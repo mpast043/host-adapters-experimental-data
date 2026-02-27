@@ -1,0 +1,47 @@
+{
+  "run_id": "RUN_20260227_161644",
+  "timestamp": "2026-02-27T16:37:00Z",
+  "index_version": "1.0.0",
+  "pointers": {
+    "contracts": {
+      "path": "../RUN_20260227_151454/results/contracts/",
+      "note": "Contract tests from parent run (unchanged)"
+    },
+    "sdk_validation": {
+      "path": "../RUN_20260227_151454/results/sdk_validation/",
+      "note": "SDK validation from parent run (unchanged)"
+    },
+    "science": {
+      "baseline": {
+        "claim3p_smoke": "../RUN_20260227_151454/results/claim3P_smoke/",
+        "verdict": "../RUN_20260227_151454/results/VERDICT.json"
+      },
+      "exploration": {
+        "claim3_chi_extended": "results/claim3_chi_extended/20260227T211813Z_d67fd589/",
+        "claim3p_cyclic": "results/claim3p_cyclic/"
+      },
+      "campaign_index": "results/campaign_index.csv",
+      "campaign_report": "results/campaign_report.md",
+      "model_comparison": "results/model_comparison.json",
+      "exploration_proposals": "results/exploration_proposals.json",
+      "exploration_selected": "results/exploration_selected.json",
+      "exploration_summary": "results/exploration_summary.json"
+    },
+    "selection": {
+      "evidence_index": "results/selection_ledger.json",
+      "ledger": "results/selection_ledger.json",
+      "selection_report": "../SUMMARY.md"
+    },
+    "verdicts": {
+      "parent": "../RUN_20260227_151454/results/VERDICT.json",
+      "current": "VERDICT.json",
+      "final": "VERDICT_FINAL.json",
+      "updated": "UPDATED_VERDICT.json"
+    }
+  },
+  "regeneration": {
+    "git_commit": "840ecb2",
+    "parent_run": "RUN_20260227_151454",
+    "reproduce": "See RETAINED.txt for full commands"
+  }
+}

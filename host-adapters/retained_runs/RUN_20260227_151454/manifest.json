@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-02-27T20:14:54Z",
+  "completion_utc": "2026-02-27T20:27:00Z",
+  "environment": {
+    "os": "Darwin Mac 25.2.0 arm64",
+    "python_version": "3.14.3",
+    "hostname": "Mac",
+    "user": "meganpastore",
+    "sandbox_mode": "none",
+    "workspace": "/Users/meganpastore/Clawdbot/.openclaw/workspace"
+  },
+  "git": {
+    "remote": "https://github.com/mpast043/host-adapters.git",
+    "branch": "main",
+    "commit_sha": "65a5ddf",
+    "commit_message": "Claim 3P: Fix Ising Hamiltonian convention bug",
+    "dirty_files": 94
+  },
+  "repo_path": "/tmp/openclaws/Repos/host-adapters",
+  "cgf_config": {
+    "CGF_ENDPOINT": "http://127.0.0.1:18080",
+    "CGF_TIMEOUT_MS": "5000",
+    "CGF_PID": 56935
+  },
+  "mcporter_version": "0.7.3",
+  "run_id": "RUN_20260227_151454",
+  "commands_executed": [
+    "pip install -r requirements.txt",
+    "ruff check . --fix (94 fixed, 35 remain)",
+    "ruff format .",
+    "pip install httpx",
+    "CGF_PORT=18080 python server/cgf_server_v03.py",
+    "make test (8/8 passed)",
+    "python exp3_claim3_physical_convergence_runner_v2.py (Ising L=8, χ=2,4)",
+    "python tools/validate_sdk_artifacts.py"
+  ],
+  "seeds": {
+    "exp3_claim3p_smoke": 42
+  },
+  "status": "COMPLETE",
+  "results": {
+    "contract_tests": "8/8 passed",
+    "sdk_validation": "PASSED",
+    "claim_3p_smoke": "REJECTED (P3.4 failed)",
+    "verdict": "REJECTED"
+  },
+  "artifacts": [
+    "manifest.json",
+    "logs/pip_install.txt",
+    "logs/ruff_fix.txt",
+    "logs/ruff_format.txt",
+    "logs/make_lint_rerun.txt",
+    "logs/make_test.txt",
+    "logs/cgf_server.log",
+    "logs/exp3_claim3p_smoke.txt",
+    "logs/validate_sdk.txt",
+    "results/VERDICT.json",
+    "results/claim3P_smoke/20260227T202634Z_933fa9d4/{manifest.json,metrics.json,verdict.json,raw_results.csv}"
+  ],
+  "mcp_targets": {
+    "compute_target": null,
+    "docs_target": null,
+    "verdict": "LOCAL_ONLY",
+    "scope_reduction": {
+      "max_minutes": 20,
+      "max_runs": 10,
+      "no_long_campaigns": true
+    }
+  },
+  "selection_pass": {
+    "timestamp": "2026-02-27T21:02:00Z",
+    "status": "COMPLETE",
+    "ledger_path": "results/selection_ledger.json",
+    "claims": {
+      "Claim_2": "SUPPORTED",
+      "Claim_3P": "REJECTED",
+      "Claim_3": "NOT_SUPPORTED",
+      "Claim_3v4": "NOT_SUPPORTED",
+      "Claim_3B": "NO_EVIDENCE"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+================================================================================
+RETENTION RECORD - Framework v4.5 End-to-End Workflow
+Run ID: RUN_20260227_161644
+Timestamp: 2026-02-27T16:37:00Z
+================================================================================
+
+ARCHIVE DETAILS
+---------------
+Filename: retained_RUN_20260227_161644.tar.gz
+Size: 23K (23240 bytes)
+Source: RUN_20260227_161644/
+Retention Path: retained_runs/retained_RUN_20260227_161644.tar.gz
+
+CONTENTS
+--------
+- manifest.json              (537 bytes)   Environment + Git state
+- VERDICT.json             (2218 bytes)  Main verdict document
+- VERDICT_FINAL.json       (2101 bytes)  Post-cyclic-boundary verdict
+- UPDATED_VERDICT.json     (2101 bytes)  Selection update
+- SUMMARY.md               (3662 bytes)  Human-readable summary
+- logs/                    Runtime logs
+- results/                 Scientific outputs + selection ledger
+
+KEY RESULTS SUMMARY
+-------------------
+Overall Status: PARTIAL (LOCAL_ONLY)
+Git Commit: 840ecb2 (AUTO: Fix Claim 3P CLI restriction, cyclic results)
+
+Claim Ledger:
+- Claim 2:     SUPPORTED
+- Claim 3P:    REJECTED (marginally: ΔAIC=+0.69, threshold not met)
+- Claim 3:     TENTATIVE_EVOLUTION (F3.2 passes with extended χ)
+- Claim 3v4:   NOT_SUPPORTED (partition-dependent behavior)
+- Claim 3B:    NO_EVIDENCE
+
+Critical Discovery: Cyclic boundary improved model selection by 60×
+(ΔAIC: -40.13 → +0.69). Physical convergence excellent (fidelity 0.9997). 
+Only statistical threshold remains blocker.
+
+REGENERATION INSTRUCTIONS
+-------------------------
+To regenerate this run from the archive:
+  tar -xzf retained_RUN_20260227_161644.tar.gz
+  cd RUN_20260227_161644/
+  # CGF server was on port 18080 (nginx conflict avoided)
+  # Python venv: venv_claim3/
+
+Rerun exploration:
+  python experiments/claim3/exp3_claim3_runner_v4.py --L 16 --A 4 --chi 2,4,8,16,32 --seeds 0,1,2
+  python experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py --model ising_cyclic --L 8 --chi-max 16
+
+Parent Run: RUN_20260227_151454
+Continuation: Yes (exploration phase)
+Total Runtime: 30 minutes (baseline + exploration + fix)
+
+================================================================================
+End of Retention Record
+================================================================================

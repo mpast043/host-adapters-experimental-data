@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-02-27T20:59:45Z",
+  "scope": "LOCAL_ONLY",
+  "candidates": [
+    {
+      "id": "claim2_seed_variation",
+      "basis": "claim2_tradeoff_smoke",
+      "claim": "Claim 2",
+      "target": "replicate robustness",
+      "script": "prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py",
+      "proposed_params": {"--output": "results/explore/claim2_seed123", "--seed": 123},
+      "estimated_minutes": 2,
+      "priority": 1,
+      "rationale": "Verify tradeoff is robust to random seed"
+    },
+    {
+      "id": "claim3_extended_chi",
+      "basis": "claim3_entropy_scaling",
+      "claim": "3",
+      "target": "convergence at higher chi",
+      "script": "experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py",
+      "proposed_params": {"--L": 16, "--A_size": 4, "--chi_sweep": "2,4,8,16,32", "--restarts_per_chi": 3, "--steps": 100, "--output_root": "results/explore", "--experiment_name": "claim3_extended"},
+      "estimated_minutes": 8,
+      "priority": 2,
+      "rationale": "Test if S converges with higher chi to reveal saturation"
+    },
+    {
+      "id": "claim3_larger_partition",
+      "basis": "claim3_entropy_scaling",
+      "claim": "3",
+      "target": "volume-law vs area-law",
+      "script": "experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py",
+      "proposed_params": {"--L": 16, "--A_size": 8, "--chi_sweep": "2,4,8", "--restarts_per_chi": 2, "--steps": 50, "--output_root": "results/explore", "--experiment_name": "claim3_voltest"},
+      "estimated_minutes": 5,
+      "priority": 3,
+      "rationale": "Partition size A=L/2 (larger) tests volume-law scaling"
+    },
+    {
+      "id": "claim3_lower_cv_threshold",
+      "basis": "claim3_entropy_scaling",
+      "claim": "3v4",
+      "target": "sensitivity analysis",
+      "script": "experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py",
+      "proposed_params": {"--L": 16, "--A_size": 4, "--chi_sweep": "2,4,8,16", "--restarts_per_chi": 5, "--slope_cv_threshold": 0.15, "--output_root": "results/explore", "--experiment_name": "claim3_sens"},
+      "estimated_minutes": 10,
+      "priority": 5,
+      "rationale": "More restarts + relaxed CV threshold to check robustness"
+    },
+    {
+      "id": "regime_crossover_L32",
+      "basis": "none",
+      "claim": "3B",
+      "target": "windowed regime",
+      "script": "experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py",
+      "proposed_params": {"--L": 32, "--A_size": 8, "--chi_sweep": "4,8,16,32,64", "--restarts_per_chi": 2, "--steps": 80, "--output_root": "results/explore", "--experiment_name": "regime_L32"},
+      "estimated_minutes": 12,
+      "priority": 6,
+      "rationale": "Larger system may show capacity-limited window before saturation"
+    }
+  ]
+}

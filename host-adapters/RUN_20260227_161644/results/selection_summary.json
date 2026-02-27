@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-02-27T16:18:00Z",
+  "selection_criteria": [
+    "Prioritize claims with medium/high confidence from baseline",
+    "Target falsifiers that were borderline (e.g., CV=0.123 vs threshold=0.10)",
+    "Maximize information gain per minute"
+  ],
+  "selected": [
+    {
+      "id": "claim3_extended_chi_A4",
+      "priority": 1,
+      "minutes": 10,
+      "rationale": "Baseline A=4 showed log-linear preference due to insufficient chi range. Extended sweep to chi=32 is most likely to reveal saturation and flip model selection verdict."
+    },
+    {
+      "id": "claim3p_replicate_closed",
+      "priority": 2,
+      "minutes": 4,
+      "rationale": "Quick robustness check. Baseline showed good fidelity but model selection failure. Seed variation determines if result is stable."
+    }
+  ],
+  "deferred": [
+    {
+      "id": "claim3_volumetric_partition",
+      "rationale": "8 minutes exceeds remaining budget after primary selection"
+    },
+    {
+      "id": "claim3b_window_probe",
+      "rationale": "8 minutes; Claim 3B previously rejected with strong evidence, lower priority"
+    }
+  ],
+  "total_allocated_minutes": 14,
+  "risk": "If claim3_extended_chi_A4 fails, insufficient budget for retry. Acceptable under LOCAL_ONLY policy."
+}

@@ -1,0 +1,14 @@
+{
+  "overall_status": "STOPPED",
+  "lint_status": "PASS",
+  "contract_status": "SKIPPED",
+  "scientific_status": {
+    "status": "NOT_RUN"
+  },
+  "selection_status": "NOT_RUN",
+  "error": {
+    "classification": "RUNTIME_FAILURE",
+    "message": "CGF server failed to start on any allowed port"
+  },
+  "generated_at_utc": "2026-02-27T22:57:46.298709+00:00"
+}

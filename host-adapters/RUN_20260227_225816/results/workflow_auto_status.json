@@ -1,0 +1,18 @@
+{
+  "run_id": "RUN_20260227_225816",
+  "mode": "STOPPED",
+  "mcp_targets": {
+    "compute_target": null,
+    "docs_target": null,
+    "discovery_log": "logs/mcporter_list.txt"
+  },
+  "contract_status": "FAIL",
+  "science_status": "NOT_RUN",
+  "selection_status": "NOT_RUN",
+  "retention_status": "NOT_RUN",
+  "artifact_index": "results/index.json",
+  "notes": [
+    "failure_classification=CONTRACT_FAILURE",
+    "failure_message=Contract suite failed"
+  ]
+}

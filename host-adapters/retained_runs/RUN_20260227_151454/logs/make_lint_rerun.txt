@@ -1,0 +1,390 @@
+ruff check .
+F401 `cgf_schemas_v03.FailMode` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> adapters/langgraph_adapter_v01.py:32:9
+   |
+30 |         DecisionType,
+31 |         RiskTier,
+32 |         FailMode,
+   |         ^^^^^^^^
+33 |         HostEventType,
+34 |         HostConfig,
+   |
+help: Remove unused import
+
+F401 `cgf_schemas_v03.ConstraintConfig` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> adapters/langgraph_adapter_v01.py:41:9
+   |
+39 |         HostOutcomeReport,
+40 |         HostEvent,
+41 |         ConstraintConfig,
+   |         ^^^^^^^^^^^^^^^^
+42 |         get_event_required_fields,
+43 |         validate_event_payload,
+   |
+help: Remove unused import
+
+F401 `cgf_schemas_v03.get_event_required_fields` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> adapters/langgraph_adapter_v01.py:42:9
+   |
+40 |         HostEvent,
+41 |         ConstraintConfig,
+42 |         get_event_required_fields,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+43 |         validate_event_payload,
+44 |     )
+   |
+help: Remove unused import
+
+F841 Local variable `is_side_effect` is assigned to but never used
+   --> adapters/langgraph_adapter_v01.py:707:13
+    |
+705 |         except (aiohttp.ClientError, asyncio.TimeoutError, Exception) as e:
+706 |             # P0 Fix: CGF unreachable - apply fail mode from cached table
+707 |             is_side_effect = "write" in proposal.action_params.get(
+    |             ^^^^^^^^^^^^^^
+708 |                 "side_effects_hint", []
+709 |             )
+    |
+help: Remove assignment to unused variable `is_side_effect`
+
+E722 Do not use bare `except`
+   --> adapters/langgraph_adapter_v01.py:936:13
+    |
+934 |             try:
+935 |                 tool_args = json.loads(tool_args)
+936 |             except:
+    |             ^^^^^^
+937 |                 tool_args = {}
+    |
+
+F841 Local variable `resp` is assigned to but never used
+   --> adapters/openclaw_adapter_v01.py:638:18
+    |
+636 |                     total=5.0
+637 |                 ),  # Longer timeout for reporting
+638 |             ) as resp:
+    |                  ^^^^
+639 |                 self.emit_event(
+640 |                     "outcome_logged",
+    |
+help: Remove assignment to unused variable `resp`
+
+F841 Local variable `S_inf_guess` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py:150:5
+    |
+148 |     Need to guess S_inf from max(y)
+149 |     """
+150 |     S_inf_guess = float(np.max(y)) * 1.05 + 0.1  # Slightly above observed max
+    |     ^^^^^^^^^^^
+151 |     best = {
+152 |         "S_inf": float("nan"),
+    |
+help: Remove assignment to unused variable `S_inf_guess`
+
+E722 Do not use bare `except`
+   --> experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py:190:9
+    |
+188 |                     "bic": bic,
+189 |                 }
+190 |         except:
+    |         ^^^^^^
+191 |             continue
+    |
+
+F841 Local variable `saturating_preferred` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py:245:5
+    |
+244 |     # Regime II: saturating preferred and valid
+245 |     saturating_preferred = (m4["aic"] < aic1 - 10.0) or (m4["aic"] < m3["aic"] - 10.0)
+    |     ^^^^^^^^^^^^^^^^^^^^
+246 |
+247 |     # Pass condition: either regime
+    |
+help: Remove assignment to unused variable `saturating_preferred`
+
+E741 Ambiguous variable name: `I`
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:142:5
+    |
+141 |     # Pauli matrices
+142 |     I = np.array([[1, 0], [0, 1]], dtype=np.float64)
+    |     ^
+143 |     X = np.array([[0, 1], [1, 0]], dtype=np.float64)
+144 |     Z = np.array([[1, 0], [0, -1]], dtype=np.float64)
+    |
+
+E741 Ambiguous variable name: `I`
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:178:5
+    |
+177 |     # Pauli spin matrices (S = 0.5 * sigma)
+178 |     I = np.array([[1, 0], [0, 1]], dtype=np.float64)
+    |     ^
+179 |     Sx = 0.5 * np.array([[0, 1], [1, 0]], dtype=np.float64)
+180 |     Sy = 0.5 * np.array([[0, -1j], [1j, 0]], dtype=np.complex128)
+    |
+
+F841 Local variable `H_mpo` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:289:9
+    |
+287 |         H_dense = build_ising_hamiltonian(L, j, h)
+288 |     else:  # heisenberg
+289 |         H_mpo = qtn.MPO_ham_heis(L, cyclic=False)
+    |         ^^^^^
+290 |         H_dense = build_heisenberg_hamiltonian(L)
+291 |         H_dense = H_dense.astype(np.float64).real
+    |
+help: Remove assignment to unused variable `H_mpo`
+
+F841 Local variable `psi_conj` is assigned to but never used
+  --> experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py:95:5
+   |
+93 |     # Compute reduced density matrix by contracting over B sites
+94 |     # rho_A[i1,i2,...,j1,j2,...] = sum_{B} psi*[i1,...,B,...] psi[j1,...,B,...]
+95 |     psi_conj = psi_tensor.conj()
+   |     ^^^^^^^^
+96 |
+97 |     # Build rho_A by contraction
+   |
+help: Remove assignment to unused variable `psi_conj`
+
+F841 Local variable `A_size` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py:294:5
+    |
+292 |     """
+293 |
+294 |     A_size = len(A_sites)
+    |     ^^^^^^
+295 |
+296 |     # Build bra with different index labels
+    |
+help: Remove assignment to unused variable `A_size`
+
+F841 Local variable `A_size` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_quimb_runner.py:258:5
+    |
+257 |     A_sites = list(part.keep_sites)
+258 |     A_size = len(A_sites)
+    |     ^^^^^^
+259 |
+260 |     # reindex kept sites on bra to b{}
+    |
+help: Remove assignment to unused variable `A_size`
+
+F841 Local variable `level_factor` is assigned to but never used
+  --> prototype/experiments/exp3_mera_spectral/exp3_entanglement_entropy.py:52:5
+   |
+51 |     system_size = num_sites
+52 |     level_factor = min(num_levels, int(np.log2(system_size / subsystem_size)) + 2)
+   |     ^^^^^^^^^^^^
+53 |
+54 |     # Geometric factor: number of bonds in minimal surface
+   |
+help: Remove assignment to unused variable `level_factor`
+
+F841 Local variable `chis` is assigned to but never used
+   --> prototype/experiments/exp3_mera_spectral/exp3_entanglement_entropy.py:125:5
+    |
+124 |     # Analyze scaling
+125 |     chis = [r["chi"] for r in results]
+    |     ^^^^
+126 |     entropies = [r["entanglement_entropy"] for r in results]
+127 |     logs_chi = [r["log_chi"] for r in results]
+    |
+help: Remove assignment to unused variable `chis`
+
+F841 Local variable `isometry_nodes` is assigned to but never used
+  --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:41:5
+   |
+39 |     level_nodes = {}
+40 |     disentangler_nodes = {}
+41 |     isometry_nodes = {}
+   |     ^^^^^^^^^^^^^^
+42 |
+43 |     for level in range(num_levels):
+   |
+help: Remove assignment to unused variable `isometry_nodes`
+
+E741 Ambiguous variable name: `l`
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:268:59
+    |
+266 |         if len(by_level) >= 2:
+267 |             levels = sorted(by_level.keys())
+268 |             dims = [by_level[l]["spectral_dimension"] for l in levels]
+    |                                                           ^
+269 |             # Trend: should decrease or stay flat (coarse-graining reduces effective dim)
+270 |             valid = all(not np.isnan(d) for d in dims)
+    |
+
+E741 Ambiguous variable name: `l`
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral_v2.py:318:57
+    |
+316 |         levels = r["level_results"]
+317 |         if len(levels) >= 2:
+318 |             dims = [levels[l]["spectral_dimension"] for l in sorted(levels.keys())]
+    |                                                         ^
+319 |             non_nan = [d for d in dims if d > 0]
+320 |             if len(non_nan) >= 2:
+    |
+
+E722 Do not use bare `except`
+   --> prototype/experiments/exp3b_windowed_regime/exp3b_windowed_regime.py:144:9
+    |
+142 |                 best_rss = rss
+143 |                 best_params = (a, p, b)
+144 |         except:
+    |         ^^^^^^
+145 |             continue
+    |
+
+E402 Module level import not at top of file
+  --> prototype/experiments/exp3b_windowed_regime/run_extended.py:25:1
+   |
+24 | # Calculate expected χ_sat
+25 | import numpy as np
+   | ^^^^^^^^^^^^^^^^^^
+26 |
+27 | A = 16
+   |
+
+E402 Module level import not at top of file
+  --> prototype/experiments/exp3b_windowed_regime/run_extended.py:56:1
+   |
+55 | # Patch the windows into the module
+56 | import exp3b_windowed_regime
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+57 |
+58 | original_windows = exp3b_windowed_regime.run_windowed_experiment.__code__.co_consts
+   |
+
+F401 `requests` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> sdk/python/cgf_sdk/cgf_client.py:23:12
+   |
+22 | try:
+23 |     import requests
+   |            ^^^^^^^^
+24 |
+25 |     HAS_REQUESTS = True
+   |
+help: Remove unused import: `requests`
+
+F401 `cgf_schemas_v03.normalize_for_processing` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> server/cgf_server_v03.py:29:9
+   |
+27 |         MIN_COMPATIBLE_VERSION,
+28 |         is_compatible_version,
+29 |         normalize_for_processing,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^
+30 |         PolicyConfig,
+31 |         HostAdapterRegistration,
+   |
+help: Remove unused import: `cgf_schemas_v03.normalize_for_processing`
+
+F401 `cgf_policy.get_fail_mode` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> server/cgf_server_v03.py:85:72
+   |
+84 |     sys.path.insert(0, str(Path(__file__).parent.parent))
+85 |     from cgf_policy import load_policy_bundle, evaluate, PolicyBundle, get_fail_mode
+   |                                                                        ^^^^^^^^^^^^^
+86 |     from cgf_policy.types import DecisionType as PolicyDecisionType
+   |
+help: Remove unused import: `cgf_policy.get_fail_mode`
+
+E741 Ambiguous variable name: `l`
+   --> server/cgf_server_v03.py:232:27
+    |
+230 |     # Histogram buckets
+231 |     for bucket in LATENCY_BUCKETS:
+232 |         count = sum(1 for l in metrics_state["decision_latency_ms"] if l <= bucket)
+    |                           ^
+233 |         lines.append(f'cgf_decision_latency_ms_bucket{{le="{bucket}"}} {count}')
+    |
+
+F841 Local variable `avg_latency` is assigned to but never used
+   --> server/cgf_server_v03.py:240:9
+    |
+239 |     if total > 0:
+240 |         avg_latency = sum(metrics_state["decision_latency_ms"]) / total
+    |         ^^^^^^^^^^^
+241 |         lines.append(
+242 |             f"cgf_decision_latency_ms_sum {sum(metrics_state['decision_latency_ms'])}"
+    |
+help: Remove assignment to unused variable `avg_latency`
+
+E722 Do not use bare `except`
+  --> tools/contract_compliance_tests.py:96:9
+   |
+94 |             # 404 is OK, server is there
+95 |             return True
+96 |         except:
+   |         ^^^^^^
+97 |             return False
+98 |     except ImportError:
+   |
+
+E402 Module level import not at top of file
+   --> tools/contract_compliance_tests.py:119:1
+    |
+117 | # ============== PYTEST FIXTURE ==============
+118 |
+119 | import pytest
+    | ^^^^^^^^^^^^^
+    |
+
+E741 Ambiguous variable name: `l`
+   --> tools/contract_compliance_tests.py:287:24
+    |
+285 |     # Each file should have events
+286 |     for ef in event_files:
+287 |         lines = [l for l in ef.read_text().strip().split("\n") if l.strip()]
+    |                        ^
+288 |         assert len(lines) > 0, f"{ef} is empty - events must be produced"
+    |
+
+F401 `cgf_policy.PolicyDecision` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> tools/replay_governance_timeline.py:29:45
+   |
+28 | try:
+29 |     from cgf_policy import PolicyEvaluator, PolicyDecision
+   |                                             ^^^^^^^^^^^^^^
+30 |
+31 |     HAS_POLICY_ENGINE = True
+   |
+help: Remove unused import: `cgf_policy.PolicyDecision`
+
+F841 Local variable `decision_event` is assigned to but never used
+  --> tools/replay_verify.py:50:9
+   |
+48 |     if proposal_events and decision_events:
+49 |         proposal_event = proposal_events[0]
+50 |         decision_event = decision_events[0]
+   |         ^^^^^^^^^^^^^^
+51 |
+52 |         # Reconstruct proposal from event payload
+   |
+help: Remove assignment to unused variable `decision_event`
+
+E722 Do not use bare `except`
+   --> tools/schema_lint.py:264:29
+    |
+262 |                             try:
+263 |                                 events.append(json.loads(line))
+264 |                             except:
+    |                             ^^^^^^
+265 |                                 pass
+266 |             host_events[host_name] = events
+    |
+
+F841 Local variable `HAS_JSONSCHEMA` is assigned to but never used
+   --> tools/validate_sdk_artifacts.py:227:9
+    |
+225 |         HAS_JSONSCHEMA = True
+226 |     except ImportError:
+227 |         HAS_JSONSCHEMA = False
+    |         ^^^^^^^^^^^^^^
+228 |         print("  ⚠ jsonschema not installed, skipping schema validation")
+229 |         print("    (Install with: pip install jsonschema)")
+    |
+help: Remove assignment to unused variable `HAS_JSONSCHEMA`
+
+Found 35 errors.
+No fixes available (14 hidden fixes can be enabled with the `--unsafe-fixes` option).
+make: *** [lint] Error 1

@@ -1,0 +1,25 @@
+{"ts_utc": "2026-02-27T22:58:16.682503+00:00", "step": "0", "event_type": "step_started", "name": "Preflight and MCP discovery"}
+{"ts_utc": "2026-02-27T22:58:16.682709+00:00", "step": "0", "event_type": "command_started", "name": "env_uname", "command": "uname -a", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/env_uname.txt"}
+{"ts_utc": "2026-02-27T22:58:16.684364+00:00", "step": "0", "event_type": "command_finished", "name": "env_uname", "exit_code": 0, "duration_s": 0.002, "log_path": "logs/env_uname.txt"}
+{"ts_utc": "2026-02-27T22:58:16.684462+00:00", "step": "0", "event_type": "command_started", "name": "env_python_version", "command": "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python --version", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/env_python_version.txt"}
+{"ts_utc": "2026-02-27T22:58:16.690696+00:00", "step": "0", "event_type": "command_finished", "name": "env_python_version", "exit_code": 0, "duration_s": 0.006, "log_path": "logs/env_python_version.txt"}
+{"ts_utc": "2026-02-27T22:58:16.690802+00:00", "step": "0", "event_type": "command_started", "name": "env_pip_freeze", "command": "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python -m pip freeze", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/env_pip_freeze.txt"}
+{"ts_utc": "2026-02-27T22:58:16.842020+00:00", "step": "0", "event_type": "command_finished", "name": "env_pip_freeze", "exit_code": 0, "duration_s": 0.151, "log_path": "logs/env_pip_freeze.txt"}
+{"ts_utc": "2026-02-27T22:58:16.842185+00:00", "step": "0", "event_type": "command_started", "name": "git_remote_v", "command": "git remote -v", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/git_remote_v.txt"}
+{"ts_utc": "2026-02-27T22:58:16.850796+00:00", "step": "0", "event_type": "command_finished", "name": "git_remote_v", "exit_code": 0, "duration_s": 0.009, "log_path": "logs/git_remote_v.txt"}
+{"ts_utc": "2026-02-27T22:58:16.850920+00:00", "step": "0", "event_type": "command_started", "name": "git_branch", "command": "git rev-parse --abbrev-ref HEAD", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/git_branch.txt"}
+{"ts_utc": "2026-02-27T22:58:16.857675+00:00", "step": "0", "event_type": "command_finished", "name": "git_branch", "exit_code": 0, "duration_s": 0.007, "log_path": "logs/git_branch.txt"}
+{"ts_utc": "2026-02-27T22:58:16.857790+00:00", "step": "0", "event_type": "command_started", "name": "git_commit", "command": "git rev-parse --short HEAD", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/git_commit.txt"}
+{"ts_utc": "2026-02-27T22:58:16.864764+00:00", "step": "0", "event_type": "command_finished", "name": "git_commit", "exit_code": 0, "duration_s": 0.007, "log_path": "logs/git_commit.txt"}
+{"ts_utc": "2026-02-27T22:58:16.864864+00:00", "step": "0", "event_type": "command_started", "name": "git_status_porcelain", "command": "git status --porcelain", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/git_status_porcelain.txt"}
+{"ts_utc": "2026-02-27T22:58:16.874167+00:00", "step": "0", "event_type": "command_finished", "name": "git_status_porcelain", "exit_code": 0, "duration_s": 0.009, "log_path": "logs/git_status_porcelain.txt"}
+{"ts_utc": "2026-02-27T22:58:16.874271+00:00", "step": "0", "event_type": "command_started", "name": "mcporter_cmd_check", "command": "sh -lc command -v mcporter", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/mcporter_cmd_check.txt"}
+{"ts_utc": "2026-02-27T22:58:16.879268+00:00", "step": "0", "event_type": "command_finished", "name": "mcporter_cmd_check", "exit_code": 0, "duration_s": 0.005, "log_path": "logs/mcporter_cmd_check.txt"}
+{"ts_utc": "2026-02-27T22:58:16.879379+00:00", "step": "0", "event_type": "command_started", "name": "mcporter_list", "command": "mcporter list", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/mcporter_list.txt"}
+{"ts_utc": "2026-02-27T22:58:18.345763+00:00", "step": "0", "event_type": "command_finished", "name": "mcporter_list", "exit_code": 0, "duration_s": 1.466, "log_path": "logs/mcporter_list.txt"}
+{"ts_utc": "2026-02-27T22:58:18.346217+00:00", "step": "0", "event_type": "step_finished", "status": "PASS"}
+{"ts_utc": "2026-02-27T22:58:18.346260+00:00", "step": "1", "event_type": "step_started", "name": "Repo verification"}
+{"ts_utc": "2026-02-27T22:58:18.346298+00:00", "step": "1", "event_type": "step_finished", "status": "PASS", "lint_status": "PASS"}
+{"ts_utc": "2026-02-27T22:58:18.346335+00:00", "step": "2", "event_type": "step_started", "name": "CGF contract verification"}
+{"ts_utc": "2026-02-27T22:58:18.359680+00:00", "step": "2", "event_type": "command_started", "name": "contract_suite", "command": "bash tools/run_contract_suite.sh", "cwd": "/private/tmp/openclaws/Repos/host-adapters", "log_path": "logs/contract_suite.txt"}
+{"ts_utc": "2026-02-27T22:58:18.933756+00:00", "step": "2", "event_type": "command_finished", "name": "contract_suite", "exit_code": 1, "duration_s": 0.574, "log_path": "logs/contract_suite.txt"}

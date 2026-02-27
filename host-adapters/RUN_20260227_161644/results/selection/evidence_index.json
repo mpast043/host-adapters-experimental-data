@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-02-27T22:55:46.724788+00:00",
+  "source": "legacy_selection_ledger",
+  "claims": {
+    "Claim_2": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "ACCEPTED",
+      "rationale": "No change from baseline"
+    },
+    "Claim_3P": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "REJECTED",
+      "rationale": "Runner CLI restricts to ising_open. Cyclic (closed) boundary available in code but not exposed."
+    },
+    "Claim_3": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "REJECTED",
+      "rationale": "Extended chi sweep (2-32) achieved F3.2 PASS (CV=0.092). F3.3 still FAILs - log-linear preferred. Model family may need expansion or threshold adjustment. Cross-partition comparison (A=4 vs A=8) shows different saturation behavior."
+    },
+    "Claim_3v4": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "REJECTED",
+      "rationale": "A=4 shows log-linear preference, A=8 shows saturating preference (but insufficient delta). Volume vs area scaling transition is real but falsification criteria too strict."
+    },
+    "Claim_3B": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "UNDERDETERMINED",
+      "rationale": "Not attempted - budget exhausted"
+    }
+  }
+}

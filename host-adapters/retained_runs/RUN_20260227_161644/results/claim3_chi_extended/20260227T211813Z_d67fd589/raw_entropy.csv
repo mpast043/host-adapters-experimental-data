@@ -1,0 +1,16 @@
+chi,seed,partition_id,L,A_start,A_size,S,run_status,notes
+2,42,contig_0_4,16,0,4,1.543179078977,ok,entanglement_max
+2,43,contig_0_4,16,0,4,1.776732479957,ok,entanglement_max
+2,44,contig_0_4,16,0,4,1.729158293966,ok,entanglement_max
+4,100042,contig_0_4,16,0,4,2.689987206231,ok,entanglement_max
+4,100043,contig_0_4,16,0,4,2.697024637225,ok,entanglement_max
+4,100044,contig_0_4,16,0,4,2.714860213223,ok,entanglement_max
+8,200042,contig_0_4,16,0,4,2.754164764124,ok,entanglement_max
+8,200043,contig_0_4,16,0,4,2.750490166902,ok,entanglement_max
+8,200044,contig_0_4,16,0,4,2.748825438579,ok,entanglement_max
+16,300042,contig_0_4,16,0,4,2.770657132506,ok,entanglement_max
+16,300043,contig_0_4,16,0,4,2.770667376876,ok,entanglement_max
+16,300044,contig_0_4,16,0,4,2.770525411687,ok,entanglement_max
+32,400042,contig_0_4,16,0,4,2.770443725116,ok,entanglement_max
+32,400043,contig_0_4,16,0,4,2.770689791940,ok,entanglement_max
+32,400044,contig_0_4,16,0,4,2.770848325094,ok,entanglement_max

@@ -1,0 +1,13 @@
+mcporter 0.7.3 — Listing 11 server(s) (per-server timeout: 30s)
+- github (offline — unable to reach server, 0.0s) [source: ~/.codex/config.toml]
+- notion (auth required — run 'mcporter auth notion', 0.2s) [source: ~/.codex/config.toml]
+- io.github.github/github-mcp-server (auth required — run 'mcporter auth io.github.github/github-mcp-server', 0.2s) [source: ~/Library/Application Support/Code/User/mcp.json]
+- com.apify/apify-mcp-server (auth required — run 'mcporter auth com.apify/apify-mcp-server', 0.2s) [source: ~/Library/Application Support/Code/User/mcp.json]
+- io.github.hashicorp/terraform-mcp-server (offline — unable to reach server, 0.3s) [source: ~/Library/Application Support/Code/User/mcp.json]
+- figma (auth required — run 'mcporter auth figma', 0.4s) [source: ~/.codex/config.toml]
+- io.github.tavily-ai/tavily-mcp (4 tools, 1.0s) [source: ~/Library/Application Support/Code/User/mcp.json]
+- io.github.bytebase/dbhub (offline — unable to reach server, 1.0s) [source: ~/Library/Application Support/Code/User/mcp.json]
+- microsoft/markitdown (1 tool, 1.1s) [source: ~/Library/Application Support/Code/User/mcp.json]
+- microsoft/playwright-mcp (22 tools, 1.3s) [source: ~/Library/Application Support/Code/User/mcp.json]
+- playwright (22 tools, 1.3s) [source: ~/.codex/config.toml]
+✔ Listed 11 servers (4 healthy; 4 auth required; 3 offline).

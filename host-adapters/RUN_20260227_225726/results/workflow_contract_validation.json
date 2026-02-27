@@ -1,0 +1,79 @@
+{
+  "run_dir": "/private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726",
+  "schema": "/private/tmp/openclaws/Repos/host-adapters/tools/workflow_auto_schema_v1.json",
+  "errors": 13,
+  "warnings": 1,
+  "ready": false,
+  "findings": [
+    {
+      "code": "ROOT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/RETAINED.txt"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/science/run_plan.json"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/science/baseline_summary.json"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/science/exploration_proposals.json"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/science/exploration_selected.json"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/science/campaign/campaign_index.csv"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/science/campaign/campaign_report.md"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/science/campaign/model_comparison.json"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/selection/evidence_index.json"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/selection/selection_manifest.json"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/selection/ledger.jsonl"
+    },
+    {
+      "code": "RESULT_REQUIRED_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/selection/selection_report.md"
+    },
+    {
+      "code": "JSONSCHEMA_NOT_INSTALLED",
+      "level": "WARN",
+      "message": "jsonschema not installed; key-level validation applied only"
+    },
+    {
+      "code": "SELECTION_MANIFEST_MISSING",
+      "level": "ERROR",
+      "message": "Missing: /private/tmp/openclaws/Repos/host-adapters/RUN_20260227_225726/results/selection/selection_manifest.json"
+    }
+  ]
+}

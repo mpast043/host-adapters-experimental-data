@@ -1,0 +1,10 @@
+{
+  "suite_id": "quick_f6703c3a65",
+  "label": "quick",
+  "timestamp": "2026-02-27T18:04:14",
+  "elapsed_s": 0.02,
+  "n_configs": 5,
+  "n_monotone_pass": 5,
+  "n_dimension_reduction": 4,
+  "all_monotone": true
+}

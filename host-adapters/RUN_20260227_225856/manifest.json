@@ -1,0 +1,199 @@
+{
+  "run_id": "RUN_20260227_225856",
+  "repo_root": "/private/tmp/openclaws/Repos/host-adapters",
+  "started_utc": "2026-02-27T22:58:56.857209+00:00",
+  "host": {
+    "hostname": "Mac",
+    "os": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.3",
+    "user": "meganpastore"
+  },
+  "steps": {
+    "0": {
+      "name": "Preflight and MCP discovery",
+      "status": "PASS"
+    },
+    "1": {
+      "name": "Repo verification",
+      "status": "PASS"
+    },
+    "2": {
+      "name": "CGF contract verification",
+      "status": "RUNNING"
+    }
+  },
+  "commands": [
+    {
+      "name": "env_uname",
+      "step": "0",
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-27T22:58:56.864213+00:00",
+      "ended_utc": "2026-02-27T22:58:56.866851+00:00",
+      "duration_s": 0.003,
+      "log_path": "logs/env_uname.txt"
+    },
+    {
+      "name": "env_python_version",
+      "step": "0",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "--version"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-27T22:58:56.867076+00:00",
+      "ended_utc": "2026-02-27T22:58:56.873857+00:00",
+      "duration_s": 0.007,
+      "log_path": "logs/env_python_version.txt"
+    },
+    {
+      "name": "env_pip_freeze",
+      "step": "0",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-27T22:58:56.874042+00:00",
+      "ended_utc": "2026-02-27T22:58:57.026619+00:00",
+      "duration_s": 0.153,
+      "log_path": "logs/env_pip_freeze.txt"
+    },
+    {
+      "name": "git_remote_v",
+      "step": "0",
+      "command": [
+        "git",
+        "remote",
+        "-v"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-27T22:58:57.026920+00:00",
+      "ended_utc": "2026-02-27T22:58:57.038020+00:00",
+      "duration_s": 0.011,
+      "log_path": "logs/git_remote_v.txt"
+    },
+    {
+      "name": "git_branch",
+      "step": "0",
+      "command": [
+        "git",
+        "rev-parse",
+        "--abbrev-ref",
+        "HEAD"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-27T22:58:57.038317+00:00",
+      "ended_utc": "2026-02-27T22:58:57.047109+00:00",
+      "duration_s": 0.009,
+      "log_path": "logs/git_branch.txt"
+    },
+    {
+      "name": "git_commit",
+      "step": "0",
+      "command": [
+        "git",
+        "rev-parse",
+        "--short",
+        "HEAD"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-27T22:58:57.047467+00:00",
+      "ended_utc": "2026-02-27T22:58:57.057158+00:00",
+      "duration_s": 0.01,
+      "log_path": "logs/git_commit.txt"
+    },
+    {
+      "name": "git_status_porcelain",
+      "step": "0",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-27T22:58:57.057404+00:00",
+      "ended_utc": "2026-02-27T22:58:57.069975+00:00",
+      "duration_s": 0.013,
+      "log_path": "logs/git_status_porcelain.txt"
+    },
+    {
+      "name": "mcporter_cmd_check",
+      "step": "0",
+      "command": [
+        "sh",
+        "-lc",
+        "command -v mcporter"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-27T22:58:57.070242+00:00",
+      "ended_utc": "2026-02-27T22:58:57.075921+00:00",
+      "duration_s": 0.006,
+      "log_path": "logs/mcporter_cmd_check.txt"
+    },
+    {
+      "name": "mcporter_list",
+      "step": "0",
+      "command": [
+        "mcporter",
+        "list"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-27T22:58:57.076122+00:00",
+      "ended_utc": "2026-02-27T22:58:58.605584+00:00",
+      "duration_s": 1.529,
+      "log_path": "logs/mcporter_list.txt"
+    },
+    {
+      "name": "contract_suite",
+      "step": "2",
+      "command": [
+        "bash",
+        "tools/run_contract_suite.sh"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-27T22:58:58.621749+00:00",
+      "ended_utc": "2026-02-27T22:58:59.203093+00:00",
+      "duration_s": 0.581,
+      "log_path": "logs/contract_suite.txt",
+      "tail200_path": "logs/contract_suite_tail200.txt"
+    }
+  ],
+  "mcp_calls": [
+    {
+      "tool": "mcporter list",
+      "server_target": "local",
+      "request_summary": "discover available MCP servers",
+      "response_pointer": "logs/mcporter_list.txt"
+    }
+  ],
+  "failure_classification": "CONTRACT_FAILURE",
+  "failure_message": "Contract suite failed",
+  "mcp_targets": {
+    "compute_target": null,
+    "docs_target": null,
+    "discovery_log": "logs/mcporter_list.txt",
+    "servers": [
+      "mcporter"
+    ]
+  },
+  "cgf": {
+    "endpoint": "http://127.0.0.1:8080"
+  },
+  "ended_utc": "2026-02-27T22:58:59.203992+00:00"
+}

@@ -1,0 +1,28 @@
+/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  t = dt.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+======================================================================
+CLAIM 3P: Physical Hamiltonian Convergence Test
+======================================================================
+Model: heisenberg_open
+System: L=8, A=4
+Chi sweep: [2, 4]
+Restarts: 3
+Steps: 120
+Output: RUN_20260227_151454/results/science/claim3p_heis/20260227T205907Z_bccf57f3
+======================================================================
+
+[Phase 1] Exact Diagonalization (Gold Standard)
+  [ED] Building heisenberg_open Hamiltonian for L=8...
+Traceback (most recent call last):
+  File "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner.py", line 810, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner.py", line 637, in main
+    ed_result = exact_diagonalization(
+        L=config.L, model=config.model, A_size=config.A_size, j=config.j, h=config.h
+    )
+  File "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner.py", line 229, in exact_diagonalization
+    H = build_heisenberg_hamiltonian(L)
+  File "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner.py", line 212, in build_heisenberg_hamiltonian
+    H += SdotS
+ValueError: operands could not be broadcast together with shapes (256,256) (128,128) (256,256) 

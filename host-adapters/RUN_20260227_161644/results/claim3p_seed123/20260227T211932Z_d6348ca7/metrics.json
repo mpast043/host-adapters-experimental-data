@@ -1,0 +1,37 @@
+{
+  "chi_sweep": [
+    2,
+    4,
+    8
+  ],
+  "metrics_per_chi": [
+    {
+      "chi": 2,
+      "fidelity_best": 0.0013733560212372575,
+      "entropy_best": 1.0055401528641659,
+      "energy_estimated": -0.2661008756164828,
+      "seed": 20123,
+      "restart_idx": 0
+    },
+    {
+      "chi": 4,
+      "fidelity_best": 0.014423075982088595,
+      "entropy_best": 2.1202450954274785,
+      "energy_estimated": 0.031228656211759492,
+      "seed": 40123,
+      "restart_idx": 0
+    },
+    {
+      "chi": 8,
+      "fidelity_best": 0.0035644792858811917,
+      "entropy_best": 2.2209100817520397,
+      "energy_estimated": -0.16463030114823773,
+      "seed": 81123,
+      "restart_idx": 1
+    }
+  ],
+  "ed_reference": {
+    "ground_state_energy": -9.83795144745942,
+    "entanglement_entropy": 0.3571613850755514
+  }
+}

@@ -1,0 +1,6 @@
+/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py:43: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  t = dt.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py:561: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp_utc": dt.datetime.utcnow().isoformat() + "Z",
+RUN_20260227_151454/results/science/claim3_smoke/20260227T205925Z_05a91e4c
+{"verdict": "INCONCLUSIVE", "corr": 1.0, "f31": true, "f32": false, "f33": false, "f34": true}

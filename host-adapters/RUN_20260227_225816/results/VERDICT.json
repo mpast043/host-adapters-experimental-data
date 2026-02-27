@@ -1,0 +1,14 @@
+{
+  "overall_status": "STOPPED",
+  "lint_status": "PASS",
+  "contract_status": "FAIL",
+  "scientific_status": {
+    "status": "NOT_RUN"
+  },
+  "selection_status": "NOT_RUN",
+  "error": {
+    "classification": "CONTRACT_FAILURE",
+    "message": "Contract suite failed"
+  },
+  "generated_at_utc": "2026-02-27T22:58:18.934002+00:00"
+}

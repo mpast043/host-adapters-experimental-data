@@ -1,0 +1,7 @@
+chi,seed,partition_id,L,A_start,A_size,S,run_status,notes
+2,42,contig_0_8,16,0,8,2.252792677780,ok,entanglement_max
+2,43,contig_0_8,16,0,8,1.896294261881,ok,entanglement_max
+4,100042,contig_0_8,16,0,8,4.197855910576,ok,entanglement_max
+4,100043,contig_0_8,16,0,8,4.377446547494,ok,entanglement_max
+8,200042,contig_0_8,16,0,8,4.781848096013,ok,entanglement_max
+8,200043,contig_0_8,16,0,8,4.763863305889,ok,entanglement_max

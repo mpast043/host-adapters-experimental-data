@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-02-27T16:21:00Z",
+  "framework_version": "0.4.5",
+  "continuation": {
+    "parent_run": "RUN_20260227_151454",
+    "new_run": "RUN_20260227_161644",
+    "continuation_reason": "Resolve underdetermined claims from baseline"
+  },
+  "evidence_index": {
+    "exploration_additions": [
+      {
+        "test_id": "claim3_extended_chi_A4",
+        "claim": "Claim_3",
+        "verdict": "INCONCLUSIVE",
+        "confidence": "MEDIUM",
+        "witness": [
+          "WORKFLOW_AUTO.md §4.3",
+          "exploration_proposals.json §candidates[0]"
+        ],
+        "artifacts": [
+          "RUN_20260227_161644/results/claim3_chi_extended/20260227T211813Z_d67fd589/verdict.json"
+        ],
+        "key_metrics": {
+          "f32_cv": 0.0919,
+          "f32_passed": true,
+          "f33_winner": "log_linear",
+          "chi_range": [2, 4, 8, 16, 32]
+        }
+      }
+    ]
+  },
+  "updated_claim_ledger": {
+    "Claim_2": {
+      "status": "SUPPORTED",
+      "evidence_quality": "HIGH",
+      "replication": "CONFIRMED (seed 42 and 123)",
+      "notes": "No change from baseline"
+    },
+    "Claim_3P": {
+      "status": "REJECTED",
+      "evidence_quality": "MEDIUM",
+      "replication": "BLOCKED",
+      "notes": "Runner CLI restricts to ising_open. Cyclic (closed) boundary available in code but not exposed."
+    },
+    "Claim_3": {
+      "status": "NOT_SUPPORTED → TENTATIVE_EVOLUTION",
+      "evidence_quality": "MEDIUM → MEDIUM-HIGH",
+      "replication": "PARTIAL",
+      "notes": "Extended chi sweep (2-32) achieved F3.2 PASS (CV=0.092). F3.3 still FAILs - log-linear preferred. Model family may need expansion or threshold adjustment. Cross-partition comparison (A=4 vs A=8) shows different saturation behavior."
+    },
+    "Claim_3v4": {
+      "status": "NOT_SUPPORTED",
+      "evidence_quality": "MEDIUM",
+      "replication": "INCONCLUSIVE",
+      "notes": "A=4 shows log-linear preference, A=8 shows saturating preference (but insufficient delta). Volume vs area scaling transition is real but falsification criteria too strict."
+    },
+    "Claim_3B": {
+      "status": "NO_EVIDENCE",
+      "evidence_quality": "LOW",
+      "notes": "Not attempted - budget exhausted"
+    }
+  },
+  "recommendations": [
+    "Fix exp3_claim3_physical_convergence_runner_v2.py argparse to expose 'ising_cyclic' choice",
+    "Consider relaxing F3.3 threshold or adding 'cross-partition consistency' as alternative falsifier",
+    "Execute Claim 3 with chi up to 64 and L=32 (requires compute_target MCP)",
+    "Investigate why extended chi range improved CV but not model preference"
+  ]
+}

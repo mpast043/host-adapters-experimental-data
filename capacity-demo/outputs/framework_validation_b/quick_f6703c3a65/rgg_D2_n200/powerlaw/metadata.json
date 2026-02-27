@@ -1,0 +1,54 @@
+{
+  "config_key": "rgg_D2_n200__powerlaw",
+  "substrate": {
+    "type": "random_geometric_graph",
+    "D": 2,
+    "n_vertices": 200,
+    "radius": 0.35,
+    "seed": 42,
+    "avg_degree": 55.76,
+    "n_edges": 5576,
+    "connected": true,
+    "max_eigenvalue": 85.36109991662923
+  },
+  "filter": {
+    "name": "powerlaw_reweight",
+    "type": "power-law spectral reweight",
+    "formula": "g_C(lam) = (1 + lam/lam0)^{-beta_max * (1 - C^gamma)}",
+    "d0": 2.0,
+    "beta_max": 1.0,
+    "gamma": 1.0,
+    "lambda0": 55.59497837613457,
+    "lambda0_quantile": 0.5
+  },
+  "d0": 2.0,
+  "n_C_steps": 15,
+  "C_range": [
+    0.05,
+    1.0
+  ],
+  "sigma_range": [
+    0.01,
+    0.3597447212711834
+  ],
+  "n_sigma": 200,
+  "plateau_window": [
+    0.010181671185274195,
+    0.08993618031779585
+  ],
+  "summary": {
+    "config_key": "rgg_D2_n200__powerlaw",
+    "substrate": "rgg_D2_n200_r0.350_s42",
+    "filter": "powerlaw_reweight",
+    "n_vertices": 200,
+    "d0": 2.0,
+    "n_C_steps": 15,
+    "ds_at_C_min": 2.5966,
+    "ds_at_C_max": 2.8079,
+    "dim_reduction": 0.2113,
+    "max_ds_drop": 0.0143,
+    "monotone_pass": true,
+    "mean_r_squared": 0.9659,
+    "min_r_squared": 0.9636
+  }
+}

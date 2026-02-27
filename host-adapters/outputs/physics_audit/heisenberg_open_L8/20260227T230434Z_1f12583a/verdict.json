@@ -1,0 +1,47 @@
+{
+  "claim": "3P",
+  "model": "heisenberg_open",
+  "L": 8,
+  "verdict": "REJECTED",
+  "falsifiers": {
+    "P3.1": {
+      "passed": true,
+      "violations": [],
+      "n_checks": 1,
+      "eps_fid": 0.0001
+    },
+    "P3.2": {
+      "passed": true,
+      "errors": [
+        0.20745922571058295,
+        0.11219225578848413
+      ],
+      "violations": [],
+      "n_checks": 1,
+      "eps_S": 0.001
+    },
+    "P3.3": {
+      "passed": false,
+      "fid_passed": false,
+      "S_passed": true,
+      "best_fidelity": 0.8931734897884154,
+      "final_entropy_error": 0.11219225578848413,
+      "fid_threshold": 0.95,
+      "S_threshold": 0.15
+    },
+    "P3.4": {
+      "passed": false,
+      "delta_aic": -34.262902519415135,
+      "delta_bic": -34.26290251941514,
+      "S_inf_sat": 0.5231584712884249,
+      "c_sat": 2.1517241379310343,
+      "aic_sat": -18.38543407356185,
+      "bic_sat": -20.99913971244196,
+      "a_log": 0.13744118506713002,
+      "b_log": 0.1542495774807013,
+      "aic_log": -52.64833659297699,
+      "bic_log": -55.2620422318571
+    }
+  },
+  "timestamp": "2026-02-27T23:04:40.286348+00:00"
+}

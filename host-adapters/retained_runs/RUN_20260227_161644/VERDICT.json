@@ -1,0 +1,68 @@
+{
+  "run_id": "RUN_20260227_161644",
+  "parent_run": "RUN_20260227_151454",
+  "timestamp_start": "2026-02-27T16:16:44Z",
+  "timestamp_end": "2026-02-27T16:21:00Z",
+  "framework_version": "0.4.5",
+  "mode": "LOCAL_ONLY (Continuation)",
+  "execution_status": "PARTIAL",
+  "time_budget": {
+    "allocated_minutes": 20,
+    "used_minutes": 14,
+    "remaining_minutes": 6
+  },
+  "steps_completed": [
+    "4.1_exploration_generate",
+    "4.2_exploration_select",
+    "4.3_exploration_execute",
+    "5.1_evidence_index_update",
+    "5.2_claim_ledger_update",
+    "5.3_selection_verdict",
+    "5.4_update_manifest"
+  ],
+  "final_verdict": {
+    "overall": "PARTIAL (LOCAL_ONLY)",
+    "claim_results": {
+      "Claim_2": "SUPPORTED (unchanged)",
+      "Claim_3P": "REJECTED → RUNTIME_BLOCKED (CLI restriction)",
+      "Claim_3": "NOT_SUPPORTED → TENTATIVE_EVOLUTION (F3.2 now passes)",
+      "Claim_3v4": "NOT_SUPPORTED (cross-partition pattern emerging)",
+      "Claim_3B": "NO_EVIDENCE"
+    },
+    "delta_from_baseline": {
+      "improvement": "F3.2 (replicate robustness) now PASSES with extended chi sweep",
+      "persistent": "F3.3 (model selection) still FAILs, log-linear preferred",
+      "discovery": "Cross-partition dependency confirmed: A=L/4 shows log-linear, A=L/2 shows saturating"
+    }
+  },
+  "key_findings": [
+    {
+      "metric": "F3.2 CV",
+      "baseline": 0.123,
+      "extension": 0.092,
+      "threshold": 0.10,
+      "verdict": "IMPROVED_TO_PASS"
+    },
+    {
+      "metric": "F3.3 Model Preference",
+      "A=4 (L=16)": "log_linear",
+      "A=8 (L=16)": "saturating (but insufficient delta)",
+      "verdict": "PARTITION_DEPENDENT"
+    }
+  ],
+  "artifact_inventory": {
+    "manifest": "manifest.json",
+    "exploration_proposals": "results/exploration_proposals.json",
+    "selection_summary": "results/selection_summary.json",
+    "exploration_summary": "results/exploration_summary.json",
+    "selection_ledger": "results/selection_ledger.json",
+    "artifacts": [
+      "results/claim3_chi_extended/20260227T211813Z_d67fd589/"
+    ]
+  },
+  "retention": {
+    "archive_path": "retained_runs/RUN_20260227_161644/",
+    "retention_policy": "full",
+    "relation_to_parent": "continuation"
+  }
+}

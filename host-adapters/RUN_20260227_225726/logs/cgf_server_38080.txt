@@ -1,0 +1,31 @@
+Policy bundle loaded: 1.0.0 (hash: 9e172b102bbd0160...)
+Warning: policy_config_v03.json not found, using defaults
+============================================================
+CGF Server v0.3
+Schema: 0.3.0
+Policy: default
+Port: 38080
+============================================================
+INFO:     Started server process [77153]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:38080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:63802 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63803 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63804 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63805 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63806 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63807 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63808 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63809 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63810 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63811 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63812 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63813 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63814 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63815 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63816 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [77153]

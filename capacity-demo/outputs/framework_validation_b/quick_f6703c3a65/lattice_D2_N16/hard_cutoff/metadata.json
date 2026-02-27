@@ -1,0 +1,45 @@
+{
+  "config_key": "lattice_D2_N16__hard_cutoff",
+  "substrate": {
+    "type": "periodic_lattice",
+    "D": 2,
+    "N": 16,
+    "n_vertices": 256,
+    "max_eigenvalue": 8.0
+  },
+  "filter": {
+    "name": "hard_cutoff",
+    "type": "rank-based hard cutoff",
+    "formula": "g_C(i) = 1 if i < floor(C*n), else 0"
+  },
+  "d0": 2.0,
+  "n_C_steps": 15,
+  "C_range": [
+    0.05,
+    1.0
+  ],
+  "sigma_range": [
+    0.5,
+    200.0
+  ],
+  "n_sigma": 200,
+  "plateau_window": [
+    3.0,
+    20.0
+  ],
+  "summary": {
+    "config_key": "lattice_D2_N16__hard_cutoff",
+    "substrate": "periodic_lattice_D2_N16",
+    "filter": "hard_cutoff",
+    "n_vertices": 256,
+    "d0": 2.0,
+    "n_C_steps": 15,
+    "ds_at_C_min": 1.7181,
+    "ds_at_C_max": 2.0133,
+    "dim_reduction": 0.2951,
+    "max_ds_drop": 0.0,
+    "monotone_pass": true,
+    "mean_r_squared": 0.9976,
+    "min_r_squared": 0.9975
+  }
+}

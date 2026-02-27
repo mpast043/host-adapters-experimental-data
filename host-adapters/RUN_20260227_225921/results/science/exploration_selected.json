@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2026-02-27T22:59:23.729122+00:00",
+  "budget_start_minutes": 20,
+  "budget_remaining_minutes": 6,
+  "selected": [
+    {
+      "test_id": "claim3p_ising_cyclic_l8",
+      "target_claims": [
+        "Claim_3P"
+      ],
+      "hypothesis": "Boundary conditions change model-selection stability at fixed L=8.",
+      "metrics": [
+        "delta_aic",
+        "delta_bic",
+        "fidelity"
+      ],
+      "falsifier": "P3.4 remains rejected across boundary condition.",
+      "estimated_minutes": 6,
+      "placement": "local",
+      "command": "exp3_claim3_physical_convergence_runner_v2.py --model ising_cyclic"
+    },
+    {
+      "test_id": "claim3p_heisenberg_cyclic_l8",
+      "target_claims": [
+        "Claim_3P"
+      ],
+      "hypothesis": "Heisenberg cyclic branch should execute and provide independent model matrix evidence.",
+      "metrics": [
+        "delta_aic",
+        "delta_bic",
+        "fidelity"
+      ],
+      "falsifier": "argparse or execution failure for heisenberg_cyclic.",
+      "estimated_minutes": 8,
+      "placement": "local",
+      "command": "exp3_claim3_physical_convergence_runner_v2.py --model heisenberg_cyclic"
+    }
+  ]
+}

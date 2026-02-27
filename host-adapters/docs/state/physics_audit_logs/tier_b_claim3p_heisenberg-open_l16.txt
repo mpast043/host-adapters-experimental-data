@@ -1,0 +1,114 @@
+======================================================================
+CLAIM 3P: Physical Hamiltonian Convergence Test (v2)
+======================================================================
+Model: heisenberg_open
+System: L=16, A=8
+Chi sweep: [2, 4]
+Restarts: 1
+Steps: 20
+Output: outputs/physics_audit/heisenberg_open_L16/20260227T230541Z_479e6ba9
+======================================================================
+
+[Phase 1] Exact Diagonalization
+  [ED] Building SPARSE heisenberg_open Hamiltonian for L=16...
+  [ED] Sparse OK: shape (65536, 65536), nnz=557056, sparsity=0.0130%
+  [ED] Sparse diagonalization (k=1, which='SA')...
+  [ED] Ground state energy: -6.911737
+  [ED] Entanglement entropy S=0.592307
+
+[Phase 2] MERA Variational Optimization
+
+  Chi = 2
+    [MERA] chi=2, restart=1/1, seed=20042
+  0%|          | 0/20 [00:00<?, ?it/s]/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:36: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead. `kahypar` is highly recommended for the best quality contraction paths.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:75: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality hyper-optimization.
+  warnings.warn(
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+  5%|▌         | 1/20 [00:06<02:11,  6.93s/it]-0.794949245972 [best: -0.794949245972] :   5%|▌         | 1/20 [00:06<02:11,  6.93s/it]-2.888114302784 [best: -2.888114302784] :  10%|█         | 2/20 [00:06<02:04,  6.93s/it]-4.215506648292 [best: -4.215506648292] :  15%|█▌        | 3/20 [00:06<01:57,  6.93s/it]-3.785293831294 [best: -4.215506648292] :  20%|██        | 4/20 [00:07<01:50,  6.93s/it]-3.785293831294 [best: -4.215506648292] :  25%|██▌       | 5/20 [00:07<00:15,  1.05s/it]-5.024642745213 [best: -5.024642745213] :  25%|██▌       | 5/20 [00:07<00:15,  1.05s/it]-5.630151766144 [best: -5.630151766144] :  30%|███       | 6/20 [00:07<00:14,  1.05s/it]-5.844888607790 [best: -5.844888607790] :  35%|███▌      | 7/20 [00:07<00:13,  1.05s/it]-5.963406044686 [best: -5.963406044686] :  40%|████      | 8/20 [00:07<00:12,  1.05s/it]-5.963406044686 [best: -5.963406044686] :  45%|████▌     | 9/20 [00:07<00:05,  2.04it/s]-6.007169609361 [best: -6.007169609361] :  45%|████▌     | 9/20 [00:07<00:05,  2.04it/s]-6.042403269447 [best: -6.042403269447] :  50%|█████     | 10/20 [00:07<00:04,  2.04it/s]-6.059485804622 [best: -6.059485804622] :  55%|█████▌    | 11/20 [00:07<00:04,  2.04it/s]-6.071526637212 [best: -6.071526637212] :  60%|██████    | 12/20 [00:07<00:03,  2.04it/s]-6.071526637212 [best: -6.071526637212] :  65%|██████▌   | 13/20 [00:07<00:02,  3.47it/s]-6.091846093283 [best: -6.091846093283] :  65%|██████▌   | 13/20 [00:07<00:02,  3.47it/s]-6.108670466572 [best: -6.108670466572] :  70%|███████   | 14/20 [00:07<00:01,  3.47it/s]-6.129266261715 [best: -6.129266261715] :  75%|███████▌  | 15/20 [00:07<00:01,  3.47it/s]-6.155393905868 [best: -6.155393905868] :  80%|████████  | 16/20 [00:07<00:01,  3.47it/s]-6.155393905868 [best: -6.155393905868] :  85%|████████▌ | 17/20 [00:07<00:00,  5.36it/s]-6.180342935536 [best: -6.180342935536] :  85%|████████▌ | 17/20 [00:07<00:00,  5.36it/s]-6.210525897390 [best: -6.210525897390] :  90%|█████████ | 18/20 [00:07<00:00,  5.36it/s]-6.252083587692 [best: -6.252083587692] :  95%|█████████▌| 19/20 [00:07<00:00,  5.36it/s]-6.258277432524 [best: -6.258277432524] : 100%|██████████| 20/20 [00:07<00:00,  5.36it/s]-6.302804802176 [best: -6.302804802176] : : 21it [00:07,  5.36it/s]                      -6.302804802176 [best: -6.302804802176] : : 21it [00:07,  2.82it/s]
+/private/tmp/openclaws/Repos/host-adapters/.venv/lib/python3.14/site-packages/cotengra/hyperoptimizers/hyper.py:55: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization. It is recommended to install one of these libraries for higher quality contraction paths.
+  warnings.warn(
+      fidelity=0.450649, S=0.1921, E=-6.3028
+  Best: fidelity=0.450649, S=0.1921
+
+  Chi = 4
+    [MERA] chi=4, restart=1/1, seed=40042
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:06<01:57,  6.18s/it]-0.114884522203 [best: -0.114884522203] :   5%|▌         | 1/20 [00:06<01:57,  6.18s/it]-1.389250562623 [best: -1.389250562623] :  10%|█         | 2/20 [00:06<01:51,  6.18s/it]-1.839620612220 [best: -1.839620612220] :  15%|█▌        | 3/20 [00:06<01:45,  6.18s/it]-3.157623776797 [best: -3.157623776797] :  20%|██        | 4/20 [00:06<01:38,  6.18s/it]-3.157623776797 [best: -3.157623776797] :  25%|██▌       | 5/20 [00:06<00:14,  1.06it/s]-1.430938773882 [best: -3.157623776797] :  25%|██▌       | 5/20 [00:06<00:14,  1.06it/s]-3.898350140288 [best: -3.898350140288] :  30%|███       | 6/20 [00:06<00:13,  1.06it/s]-4.557123434228 [best: -4.557123434228] :  35%|███▌      | 7/20 [00:06<00:12,  1.06it/s]-4.710555474526 [best: -4.710555474526] :  40%|████      | 8/20 [00:06<00:11,  1.06it/s]-4.710555474526 [best: -4.710555474526] :  45%|████▌     | 9/20 [00:06<00:04,  2.26it/s]-5.007273976828 [best: -5.007273976828] :  45%|████▌     | 9/20 [00:06<00:04,  2.26it/s]-5.555183781307 [best: -5.555183781307] :  50%|█████     | 10/20 [00:06<00:04,  2.26it/s]-6.005176529271 [best: -6.005176529271] :  55%|█████▌    | 11/20 [00:06<00:03,  2.26it/s]-6.283247992797 [best: -6.283247992797] :  60%|██████    | 12/20 [00:06<00:03,  2.26it/s]-6.283247992797 [best: -6.283247992797] :  65%|██████▌   | 13/20 [00:06<00:01,  3.84it/s]-6.355874551673 [best: -6.355874551673] :  65%|██████▌   | 13/20 [00:06<00:01,  3.84it/s]-6.387774987912 [best: -6.387774987912] :  70%|███████   | 14/20 [00:06<00:01,  3.84it/s]-6.407471873315 [best: -6.407471873315] :  75%|███████▌  | 15/20 [00:06<00:01,  3.84it/s]-6.426576049687 [best: -6.426576049687] :  80%|████████  | 16/20 [00:06<00:01,  3.84it/s]-6.426576049687 [best: -6.426576049687] :  85%|████████▌ | 17/20 [00:06<00:00,  5.86it/s]-6.438635741441 [best: -6.438635741441] :  85%|████████▌ | 17/20 [00:06<00:00,  5.86it/s]-6.458430264716 [best: -6.458430264716] :  90%|█████████ | 18/20 [00:06<00:00,  5.86it/s]-6.471932005596 [best: -6.471932005596] :  95%|█████████▌| 19/20 [00:06<00:00,  5.86it/s]-6.489228901485 [best: -6.489228901485] : 100%|██████████| 20/20 [00:06<00:00,  5.86it/s]-6.489228901485 [best: -6.489228901485] : : 21it [00:06,  8.36it/s]                      -6.510462191918 [best: -6.510462191918] : : 21it [00:06,  8.36it/s]-6.510462191918 [best: -6.510462191918] : : 21it [00:06,  3.11it/s]
+      fidelity=0.501802, S=0.3370, E=-6.5105
+  Best: fidelity=0.501802, S=0.3370
+
+[Phase 3] Acceptance Criteria
+  P3.1 Fidelity nondecreasing: PASS
+  P3.2 Entropy convergence: PASS
+  P3.3 Final thresholds: FAIL
+        Fidelity: 0.5018 (threshold: 0.9)
+        S error: 0.2553 (threshold: 0.15)
+  P3.4 Model selection: FAIL
+        Delta AIC: -40.17
+        Delta BIC: -40.17
+
+======================================================================
+FINAL VERDICT: REJECTED
+======================================================================
+
+[Phase 4] Saving artifacts to outputs/physics_audit/heisenberg_open_L16/20260227T230541Z_479e6ba9
+  Saved: metrics.json, verdict.json, manifest.json, raw_results.csv

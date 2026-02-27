@@ -1,0 +1,56 @@
+{
+  "claim": "3P",
+  "model": "ising_cyclic",
+  "L": 16,
+  "verdict": "REJECTED",
+  "falsifiers": {
+    "P3.1": {
+      "passed": true,
+      "violations": [],
+      "n_checks": 3,
+      "eps_fid": 0.0001
+    },
+    "P3.2": {
+      "passed": false,
+      "errors": [
+        0.006271085217712469,
+        0.007785198110155017,
+        0.005116291553047769,
+        0.0017851553400410336
+      ],
+      "violations": [
+        {
+          "chi_i": 2,
+          "chi_i+1": 4,
+          "error_i": 0.006271085217712469,
+          "error_i+1": 0.007785198110155017
+        }
+      ],
+      "n_checks": 3,
+      "eps_S": 0.001
+    },
+    "P3.3": {
+      "passed": true,
+      "fid_passed": true,
+      "S_passed": true,
+      "best_fidelity": 0.9993179023300166,
+      "final_entropy_error": 0.0017851553400410336,
+      "fid_threshold": 0.9,
+      "S_threshold": 0.15
+    },
+    "P3.4": {
+      "passed": false,
+      "delta_aic": -4.417827207994442,
+      "delta_bic": -4.417827207994442,
+      "S_inf_sat": 0.17646784329198356,
+      "c_sat": 0.1,
+      "aic_sat": -44.90901558424669,
+      "bic_sat": -46.13642686200691,
+      "a_log": 0.0023265904619411575,
+      "b_log": 0.16842220782318618,
+      "aic_log": -49.32684279224113,
+      "bic_log": -50.55425407000135
+    }
+  },
+  "timestamp": "2026-02-27T21:45:25.082291+00:00"
+}

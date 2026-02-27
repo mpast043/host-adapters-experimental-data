@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-02-27T20:59:30Z",
+  "baseline_tests": [
+    {
+      "id": "claim2_tradeoff_smoke",
+      "claim": "Claim 2",
+      "verdict": "SUPPORTED",
+      "time_minutes": 2,
+      "details": {
+        "falsifier_2_1": "PASS",
+        "falsifier_2_2": "PASS (slope=0.1546, expected=0.1667)"
+      },
+      "artifacts": "results/science/claim2_smoke/"
+    },
+    {
+      "id": "claim3p_ising_open",
+      "claim": "3P",
+      "verdict": "REJECTED",
+      "time_minutes": 2,
+      "details": {
+        "fidelity": 0.0103,
+        "fidelity_threshold": 0.95,
+        "S_error": 1.8647,
+        "S_error_threshold": 0.15,
+        "note": "Using ising_open boundary conditions (E0=-9.84 vs closed E0=-4.22)"
+      },
+      "artifacts": "results/science/claim3p_ising/20260227T205853Z_e95ea15e/"
+    },
+    {
+      "id": "claim3p_heisenberg_open",
+      "claim": "3P",
+      "verdict": "RUNTIME_FAILURE",
+      "time_minutes": 0.5,
+      "details": {
+        "error": "Shape mismatch in build_heisenberg_hamiltonian (256 vs 128)",
+        "note": "Skipped due to boundary condition parameter issue"
+      }
+    },
+    {
+      "id": "claim3_entropy_scaling",
+      "claim": "3",
+      "verdict": "INCONCLUSIVE",
+      "time_minutes": 1,
+      "details": {
+        "F3.1_monotonicity": "PASS",
+        "F3.2_replicate_robustness": "FAIL (CV=0.123 > 0.10)",
+        "F3.3_model_selection": "FAIL (log_linear preferred)",
+        "F3.4_bound_validity": "PASS"
+      },
+      "artifacts": "results/science/claim3_smoke/20260227T205925Z_05a91e4c/"
+    }
+  ],
+  "runtime_failures": ["claim3p_heisenberg_open"],
+  "total_elapsed_minutes": 5.5,
+  "budget_remaining": {
+    "minutes": 14.5,
+    "runs": 9
+  }
+}

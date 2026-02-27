@@ -1,0 +1,68 @@
+{
+  "framework_spec": {
+    "name": "FRAMEWORK_SPEC_v0.2",
+    "version": "0.2.0",
+    "date": "2026-02-25"
+  },
+  "experiment_name": "claim3_chi_extended",
+  "run_id": "20260227T211813Z_d67fd589",
+  "timestamp_utc": "2026-02-27T21:18:53.344401Z",
+  "claim": {
+    "claim_id": "C3",
+    "option": "A",
+    "version": "0.2.1",
+    "statement": "For fixed N and fixed bipartition A, a capacity-limited state family produces either capacity scaling (S ~ log \u03c7) in Regime I, or saturation (S \u2192 S\u221e \u2264 S_max) in Regime II.",
+    "regime_detection": "Determined by model selection (saturating vs log-linear)."
+  },
+  "scope": {
+    "fixed": {
+      "L": 16,
+      "partition_id": "contig_0_4",
+      "A_sites": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "varied": {
+      "chi_sweep": [
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "restarts_per_chi": 3
+    },
+    "state_family": "MERA states optimized to maximize S(A) within the MERA manifold (entanglement-max objective).",
+    "observables": [
+      "S(chi, seed, partition) from contracted MERA wavefunction",
+      "K_cut from TN min-cut",
+      "AIC/BIC model fits"
+    ],
+    "K_cut_definition": "K_cut computed as minimum s-t cut on instantiated TN index graph (networkx.minimum_cut)."
+  },
+  "seed_policy": {
+    "seed_base": 42,
+    "formula": "seed = seed_base + chi_index*100000 + restart_id"
+  },
+  "software": {
+    "python": "3.14.3",
+    "numpy": "2.4.2",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O"
+  },
+  "scope_limitations": [
+    "State family is defined by an explicit optimization objective: maximize entanglement entropy S(A) within the MERA manifold for each chi.",
+    "S(A) is computed from the contracted MERA wavefunction and a dense rho_A eigen-decomposition.",
+    "K_cut is computed mechanically as a minimum cut on the instantiated TN index graph (no proxy).",
+    "This is empirical evidence (mechanically checkable), not a formal proof in the mathematical sense."
+  ],
+  "outputs": {
+    "manifest": "manifest.json",
+    "raw_entropy": "raw_entropy.csv",
+    "fits": "fits.json",
+    "bound_checks": "bound_checks.json",
+    "verdict": "verdict.json"
+  }
+}

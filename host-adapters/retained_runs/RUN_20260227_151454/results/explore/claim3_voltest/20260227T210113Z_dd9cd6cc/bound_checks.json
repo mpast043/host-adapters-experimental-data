@@ -1,0 +1,77 @@
+{
+  "K_cut_definition": "K_cut computed as minimum s-t cut on instantiated TN index graph (networkx.minimum_cut).",
+  "summary": {
+    "total_points": 6,
+    "violation_count": 0,
+    "passed": true,
+    "min_margin": 1.9060904055801298
+  },
+  "rows": [
+    {
+      "chi": 2,
+      "seed": 42,
+      "partition_id": "contig_0_8",
+      "S": 2.2527926777795417,
+      "K_cut": 6,
+      "log_chi": 0.6931471805599453,
+      "bound": 4.1588830833596715,
+      "margin": 1.9060904055801298,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 43,
+      "partition_id": "contig_0_8",
+      "S": 1.8962942618812766,
+      "K_cut": 6,
+      "log_chi": 0.6931471805599453,
+      "bound": 4.1588830833596715,
+      "margin": 2.2625888214783947,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 100042,
+      "partition_id": "contig_0_8",
+      "S": 4.197855910575679,
+      "K_cut": 6,
+      "log_chi": 1.3862943611198906,
+      "bound": 8.317766166719343,
+      "margin": 4.119910256143664,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 100043,
+      "partition_id": "contig_0_8",
+      "S": 4.377446547494381,
+      "K_cut": 6,
+      "log_chi": 1.3862943611198906,
+      "bound": 8.317766166719343,
+      "margin": 3.9403196192249617,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 200042,
+      "partition_id": "contig_0_8",
+      "S": 4.781848096013431,
+      "K_cut": 6,
+      "log_chi": 2.0794415416798357,
+      "bound": 12.476649250079014,
+      "margin": 7.6948011540655825,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 200043,
+      "partition_id": "contig_0_8",
+      "S": 4.7638633058889495,
+      "K_cut": 6,
+      "log_chi": 2.0794415416798357,
+      "bound": 12.476649250079014,
+      "margin": 7.712785944190064,
+      "passed": true
+    }
+  ]
+}

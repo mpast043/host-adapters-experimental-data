@@ -1,0 +1,63 @@
+========================================
+CGF Contract Compliance Suite (Hardened)
+========================================
+
+Flags: --allow-empty=0, --allow-empty-events=0
+
+Python: Python 3.14.3
+Repo root: /tmp/openclaws/Repos/host-adapters
+
+[1/5] Cleaning runtime directories...
+[0;32m✓ Runtime directories cleaned[0m
+
+[2/5] Checking CGF server...
+[0;32m✓ CGF server already running (using existing)[0m
+Waiting for CGF server to be ready...
+[0;32m✓ CGF server ready (http://127.0.0.1:8080)[0m
+
+[3/5] Running contract compliance tests...
+============================= test session starts ==============================
+platform darwin -- Python 3.14.3, pytest-9.0.2, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14
+cachedir: .pytest_cache
+rootdir: /private/tmp/openclaws/Repos/host-adapters
+plugins: anyio-4.12.1, asyncio-1.3.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 8 items
+
+tools/contract_compliance_tests.py::test_cgf_server_available PASSED     [ 12%]
+tools/contract_compliance_tests.py::test_adapters_importable PASSED      [ 25%]
+tools/contract_compliance_tests.py::test_cgf_server_importable PASSED    [ 37%]
+tools/contract_compliance_tests.py::test_denylisted_tool_blocked_openclaw FAILED [ 50%]
+tools/contract_compliance_tests.py::test_read_only_tool_allowed_openclaw FAILED [ 62%]
+tools/contract_compliance_tests.py::test_denylisted_tool_blocked_langgraph PASSED [ 75%]
+tools/contract_compliance_tests.py::test_read_only_tool_allowed_langgraph PASSED [ 87%]
+tools/contract_compliance_tests.py::test_events_produced PASSED          [100%]Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10ac00ec0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x10ac24650>, 855950.1379395)])']
+connector: <aiohttp.connector.TCPConnector object at 0x10ac012b0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10ac016a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x10ac308f0>, 855950.151772083)])']
+connector: <aiohttp.connector.TCPConnector object at 0x10ab93110>
+
+
+=================================== FAILURES ===================================
+____________________ test_denylisted_tool_blocked_openclaw _____________________
+tools/contract_compliance_tests.py:224: in test_denylisted_tool_blocked_openclaw
+    assert result["error"] is None, f"Error: {result['error']}"
+E   AssertionError: Error: Registration failed: 404, message='Attempt to decode JSON with unexpected mimetype: text/html', url='http://127.0.0.1:8080/v1/register'
+E   assert "Registration failed: 404, message='Attempt to decode JSON with unexpected mimetype: text/html', url='http://127.0.0.1:8080/v1/register'" is None
+_____________________ test_read_only_tool_allowed_openclaw _____________________
+tools/contract_compliance_tests.py:238: in test_read_only_tool_allowed_openclaw
+    assert result["error"] is None, f"Error: {result['error']}"
+E   AssertionError: Error: Registration failed: 404, message='Attempt to decode JSON with unexpected mimetype: text/html', url='http://127.0.0.1:8080/v1/register'
+E   assert "Registration failed: 404, message='Attempt to decode JSON with unexpected mimetype: text/html', url='http://127.0.0.1:8080/v1/register'" is None
+=========================== short test summary info ============================
+FAILED tools/contract_compliance_tests.py::test_denylisted_tool_blocked_openclaw
+FAILED tools/contract_compliance_tests.py::test_read_only_tool_allowed_openclaw
+========================= 2 failed, 6 passed in 0.27s ==========================
+Tests collected: 8, passed: 6, failed: 2
+
+[0;31m✗ Contract compliance tests failed[0m

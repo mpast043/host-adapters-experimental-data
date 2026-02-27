@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-02-27T16:17:00Z",
+  "parent_run": "RUN_20260227_151454",
+  "continuation_intent": "Resolve underdetermined claims from baseline",
+  "candidates": [
+    {
+      "id": "claim3p_replicate_closed",
+      "target_claims": ["Claim_3P"],
+      "hypothesis": "Claim 3P physical convergence passes with seed variation on closed boundary",
+      "script": "prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py",
+      "params": {"L": 8, "chi": [2, 4, 8], "model": "ising_closed", "seeds": [42, 123, 456]},
+      "metrics": ["fidelity", "entropy_error", "E_ground"],
+      "acceptance": "fidelity>0.95 AND entropy_error<0.15",
+      "estimated_minutes": 4,
+      "priority": 1,
+      "rationale": "Baseline showed Pass P3.1-P3.3 but Fail P3.4. Seed robustness check needed."
+    },
+    {
+      "id": "claim3_extended_chi_A4",
+      "target_claims": ["Claim_3", "Claim_3v4"],
+      "hypothesis": "Extended chi sweep reveals saturation plateau for small partition",
+      "script": "experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py",
+      "params": {"L": 16, "A_size": 4, "chi_sweep": [2, 4, 8, 16, 32], "restarts": 3, "steps": 80},
+      "metrics": ["S_chi_curve", "slope_CV", "model_selection_AIC", "S_inf_fitted"],
+      "acceptance": "CV<0.10 AND saturating_model_wins",
+      "estimated_minutes": 10,
+      "priority": 1,
+      "rationale": "Baseline A=4 showed log-linear preference. Higher chi may reveal saturation."
+    },
+    {
+      "id": "claim3_volumetric_partition",
+      "target_claims": ["Claim_3", "Claim_3v4"],
+      "hypothesis": "A=L/2 partition shows saturating behavior earlier than A=L/4",
+      "script": "experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py",
+      "params": {"L": 16, "A_size": 8, "chi_sweep": [4, 8, 16, 32], "restarts": 2, "steps": 60},
+      "metrics": ["S_chi_curve", "regime", "fidelity_to_theoretical_S_max"],
+      "acceptance": "saturating detected OR CV<0.1",
+      "estimated_minutes": 8,
+      "priority": 2,
+      "rationale": "Exploration showed A=8 moved toward saturating; full sweep may confirm."
+    },
+    {
+      "id": "claim3b_window_probe",
+      "target_claims": ["Claim_3B"],
+      "hypothesis": "Intermediate chi regime shows capacity-limited behavior",
+      "script": "prototype/experiments/exp3b_windowed_regime/exp3b_windowed_regime.py",
+      "params": {"L": 16, "A": 8, "chi_range": [4, 8, 16, 32, 64], "temperature": 0.1},
+      "metrics": ["crossover_chi", "regime_transitions", "window_detection"],
+      "acceptance": "window detected between low-chi and high-chi regimes",
+      "estimated_minutes": 8,
+      "priority": 3,
+      "rationale": "Claim 3B previously rejected. Larger chi may reveal window if exists."
+    }
+  ],
+  "budget_local_only": {
+    "max_minutes": 20,
+    "max_runs": 10,
+    "max_failures": 3,
+    "end_by": "2026-02-27T16:36:00Z"
+  }
+}

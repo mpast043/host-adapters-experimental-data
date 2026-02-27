@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": "2026-02-27T22:59:23.729562+00:00",
+  "pdf_source": "/Users/meganpastore/Clawdbot/Repos/capacity-demo/Framework with selection.pdf",
+  "entry_count": 4,
+  "statuses": [
+    "ACCEPTED",
+    "UNDERDETERMINED",
+    "REJECTED"
+  ],
+  "required_fields": [
+    "claim_id",
+    "status",
+    "rationale",
+    "witnesses"
+  ]
+}

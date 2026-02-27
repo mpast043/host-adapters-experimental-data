@@ -1,0 +1,6 @@
+config_key,substrate,filter,n_vertices,d0,n_C_steps,ds_at_C_min,ds_at_C_max,dim_reduction,max_ds_drop,monotone_pass,mean_r_squared,min_r_squared
+lattice_D2_N16__hard_cutoff,periodic_lattice_D2_N16,hard_cutoff,256,2.0,15,1.7181,2.0133,0.2951,0.0,True,0.9976,0.9975
+lattice_D2_N16__soft_cutoff,periodic_lattice_D2_N16,soft_cutoff,256,2.0,15,1.871,2.0133,0.1423,0.0,True,0.9976,0.9975
+lattice_D2_N16__powerlaw,periodic_lattice_D2_N16,powerlaw_reweight,256,2.0,15,1.9514,2.0133,0.0619,0.0043,True,0.9977,0.9975
+rgg_D2_n200__powerlaw,rgg_D2_n200_r0.350_s42,powerlaw_reweight,200,2.0,15,2.5966,2.8079,0.2113,0.0143,True,0.9659,0.9636
+sw_n200__powerlaw,smallworld_n200_k6_p0.30_s42,powerlaw_reweight,200,2.0,15,0.8565,0.9708,0.1143,0.0081,True,0.8668,0.8654

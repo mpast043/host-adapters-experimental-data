@@ -1,0 +1,61 @@
+{
+  "claim": "3P",
+  "model": "ising_open",
+  "L": 8,
+  "verdict": "REJECTED",
+  "falsifiers": {
+    "P3.1": {
+      "passed": true,
+      "violations": [],
+      "n_checks": 1,
+      "eps_fid": 0.0001
+    },
+    "P3.2": {
+      "passed": false,
+      "errors": [
+        0.46916772299260945,
+        1.8646997751279262
+      ],
+      "violations": [
+        {
+          "chi_i": 2,
+          "chi_i+1": 4,
+          "error_i": 0.46916772299260945,
+          "error_i+1": 1.8646997751279262,
+          "increase": 1.3955320521353167
+        }
+      ],
+      "n_checks": 1,
+      "eps_S": 0.001
+    },
+    "P3.3": {
+      "passed": false,
+      "fid_passed": false,
+      "S_passed": false,
+      "best_fidelity": 0.01034426926391157,
+      "final_entropy_error": 1.8646997751279262,
+      "fid_threshold": 0.95,
+      "S_threshold": 0.15,
+      "L": 8,
+      "model": "ising_open"
+    },
+    "P3.4": {
+      "passed": false,
+      "saturating_wins": false,
+      "delta_aic": -57.73061555750706,
+      "delta_bic": -57.730615557507065,
+      "S_inf_sat": 0.535742077613327,
+      "c_sat": 1.0,
+      "rss_sat": 3.435926672085869,
+      "aic_sat": 5.0822789645300706,
+      "bic_sat": 2.4685733256499605,
+      "a_log": 2.0133271710172203,
+      "b_log": -0.5692029440671571,
+      "rss_log": 1.787262988391355e-30,
+      "aic_log": -52.64833659297699,
+      "bic_log": -55.2620422318571,
+      "n_points": 2
+    }
+  },
+  "timestamp": "2026-02-27T20:58:54.659578Z"
+}

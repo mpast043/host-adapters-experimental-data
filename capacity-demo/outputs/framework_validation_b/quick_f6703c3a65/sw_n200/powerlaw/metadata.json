@@ -1,0 +1,54 @@
+{
+  "config_key": "sw_n200__powerlaw",
+  "substrate": {
+    "type": "small_world",
+    "n_vertices": 200,
+    "k_neighbors": 6,
+    "rewire_prob": 0.3,
+    "seed": 42,
+    "avg_degree": 6.0,
+    "n_edges": 600,
+    "connected": true,
+    "max_eigenvalue": 12.320102812165647
+  },
+  "filter": {
+    "name": "powerlaw_reweight",
+    "type": "power-law spectral reweight",
+    "formula": "g_C(lam) = (1 + lam/lam0)^{-beta_max * (1 - C^gamma)}",
+    "d0": 2.0,
+    "beta_max": 1.0,
+    "gamma": 1.0,
+    "lambda0": 6.155365462417825,
+    "lambda0_quantile": 0.5
+  },
+  "d0": 2.0,
+  "n_C_steps": 15,
+  "C_range": [
+    0.05,
+    1.0
+  ],
+  "sigma_range": [
+    0.01,
+    3.249197813210592
+  ],
+  "n_sigma": 200,
+  "plateau_window": [
+    0.01029489664055555,
+    0.812299453302648
+  ],
+  "summary": {
+    "config_key": "sw_n200__powerlaw",
+    "substrate": "smallworld_n200_k6_p0.30_s42",
+    "filter": "powerlaw_reweight",
+    "n_vertices": 200,
+    "d0": 2.0,
+    "n_C_steps": 15,
+    "ds_at_C_min": 0.8565,
+    "ds_at_C_max": 0.9708,
+    "dim_reduction": 0.1143,
+    "max_ds_drop": 0.0081,
+    "monotone_pass": true,
+    "mean_r_squared": 0.8668,
+    "min_r_squared": 0.8654
+  }
+}

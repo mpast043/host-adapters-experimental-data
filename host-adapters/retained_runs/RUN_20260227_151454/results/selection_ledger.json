@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-02-27T21:01:30Z",
+  "framework_version": "0.4.5",
+  "evidence_index": {
+    "run_id": "RUN_20260227_151454",
+    "completed_tests": [
+      {
+        "id": "claim2_tradeoff_smoke",
+        "claim": "Claim 2",
+        "verdict": "SUPPORTED",
+        "confidence": "HIGH",
+        "replicates": 2,
+        "witness": [
+          "WORKFLOW_AUTO.md §4.1",
+          "CONSOLIDATED_REPORT_CLAIM3P.md §2.1"
+        ],
+        "artifacts": [
+          "results/science/claim2_smoke/exp2_verdict.json",
+          "results/explore/claim2_seed123/exp2_verdict.json"
+        ]
+      },
+      {
+        "id": "claim3p_ising_open",
+        "claim": "3P",
+        "verdict": "REJECTED",
+        "confidence": "MEDIUM",
+        "note": "Open boundary conditions may differ from closed boundary reference",
+        "witness": [
+          "CONSOLIDATED_REPORT_CLAIM3P.md §3.1"
+        ],
+        "artifacts": [
+          "results/science/claim3p_ising/20260227T205853Z_e95ea15e/verdict.json"
+        ]
+      },
+      {
+        "id": "claim3p_heisenberg_open",
+        "claim": "3P",
+        "verdict": "RUNTIME_FAILURE",
+        "confidence": "LOW",
+        "note": "Boundary condition mismatch (shape 256 vs 128)",
+        "artifacts": []
+      },
+      {
+        "id": "claim3_entropy_scaling_A4",
+        "claim": "3",
+        "verdict": "INCONCLUSIVE",
+        "confidence": "MEDIUM",
+        "falsifiers": {
+          "3.1": "PASS",
+          "3.2": "FAIL (CV=0.123)",
+          "3.3": "FAIL (log_linear preferred)",
+          "3.4": "PASS"
+        },
+        "witness": [
+          "WORKFLOW_AUTO.md §4.2"
+        ],
+        "artifacts": [
+          "results/science/claim3_smoke/20260227T205925Z_05a91e4c/verdict.json"
+        ]
+      },
+      {
+        "id": "claim3_entropy_scaling_A8",
+        "claim": "3",
+        "verdict": "INCONCLUSIVE",
+        "confidence": "MEDIUM",
+        "falsifiers": {
+          "3.1": "PASS",
+          "3.2": "PASS (CV=0.063)",
+          "3.3": "FAIL (saturating preferred but insufficient delta)",
+          "3.4": "PASS"
+        },
+        "note": "Partition size changes model preference (saturating vs log-linear)",
+        "artifacts": [
+          "results/explore/claim3_voltest/20260227T210113Z_dd9cd6cc/verdict.json"
+        ]
+      }
+    ]
+  },
+  "claim_ledger": {
+    "Claim_2": {
+      "status": "SUPPORTED",
+      "evidence_quality": "HIGH",
+      "replication": "REPLICATED",
+      "notes": "Falsifiers 2.1 (lower capacity) and 2.2 (log scaling) pass across both seeds. Slope 0.1546 close to expected 0.1667 for c=0.5 CFT."
+    },
+    "Claim_3P": {
+      "status": "REJECTED",
+      "evidence_quality": "MEDIUM",
+      "replication": "PARTIAL",
+      "notes": "Open boundary Ising model shows poor physical convergence (fidelity ~0.01). Runner may need closed boundary variant. Heisenberg model failed (boundary condition mismatch)."
+    },
+    "Claim_3": {
+      "status": "NOT_SUPPORTED",
+      "evidence_quality": "MEDIUM",
+      "replication": "INCONCLUSIVE",
+      "notes": "F3.3 (model selection) fails across conditions. With A=4, log-linear preferred. With A=8, saturating preferred but insufficient delta to satisfy pass criteria. Need larger chi sweep or refined threshold logic."
+    },
+    "Claim_3v4": {
+      "status": "NOT_SUPPORTED",
+      "evidence_quality": "MEDIUM",
+      "replication": "INCONCLUSIVE",
+      "notes": "Entropy scaling shows partition-dependent behavior. F3.2 (CV threshold) passes for A=8 but still inconclusive on model selection."
+    },
+    "Claim_3B": {
+      "status": "NO_EVIDENCE",
+      "evidence_quality": "LOW",
+      "replication": "NONE",
+      "notes": "Not executed in this baseline run (deferred due to time budget)."
+    }
+  },
+  "recommendations": [
+    "For Claim 3P: Use closed boundary conditions to match MEMORY.md baseline (previous successful runs used different runner or parameters)",
+    "For Claim 3: Larger chi sweep (up to 64/128) may reveal clear saturation regime",
+    "For Claim 3v4: Partition size A=L/2 vs A=L/4 shows different model selection outcomes — needs systematic study"
+  ]
+}

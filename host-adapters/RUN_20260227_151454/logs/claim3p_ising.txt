@@ -1,0 +1,60 @@
+/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  t = dt.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner.py:754: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": dt.datetime.utcnow().isoformat() + "Z",
+/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner.py:761: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": dt.datetime.utcnow().isoformat() + "Z",
+======================================================================
+CLAIM 3P: Physical Hamiltonian Convergence Test
+======================================================================
+Model: ising_open
+System: L=8, A=4
+Chi sweep: [2, 4]
+Restarts: 3
+Steps: 120
+Output: RUN_20260227_151454/results/science/claim3p_ising/20260227T205853Z_e95ea15e
+======================================================================
+
+[Phase 1] Exact Diagonalization (Gold Standard)
+  [ED] Building ising_open Hamiltonian for L=8...
+  [ED] Diagonalizing 256x256 matrix...
+  [ED] Ground state energy: -9.837951
+  [ED] Entanglement entropy S=0.357161
+
+[Phase 2] MERA Variational Optimization
+
+  Chi = 2
+    [MERA] chi=2, restart=1/3, seed=20042
+      fidelity=0.003955, S=1.2009
+    [MERA] chi=2, restart=2/3, seed=21042
+      fidelity=0.000000, S=1.2126
+    [MERA] chi=2, restart=3/3, seed=22042
+      fidelity=0.003973, S=0.8263
+    Best: fidelity=0.003973, S=0.8263
+
+  Chi = 4
+    [MERA] chi=4, restart=1/3, seed=40042
+      fidelity=0.010344, S=2.2219
+    [MERA] chi=4, restart=2/3, seed=41042
+      fidelity=0.000199, S=2.1306
+    [MERA] chi=4, restart=3/3, seed=42042
+      fidelity=0.000239, S=2.0290
+    Best: fidelity=0.010344, S=2.2219
+
+[Phase 3] Acceptance Criteria Evaluation
+  P3.1 Fidelity nondecreasing: PASS
+  P3.2 Entropy convergence: FAIL
+  P3.3 Final thresholds: FAIL
+        Fidelity: 0.0103 (threshold: 0.95)
+        S error: 1.8647 (threshold: 0.15)
+  P3.4 Model selection: FAIL
+        Delta AIC: -57.73
+        Delta BIC: -57.73
+
+======================================================================
+FINAL VERDICT: REJECTED
+======================================================================
+
+[Phase 4] Saving artifacts to RUN_20260227_151454/results/science/claim3p_ising/20260227T205853Z_e95ea15e
+  Saved: metrics.json, verdict.json, manifest.json, raw_results.csv
+  Run directory: RUN_20260227_151454/results/science/claim3p_ising/20260227T205853Z_e95ea15e

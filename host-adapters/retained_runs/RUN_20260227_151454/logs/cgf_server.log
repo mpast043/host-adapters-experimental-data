@@ -1,0 +1,53 @@
+INFO:     Started server process [56957]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:18080 (Press CTRL+C to quit)
+Policy bundle loaded: 1.0.0 (hash: 9e172b102bbd0160...)
+Warning: policy_config_v03.json not found, using defaults
+============================================================
+CGF Server v0.3
+Schema: 0.3.0
+Policy: default
+Port: 18080
+============================================================
+INFO:     127.0.0.1:62599 - "GET /v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62600 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62601 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62602 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62603 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62603 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62604 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62604 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62605 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62606 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62607 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62608 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62609 - "POST /v1/outcomes/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62610 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62611 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62612 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62613 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62613 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62614 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62614 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62615 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62616 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62617 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62618 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62619 - "POST /v1/outcomes/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62621 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62622 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62623 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62624 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62624 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62625 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62625 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62626 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62627 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62628 - "POST /v1/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62629 - "POST /v1/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62630 - "POST /v1/outcomes/report HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [56957]

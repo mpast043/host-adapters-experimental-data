@@ -1,0 +1,23 @@
+{
+  "overall_status": "PARTIAL",
+  "lint_status": "PASS",
+  "contract_status": "PASS",
+  "scientific_status": {
+    "status": "NOT_RUN",
+    "baseline_summary": "results/science/baseline_summary.json",
+    "campaign_report": "results/science/campaign/campaign_report.md"
+  },
+  "selection_status": "UNDERDETERMINED",
+  "deltas_vs_baseline_expectations": {
+    "local_only_mode": true,
+    "exploration_runs": 0
+  },
+  "key_artifact_pointers": {
+    "contracts": "results/contracts",
+    "sdk_validation": "results/sdk_validation",
+    "science": "results/science",
+    "selection": "results/selection",
+    "workflow_status": "results/workflow_auto_status.json"
+  },
+  "generated_at_utc": "2026-02-27T22:59:23.729939+00:00"
+}

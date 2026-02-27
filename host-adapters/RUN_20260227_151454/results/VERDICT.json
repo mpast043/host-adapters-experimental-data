@@ -1,0 +1,23 @@
+{
+  "claim": "Claim 3P: Physical Hamiltonian Convergence",
+  "run_id": "RUN_20260227_151454",
+  "verdict": "REJECTED",
+  "falsifier_summary": {
+    "P3.1": "PASS (fidelity monotonic)",
+    "P3.2": "PASS (entropy convergence)",
+    "P3.3": "PASS (thresholds met)",
+    "P3.4": "FAIL (model selection favors log-linear)"
+  },
+  "key_metrics": {
+    "fidelity": 0.9976,
+    "entropy_error": 0.0134,
+    "delta_aic": -40.13
+  },
+  "implication": "MERA achieves excellent physical convergence at χ=16, but statistical model selection indicates insufficient evidence for saturation regime over log-linear scaling",
+  "prior_runs": "Prior Claim 3 runs exist in outputs/ (2026-02-25)",
+  "recommendations": [
+    "Increase χ sweep to 32, 64 for stronger saturation evidence",
+    "Run multiple L values (16, 32) for cross-scale validation",
+    "Consider longer optimization (200+ steps) with 5 restarts"
+  ]
+}

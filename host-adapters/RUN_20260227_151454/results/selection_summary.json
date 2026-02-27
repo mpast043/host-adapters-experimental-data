@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-02-27T21:00:00Z",
+  "selection_phase": "EXPLORATION_EXECUTE",
+  "budget_remaining": {
+    "minutes": 14.5,
+    "runs": 9
+  },
+  "selected": [
+    {
+      "id": "claim2_seed_variation",
+      "estimated_minutes": 2,
+      "rationale": "Quick robustness check on core supported claim"
+    },
+    {
+      "id": "claim3_larger_partition",
+      "estimated_minutes": 5,
+      "rationale": "Test partition size dependence for inconclusive claim"
+    }
+  ],
+  "deferred": [
+    {
+      "id": "claim3_extended_chi",
+      "rationale": "Too time-intensive (8 min) for remaining budget"
+    },
+    {
+      "id": "claim3_lower_cv_threshold",
+      "rationale": "10 min exceeds single remaining exploration slot"
+    },
+    {
+      "id": "regime_crossover_L32",
+      "rationale": "12 min, requires significant compute"
+    }
+  ],
+  "expected_total_minutes": 7
+}

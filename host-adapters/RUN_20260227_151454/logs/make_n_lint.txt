@@ -1,0 +1,3 @@
+ruff check .
+ruff check --select I .
+python tools/schema_lint.py --dir ./

@@ -1,0 +1,14 @@
+Policy bundle loaded: 1.0.0 (hash: 9e172b102bbd0160...)
+Warning: policy_config_v03.json not found, using defaults
+============================================================
+CGF Server v0.3
+Schema: 0.3.0
+Policy: default
+Port: 8080
+============================================================
+INFO:     Started server process [77743]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8080): [errno 48] address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.

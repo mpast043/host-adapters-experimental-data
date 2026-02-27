@@ -1,0 +1,46 @@
+{
+  "config_key": "lattice_D2_N16__soft_cutoff",
+  "substrate": {
+    "type": "periodic_lattice",
+    "D": 2,
+    "N": 16,
+    "n_vertices": 256,
+    "max_eigenvalue": 8.0
+  },
+  "filter": {
+    "name": "soft_cutoff",
+    "type": "rank-based logistic taper",
+    "formula": "g_C(i) = sigmoid((C*n - i) / s)",
+    "steepness_frac": 0.05
+  },
+  "d0": 2.0,
+  "n_C_steps": 15,
+  "C_range": [
+    0.05,
+    1.0
+  ],
+  "sigma_range": [
+    0.5,
+    200.0
+  ],
+  "n_sigma": 200,
+  "plateau_window": [
+    3.0,
+    20.0
+  ],
+  "summary": {
+    "config_key": "lattice_D2_N16__soft_cutoff",
+    "substrate": "periodic_lattice_D2_N16",
+    "filter": "soft_cutoff",
+    "n_vertices": 256,
+    "d0": 2.0,
+    "n_C_steps": 15,
+    "ds_at_C_min": 1.871,
+    "ds_at_C_max": 2.0133,
+    "dim_reduction": 0.1423,
+    "max_ds_drop": 0.0,
+    "monotone_pass": true,
+    "mean_r_squared": 0.9976,
+    "min_r_squared": 0.9975
+  }
+}

@@ -1,0 +1,6 @@
+mcporter 0.7.3 — Listing 4 server(s) (per-server timeout: 30s)
+- github (offline — unable to reach server, 0.0s) [source: ~/.codex/config.toml]
+- notion (auth required — run 'mcporter auth notion', 0.2s) [source: ~/.codex/config.toml]
+- figma (auth required — run 'mcporter auth figma', 0.3s) [source: ~/.codex/config.toml]
+- playwright (22 tools, 1.3s) [source: ~/.codex/config.toml]
+✔ Listed 4 servers (1 healthy; 2 auth required; 1 offline).

@@ -1,0 +1,72 @@
+{
+  "chi_sweep": [
+    2,
+    4
+  ],
+  "medians_by_chi": {
+    "2": 1.4554502311585567,
+    "4": 2.7152818717165
+  },
+  "corr_medians_log_chi": 1.0,
+  "falsifier_3_3_model_selection": {
+    "passed": false,
+    "regime": "indeterminate",
+    "pass_condition": {
+      "delta_aic_min": 10.0,
+      "delta_bic_min": 10.0,
+      "log_slope_positive": true,
+      "saturation_tolerance": 0.5,
+      "S_max": 2.772588722239781
+    },
+    "S_max_theoretical": 2.772588722239781,
+    "S_inf_fitted": NaN,
+    "saturation_valid": false,
+    "winner_by_aic": "log_linear",
+    "model_1_log_linear": {
+      "a": 1.8175528601879525,
+      "b": 0.1956185906006119,
+      "rss": 1.4298103907130839e-30,
+      "aic": -52.64833659297699,
+      "bic": -55.2620422318571
+    },
+    "model_2_linear_chi": {
+      "a": 0.6299158202789722,
+      "b": 0.1956185906006121,
+      "rss": 8.38164711797325e-31,
+      "aic": -52.64833659297699,
+      "bic": -55.2620422318571
+    },
+    "model_3_log_power": {
+      "p": 0.51,
+      "a": 3.581576719310084,
+      "b": -1.5154990895558775,
+      "rss": 0.0,
+      "aic": -50.64833659297699,
+      "bic": -54.568895051297154
+    },
+    "model_4_saturating": {
+      "S_inf": NaN,
+      "c": NaN,
+      "alpha": NaN,
+      "rss": Infinity,
+      "aic": Infinity,
+      "bic": Infinity
+    }
+  },
+  "replicate_slopes": [
+    2.0415579814924234,
+    1.593547738883482
+  ],
+  "falsifier_3_2_slope_stats": {
+    "passed": false,
+    "no_negative_slopes": true,
+    "cv_threshold": 0.1,
+    "slope_mean": 1.8175528601879527,
+    "slope_std": 0.2240051213044707,
+    "slope_cv": 0.12324545063371989,
+    "slopes": [
+      2.0415579814924234,
+      1.593547738883482
+    ]
+  }
+}

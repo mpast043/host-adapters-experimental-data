@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-02-27T22:55:46.724825+00:00",
+  "source": "legacy_selection_ledger",
+  "claims": {
+    "Claim_2": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "ACCEPTED",
+      "rationale": "Falsifiers 2.1 (lower capacity) and 2.2 (log scaling) pass across both seeds. Slope 0.1546 close to expected 0.1667 for c=0.5 CFT."
+    },
+    "Claim_3P": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "REJECTED",
+      "rationale": "Open boundary Ising model shows poor physical convergence (fidelity ~0.01). Runner may need closed boundary variant. Heisenberg model failed (boundary condition mismatch)."
+    },
+    "Claim_3": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "REJECTED",
+      "rationale": "F3.3 (model selection) fails across conditions. With A=4, log-linear preferred. With A=8, saturating preferred but insufficient delta to satisfy pass criteria. Need larger chi sweep or refined threshold logic."
+    },
+    "Claim_3v4": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "REJECTED",
+      "rationale": "Entropy scaling shows partition-dependent behavior. F3.2 (CV threshold) passes for A=8 but still inconclusive on model selection."
+    },
+    "Claim_3B": {
+      "witnesses": [
+        "results/selection/evidence_index.json"
+      ],
+      "status": "UNDERDETERMINED",
+      "rationale": "Not executed in this baseline run (deferred due to time budget)."
+    }
+  }
+}

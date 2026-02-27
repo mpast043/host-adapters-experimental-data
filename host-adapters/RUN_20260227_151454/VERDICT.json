@@ -1,0 +1,74 @@
+{
+  "run_id": "RUN_20260227_151454",
+  "timestamp": "2026-02-27T21:02:30Z",
+  "framework_version": "0.4.5",
+  "mode": "LOCAL_ONLY",
+  "execution_status": "PARTIAL",
+  "time_budget": {
+    "allocated_minutes": 20,
+    "used_minutes": 14.5,
+    "remaining_minutes": 5.5
+  },
+  "steps_completed": [
+    "0.4_MCP_discovery",
+    "0.5_MCP_target_selection",
+    "1.1_repo_verification",
+    "1.2_dependency_installation",
+    "1.3_lint_validation",
+    "1.4_test_execution",
+    "2.1_CGF_startup",
+    "2.2_contract_verification",
+    "3.1_baseline_run_plan",
+    "3.2_science_execution",
+    "3.3_baseline_summary",
+    "4.1_exploration_generate",
+    "4.2_exploration_select",
+    "4.3_exploration_execute",
+    "5.1_evidence_index",
+    "5.2_claim_ledger",
+    "5.3_selection_verdict",
+    "5.4_update_manifest"
+  ],
+  "final_verdict": {
+    "overall": "PARTIAL (LOCAL_ONLY)",
+    "claim_results": {
+      "Claim_2": "SUPPORTED",
+      "Claim_3P": "REJECTED",
+      "Claim_3": "NOT_SUPPORTED",
+      "Claim_3v4": "NOT_SUPPORTED",
+      "Claim_3B": "NO_EVIDENCE"
+    },
+    "CGF_layer": {
+      "status": "PASS",
+      "contracts_passed": 8,
+      "contracts_total": 8
+    },
+    "mcp_integration": {
+      "status": "LOCAL_ONLY",
+      "compute_target": null,
+      "docs_target": null
+    }
+  },
+  "artifact_inventory": {
+    "manifest": "manifest.json",
+    "logs": "logs/",
+    "results": "results/",
+    "run_plan": "results/science/run_plan.json",
+    "baseline_summary": "results/baseline_summary.json",
+    "exploration_candidates": "results/exploration_candidates.json",
+    "selection_summary": "results/selection_summary.json",
+    "selection_ledger": "results/selection_ledger.json",
+    "claim_artifacts": [
+      "results/science/claim2_smoke/",
+      "results/science/claim3p_ising/20260227T205853Z_e95ea15e/",
+      "results/science/claim3_smoke/20260227T205925Z_05a91e4c/",
+      "results/explore/claim2_seed123/",
+      "results/explore/claim3_voltest/20260227T210113Z_dd9cd6cc/"
+    ]
+  },
+  "retention": {
+    "archive_path": "retained_runs/RUN_20260227_151454/",
+    "retention_policy": "full",
+    "retention_reason": "Selection framework validation run with LOCAL_ONLY mode"
+  }
+}

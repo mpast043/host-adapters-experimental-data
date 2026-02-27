@@ -1,0 +1,42 @@
+{
+  "baseline_tests": [
+    {
+      "id": "claim2_tradeoff_smoke",
+      "claim": "Claim 2",
+      "script": "prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py",
+      "description": "MERA bond dimension vs error tradeoff",
+      "params": {"L": [8], "chi": [2, 4], "model": "ising"},
+      "estimated_minutes": 5,
+      "output_dir": "results/science/claim2_smoke"
+    },
+    {
+      "id": "claim3p_physical_convergence_smoke",
+      "claim": "3P",
+      "script": "experiments/claim3/exp3_claim3_physical_convergence_runner.py",
+      "description": "Physical convergence (ED vs MERA fidelity and entropy)",
+      "params": {"L": [8], "chi": [2, 4, 8], "models": ["ising", "heisenberg"]},
+      "estimated_minutes": 8,
+      "output_dir": "results/science/claim3p_smoke"
+    },
+    {
+      "id": "claim3_entropy_scaling_smoke",
+      "claim": "3",
+      "script": "experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py",
+      "description": "Entanglement entropy scaling with bond dimension",
+      "params": {"L": [16], "A": [4, 8], "chi": [2, 4, 8, 16]},
+      "estimated_minutes": 8,
+      "output_dir": "results/science/claim3_smoke"
+    }
+  ],
+  "exploration_tests": [],
+  "budgets": {
+    "max_minutes": 20,
+    "max_runs": 10,
+    "max_failures": 3,
+    "seeds": [42, 123, 456]
+  },
+  "stop_conditions": {
+    "hard_stop_on_failure": ["claim2_tradeoff_smoke"],
+    "allow_verdict_failure": ["claim3p_physical_convergence_smoke", "claim3_entropy_scaling_smoke"]
+  }
+}

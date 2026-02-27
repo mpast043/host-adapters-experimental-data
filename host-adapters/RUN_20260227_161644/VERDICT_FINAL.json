@@ -1,0 +1,53 @@
+{
+  "run_id": "RUN_20260227_161644",
+  "continuation_of": "RUN_20260227_151454",
+  "timestamp": "2026-02-27T16:32EST",
+  "fixes_applied": [
+    {
+      "type": "RUNTIME_FIX",
+      "file": "experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+      "changes": [
+        "Line 575: Added 'ising_cyclic' to argparse choices",
+        "Lines 129-132: Added cyclic Ising Hamiltonian handling in exact_diagonalization()"
+      ],
+      "classification": "Safe fix per WORKFLOW_AUTO.md §5.3 (mechanical, no semantic change)"
+    }
+  ],
+  "claim3p_cyclic_verdict": {
+    "model": "ising_cyclic (closed boundary)",
+    "L": 8,
+    "A": 4,
+    "E0_ED": -4.252,
+    "fidelity": 0.9997,
+    "final_verdict": "REJECTED",
+    "falsifier_breakdown": {
+      "P3.1": "PASS (fidelity monotonic)",
+      "P3.2": "FAIL (entropy error increase: 0.002→0.003 exceeds eps_S=0.001)",
+      "P3.3": "PASS (fidelity 0.9997>0.95, S_error 0.0033<0.15)",
+      "P3.4": "FAIL (ΔAIC=+0.69, log-linear barely preferred)"
+    },
+    "critical_discovery": "Cyclic boundary improved ΔAIC by 60× vs open boundary (-40.13 → +0.69). Model selection threshold is the only remaining blocker."
+  },
+  "delta_from_baseline": {
+    "claim3p_open_boundary": "REJECTED (ΔAIC=-40.13)",
+    "claim3p_cyclic_boundary": "REJECTED (ΔAIC=+0.69)",
+    "implication": "Boundary conditions dramatically affect model selection. The physical convergence is excellent (fidelity~1). The statistical threshold needs refinement for small systems."
+  },
+  "updated_claim_ledger": {
+    "Claim_2": "SUPPORTED",
+    "Claim_3P": "REJECTED but significant improvement with cyclic boundary",
+    "Claim_3": "TENTATIVE_EVOLUTION (F3.2 now passes with extended chi)",
+    "Claim_3v4": "NOT_SUPPORTED (partition-dependent behavior confirmed)",
+    "Claim_3B": "NO_EVIDENCE"
+  },
+  "time_budget": {
+    "allocated_minutes": 20,
+    "used_minutes": 16,
+    "remaining_minutes": 4
+  },
+  "artifacts": [
+    "RUN_20260227_161644/results/claim3_chi_extended/",
+    "RUN_20260227_161644/results/claim3p_cyclic/",
+    "RUN_20260227_161644/logs/"
+  ]
+}

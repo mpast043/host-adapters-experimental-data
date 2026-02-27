@@ -1,0 +1,25 @@
+======================================================================
+Framework v4.5 Option B — Validation Suite [quick]
+Suite ID: quick_f6703c3a65
+Configs: 5
+======================================================================
+
+[1/5] lattice_D2_N16__hard_cutoff
+  lattice_D2_N16__hard_cutoff: ds=[1.72,2.01] reduction=0.30 R2=0.998 [MONO]
+
+[2/5] lattice_D2_N16__soft_cutoff
+  lattice_D2_N16__soft_cutoff: ds=[1.87,2.01] reduction=0.14 R2=0.998 [MONO]
+
+[3/5] lattice_D2_N16__powerlaw
+  lattice_D2_N16__powerlaw: ds=[1.95,2.01] reduction=0.06 R2=0.998 [MONO]
+
+[4/5] rgg_D2_n200__powerlaw
+  rgg_D2_n200__powerlaw: ds=[2.60,2.81] reduction=0.21 R2=0.966 [MONO]
+
+[5/5] sw_n200__powerlaw
+  sw_n200__powerlaw: ds=[0.86,0.97] reduction=0.11 R2=0.867 [MONO]
+
+======================================================================
+Monotone: 5/5  |  Dim reduction: 4/5  |  Time: 0.0s
+Artifacts: /Users/meganpastore/Clawdbot/Repos/capacity-demo/outputs/framework_validation_b/quick_f6703c3a65
+======================================================================

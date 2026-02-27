@@ -1,0 +1,6 @@
+usage: runner [-h] --L L --A_size A_SIZE --model {ising_open,heisenberg_open}
+              [--j J] [--h H] [--chi_sweep CHI_SWEEP]
+              [--restarts_per_chi RESTARTS_PER_CHI] [--fit_steps FIT_STEPS]
+              [--seed SEED] --output OUTPUT [--eps_fid EPS_FID]
+              [--eps_S EPS_S]
+runner: error: the following arguments are required: --L, --A_size, --model

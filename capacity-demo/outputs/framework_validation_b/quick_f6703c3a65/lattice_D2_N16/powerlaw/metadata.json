@@ -1,0 +1,50 @@
+{
+  "config_key": "lattice_D2_N16__powerlaw",
+  "substrate": {
+    "type": "periodic_lattice",
+    "D": 2,
+    "N": 16,
+    "n_vertices": 256,
+    "max_eigenvalue": 8.0
+  },
+  "filter": {
+    "name": "powerlaw_reweight",
+    "type": "power-law spectral reweight",
+    "formula": "g_C(lam) = (1 + lam/lam0)^{-beta_max * (1 - C^gamma)}",
+    "d0": 2.0,
+    "beta_max": 1.0,
+    "gamma": 1.0,
+    "lambda0": 4.0,
+    "lambda0_quantile": 0.5
+  },
+  "d0": 2.0,
+  "n_C_steps": 15,
+  "C_range": [
+    0.05,
+    1.0
+  ],
+  "sigma_range": [
+    0.5,
+    200.0
+  ],
+  "n_sigma": 200,
+  "plateau_window": [
+    3.0,
+    20.0
+  ],
+  "summary": {
+    "config_key": "lattice_D2_N16__powerlaw",
+    "substrate": "periodic_lattice_D2_N16",
+    "filter": "powerlaw_reweight",
+    "n_vertices": 256,
+    "d0": 2.0,
+    "n_C_steps": 15,
+    "ds_at_C_min": 1.9514,
+    "ds_at_C_max": 2.0133,
+    "dim_reduction": 0.0619,
+    "max_ds_drop": 0.0043,
+    "monotone_pass": true,
+    "mean_r_squared": 0.9977,
+    "min_r_squared": 0.9975
+  }
+}

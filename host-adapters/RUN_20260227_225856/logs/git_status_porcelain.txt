@@ -1,0 +1,22 @@
+ M CONSOLIDATED_REPORT_CLAIM3P.md
+ M Makefile
+ M experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py
+?? RUN_20260227_161644/RETAINED.txt
+?? RUN_20260227_161644/VERDICT_FINAL.json
+?? RUN_20260227_161644/logs/claim3p_cyclic_L16.txt
+?? RUN_20260227_161644/retained_RUN_20260227_161644.tar.gz
+?? RUN_20260227_225726/
+?? RUN_20260227_225816/
+?? RUN_20260227_225856/
+?? docs/CANONICAL_STATE.md
+?? docs/product/
+?? docs/state/
+?? logs/
+?? retained_runs/RUN_20260227_161644/
+?? retained_runs/retained_RUN_20260227_161644.tar.gz
+?? tee
+?? tools/normalize_selection_ledger.py
+?? tools/run_physics_audit.py
+?? tools/run_workflow_auto.py
+?? tools/validate_workflow_auto_run.py
+?? tools/workflow_auto_schema_v1.json

@@ -1,0 +1,15 @@
+INFO:     Started server process [59557]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:18080 (Press CTRL+C to quit)
+Policy bundle loaded: 1.0.0 (hash: 9e172b102bbd0160...)
+Warning: policy_config_v03.json not found, using defaults
+============================================================
+CGF Server v0.3
+Schema: 0.3.0
+Policy: default
+Port: 18080
+============================================================
+INFO:     127.0.0.1:62720 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62721 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62722 - "GET /v1/health HTTP/1.1" 200 OK

@@ -1,0 +1,32 @@
+{
+  "mcp_discovery": {
+    "timestamp": "2026-02-27T20:54:45Z",
+    "servers_found": 4,
+    "servers_healthy": 1,
+    "servers_auth_required": 2,
+    "servers_offline": 1,
+    "target_selection": {
+      "compute_target": null,
+      "docs_target": null,
+      "verdict": "LOCAL_ONLY",
+      "rationale": "No compute-capable MCP (job execution, container, python/jupyter). Playwright only provides browser automation.",
+      "scope_reduction": {
+        "max_minutes": 20,
+        "max_runs": 10,
+        "no_long_campaigns": true
+      }
+    },
+    "server_details": {
+      "playwright": {
+        "status": "ok",
+        "tools": 22,
+        "tool_categories": ["browser_close", "browser_navigate", "browser_click", "browser_evaluate", "browser_screenshot", "browser_snapshot"],
+        "compute_capable": false,
+        "docs_capable": false
+      },
+      "github": {"status": "offline"},
+      "notion": {"status": "auth_required"},
+      "figma": {"status": "auth_required"}
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "K_cut_definition": "K_cut computed as minimum s-t cut on instantiated TN index graph (networkx.minimum_cut).",
+  "summary": {
+    "total_points": 15,
+    "violation_count": 0,
+    "passed": true,
+    "min_margin": 0.9958562422829615
+  },
+  "rows": [
+    {
+      "chi": 2,
+      "seed": 42,
+      "partition_id": "contig_0_4",
+      "S": 1.543179078977098,
+      "K_cut": 4,
+      "log_chi": 0.6931471805599453,
+      "bound": 2.772588722239781,
+      "margin": 1.229409643262683,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 43,
+      "partition_id": "contig_0_4",
+      "S": 1.7767324799568196,
+      "K_cut": 4,
+      "log_chi": 0.6931471805599453,
+      "bound": 2.772588722239781,
+      "margin": 0.9958562422829615,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 44,
+      "partition_id": "contig_0_4",
+      "S": 1.7291582939655588,
+      "K_cut": 4,
+      "log_chi": 0.6931471805599453,
+      "bound": 2.772588722239781,
+      "margin": 1.0434304282742224,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 100042,
+      "partition_id": "contig_0_4",
+      "S": 2.68998720623089,
+      "K_cut": 4,
+      "log_chi": 1.3862943611198906,
+      "bound": 5.545177444479562,
+      "margin": 2.8551902382486722,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 100043,
+      "partition_id": "contig_0_4",
+      "S": 2.697024637225355,
+      "K_cut": 4,
+      "log_chi": 1.3862943611198906,
+      "bound": 5.545177444479562,
+      "margin": 2.8481528072542073,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 100044,
+      "partition_id": "contig_0_4",
+      "S": 2.7148602132228734,
+      "K_cut": 4,
+      "log_chi": 1.3862943611198906,
+      "bound": 5.545177444479562,
+      "margin": 2.830317231256689,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 200042,
+      "partition_id": "contig_0_4",
+      "S": 2.7541647641244253,
+      "K_cut": 4,
+      "log_chi": 2.0794415416798357,
+      "bound": 8.317766166719343,
+      "margin": 5.563601402594918,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 200043,
+      "partition_id": "contig_0_4",
+      "S": 2.7504901669016055,
+      "K_cut": 4,
+      "log_chi": 2.0794415416798357,
+      "bound": 8.317766166719343,
+      "margin": 5.5672759998177375,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 200044,
+      "partition_id": "contig_0_4",
+      "S": 2.7488254385789777,
+      "K_cut": 4,
+      "log_chi": 2.0794415416798357,
+      "bound": 8.317766166719343,
+      "margin": 5.568940728140365,
+      "passed": true
+    },
+    {
+      "chi": 16,
+      "seed": 300042,
+      "partition_id": "contig_0_4",
+      "S": 2.7706571325063565,
+      "K_cut": 4,
+      "log_chi": 2.772588722239781,
+      "bound": 11.090354888959125,
+      "margin": 8.319697756452769,
+      "passed": true
+    },
+    {
+      "chi": 16,
+      "seed": 300043,
+      "partition_id": "contig_0_4",
+      "S": 2.7706673768760943,
+      "K_cut": 4,
+      "log_chi": 2.772588722239781,
+      "bound": 11.090354888959125,
+      "margin": 8.31968751208303,
+      "passed": true
+    },
+    {
+      "chi": 16,
+      "seed": 300044,
+      "partition_id": "contig_0_4",
+      "S": 2.7705254116872857,
+      "K_cut": 4,
+      "log_chi": 2.772588722239781,
+      "bound": 11.090354888959125,
+      "margin": 8.319829477271838,
+      "passed": true
+    },
+    {
+      "chi": 32,
+      "seed": 400042,
+      "partition_id": "contig_0_4",
+      "S": 2.7704437251156797,
+      "K_cut": 4,
+      "log_chi": 3.4657359027997265,
+      "bound": 13.862943611198906,
+      "margin": 11.092499886083226,
+      "passed": true
+    },
+    {
+      "chi": 32,
+      "seed": 400043,
+      "partition_id": "contig_0_4",
+      "S": 2.7706897919396205,
+      "K_cut": 4,
+      "log_chi": 3.4657359027997265,
+      "bound": 13.862943611198906,
+      "margin": 11.092253819259286,
+      "passed": true
+    },
+    {
+      "chi": 32,
+      "seed": 400044,
+      "partition_id": "contig_0_4",
+      "S": 2.770848325093857,
+      "K_cut": 4,
+      "log_chi": 3.4657359027997265,
+      "bound": 13.862943611198906,
+      "margin": 11.09209528610505,
+      "passed": true
+    }
+  ]
+}

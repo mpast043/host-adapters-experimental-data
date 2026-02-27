@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-02-27T16:20:30Z",
+  "execution_summary": [
+    {
+      "id": "claim3_extended_chi_A4",
+      "status": "COMPLETE",
+      "verdict": "INCONCLUSIVE",
+      "key_findings": {
+        "f32_robustness": "PASS (CV=0.092 < 0.10)",
+        "f33_model_selection": "FAIL (log_linear still preferred)",
+        "correlation": 0.747,
+        "slope_mean": 1.946
+      },
+      "improvement_vs_baseline": "F3.2 now passes with extended chi range [2-32] vs [2-4]",
+      "remaining_issue": "Model selection still prefers log-linear over saturation-governance",
+      "artifacts": "RUN_20260227_161644/results/claim3_chi_extended/20260227T211813Z_d67fd589/"
+    },
+    {
+      "id": "claim3p_replicate_closed",
+      "status": "RUNTIME_FAILURE",
+      "error": "Parameter mismatch - runner implements 'ising_cyclic' but CLI restricts to 'ising_open' only",
+      "workaround": "None (requires code fix to argparse choices)",
+      "artifacts": "N/A"
+    }
+  ],
+  "time_used_minutes": 14,
+  "time_remaining_minutes": 6,
+  "conclusion": "Extended chi sweep improved robustness (F3.2 pass) but did not change model preference. Claim 3 remains INCONCLUSIVE due to persistent log-linear preference in AIC comparison."
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "20260227T205853Z_e95ea15e",
+  "timestamp": "2026-02-27T20:58:54.659724Z",
+  "config": {
+    "L": 8,
+    "A_size": 4,
+    "model": "ising_open",
+    "chi_sweep": [
+      2,
+      4
+    ],
+    "restarts_per_chi": 3,
+    "fit_steps": 120,
+    "seed": 42,
+    "eps_fid": 0.0001,
+    "eps_S": 0.001
+  },
+  "ed_reference": {
+    "ground_state_energy": -9.83795144745942,
+    "entanglement_entropy": 0.3571613850755514,
+    "n_sites": 8
+  },
+  "verdict": "REJECTED",
+  "python_version": "3.14.3",
+  "numpy_version": "2.4.2"
+}

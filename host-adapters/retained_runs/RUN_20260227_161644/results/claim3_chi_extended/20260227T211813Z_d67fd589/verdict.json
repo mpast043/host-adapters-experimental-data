@@ -1,0 +1,95 @@
+{
+  "framework_spec": {
+    "version": "0.2.0"
+  },
+  "experiment_name": "claim3_chi_extended",
+  "run_id": "20260227T211813Z_d67fd589",
+  "claim_id": "C3",
+  "option": "A",
+  "verdict": "INCONCLUSIVE",
+  "metrics": {
+    "corr_medians_log_chi": 0.7473481975305956
+  },
+  "falsifiers": {
+    "3.1_monotonicity": {
+      "passed": true,
+      "violations": []
+    },
+    "3.2_replicate_robustness": {
+      "passed": true,
+      "no_negative_slopes": true,
+      "cv_threshold": 0.1,
+      "slope_mean": 0.32392359717160396,
+      "slope_std": 0.029927140620615234,
+      "slope_cv": 0.09238950444465714,
+      "slopes": [
+        0.3657519340271455,
+        0.2974198584997422,
+        0.3085989989879243
+      ]
+    },
+    "3.3_model_selection": {
+      "passed": false,
+      "regime": "indeterminate",
+      "pass_condition": {
+        "delta_aic_min": 10.0,
+        "delta_bic_min": 10.0,
+        "log_slope_positive": true,
+        "saturation_tolerance": 0.5,
+        "S_max": 2.772588722239781
+      },
+      "S_max_theoretical": 2.772588722239781,
+      "S_inf_fitted": 3.3748277503275443,
+      "saturation_valid": false,
+      "winner_by_aic": "log_linear",
+      "model_1_log_linear": {
+        "a": 0.31114538899038446,
+        "b": 1.8965953571389618,
+        "rss": 0.3676491237528022,
+        "aic": -9.050320880750787,
+        "bic": -9.831445055882586
+      },
+      "model_2_linear_chi": {
+        "a": 0.01938755990379301,
+        "b": 2.3031982617006657,
+        "rss": 0.6090603924270198,
+        "aic": -6.526378810380933,
+        "bic": -7.307502985512732
+      },
+      "model_3_log_power": {
+        "p": 0.5,
+        "a": 0.9164007517721928,
+        "b": 1.2645377563704994,
+        "rss": 0.281360429441435,
+        "aic": -8.387783384728753,
+        "bic": -9.559469647426452
+      },
+      "model_4_saturating": {
+        "S_inf": 3.3748277503275443,
+        "c": 1.4359501153654326,
+        "alpha": 0.30573595386915764,
+        "rss": 0.3328406667812045,
+        "aic": -7.547646470387525,
+        "bic": -8.719332733085224
+      }
+    },
+    "3.4_bound_validity": {
+      "passed": true,
+      "violation_count": 0,
+      "violations": []
+    }
+  },
+  "scope_limitations": [
+    "State family is defined by an explicit optimization objective: maximize entanglement entropy S(A) within the MERA manifold for each chi.",
+    "S(A) is computed from the contracted MERA wavefunction and a dense rho_A eigen-decomposition.",
+    "K_cut is computed mechanically as a minimum cut on the instantiated TN index graph (no proxy).",
+    "This is empirical evidence (mechanically checkable), not a formal proof in the mathematical sense."
+  ],
+  "artifact_paths": {
+    "manifest": "manifest.json",
+    "raw_entropy": "raw_entropy.csv",
+    "fits": "fits.json",
+    "bound_checks": "bound_checks.json",
+    "verdict": "verdict.json"
+  }
+}
