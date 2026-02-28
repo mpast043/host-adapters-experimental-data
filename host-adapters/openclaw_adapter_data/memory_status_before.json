@@ -1,0 +1,61 @@
+[
+  {
+    "agentId": "main",
+    "status": {
+      "backend": "builtin",
+      "files": 0,
+      "chunks": 0,
+      "dirty": false,
+      "workspaceDir": "/Users/meganpastore/Clawdbot/.openclaw/workspace",
+      "dbPath": "/Users/meganpastore/Clawdbot/.openclaw/memory/main.sqlite",
+      "provider": "none",
+      "requestedProvider": "auto",
+      "sources": [
+        "memory"
+      ],
+      "extraPaths": [],
+      "sourceCounts": [
+        {
+          "source": "memory",
+          "files": 0,
+          "chunks": 0
+        }
+      ],
+      "cache": {
+        "enabled": true,
+        "entries": 0
+      },
+      "fts": {
+        "enabled": true,
+        "available": true
+      },
+      "vector": {
+        "enabled": true
+      },
+      "batch": {
+        "enabled": false,
+        "failures": 0,
+        "limit": 2,
+        "wait": true,
+        "concurrency": 2,
+        "pollIntervalMs": 2000,
+        "timeoutMs": 3600000
+      },
+      "custom": {
+        "searchMode": "fts-only",
+        "providerUnavailableReason": "No API key found for provider \"openai\". Auth store: /Users/meganpastore/Clawdbot/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /Users/meganpastore/Clawdbot/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.\n\nNo API key found for provider \"google\". Auth store: /Users/meganpastore/Clawdbot/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /Users/meganpastore/Clawdbot/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.\n\nNo API key found for provider \"voyage\". Auth store: /Users/meganpastore/Clawdbot/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /Users/meganpastore/Clawdbot/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.\n\nNo API key found for provider \"mistral\". Auth store: /Users/meganpastore/Clawdbot/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /Users/meganpastore/Clawdbot/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir."
+      }
+    },
+    "scan": {
+      "sources": [
+        {
+          "source": "memory",
+          "totalFiles": 15,
+          "issues": []
+        }
+      ],
+      "totalFiles": 15,
+      "issues": []
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "path": "sessions/1e0676e6-1eae-449b-b2c1-b7bed3c394cc.jsonl",
+      "startLine": 232,
+      "endLine": 235,
+      "score": 0.649223405122757,
+      "snippet": "Assistant: Got it. I've read the updated WORKFLOW_AUTO.md (v4.5 with Selection framework) and memory/2026-02-27.md (our session log from the completed run). **Key workflow changes I noticed:** 1. **MCP-first compute policy** — prefers MCP servers for parameter sweeps, model selection, long campaigns 2. **Two-phase autonomy** — baseline (required) + exploration (generate new tests) 3. **Required step format** — Step, What I decided, Commands/MCP calls, Outputs written, Next step 4. **Exploration phase** — I propose 5-12 new tests, select subset, execute on MCP if available 5. **Selection pass** — evidence index → claim ledger with witnesses from the Framework PDF 6. **Retention contract** — a",
+      "source": "sessions"
+    },
+    {
+      "path": "MEMORY.md",
+      "startLine": 75,
+      "endLine": 108,
+      "score": 0.3635720521211624,
+      "snippet": "- `session_logs/capacity_platform_bg.md` - Background research thread\n\n---\n\n## P7: Agent SDK (v0.4.0)\n\n**Status**: Complete — SDK + metrics tooling + contract gate scripts  \n**Commit**: bd21ebfc — \"v0.4.0: P7 SDK + metrics tooling + contract gate scripts\"  \n**Tag**: v0.4.0\n\n### Deliverables\n\n| Component | File | Purpose |\n|-----------|------|---------|\n| Contract Test Runner | `tools/run_contract_suite.sh` | CI-friendly runner, handles \"0 tests collected\" gracefully when CGF not running |\n| SDK Artifact Validator | `tools/validate_sdk_artifacts.py` | Validates `event_types.json` matches code enums |\n| Event Types Spec | `sdk/spec/event_types.json` | Added base required fields (`event_id`, `e",
+      "source": "memory"
+    },
+    {
+      "path": "memory/2026-02-23-0016.md",
+      "startLine": 134,
+      "endLine": 175,
+      "score": 0.35984086692333217,
+      "snippet": "[Sun 2026-02-22 18:40 EST] you should but also need to figure out how/when to use which substrate\nassistant: **Building both** — network substrate + auto-selection logic. \nassistant: **Done.** Platform v0.8.0 with **auto-selecting substrates** is live.\n\n---\n\n**What we built:**\n\n| Component | What It Does |\n|-----------|--------------|\n| `NetworkFingerprint` | Graph-theoretic signature (spectral radius, algebraic connectivity, clustering) |\n| `NetworkGateCalculator` | fit_error, gluing_delta, isolation adapted for graph topology |\n| `NetworkSubstrateMonitor` | Admit workloads based on mesh/ring/tree constraints |\n| `SubstrateSelector` | Auto-route to host/db/gpu/network by workload hints |\n\n*",
+      "source": "memory"
+    },
+    {
+      "path": "memory/2026-02-27.md",
+      "startLine": 194,
+      "endLine": 209,
+      "score": 0.35213084816932677,
+      "snippet": "- **Overall**: **COMPLETE**\n- **Artifacts retained**: `retained_runs/RUN_20260227_161644.tar.gz` (23K)\n- **Claim ledger**: Claim 3P REJECTED (marginal) with falsifier refinement proposal\n- **Next**: Operator decision on threshold refinement approach\n\n### Artifacts\n```\nRUN_20260227_161644/results/claim3p_cyclic_L16/\n├── manifest.json\n├── chi_2/ (3 restarts)\n├── chi_4/ (3 restarts)\n├── chi_8/ (3 restarts)\n├── chi_16/ (3 restarts)\n└── analysis_summary.json\n```\n",
+      "source": "memory"
+    }
+  ]
+}

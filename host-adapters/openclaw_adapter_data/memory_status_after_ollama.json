@@ -1,0 +1,75 @@
+[
+  {
+    "agentId": "main",
+    "status": {
+      "backend": "builtin",
+      "files": 16,
+      "chunks": 212,
+      "dirty": false,
+      "workspaceDir": "/Users/meganpastore/Clawdbot/.openclaw/workspace",
+      "dbPath": "/Users/meganpastore/Clawdbot/.openclaw/memory/main.sqlite",
+      "provider": "openai",
+      "model": "nomic-embed-text",
+      "requestedProvider": "openai",
+      "sources": [
+        "memory",
+        "sessions"
+      ],
+      "extraPaths": [],
+      "sourceCounts": [
+        {
+          "source": "memory",
+          "files": 15,
+          "chunks": 151
+        },
+        {
+          "source": "sessions",
+          "files": 1,
+          "chunks": 61
+        }
+      ],
+      "cache": {
+        "enabled": true,
+        "entries": 212
+      },
+      "fts": {
+        "enabled": true,
+        "available": true
+      },
+      "vector": {
+        "enabled": true,
+        "available": true,
+        "extensionPath": "/opt/homebrew/lib/node_modules/openclaw/node_modules/sqlite-vec-darwin-arm64/vec0.dylib",
+        "dims": 768
+      },
+      "batch": {
+        "enabled": false,
+        "failures": 0,
+        "limit": 2,
+        "wait": true,
+        "concurrency": 2,
+        "pollIntervalMs": 2000,
+        "timeoutMs": 3600000
+      },
+      "custom": {
+        "searchMode": "hybrid"
+      }
+    },
+    "scan": {
+      "sources": [
+        {
+          "source": "memory",
+          "totalFiles": 15,
+          "issues": []
+        },
+        {
+          "source": "sessions",
+          "totalFiles": 1,
+          "issues": []
+        }
+      ],
+      "totalFiles": 16,
+      "issues": []
+    }
+  }
+]

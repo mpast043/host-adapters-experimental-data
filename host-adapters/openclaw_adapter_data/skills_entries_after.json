@@ -1,0 +1,35 @@
+{
+  "clawhub": {
+    "enabled": true
+  },
+  "coding-agent": {
+    "enabled": true
+  },
+  "github": {
+    "enabled": true
+  },
+  "healthcheck": {
+    "enabled": true
+  },
+  "model-usage": {
+    "enabled": true
+  },
+  "nano-pdf": {
+    "enabled": true
+  },
+  "session-logs": {
+    "enabled": true
+  },
+  "skill-creator": {
+    "enabled": true
+  },
+  "summarize": {
+    "enabled": true
+  },
+  "things-mac": {
+    "enabled": true
+  },
+  "apple-notes": {
+    "enabled": false
+  }
+}

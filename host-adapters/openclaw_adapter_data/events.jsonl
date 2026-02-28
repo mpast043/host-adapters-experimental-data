@@ -49,3 +49,6 @@
 {"schema_version":"0.3.0","event_type":"outcome_logged","adapter_id":"adp-7b4a10fe41bb","timestamp":1772240065.981,"payload":{"proposal_id":"prop-1772240065957-eujfel","decision_id":"dec-d2ce41d660eb","success":false,"summary":"tool execution failed"}}
 {"schema_version":"0.3.0","event_type":"decision_made","adapter_id":"adp-7b4a10fe41bb","timestamp":1772240118.452,"payload":{"proposal_id":"prop-1772240118440-uityq3","decision_id":"dec-0b90c2c5df7a","decision":"ALLOW","tool_name":"memory_search","session_key":"agent:main:main"}}
 {"schema_version":"0.3.0","event_type":"outcome_logged","adapter_id":"adp-7b4a10fe41bb","timestamp":1772240118.464,"payload":{"proposal_id":"prop-1772240118440-uityq3","decision_id":"dec-0b90c2c5df7a","success":false,"summary":"tool execution failed"}}
+{"schema_version":"0.3.0","event_type":"adapter_registered","adapter_id":"adp-0a53173bab6f","timestamp":1772245198.479,"payload":{"adapter_id":"adp-0a53173bab6f","fail_mode_rows":6}}
+{"schema_version":"0.3.0","event_type":"adapter_registered","adapter_id":"adp-d64c9387cb4f","timestamp":1772245269.952,"payload":{"adapter_id":"adp-d64c9387cb4f","fail_mode_rows":6}}
+{"schema_version":"0.3.0","event_type":"adapter_registered","adapter_id":"adp-9ce74d235132","timestamp":1772245316.026,"payload":{"adapter_id":"adp-9ce74d235132","fail_mode_rows":6}}
