@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-02-28T02:28:57.674068+00:00",
+  "generated_at_utc": "2026-02-28T02:42:30.564332+00:00",
   "ready": true,
   "score": 100,
   "errors": 0,
@@ -19,8 +19,8 @@
       "mode": "safeguard"
     },
     "skills": {
-      "eligible": 16,
-      "disabled": 1,
+      "eligible": 15,
+      "disabled": 2,
       "missingRequirements": 34
     }
   },
