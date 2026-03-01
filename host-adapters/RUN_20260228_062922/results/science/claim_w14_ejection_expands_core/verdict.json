@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-02-28T06:29:26.343893+00:00",
+  "claim_id": "W14",
+  "verdict": "PASS",
+  "rationale": "Removing one set never shrank the intersection in sampled ensembles.",
+  "metrics": {
+    "samples": 1500,
+    "universe_size": 60,
+    "ensemble_size": 7,
+    "failures": 0
+  }
+}

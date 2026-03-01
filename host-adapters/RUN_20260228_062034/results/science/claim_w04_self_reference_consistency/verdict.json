@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:20:38.786587+00:00",
+  "claim_id": "W04",
+  "verdict": "PASS",
+  "rationale": "Self-representation remained fixed-point stable under deterministic reconstruction.",
+  "metrics": {
+    "samples": 500,
+    "failures": 0
+  }
+}

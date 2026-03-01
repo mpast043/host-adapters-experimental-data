@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:20:38.460320+00:00",
+  "claim_id": "W13",
+  "verdict": "PASS",
+  "rationale": "Aggregate C_obs compatibility holds in the backward-compatible equal-components limit.",
+  "metrics": {
+    "samples": 2000,
+    "max_abs_error": 1.1102230246251565e-16
+  }
+}

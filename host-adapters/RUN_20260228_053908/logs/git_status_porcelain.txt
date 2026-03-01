@@ -1,0 +1,8 @@
+ M docs/WORKFLOW_AUTO_AGENTIC.md
+ M docs/physics/FRAMEWORK_START_TO_FINISH_CHECKLIST.md
+ M tools/research_framework_selection.py
+ M tools/run_workflow_auto.py
+ M tools/run_workflow_auto_supervisor.py
+ M tools/workflow_auto_agent_role.py
+ M tools/workflow_auto_multi_agent.py
+?? memory/2026-02-27.md

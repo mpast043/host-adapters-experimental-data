@@ -1,0 +1,20 @@
+{
+  "run_id": "20260228T044945Z_87f68097",
+  "config": {
+    "L": 8,
+    "A_size": 4,
+    "model": "heisenberg_cyclic",
+    "chi_sweep": [
+      2,
+      4
+    ],
+    "restarts": 1,
+    "steps": 30,
+    "seed": 46
+  },
+  "ed_reference": {
+    "energy": -3.6510934089371747,
+    "entropy": 1.0511658766146608
+  },
+  "verdict": "REJECTED"
+}

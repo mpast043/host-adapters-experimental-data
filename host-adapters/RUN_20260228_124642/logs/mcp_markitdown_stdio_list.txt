@@ -1,0 +1,12 @@
+uvx-markitdown-mcp-0-0-1a4
+
+  /**
+   * Convert a resource described by an http:, https:, file: or data: URI to markdown
+   */
+  function convert_to_markdown(uri: string);
+
+  Examples:
+    mcporter call uvx-markitdown-mcp-0-0-1a4.convert_to_markdown(uri: "value")
+
+  1 tool · 477ms · STDIO uvx markitdown-mcp@0.0.1a4
+

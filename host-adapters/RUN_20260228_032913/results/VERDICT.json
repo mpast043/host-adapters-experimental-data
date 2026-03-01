@@ -1,0 +1,14 @@
+{
+  "overall_status": "STOPPED",
+  "lint_status": "LINT_DEBT",
+  "contract_status": "SKIPPED",
+  "scientific_status": {
+    "status": "NOT_RUN"
+  },
+  "selection_status": "NOT_RUN",
+  "error": {
+    "classification": "TEST_FAILURE",
+    "message": "Step 1 tests failed"
+  },
+  "generated_at_utc": "2026-02-28T03:29:17.835785+00:00"
+}

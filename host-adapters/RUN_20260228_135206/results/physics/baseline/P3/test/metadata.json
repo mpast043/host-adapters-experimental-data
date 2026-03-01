@@ -1,0 +1,14 @@
+{
+  "run_id": "20260228T191659Z_e5e55a7e",
+  "timestamp": "2026-02-28T19:16:59.408756",
+  "config": {
+    "chi_sweep": [
+      2,
+      4
+    ],
+    "threshold": 1.0,
+    "seed": 42
+  },
+  "test": "P3",
+  "version": "1.0.0"
+}

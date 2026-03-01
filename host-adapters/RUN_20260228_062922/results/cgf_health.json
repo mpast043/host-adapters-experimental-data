@@ -1,0 +1,7 @@
+{
+  "endpoint": "http://127.0.0.1:18080",
+  "ok": true,
+  "status_code": 404,
+  "body": "{\"detail\":\"Not Found\"}",
+  "checked_at_utc": "2026-02-28T06:29:25.328671+00:00"
+}

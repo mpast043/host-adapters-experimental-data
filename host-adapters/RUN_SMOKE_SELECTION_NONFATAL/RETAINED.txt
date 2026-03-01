@@ -1,0 +1,5 @@
+archive_filename: retained_RUN_SMOKE_SELECTION_NONFATAL.tar.gz
+archive_size_bytes: 11080
+retention_path: /private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/retained_runs/retained_RUN_SMOKE_SELECTION_NONFATAL.tar.gz
+timestamp_utc: 2026-02-28T03:37:59.702638+00:00
+remote_uri: N/A

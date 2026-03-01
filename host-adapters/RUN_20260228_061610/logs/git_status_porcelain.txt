@@ -1,0 +1,4 @@
+ M docs/physics/framework_selection_test_catalog_v1.json
+ M tools/framework_claim_checks.py
+?? memory/2026-02-27.md
+?? memory/2026-02-28.md

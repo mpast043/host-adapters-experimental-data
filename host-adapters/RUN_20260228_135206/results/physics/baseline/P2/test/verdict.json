@@ -1,0 +1,9 @@
+{
+  "test": "P2",
+  "verdict": "REJECT",
+  "status": "COMPLETE",
+  "passed": {
+    "P2.1": false,
+    "P2.2": true
+  }
+}

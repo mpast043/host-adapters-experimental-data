@@ -1,0 +1,39 @@
+============================================================
+SDK ARTIFACT VALIDATION
+============================================================
+============================================================
+VALIDATION 1: Event Types Consistency
+============================================================
+WARNING: Could not import cgf_schemas_v03: No module named 'cgf_schemas_v03'
+         Falling back to event_types.json as source of truth
+  Schema events unavailable - using JSON as source of truth
+  ✓ Found 19 events in event_types.json
+    - action_allowed
+    - action_audited
+    - action_blocked
+    - action_constrained
+    - action_deferred
+    - adapter_disconnected
+    - adapter_registered
+    - cgf_unreachable
+    - constraint_failed
+    - decision_made
+    - decision_rejected
+    - errors
+    - evaluate_timeout
+    - outcome_logged
+    - proposal_enacted
+    - proposal_expired
+    - proposal_received
+    - proposal_revoked
+    - side_effect_reported
+
+============================================================
+VALIDATION 2: JSON Schema Validation
+============================================================
+  ⚠ Schemas directory not found: /private/tmp/openclaws/Repos/host-adapters/sdk/spec/schemas
+    (This is OK - schemas are optional for v0.4.0)
+
+============================================================
+✓ ALL VALIDATIONS PASSED
+============================================================

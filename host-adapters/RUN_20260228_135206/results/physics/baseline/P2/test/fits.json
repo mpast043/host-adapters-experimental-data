@@ -1,0 +1,17 @@
+{
+  "loglinear": {
+    "a": 2.131646776087739,
+    "b": 0.1711760774419176,
+    "rss": 1.9721522630525295e-31,
+    "aic": -52.64833659297699,
+    "bic": -55.2620422318571
+  },
+  "saturating": {
+    "S_inf": NaN,
+    "c": NaN,
+    "alpha": NaN,
+    "rss": Infinity,
+    "aic": Infinity
+  },
+  "delta_aic": Infinity
+}

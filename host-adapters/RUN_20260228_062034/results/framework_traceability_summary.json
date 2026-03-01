@@ -1,0 +1,511 @@
+{
+  "generated_at_utc": "2026-02-28T06:21:29.071244+00:00",
+  "run_dir": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034",
+  "unresolved_before_count": 20,
+  "unresolved_after_count": 3,
+  "unresolved_delta": -17,
+  "resolved_this_run": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W10",
+    "W11",
+    "W12",
+    "W13",
+    "W14",
+    "W15",
+    "W16",
+    "W17"
+  ],
+  "newly_unresolved": [],
+  "unresolved_before": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W10",
+    "W11",
+    "W12",
+    "W13",
+    "W14",
+    "W15",
+    "W16",
+    "W17",
+    "W18",
+    "W19",
+    "W20"
+  ],
+  "unresolved_after": [
+    "W18",
+    "W19",
+    "W20"
+  ],
+  "metadata": {
+    "workflow_status": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/workflow_auto_status_latest.json",
+    "verdict": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/VERDICT_latest.json",
+    "contract_validation": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/workflow_contract_validation.json",
+    "science_baseline_summary": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/baseline_summary.json",
+    "science_campaign_report": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_report.md",
+    "science_campaign_index": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv",
+    "selection_report": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/selection/selection_report.md",
+    "selection_manifest": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/selection/selection_manifest.json",
+    "selection_ledger": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/selection/ledger.jsonl",
+    "agentic_live_brief": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/agentic/live_brief.md",
+    "agentic_events": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/logs/agentic_events.jsonl",
+    "workflow_events": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/logs/workflow_events.jsonl",
+    "claim_map_baseline": "/private/tmp/openclaws/Repos/host-adapters/docs/physics/framework_pdf_claim_map_v1.json",
+    "claim_map_live": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/claim_map/framework_pdf_claim_map_live.json"
+  },
+  "latest_campaign_rows": [
+    {
+      "timestamp": "2026-02-28T06:20:38.339074+00:00",
+      "test_id": "claim_w02_poset_infimum",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 2000, \"dims\": 5, \"failures\": 0}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w02_poset_infimum",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.377675+00:00",
+      "test_id": "claim_w06_depth_vector_monotonicity",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "n/a",
+      "key_metrics": "{\"max_n\": 5000, \"axes\": [\"geo\", \"int\", \"gauge\", \"ptr\", \"obs\"], \"failure_count\": 0}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w06_depth_vector_monotonicity",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.428427+00:00",
+      "test_id": "claim_w08_class_splitting_monotonicity",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 4000, \"bit_depth\": 16, \"drops\": 0, \"counts_tail\": [128, 256, 512, 1007, 1743, 2552, 3168, 3547, 3769, 3878]}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w08_class_splitting_monotonicity",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.465184+00:00",
+      "test_id": "claim_w13_cobs_decomposition_compat",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 2000, \"max_abs_error\": 1.1102230246251565e-16}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w13_cobs_decomposition_compat",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.556347+00:00",
+      "test_id": "claim_w14_ejection_expands_core",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 1500, \"universe_size\": 60, \"ensemble_size\": 7, \"failures\": 0}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w14_ejection_expands_core",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.594360+00:00",
+      "test_id": "claim_w16_time_consistency_monotone",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 3000, \"a\": 1.7416963688902962, \"b\": 0.3019391262269546, \"violations\": 0}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w16_time_consistency_monotone",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.632510+00:00",
+      "test_id": "claim_w09_delta_t_well_defined",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 5000, \"non_finite\": 0, \"max_abs_delta\": 1965.415658517396}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w09_delta_t_well_defined",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.677616+00:00",
+      "test_id": "claim_w10_observer_non_influence",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 3000, \"mismatches\": 0}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w10_observer_non_influence",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.714294+00:00",
+      "test_id": "claim_w12_observer_triad_mapping",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "n/a",
+      "key_metrics": "{\"mapping\": {\"Access\": \"M\", \"Selection\": \"omega\", \"Commitment\": \"U\"}, \"bijective\": true}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w12_observer_triad_mapping",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.752696+00:00",
+      "test_id": "claim_w03_memory_excision_consistency",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 3000, \"failures\": 0}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w03_memory_excision_consistency",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.792203+00:00",
+      "test_id": "claim_w04_self_reference_consistency",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 500, \"failures\": 0}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w04_self_reference_consistency",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.830173+00:00",
+      "test_id": "claim_w07_cross_axis_isolation",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 3000, \"failures\": 0}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w07_cross_axis_isolation",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.871915+00:00",
+      "test_id": "claim_w11_cpmt_annex_t_conformance",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 3000, \"failures\": 0, \"required_axes\": [\"gauge\", \"geo\", \"int\", \"obs\", \"ptr\"]}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w11_cpmt_annex_t_conformance",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.910157+00:00",
+      "test_id": "claim_w15_pointer_accuracy_orthogonality",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 4000, \"correlation\": -0.005547747389901118, \"threshold\": 0.08}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w15_pointer_accuracy_orthogonality",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:38.954565+00:00",
+      "test_id": "claim_w17_local_global_fixed_point_compat",
+      "model": "claim_check",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "42",
+      "key_metrics": "{\"samples\": 3000, \"failures\": 0, \"max_local_points\": 6}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim_w17_local_global_fixed_point_compat",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:39.027036+00:00",
+      "test_id": "claim2_seed_perturbation",
+      "model": "claim2",
+      "L": "0",
+      "chi": "n/a",
+      "seed": "321",
+      "key_metrics": "{}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim2_seed321",
+      "exit_code": "0"
+    },
+    {
+      "timestamp": "2026-02-28T06:20:39.123731+00:00",
+      "test_id": "claim3_optionb_regime_check",
+      "model": "optionB",
+      "L": "32",
+      "chi": "2,4,8",
+      "seed": "49",
+      "key_metrics": "{}",
+      "aic_delta": "",
+      "bic_delta": "",
+      "verdict": "PASS",
+      "artifact_path": "results/science/claim3_explore",
+      "exit_code": "0"
+    }
+  ],
+  "claim_status_rows": [
+    {
+      "id": "W01",
+      "page": 59,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 4,
+      "evidence_paths": [
+        "/Users/meganpastore/Clawdbot/Repos/capacity-demo/tests/test_framework_b.py",
+        "/Users/meganpastore/Clawdbot/Repos/capacity-demo/tests/test_theorem_validation.py",
+        "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/docs/state/physics_audit_logs/tier_a_test_framework_b.txt",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add direct W01 identity checks in host-adapters regression suite."
+    },
+    {
+      "id": "W02",
+      "page": 59,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add executable poset infimum tests."
+    },
+    {
+      "id": "W03",
+      "page": 60,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add CPMT/Annex-T conformance tests."
+    },
+    {
+      "id": "W04",
+      "page": 60,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add self-reference replay invariants."
+    },
+    {
+      "id": "W05",
+      "page": 60,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 2,
+      "evidence_paths": [
+        "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_052622/results/science/campaign/campaign_index.csv",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add explicit mixed-regime fixtures from Annex S."
+    },
+    {
+      "id": "W06",
+      "page": 60,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add executable monotone D(n) checks."
+    },
+    {
+      "id": "W07",
+      "page": 60,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add cross-axis perturbation simulations."
+    },
+    {
+      "id": "W08",
+      "page": 61,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 2,
+      "evidence_paths": [
+        "/Users/meganpastore/Clawdbot/Repos/capacity-demo/tests/test_theorem_validation.py",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add direct N(C) regression test."
+    },
+    {
+      "id": "W09",
+      "page": 61,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add executable Delta-T well-definedness checks."
+    },
+    {
+      "id": "W10",
+      "page": 61,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add independent model-checking tests."
+    },
+    {
+      "id": "W11",
+      "page": 61,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add CPMT conformance suite."
+    },
+    {
+      "id": "W12",
+      "page": 61,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add typed mapping tests."
+    },
+    {
+      "id": "W13",
+      "page": 62,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add schema migration compatibility tests."
+    },
+    {
+      "id": "W14",
+      "page": 62,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add finite-ensemble constructive simulation."
+    },
+    {
+      "id": "W15",
+      "page": 62,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add orthogonality tests for p(m) and a(m)."
+    },
+    {
+      "id": "W16",
+      "page": 62,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add time-consistency simulation constraints."
+    },
+    {
+      "id": "W17",
+      "page": 62,
+      "status": "LOCAL_EXEC",
+      "evidence_count": 1,
+      "evidence_paths": [
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_062034/results/science/campaign/campaign_index.csv"
+      ],
+      "next_test": "Add multi-fixed-point toy model."
+    },
+    {
+      "id": "W18",
+      "page": 63,
+      "status": "DOC_ONLY",
+      "evidence_count": 0,
+      "evidence_paths": [],
+      "next_test": "Add policy replay checks over compression events."
+    },
+    {
+      "id": "W19",
+      "page": 63,
+      "status": "DOC_ONLY",
+      "evidence_count": 0,
+      "evidence_paths": [],
+      "next_test": "No finite closure; keep as scope boundary."
+    },
+    {
+      "id": "W20",
+      "page": 63,
+      "status": "DOC_ONLY",
+      "evidence_count": 0,
+      "evidence_paths": [],
+      "next_test": "Add policy-enforced self-argument blocking tests."
+    }
+  ]
+}

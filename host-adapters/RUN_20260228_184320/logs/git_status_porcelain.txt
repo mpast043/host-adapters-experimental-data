@@ -1,0 +1,14 @@
+ M docs/physics/framework_selection_test_catalog_v1.json
+ M tools/contract_compliance_tests.py
+ M tools/framework_claim_checks.py
+ M tools/run_contract_suite.sh
+ M tools/run_workflow_auto.py
+ M tools/validate_workflow_auto_run.py
+ M tools/workflow_auto_multi_agent.py
+ M tools/workflow_auto_schema_v1.json
+?? LAST_RUN_PATH.txt
+?? WORKFLOW_AUTO.md
+?? docs/physics/FRAMEWORK_SELECTION_PHYSICS_RESULTS_PAPER_v1.md
+?? memory/2026-02-27.md
+?? memory/2026-02-28.md
+?? tools/generate_framework_traceability_summary.py

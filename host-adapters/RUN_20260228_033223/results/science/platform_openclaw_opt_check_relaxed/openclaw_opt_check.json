@@ -1,0 +1,37 @@
+{
+  "generated_at_utc": "2026-02-28T05:05:47.382554+00:00",
+  "ready": true,
+  "score": 100,
+  "errors": 0,
+  "warnings": 0,
+  "checks": {
+    "memory": {
+      "provider": "openai",
+      "files": 16,
+      "chunks": 212,
+      "searchMode": "hybrid",
+      "sources": [
+        "memory",
+        "sessions"
+      ]
+    },
+    "compaction": {
+      "mode": "safeguard"
+    },
+    "skills": {
+      "eligible": 15,
+      "disabled": 2,
+      "missingRequirements": 34
+    }
+  },
+  "thresholds": {
+    "min_files": 5,
+    "min_chunks": 20,
+    "min_eligible_skills": 8,
+    "max_disabled_skills": 6,
+    "require_compaction_mode": "safeguard",
+    "require_hybrid_search": true,
+    "require_memory_enabled": true
+  },
+  "findings": []
+}

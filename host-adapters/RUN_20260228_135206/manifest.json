@@ -1,0 +1,11 @@
+{
+  "run_id": "RUN_20260228_135206",
+  "objective": "PHYSICS_P",
+  "start_utc": "2026-02-28T18:53:40Z",
+  "git_branch": "main",
+  "git_commit": "57fb67c167753e049ca13e66c5566933edf9421e",
+  "dirty_status": "M docs/physics/framework_selection_test_catalog_v1.json\n M tools/contract_compliance_tests.py\n M too",
+  "inputs": {
+    "framework_pdf_sha256": "972995a9ce94cde412d48c4cbef12cb072552baab32a1febd15ca5302ba4c0a1"
+  }
+}

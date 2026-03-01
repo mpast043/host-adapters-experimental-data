@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:29:26.784922+00:00",
+  "claim_id": "W18",
+  "verdict": "PASS",
+  "rationale": "Compression governance events satisfied T.7-style replay and monotone-retention invariants.",
+  "metrics": {
+    "samples": 3000,
+    "failures": 0
+  }
+}

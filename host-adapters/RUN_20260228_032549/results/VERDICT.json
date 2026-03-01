@@ -1,0 +1,14 @@
+{
+  "overall_status": "STOPPED",
+  "lint_status": "PASS",
+  "contract_status": "SKIPPED",
+  "scientific_status": {
+    "status": "NOT_RUN"
+  },
+  "selection_status": "NOT_RUN",
+  "error": {
+    "classification": "RUNTIME_FAILURE",
+    "message": "[Errno 2] No such file or directory: 'ruff'"
+  },
+  "generated_at_utc": "2026-02-28T03:25:55.857781+00:00"
+}

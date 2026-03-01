@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "thresholds": {
+    "r_all_min": 0.9,
+    "leave_one_out_min": 0.8
+  },
+  "r_all": 0.999461800091057,
+  "leave_one_out": [
+    {
+      "omit": "part_A_16",
+      "r": 1.0
+    },
+    {
+      "omit": "part_A_4",
+      "r": 1.0
+    },
+    {
+      "omit": "part_A_8",
+      "r": 1.0
+    }
+  ],
+  "min_leave_one_out_r": 1.0,
+  "pairs": [
+    {
+      "partition_id": "part_A_16",
+      "K_cut": 2.0,
+      "slope_mean": 2.0218665294129434
+    },
+    {
+      "partition_id": "part_A_4",
+      "K_cut": 4.0,
+      "slope_mean": 3.982249135035779
+    },
+    {
+      "partition_id": "part_A_8",
+      "K_cut": 3.0,
+      "slope_mean": 2.9463349415326525
+    }
+  ]
+}

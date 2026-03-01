@@ -1,0 +1,72 @@
+{
+  "generated_at_utc": "2026-02-28T05:26:26.697465+00:00",
+  "tests": [
+    {
+      "test_id": "claim2_baseline",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_052622/results/science/claim2_baseline",
+        "--seed",
+        "123"
+      ],
+      "exit_code": 0,
+      "log_path": "logs/science_claim2_baseline.txt",
+      "artifact_path": "results/science/claim2_baseline",
+      "verdict": "NOT_RUN"
+    },
+    {
+      "test_id": "claim3_baseline",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_052622/results/science",
+        "--experiment_name",
+        "claim3_baseline",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "42"
+      ],
+      "exit_code": 0,
+      "log_path": "logs/science_claim3_optionb_baseline.txt",
+      "artifact_path": "results/science/claim3_baseline/20260228T052626Z_84c365c6",
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "test_id": "claim3p_ising_open",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_open",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_052622/results/science/claim3p_ising_open"
+      ],
+      "exit_code": 1,
+      "log_path": "logs/science_claim3p_ising_open.txt",
+      "artifact_path": "results/science/claim3p_ising_open/20260228T052626Z_75a225cf",
+      "verdict": "REJECTED"
+    }
+  ]
+}

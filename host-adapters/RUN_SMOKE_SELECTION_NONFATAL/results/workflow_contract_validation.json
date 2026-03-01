@@ -1,0 +1,8 @@
+{
+  "run_dir": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_SMOKE_SELECTION_NONFATAL",
+  "schema": "/private/tmp/openclaws/Repos/host-adapters/tools/workflow_auto_schema_v1.json",
+  "errors": 0,
+  "warnings": 0,
+  "ready": true,
+  "findings": []
+}

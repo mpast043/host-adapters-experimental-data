@@ -1,0 +1,35 @@
+{
+  "role": "planner",
+  "ts_utc": "2026-02-28T06:16:01.911723+00:00",
+  "cycle": 2,
+  "ok": true,
+  "exit_code": 0,
+  "selected_execution_keys": [
+    "claim_w02_poset_infimum",
+    "claim_w06_depth_vector_monotonicity",
+    "claim_w08_class_splitting_monotonicity",
+    "claim_w13_cobs_decomposition_compat",
+    "claim_w14_ejection_expands_core",
+    "claim_w16_time_consistency_monotone",
+    "claim_w09_delta_t_well_defined",
+    "claim_w10_observer_non_influence",
+    "claim_w12_observer_triad_mapping",
+    "claim_w03_memory_excision_consistency",
+    "claim_w04_self_reference_consistency",
+    "claim_w07_cross_axis_isolation",
+    "w03_memory_excision_consistency",
+    "w04_self_reference_consistency",
+    "w07_cross_axis_isolation",
+    "claim2_seed_perturbation",
+    "claim3_optionb_regime_check"
+  ],
+  "tier_c_blocked": [
+    "claim3p_ising_cyclic_l8",
+    "claim3p_heisenberg_cyclic_l8",
+    "claim3p_l16_gate"
+  ],
+  "plan_json": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061548/results/agentic/planner_plan_cycle_002.json",
+  "plan_md": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061548/results/agentic/planner_plan_cycle_002.md",
+  "stdout_tail": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061548/results/agentic/planner_plan_cycle_002.json",
+  "stderr_tail": ""
+}

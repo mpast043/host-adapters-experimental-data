@@ -1,0 +1,736 @@
+{
+  "run_id": "RUN_20260228_061326",
+  "repo_root": "/private/tmp/openclaws/Repos/host-adapters",
+  "artifacts_root": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters",
+  "started_utc": "2026-02-28T06:13:26.111118+00:00",
+  "host": {
+    "hostname": "Mac",
+    "os": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.3",
+    "user": "meganpastore"
+  },
+  "steps": {
+    "0": {
+      "name": "Preflight and MCP discovery",
+      "status": "PASS"
+    },
+    "1": {
+      "name": "Repo verification",
+      "status": "PASS"
+    },
+    "2": {
+      "name": "CGF contract verification",
+      "status": "PASS"
+    },
+    "3": {
+      "name": "Scientific baseline suite",
+      "status": "PASS"
+    },
+    "4": {
+      "name": "Exploration campaign",
+      "status": "PASS"
+    },
+    "5": {
+      "name": "Selection pass",
+      "status": "PASS"
+    },
+    "6": {
+      "name": "Verdict and retention",
+      "status": "PASS"
+    }
+  },
+  "commands": [
+    {
+      "name": "env_uname",
+      "step": "0",
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:26.122018+00:00",
+      "ended_utc": "2026-02-28T06:13:26.124220+00:00",
+      "duration_s": 0.002,
+      "log_path": "logs/env_uname.txt"
+    },
+    {
+      "name": "env_python_version",
+      "step": "0",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "--version"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:26.124425+00:00",
+      "ended_utc": "2026-02-28T06:13:26.133205+00:00",
+      "duration_s": 0.009,
+      "log_path": "logs/env_python_version.txt"
+    },
+    {
+      "name": "env_pip_freeze",
+      "step": "0",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:26.133538+00:00",
+      "ended_utc": "2026-02-28T06:13:26.302371+00:00",
+      "duration_s": 0.169,
+      "log_path": "logs/env_pip_freeze.txt"
+    },
+    {
+      "name": "git_remote_v",
+      "step": "0",
+      "command": [
+        "git",
+        "remote",
+        "-v"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:26.302669+00:00",
+      "ended_utc": "2026-02-28T06:13:26.311875+00:00",
+      "duration_s": 0.009,
+      "log_path": "logs/git_remote_v.txt"
+    },
+    {
+      "name": "git_branch",
+      "step": "0",
+      "command": [
+        "git",
+        "rev-parse",
+        "--abbrev-ref",
+        "HEAD"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:26.312112+00:00",
+      "ended_utc": "2026-02-28T06:13:26.319486+00:00",
+      "duration_s": 0.007,
+      "log_path": "logs/git_branch.txt"
+    },
+    {
+      "name": "git_commit",
+      "step": "0",
+      "command": [
+        "git",
+        "rev-parse",
+        "--short",
+        "HEAD"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:26.319720+00:00",
+      "ended_utc": "2026-02-28T06:13:26.327994+00:00",
+      "duration_s": 0.008,
+      "log_path": "logs/git_commit.txt"
+    },
+    {
+      "name": "git_status_porcelain",
+      "step": "0",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:26.328279+00:00",
+      "ended_utc": "2026-02-28T06:13:26.337983+00:00",
+      "duration_s": 0.01,
+      "log_path": "logs/git_status_porcelain.txt"
+    },
+    {
+      "name": "mcporter_cmd_check",
+      "step": "0",
+      "command": [
+        "sh",
+        "-lc",
+        "command -v mcporter"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:26.338232+00:00",
+      "ended_utc": "2026-02-28T06:13:26.344016+00:00",
+      "duration_s": 0.006,
+      "log_path": "logs/mcporter_cmd_check.txt"
+    },
+    {
+      "name": "mcporter_list",
+      "step": "0",
+      "command": [
+        "mcporter",
+        "list"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:26.344329+00:00",
+      "ended_utc": "2026-02-28T06:13:27.969698+00:00",
+      "duration_s": 1.625,
+      "log_path": "logs/mcporter_list.txt"
+    },
+    {
+      "name": "pip_install_requirements",
+      "step": "1",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:27.971441+00:00",
+      "ended_utc": "2026-02-28T06:13:28.236848+00:00",
+      "duration_s": 0.265,
+      "log_path": "logs/pip_install_requirements.txt"
+    },
+    {
+      "name": "make_lint",
+      "step": "1",
+      "command": [
+        "make",
+        "lint"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 2,
+      "started_utc": "2026-02-28T06:13:28.237197+00:00",
+      "ended_utc": "2026-02-28T06:13:28.246824+00:00",
+      "duration_s": 0.01,
+      "log_path": "logs/make_lint.txt",
+      "tail200_path": "logs/make_lint_tail200.txt"
+    },
+    {
+      "name": "ruff_fix",
+      "step": "1",
+      "command": [
+        "ruff",
+        "check",
+        ".",
+        "--fix"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 127,
+      "started_utc": "2026-02-28T06:13:28.247261+00:00",
+      "ended_utc": "2026-02-28T06:13:28.248737+00:00",
+      "duration_s": 0.001,
+      "log_path": "logs/ruff_fix.txt",
+      "tail200_path": "logs/ruff_fix_tail200.txt"
+    },
+    {
+      "name": "ruff_format",
+      "step": "1",
+      "command": [
+        "ruff",
+        "format",
+        "."
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 127,
+      "started_utc": "2026-02-28T06:13:28.248985+00:00",
+      "ended_utc": "2026-02-28T06:13:28.250101+00:00",
+      "duration_s": 0.001,
+      "log_path": "logs/ruff_format.txt",
+      "tail200_path": "logs/ruff_format_tail200.txt"
+    },
+    {
+      "name": "make_lint_rerun",
+      "step": "1",
+      "command": [
+        "make",
+        "lint"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 2,
+      "started_utc": "2026-02-28T06:13:28.250332+00:00",
+      "ended_utc": "2026-02-28T06:13:28.258036+00:00",
+      "duration_s": 0.008,
+      "log_path": "logs/make_lint_rerun.txt",
+      "tail200_path": "logs/make_lint_rerun_tail200.txt"
+    },
+    {
+      "name": "make_test_fast",
+      "step": "1",
+      "command": [
+        "make",
+        "test-fast"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:28.258789+00:00",
+      "ended_utc": "2026-02-28T06:13:28.875022+00:00",
+      "duration_s": 0.616,
+      "log_path": "logs/make_test_fast.txt"
+    },
+    {
+      "name": "contract_suite",
+      "step": "2",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-v",
+        "tools/contract_compliance_tests.py"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:29.394401+00:00",
+      "ended_utc": "2026-02-28T06:13:29.875668+00:00",
+      "duration_s": 0.481,
+      "log_path": "logs/contract_suite.txt"
+    },
+    {
+      "name": "validate_sdk_artifacts",
+      "step": "2",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/validate_sdk_artifacts.py"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:29.876234+00:00",
+      "ended_utc": "2026-02-28T06:13:29.898486+00:00",
+      "duration_s": 0.022,
+      "log_path": "logs/validate_sdk_artifacts.txt"
+    },
+    {
+      "name": "science_claim2_baseline",
+      "step": "3",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim2_baseline",
+        "--seed",
+        "123"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:29.899126+00:00",
+      "ended_utc": "2026-02-28T06:13:29.987207+00:00",
+      "duration_s": 0.088,
+      "log_path": "logs/science_claim2_baseline.txt"
+    },
+    {
+      "name": "science_claim3_optionb_baseline",
+      "step": "3",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science",
+        "--experiment_name",
+        "claim3_baseline",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:29.987638+00:00",
+      "ended_utc": "2026-02-28T06:13:30.084619+00:00",
+      "duration_s": 0.097,
+      "log_path": "logs/science_claim3_optionb_baseline.txt"
+    },
+    {
+      "name": "plan_framework_selection_tests",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/plan_framework_selection_tests.py",
+        "--repo-root",
+        "/private/tmp/openclaws/Repos/host-adapters",
+        "--artifacts-root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326",
+        "--catalog",
+        "docs/physics/framework_selection_test_catalog_v1.json",
+        "--max-minutes",
+        "120",
+        "--max-runs",
+        "80",
+        "--output-json",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/exploration_proposals.json",
+        "--output-md",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/exploration_proposals.md",
+        "--focus-objective",
+        "B",
+        "--compute-target",
+        "local-compute"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.085450+00:00",
+      "ended_utc": "2026-02-28T06:13:30.119761+00:00",
+      "duration_s": 0.034,
+      "log_path": "logs/plan_framework_selection_tests.txt"
+    },
+    {
+      "name": "explore_claim_w02_poset_infimum",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w02_poset_infimum",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w02_poset_infimum",
+        "--samples",
+        "2000",
+        "--dims",
+        "5",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.120356+00:00",
+      "ended_utc": "2026-02-28T06:13:30.160728+00:00",
+      "duration_s": 0.04,
+      "log_path": "logs/explore_claim_w02_poset_infimum.txt"
+    },
+    {
+      "name": "explore_claim_w06_depth_vector_monotonicity",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w06_depth_vector_monotonicity",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w06_depth_vector_monotonicity",
+        "--max-n",
+        "5000"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.161253+00:00",
+      "ended_utc": "2026-02-28T06:13:30.198037+00:00",
+      "duration_s": 0.037,
+      "log_path": "logs/explore_claim_w06_depth_vector_monotonicity.txt"
+    },
+    {
+      "name": "explore_claim_w08_class_splitting_monotonicity",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w08_class_splitting_monotonicity",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w08_class_splitting_monotonicity",
+        "--samples",
+        "4000",
+        "--bit-depth",
+        "16",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.198434+00:00",
+      "ended_utc": "2026-02-28T06:13:30.248795+00:00",
+      "duration_s": 0.05,
+      "log_path": "logs/explore_claim_w08_class_splitting_monotonicity.txt"
+    },
+    {
+      "name": "explore_claim_w13_cobs_decomposition_compat",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w13_cobs_decomposition_compat",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w13_cobs_decomposition_compat",
+        "--samples",
+        "2000",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.249206+00:00",
+      "ended_utc": "2026-02-28T06:13:30.284250+00:00",
+      "duration_s": 0.035,
+      "log_path": "logs/explore_claim_w13_cobs_decomposition_compat.txt"
+    },
+    {
+      "name": "explore_claim_w14_ejection_expands_core",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w14_ejection_expands_core",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w14_ejection_expands_core",
+        "--samples",
+        "1500",
+        "--universe-size",
+        "60",
+        "--ensemble-size",
+        "7",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.284691+00:00",
+      "ended_utc": "2026-02-28T06:13:30.374202+00:00",
+      "duration_s": 0.09,
+      "log_path": "logs/explore_claim_w14_ejection_expands_core.txt"
+    },
+    {
+      "name": "explore_claim_w16_time_consistency_monotone",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w16_time_consistency_monotone",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w16_time_consistency_monotone",
+        "--samples",
+        "3000",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.374757+00:00",
+      "ended_utc": "2026-02-28T06:13:30.411182+00:00",
+      "duration_s": 0.036,
+      "log_path": "logs/explore_claim_w16_time_consistency_monotone.txt"
+    },
+    {
+      "name": "explore_claim_w09_delta_t_well_defined",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w09_delta_t_well_defined",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w09_delta_t_well_defined",
+        "--samples",
+        "5000",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.411630+00:00",
+      "ended_utc": "2026-02-28T06:13:30.448067+00:00",
+      "duration_s": 0.036,
+      "log_path": "logs/explore_claim_w09_delta_t_well_defined.txt"
+    },
+    {
+      "name": "explore_claim_w10_observer_non_influence",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w10_observer_non_influence",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w10_observer_non_influence",
+        "--samples",
+        "3000",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.448480+00:00",
+      "ended_utc": "2026-02-28T06:13:30.491574+00:00",
+      "duration_s": 0.043,
+      "log_path": "logs/explore_claim_w10_observer_non_influence.txt"
+    },
+    {
+      "name": "explore_claim_w12_observer_triad_mapping",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w12_observer_triad_mapping",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w12_observer_triad_mapping"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.492112+00:00",
+      "ended_utc": "2026-02-28T06:13:30.529231+00:00",
+      "duration_s": 0.037,
+      "log_path": "logs/explore_claim_w12_observer_triad_mapping.txt"
+    },
+    {
+      "name": "explore_claim_w03_memory_excision_consistency",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w03_memory_excision_consistency",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w03_memory_excision_consistency",
+        "--samples",
+        "3000",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.529677+00:00",
+      "ended_utc": "2026-02-28T06:13:30.573754+00:00",
+      "duration_s": 0.044,
+      "log_path": "logs/explore_claim_w03_memory_excision_consistency.txt"
+    },
+    {
+      "name": "explore_claim_w04_self_reference_consistency",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w04_self_reference_consistency",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w04_self_reference_consistency",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.574230+00:00",
+      "ended_utc": "2026-02-28T06:13:30.609420+00:00",
+      "duration_s": 0.035,
+      "log_path": "logs/explore_claim_w04_self_reference_consistency.txt"
+    },
+    {
+      "name": "explore_claim_w07_cross_axis_isolation",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/framework_claim_checks.py",
+        "--check",
+        "w07_cross_axis_isolation",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim_w07_cross_axis_isolation",
+        "--samples",
+        "3000",
+        "--seed",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.609938+00:00",
+      "ended_utc": "2026-02-28T06:13:30.645979+00:00",
+      "duration_s": 0.036,
+      "log_path": "logs/explore_claim_w07_cross_axis_isolation.txt"
+    },
+    {
+      "name": "explore_claim2_seed_perturbation",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science/claim2_seed321",
+        "--seed",
+        "321"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.646404+00:00",
+      "ended_utc": "2026-02-28T06:13:30.715930+00:00",
+      "duration_s": 0.07,
+      "log_path": "logs/explore_claim2_seed_perturbation.txt"
+    },
+    {
+      "name": "explore_claim3_optionb_regime_check",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061326/results/science",
+        "--experiment_name",
+        "claim3_explore",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "49"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T06:13:30.716335+00:00",
+      "ended_utc": "2026-02-28T06:13:30.810031+00:00",
+      "duration_s": 0.094,
+      "log_path": "logs/explore_claim3_optionb_regime_check.txt"
+    }
+  ],
+  "mcp_calls": [
+    {
+      "tool": "mcporter list",
+      "server_target": "local",
+      "request_summary": "discover available MCP servers",
+      "response_pointer": "logs/mcporter_list.txt"
+    }
+  ],
+  "failure_classification": null,
+  "failure_message": null,
+  "mcp_targets": {
+    "compute_target": "local-compute",
+    "docs_target": null,
+    "discovery_log": "logs/mcporter_list.txt",
+    "servers": [
+      "com.apify/apify-mcp-server",
+      "figma",
+      "github",
+      "io.github.bytebase/dbhub",
+      "io.github.github/github-mcp-server",
+      "io.github.hashicorp/terraform-mcp-server",
+      "io.github.tavily-ai/tavily-mcp",
+      "local-compute",
+      "microsoft/markitdown",
+      "microsoft/playwright-mcp",
+      "notion",
+      "playwright"
+    ]
+  },
+  "_resume_enabled": true,
+  "capabilities": {
+    "path": "results/capabilities.json",
+    "skills_count": 16
+  },
+  "cgf": {
+    "endpoint": "http://127.0.0.1:18080"
+  },
+  "ended_utc": "2026-02-28T06:13:34.956786+00:00",
+  "resume_history": [
+    {
+      "resumed_utc": "2026-02-28T06:13:34.935248+00:00"
+    }
+  ]
+}

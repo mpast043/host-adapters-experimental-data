@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:16:05.703246+00:00",
+  "claim_id": "W03",
+  "verdict": "PASS",
+  "rationale": "Memory excision consistent.",
+  "metrics": {
+    "samples": 3000,
+    "failures": 0
+  }
+}

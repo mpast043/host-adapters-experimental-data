@@ -1,0 +1,5 @@
+archive_filename: retained_RUN_20260228_053908.tar.gz
+archive_size_bytes: 70527
+retention_path: /private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/retained_runs/retained_RUN_20260228_053908.tar.gz
+timestamp_utc: 2026-02-28T05:39:25.728755+00:00
+remote_uri: N/A

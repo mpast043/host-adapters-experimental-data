@@ -1,0 +1,12 @@
+=== SECTION 10: EVIDENCE GATE ===
+❌ results/VERDICT.json MISSING
+❌ manifest.json MISSING
+✅ results/docs/framework.md
+✅ results/docs/framework_chunks.jsonl
+✅ results/physics/baseline/baseline_index.json
+✅ results/physics/exploration/campaign_index.csv
+✅ results/selection/ledger.jsonl
+
+Verifying witness files...
+
+EVIDENCE GATE: FAIL

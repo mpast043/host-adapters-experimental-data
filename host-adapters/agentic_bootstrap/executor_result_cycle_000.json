@@ -1,0 +1,13 @@
+{
+  "role": "executor",
+  "ts_utc": "2026-02-28T06:16:15.086272+00:00",
+  "cycle": 0,
+  "ok": true,
+  "exit_code": 0,
+  "run_dir": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061610",
+  "mode": "COMPLETE",
+  "selection_status": "ACCEPTED",
+  "overall_status": "COMPLETE",
+  "stdout_tail": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061610",
+  "stderr_tail": ""
+}

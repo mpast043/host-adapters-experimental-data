@@ -1,0 +1,2 @@
+Wrote report: /private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/platform_openclaw_opt_check/openclaw_opt_check.json
+OPENCLAW_OPT_CHECK ready=True score=100/100 errors=0 warnings=0

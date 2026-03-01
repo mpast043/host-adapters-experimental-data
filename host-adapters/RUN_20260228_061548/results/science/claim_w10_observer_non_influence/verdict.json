@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:16:05.667298+00:00",
+  "claim_id": "W10",
+  "verdict": "PASS",
+  "rationale": "Reconstruction output stayed invariant across observer identities in all sampled cases.",
+  "metrics": {
+    "samples": 3000,
+    "mismatches": 0
+  }
+}

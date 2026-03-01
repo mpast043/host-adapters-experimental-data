@@ -1,0 +1,74 @@
+{
+  "selected": [
+    {
+      "test_id": "EX01",
+      "target_claim_ids": [
+        "W01"
+      ],
+      "hypothesis": "Capacity threshold increases with system size",
+      "parameters": {
+        "L": [
+          8,
+          16
+        ],
+        "chi": [
+          4,
+          8,
+          16
+        ]
+      },
+      "seeds": [
+        42,
+        43
+      ],
+      "expected_runtime_min": 5,
+      "class": "small",
+      "placement": "local"
+    },
+    {
+      "test_id": "EX02",
+      "target_claim_ids": [
+        "W02"
+      ],
+      "hypothesis": "MERA fidelity improves with bond dimension",
+      "parameters": {
+        "L": 8,
+        "chi_sweep": [
+          4,
+          8,
+          16,
+          32
+        ]
+      },
+      "seeds": [
+        42
+      ],
+      "expected_runtime_min": 10,
+      "class": "medium",
+      "placement": "local"
+    },
+    {
+      "test_id": "EX03",
+      "target_claim_ids": [
+        "W03"
+      ],
+      "hypothesis": "Gluing stability holds under excision",
+      "parameters": {
+        "boundary_type": [
+          "open",
+          "cyclic"
+        ],
+        "L": 8
+      },
+      "seeds": [
+        42,
+        44
+      ],
+      "expected_runtime_min": 5,
+      "class": "small",
+      "placement": "local"
+    }
+  ],
+  "count": 3,
+  "reason": "within LOCAL_ONLY budget"
+}

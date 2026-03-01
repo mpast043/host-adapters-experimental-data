@@ -1,0 +1,8 @@
+{
+  "mapping": {
+    "Access": "M",
+    "Selection": "omega",
+    "Commitment": "U"
+  },
+  "bijective": true
+}

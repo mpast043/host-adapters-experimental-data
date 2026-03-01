@@ -1,0 +1,56 @@
+{
+  "claims": [
+    {
+      "claim_id": "W01",
+      "statement": "Claim about capacity",
+      "source_span": {
+        "chunk_id": "chunk_0000",
+        "char_start": 0,
+        "char_end": 2500
+      },
+      "testable_implication": "Evidence of capacity can be measured",
+      "metrics": [
+        "capacity_score",
+        "gluing_score",
+        "threshold_score"
+      ],
+      "falsifier": "No capacity evidence found",
+      "priority": "high"
+    },
+    {
+      "claim_id": "W02",
+      "statement": "Claim about mera physical",
+      "source_span": {
+        "chunk_id": "chunk_0019",
+        "char_start": 47500,
+        "char_end": 50000
+      },
+      "testable_implication": "Evidence of mera physical can be measured",
+      "metrics": [
+        "mera_score",
+        "fidelity_score",
+        "entropy_score"
+      ],
+      "falsifier": "No mera physical evidence found",
+      "priority": "high"
+    },
+    {
+      "claim_id": "W03",
+      "statement": "Claim about gluing stability",
+      "source_span": {
+        "chunk_id": "chunk_0002",
+        "char_start": 5000,
+        "char_end": 7500
+      },
+      "testable_implication": "Evidence of gluing stability can be measured",
+      "metrics": [
+        "gluing_score",
+        "stable_score",
+        "excision_score"
+      ],
+      "falsifier": "No gluing stability evidence found",
+      "priority": "high"
+    }
+  ],
+  "extracted_count": 3
+}

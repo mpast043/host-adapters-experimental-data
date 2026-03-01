@@ -1,0 +1,19 @@
+{
+  "run_id": "RUN_20260228_062034",
+  "mode": "COMPLETE",
+  "mcp_targets": {
+    "compute_target": "local-compute",
+    "docs_target": null,
+    "discovery_log": "logs/mcporter_list.txt"
+  },
+  "contract_status": "PASS",
+  "science_status": "PARTIAL",
+  "selection_status": "ACCEPTED",
+  "retention_status": "PASS",
+  "artifact_index": "results/index.json",
+  "notes": [
+    "lint_status=PASS",
+    "focus_objective=B",
+    "overall_status=COMPLETE"
+  ]
+}

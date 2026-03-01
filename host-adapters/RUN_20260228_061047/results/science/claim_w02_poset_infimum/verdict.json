@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-02-28T06:10:51.721744+00:00",
+  "claim_id": "W02",
+  "verdict": "PASS",
+  "rationale": "Componentwise infimum was <= both vectors in all sampled cases.",
+  "metrics": {
+    "samples": 2000,
+    "dims": 5,
+    "failures": 0
+  }
+}

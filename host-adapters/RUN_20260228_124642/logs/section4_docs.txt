@@ -1,0 +1,134 @@
+=== SECTION 4.1: BASELINE ATTEMPT ===
+Running: mcporter inspect microsoft/markitdown
+[mcporter] Did you mean notion?
+Unknown MCP server 'inspect'.
+
+=== STEP A: DAEMON RESTART ===
+Running: mcporter daemon restart
+Daemon stopped (if it was running).
+Daemon started for 2 server(s).
+
+Retry: mcporter list
+microsoft-markitdown
+  tools unavailable · 21ms · HTTP https://microsoft/markitdown
+
+  Tools: <timed out after 30000ms>
+  Reason: SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND microsoft
+
+=== STEP B: CONFIG DIAGNOSE ===
+Running: mcporter config get microsoft/markitdown
+microsoft/markitdown
+  Source: import (/Users/meganpastore/Library/Application Support/Code/User/mcp.json)
+  Transport: stdio (uvx markitdown-mcp@0.0.1a4)
+  CWD: /Users/meganpastore/Library/Application Support/Code/User
+
+Checking mcp.json config files:
+-rw-r--r--@ 1 meganpastore  staff  6300 Feb 27 17:28 /Users/meganpastore/Library/Application Support/Code/User/mcp.json
+ls: /tmp/openclaws/Repos/host-adapters/.vscode/mcp.json: No such file or directory
+
+=== STEP C: AD-HOC STDIO MARKITDOWN ===
+Checking: command -v uvx
+/opt/homebrew/bin/uvx
+
+Checking: command -v markitdown-mcp
+markitdown-mcp not found
+
+Checking: uvx markitdown-mcp availability
+usage: markitdown-mcp [-h] [--http] [--sse] [--host HOST] [--port PORT]
+
+Run a MarkItDown MCP server
+
+options:
+
+=== ATTEMPTING AD-HOC STDIO MCP ===
+Running: mcporter list --stdio "uvx markitdown-mcp@0.0.1a4"
+uvx-markitdown-mcp-0-0-1a4
+
+  /**
+   * Convert a resource described by an http:, https:, file: or data: URI to markdown
+   */
+  function convert_to_markdown(uri: string);
+
+  Examples:
+    mcporter call uvx-markitdown-mcp-0-0-1a4.convert_to_markdown(uri: "value")
+
+  1 tool · 477ms · STDIO uvx markitdown-mcp@0.0.1a4
+
+
+=== CALLING CONVERT_TO_MARKDOWN ===
+Converting: file:///tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/docs/framework.pdf
+Output received, size:    85524
+FRAMEWORK v4.5
+
+CANONICAL EDITION
+
+with Prealgebraic Foundation, Vectorial Capacity, and Observer Memory
+
+(Stress-Tested and Regression-Verified)
+
+Structured Technical Standard
+
+A capacity-filtered correlator theory of emergent spacetime, effective field theory, and
+
+observer structure, grounded in self-reflecting triadic prealgebra
+
+Document Structure
+
+Section -1: Prealgebraic Foundation (The Ground)
+
+Part I: Sections 0-10 Core Framework
+
+Part II: Sections 11-20 Applications
+
+Part III: Appendices A-N Technical Details
+
+Part IV: Annexes O-U Concrete Examples, Self-Reference, Memory & Reference
+
+Toys
+
+February 2026
+
+SECTION -1: PREALGEBRAIC FOUNDATION
+
+-1.1 The Prealgebraic Level P
+
+Prior to the substrate X = (Λ, H_d, ρ, U_micro), there exists a prealgebraic structure P.
+
+P is not an algebra. It has no elements in the algebraic sense, no multiplication, no
+
+distinguished identity. It is the potential from which algebraic structure emerges via
+
+representation.
+
+Definition (Prealgebraic Structure). Let F : Set → Set be the triadic functor F(X) = X ×
+
+X × X. The prealgebraic structure P is the terminal coalgebra of F. An element φ ∈ P is an
+
+infinite triadic tree: a triad of triads of triads, without bottom.
+
+P carries a natural filtration by depth:
+
+=== EXTRACTING MARKDOWN FROM MCP OUTPUT ===
+Found document start at line 1
+Written to framework.md, size:    85524
+FRAMEWORK v4.5
+
+CANONICAL EDITION
+
+with Prealgebraic Foundation, Vectorial Capacity, and Observer Memory
+
+(Stress-Tested and Regression-Verified)
+
+Structured Technical Standard
+
+A capacity-filtered correlator theory of emergent spacetime, effective field theory, and
+
+observer structure, grounded in self-reflecting triadic prealgebra
+
+Document Structure
+
+Section -1: Prealgebraic Foundation (The Ground)
+
+Part I: Sections 0-10 Core Framework
+
+=== SECTION 4.3: CHUNKING ===

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-v",
+    "tools/contract_compliance_tests.py"
+  ],
+  "exit_code": 0,
+  "log_path": "logs/contract_suite.txt",
+  "endpoint": "http://127.0.0.1:18080",
+  "generated_at_utc": "2026-02-28T05:39:12.200430+00:00"
+}

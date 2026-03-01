@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-02-28T06:13:30.406223+00:00",
+  "claim_id": "W16",
+  "verdict": "PASS",
+  "rationale": "Constructed monotone mapping t_E=f(t_B) held across sampled points.",
+  "metrics": {
+    "samples": 3000,
+    "a": 1.7416963688902962,
+    "b": 0.3019391262269546,
+    "violations": 0
+  }
+}

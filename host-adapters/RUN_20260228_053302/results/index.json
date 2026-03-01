@@ -1,0 +1,24 @@
+{
+  "run_id": "RUN_20260228_053302",
+  "generated_at_utc": "2026-02-28T05:33:22.059249+00:00",
+  "pointers": {
+    "contracts": {
+      "path": "results/contracts"
+    },
+    "sdk_validation": {
+      "path": "results/sdk_validation"
+    },
+    "science": {
+      "path": "results/science"
+    },
+    "selection": {
+      "path": "results/selection"
+    },
+    "capabilities": {
+      "path": "results/capabilities.json"
+    },
+    "VERDICT": {
+      "path": "results/VERDICT.json"
+    }
+  }
+}

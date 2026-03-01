@@ -1,0 +1,20 @@
+{
+  "run_id": "20260228T045204Z_2e3229ee",
+  "config": {
+    "L": 8,
+    "A_size": 4,
+    "model": "ising_cyclic",
+    "chi_sweep": [
+      2,
+      4
+    ],
+    "restarts": 1,
+    "steps": 30,
+    "seed": 48
+  },
+  "ed_reference": {
+    "energy": -4.254541117570139,
+    "entropy": 0.1789071370783133
+  },
+  "verdict": "REJECTED"
+}

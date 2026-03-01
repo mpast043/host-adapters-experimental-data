@@ -1,0 +1,64 @@
+{
+  "run_id": "RUN_20260228_124642",
+  "objective": "PHYSICS_P",
+  "start_utc": "",
+  "end_utc": "2026-02-28T17:53:39Z",
+  "repo_path": "/tmp/openclaws/Repos/host-adapters",
+  "git_branch": "main",
+  "git_commit": "57fb67c",
+  "dirty_status": "dirty",
+  "mcp": {
+    "docs_target": "microsoft/markitdown",
+    "compute_target": "local-compute",
+    "compute_mode": "LOCAL_ONLY"
+  },
+  "inputs": {
+    "framework_pdf_path": "/Users/meganpastore/Clawdbot/Repos/capacity-demo/Framework with selection.pdf",
+    "framework_pdf_sha256": "972995a9ce94cde412d48c4cbef12cb072552baab32a1febd15ca5302ba4c0a1"
+  },
+  "executions": [
+    {
+      "kind": "local",
+      "command_or_tool": "mkdir -p RUN_DIR structure",
+      "target_or_cwd": "/tmp/openclaws/Repos/host-adapters",
+      "start_utc": "",
+      "end_utc": "",
+      "status_or_exit": 0,
+      "log_path": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/logs/section1_input.txt"
+    },
+    {
+      "kind": "mcp",
+      "command_or_tool": "microsoft/markitdown convert (ad-hoc stdio)",
+      "target_or_cwd": "uvx markitdown-mcp@0.0.1a4",
+      "start_utc": "",
+      "end_utc": "2026-02-28T17:53:39Z",
+      "status_or_exit": "SUCCESS",
+      "log_path": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/logs/mcp_markitdown_stdio_call.txt"
+    },
+    {
+      "kind": "local",
+      "command_or_tool": "python3 exp1_spectral_dim.py",
+      "target_or_cwd": "/tmp/openclaws/Repos/host-adapters/prototype/experiments/exp1_spectral_dim",
+      "start_utc": "",
+      "end_utc": "2026-02-28T17:53:39Z",
+      "status_or_exit": 0,
+      "log_path": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/physics/baseline/P1_run.log"
+    },
+    {
+      "kind": "local",
+      "command_or_tool": "python3 exp3_claim3_physical_convergence_runner_v2.py",
+      "target_or_cwd": "/tmp/openclaws/Repos/host-adapters/experiments/claim3",
+      "start_utc": "",
+      "end_utc": "2026-02-28T17:53:39Z",
+      "status_or_exit": 0,
+      "log_path": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/physics/baseline/P4_run.log"
+    }
+  ],
+  "artifacts": {
+    "verdict": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/VERDICT.json",
+    "manifest": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/manifest.json",
+    "summary": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/summary.md",
+    "ledger": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/selection/ledger.jsonl",
+    "baseline": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/physics/baseline/baseline_index.json"
+  }
+}

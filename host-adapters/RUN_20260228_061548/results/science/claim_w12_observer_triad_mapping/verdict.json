@@ -1,0 +1,14 @@
+{
+  "generated_at_utc": "2026-02-28T06:15:52.915877+00:00",
+  "claim_id": "W12",
+  "verdict": "PASS",
+  "rationale": "Observer triad mapping is one-to-one and consistent with substrate triad correspondence.",
+  "metrics": {
+    "mapping": {
+      "Access": "M",
+      "Selection": "omega",
+      "Commitment": "U"
+    },
+    "bijective": true
+  }
+}

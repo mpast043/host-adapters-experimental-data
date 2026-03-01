@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:16:05.772962+00:00",
+  "claim_id": "W07",
+  "verdict": "PASS",
+  "rationale": "Cross-axis isolation preserved gluing.",
+  "metrics": {
+    "samples": 3000,
+    "failures": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "mcp_inventory": {
+    "docs_target": "microsoft/markitdown",
+    "docs_status": "healthy",
+    "compute_target": "local-compute",
+    "compute_status": "healthy",
+    "compute_mode": "LOCAL_ONLY"
+  },
+  "servers": [
+    {
+      "name": "local-compute",
+      "status": "healthy",
+      "tools": 7
+    },
+    {
+      "name": "microsoft/markitdown",
+      "status": "healthy",
+      "tools": 1
+    },
+    {
+      "name": "io.github.tavily-ai/tavily-mcp",
+      "status": "healthy",
+      "tools": 4
+    }
+  ]
+}

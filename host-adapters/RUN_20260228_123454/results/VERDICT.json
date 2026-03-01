@@ -1,0 +1,21 @@
+{
+  "overall_status": "STOPPED",
+  "objective": "PHYSICS_P",
+  "compute_mode": "LOCAL_ONLY",
+  "stopped_reason": "MCP_DOCS_UNAVAILABLE",
+  "stopped_section": "3.1",
+  "governance": "PASS",
+  "physics": "NOT_STARTED",
+  "selection": "NOT_STARTED",
+  "exploration_runs": 0,
+  "mcp_status": {
+    "microsoft_markitdown": "offline - SSE error: getaddrinfo ENOTFOUND microsoft",
+    "local_pdf_tools": "not_available",
+    "docs_target": "FAILED"
+  },
+  "artifacts": {
+    "pdf_copied": "${RUN_DIR}/results/docs/framework.pdf",
+    "pdf_sha256": "${RUN_DIR}/results/docs/framework.pdf.sha256"
+  },
+  "timestamp": "2026-02-28T17:36:07Z"
+}

@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:13:30.641326+00:00",
+  "claim_id": "W07",
+  "verdict": "PASS",
+  "rationale": "Geometric gate decision remained invariant under sampled non-geo perturbations.",
+  "metrics": {
+    "samples": 3000,
+    "violations": 0
+  }
+}

@@ -1,0 +1,39 @@
+Policy bundle loaded: 1.0.0 (hash: 085b6d282eb9ecc2...)
+Warning: policy_config_v03.json not found, using defaults
+============================================================
+CGF Server v0.3
+Schema: 0.3.0
+Policy: default
+Port: 18080
+============================================================
+INFO:     Started server process [72483]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56702 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56703 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56705 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56706 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56707 - "GET /health HTTP/1.1" 404 Not Found
+{"timestamp": 1772256787.706969, "level": "info", "message": "Adapter registered", "source": "cgf_server_v03", "adapter_id": "adp-d463bb396057", "event_type": "ADAPTER_REGISTERED", "adapter_type": "openclaw", "schema_version": "0.2.0"}
+INFO:     127.0.0.1:56708 - "POST /v1/register HTTP/1.1" 200 OK
+{"timestamp": 1772256787.708425, "level": "info", "message": "Decision made", "source": "cgf_server_v03", "adapter_id": "adp-d463bb396057", "proposal_id": "prop-1772256787704-e41e8a", "decision_id": "dec-5bce15bea327", "event_type": "DECISION_MADE", "decision": "BLOCK", "confidence": 1.0, "reason_code": "DENYLISTED_TOOL"}
+INFO:     127.0.0.1:56708 - "POST /v1/evaluate HTTP/1.1" 200 OK
+{"timestamp": 1772256787.7101922, "level": "info", "message": "Adapter registered", "source": "cgf_server_v03", "adapter_id": "adp-b25e038c7be8", "event_type": "ADAPTER_REGISTERED", "adapter_type": "openclaw", "schema_version": "0.2.0"}
+INFO:     127.0.0.1:56709 - "POST /v1/register HTTP/1.1" 200 OK
+{"timestamp": 1772256787.711141, "level": "info", "message": "Decision made", "source": "cgf_server_v03", "adapter_id": "adp-b25e038c7be8", "proposal_id": "prop-1772256787709-15ba72", "decision_id": "dec-e0235896be2d", "event_type": "DECISION_MADE", "decision": "ALLOW", "confidence": 0.85, "reason_code": "DEFAULT_ALLOW"}
+INFO:     127.0.0.1:56709 - "POST /v1/evaluate HTTP/1.1" 200 OK
+{"timestamp": 1772256787.712544, "level": "info", "message": "Adapter registered", "source": "cgf_server_v03", "adapter_id": "adp-19ede53a126e", "event_type": "ADAPTER_REGISTERED", "adapter_type": "langgraph", "schema_version": "0.3.0"}
+INFO:     127.0.0.1:56710 - "POST /v1/register HTTP/1.1" 200 OK
+{"timestamp": 1772256787.714089, "level": "info", "message": "Decision made", "source": "cgf_server_v03", "adapter_id": "adp-19ede53a126e", "proposal_id": "lg-prop-1772256787713-94ba0c", "decision_id": "dec-901533f4cf98", "event_type": "DECISION_MADE", "decision": "BLOCK", "confidence": 1.0, "reason_code": "DENYLISTED_TOOL"}
+INFO:     127.0.0.1:56711 - "POST /v1/evaluate HTTP/1.1" 200 OK
+{"timestamp": 1772256787.715588, "level": "info", "message": "Adapter registered", "source": "cgf_server_v03", "adapter_id": "adp-7394bbe6b805", "event_type": "ADAPTER_REGISTERED", "adapter_type": "langgraph", "schema_version": "0.3.0"}
+INFO:     127.0.0.1:56712 - "POST /v1/register HTTP/1.1" 200 OK
+{"timestamp": 1772256787.716567, "level": "info", "message": "Decision made", "source": "cgf_server_v03", "adapter_id": "adp-7394bbe6b805", "proposal_id": "lg-prop-1772256787716-8589a0", "decision_id": "dec-bc56add79706", "event_type": "DECISION_MADE", "decision": "ALLOW", "confidence": 0.85, "reason_code": "DEFAULT_ALLOW"}
+INFO:     127.0.0.1:56713 - "POST /v1/evaluate HTTP/1.1" 200 OK
+{"timestamp": 1772256787.71762, "level": "info", "message": "Outcome received", "source": "cgf_server_v03", "adapter_id": "adp-7394bbe6b805", "proposal_id": "lg-prop-1772256787716-8589a0", "decision_id": "dec-bc56add79706", "event_type": "OUTCOME_LOGGED", "success": true, "committed": true}
+INFO:     127.0.0.1:56714 - "POST /v1/outcomes/report HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [72483]

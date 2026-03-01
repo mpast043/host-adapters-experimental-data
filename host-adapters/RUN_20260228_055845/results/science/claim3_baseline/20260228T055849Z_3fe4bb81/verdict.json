@@ -1,0 +1,227 @@
+{
+  "framework_spec": {
+    "version": "0.2.0"
+  },
+  "experiment_name": "claim3_baseline",
+  "run_id": "20260228T055849Z_3fe4bb81",
+  "claim_id": "C3",
+  "option": "B",
+  "verdict": "INCONCLUSIVE",
+  "scope_limitations": [
+    "This run validates scaling, model selection, bound compliance, and the cut-size bridge inside a simplified entropy generator and a proxy K_cut.",
+    "It does not demonstrate that a full physical MERA simulation for a specified Hamiltonian reproduces the same scaling in the same regime, because S is not computed from a Hamiltonian ground state/time evolution and K_cut is not computed as an actual network minimal cut."
+  ],
+  "falsifiers": {
+    "3.1_monotonicity_per_partition": {
+      "part_A_16": {
+        "passed": true,
+        "violations": []
+      },
+      "part_A_8": {
+        "passed": true,
+        "violations": []
+      },
+      "part_A_4": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    "3.2_replicate_robustness_per_partition": {
+      "part_A_16": {
+        "passed": true,
+        "no_negative_slopes": true,
+        "cv_threshold": 0.1,
+        "slope_mean": 1.9105649822597195,
+        "slope_std": 0.06469347924369952,
+        "slope_cv": 0.033860915406909296,
+        "slopes": [
+          2.0000000000000004,
+          1.8491470965576275,
+          1.88254785022153
+        ]
+      },
+      "part_A_8": {
+        "passed": true,
+        "no_negative_slopes": true,
+        "cv_threshold": 0.1,
+        "slope_mean": 2.9407890405848964,
+        "slope_std": 0.14257121251807922,
+        "slope_cv": 0.04848059842120572,
+        "slopes": [
+          3.0298642174150165,
+          3.0529008556568114,
+          2.7396020486828614
+        ]
+      },
+      "part_A_4": {
+        "passed": true,
+        "no_negative_slopes": true,
+        "cv_threshold": 0.1,
+        "slope_mean": 3.982948499612417,
+        "slope_std": 0.04813716603252826,
+        "slope_cv": 0.012085811814341188,
+        "slopes": [
+          3.915594237794791,
+          4.02518908144459,
+          4.008062179597871
+        ]
+      }
+    },
+    "3.3_model_selection_per_partition": {
+      "part_A_16": {
+        "passed": false,
+        "pass_condition": {
+          "delta_aic_min": 10.0,
+          "delta_bic_min": 10.0,
+          "log_slope_positive": true
+        },
+        "delta_aic": -25.07450688883663,
+        "delta_bic": -25.97589460016852,
+        "model_1_log_linear": {
+          "a": 1.88254785022153,
+          "b": 0.10854883529286825,
+          "rss": 0.004418568616289373,
+          "aic": -15.56165529943221,
+          "bic": -17.364430722095992
+        },
+        "model_2_linear_chi": {
+          "a": 0.4165190351922322,
+          "b": 0.7745588070295948,
+          "rss": 0.1714118130134606,
+          "aic": -4.5868959293885485,
+          "bic": -6.3896713520523285
+        },
+        "model_3_log_power": {
+          "p": 0.76,
+          "a": 2.6427811028602606,
+          "b": -0.614254059679157,
+          "rss": 5.319187379844402e-07,
+          "aic": -40.63616218826884,
+          "bic": -43.34032532226451
+        }
+      },
+      "part_A_8": {
+        "passed": false,
+        "pass_condition": {
+          "delta_aic_min": 10.0,
+          "delta_bic_min": 10.0,
+          "log_slope_positive": true
+        },
+        "delta_aic": -14.614904434197989,
+        "delta_bic": -15.516292145529878,
+        "model_1_log_linear": {
+          "a": 3.0298642174150165,
+          "b": -0.0552007949355937,
+          "rss": 0.0002856682276426461,
+          "aic": -23.77787525717298,
+          "bic": -25.58065067983676
+        },
+        "model_2_linear_chi": {
+          "a": 0.674306294997332,
+          "b": 0.9983201746382206,
+          "rss": 0.33394954579255093,
+          "aic": -2.5861329397570323,
+          "bic": -4.388908362420812
+        },
+        "model_3_log_power": {
+          "p": 0.96,
+          "a": 3.1915858182503456,
+          "b": -0.20729743464059455,
+          "rss": 1.1235907864362505e-06,
+          "aic": -38.39277969137097,
+          "bic": -41.09694282536664
+        }
+      },
+      "part_A_4": {
+        "passed": false,
+        "pass_condition": {
+          "delta_aic_min": 10.0,
+          "delta_bic_min": 10.0,
+          "log_slope_positive": true
+        },
+        "delta_aic": -22.700147194470013,
+        "delta_bic": -23.601534905801902,
+        "model_1_log_linear": {
+          "a": 3.9511983004649065,
+          "b": 0.029983774023780774,
+          "rss": 0.002128514742155829,
+          "aic": -17.752829405932168,
+          "bic": -19.55560482859595
+        },
+        "model_2_linear_chi": {
+          "a": 0.87829832271151,
+          "b": 1.4087821916377226,
+          "rss": 0.6041477328995256,
+          "aic": -0.8076464261889598,
+          "bic": -2.61042184885274
+        },
+        "model_3_log_power": {
+          "p": 0.9199999999999999,
+          "a": 4.391216739888637,
+          "b": -0.38471661082081865,
+          "rss": 5.654108257539092e-07,
+          "aic": -40.45297660040218,
+          "bic": -43.15713973439785
+        }
+      }
+    },
+    "3.4_bound_validity_global": {
+      "passed": true,
+      "violation_count": 0,
+      "violations": []
+    },
+    "3.5_cut_size_bridge": {
+      "passed": true,
+      "thresholds": {
+        "r_all_min": 0.9,
+        "leave_one_out_min": 0.8
+      },
+      "r_all": 0.9999944718617269,
+      "leave_one_out": [
+        {
+          "omit": "part_A_16",
+          "r": 1.0
+        },
+        {
+          "omit": "part_A_4",
+          "r": 1.0
+        },
+        {
+          "omit": "part_A_8",
+          "r": 1.0
+        }
+      ],
+      "min_leave_one_out_r": 1.0,
+      "pairs": [
+        {
+          "partition_id": "part_A_16",
+          "K_cut": 2.0,
+          "slope_mean": 1.9105649822597195
+        },
+        {
+          "partition_id": "part_A_4",
+          "K_cut": 4.0,
+          "slope_mean": 3.982948499612417
+        },
+        {
+          "partition_id": "part_A_8",
+          "K_cut": 3.0,
+          "slope_mean": 2.9407890405848964
+        }
+      ]
+    }
+  },
+  "summary": {
+    "per_partition_passed_all_of_3_1_3_2_3_3": false,
+    "bound_passed": true,
+    "bridge_passed": true
+  },
+  "artifact_paths": {
+    "manifest": "manifest.json",
+    "raw_entropy": "raw_entropy.csv",
+    "fits": "fits.json",
+    "bound_checks": "bound_checks.json",
+    "bridge_checks": "bridge_checks.json",
+    "verdict": "verdict.json"
+  }
+}

@@ -1,0 +1,18 @@
+[mcporter] microsoft-markitdown appears offline (SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND microsoft).
+[mcporter] microsoft-markitdown appears offline (SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND microsoft).
+[mcporter] SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND microsoft
+SseError: SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND microsoft
+    at _eventSource.onerror (file:///opt/homebrew/lib/node_modules/mcporter/node_modules/@modelcontextprotocol/sdk/dist/esm/client/sse.js:93:31)
+    at EventSource.scheduleReconnect_fn (file:///opt/homebrew/lib/node_modules/mcporter/node_modules/eventsource/dist/index.js:248:53)
+    at file:///opt/homebrew/lib/node_modules/mcporter/node_modules/eventsource/dist/index.js:98:174
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: undefined,
+  event: {
+    type: 'error',
+    message: 'TypeError: fetch failed: getaddrinfo ENOTFOUND microsoft',
+    code: undefined,
+    defaultPrevented: false,
+    cancelable: false,
+    timeStamp: 161.374292
+  }
+}

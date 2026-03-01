@@ -1,0 +1,166 @@
+{
+  "generated_at_utc": "2026-02-28T06:16:05.202860+00:00",
+  "run_dir": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061548",
+  "underdetermined_cycles": 1,
+  "focus_objective": "B",
+  "queries": [
+    {
+      "query": "entanglement entropy finite size scaling ising cyclic boundary",
+      "arxiv_count": 5,
+      "crossref_count": 5
+    },
+    {
+      "query": "heisenberg spin chain entanglement entropy finite size",
+      "arxiv_count": 5,
+      "crossref_count": 5
+    },
+    {
+      "query": "tensor network MERA model selection AIC BIC",
+      "arxiv_count": 5,
+      "crossref_count": 5
+    },
+    {
+      "query": "cyclic boundary conditions 1D spin chain benchmark",
+      "arxiv_count": 5,
+      "crossref_count": 5
+    },
+    {
+      "query": "model selection robustness AIC BIC bootstrap confidence intervals",
+      "arxiv_count": 5,
+      "crossref_count": 5
+    },
+    {
+      "query": "finite size scaling regression diagnostics entanglement entropy",
+      "arxiv_count": 5,
+      "crossref_count": 5
+    },
+    {
+      "query": "MERA variational stability seed sensitivity analysis",
+      "arxiv_count": 5,
+      "crossref_count": 5
+    },
+    {
+      "query": "replication protocol for computational physics claims",
+      "arxiv_count": 5,
+      "crossref_count": 5
+    }
+  ],
+  "query_count": 8,
+  "total_documents": 80,
+  "local_signals": {
+    "failed_tests": [
+      "claim_w04_self_reference_consistency"
+    ],
+    "underdetermined_claims": [
+      "science"
+    ]
+  },
+  "errors": [],
+  "recommendations": {
+    "top_evidence": [
+      {
+        "source": "arxiv",
+        "title": "Entanglement Entropy in an Antiferromagnetic Heisenberg Spin Chain with Boundary Impurities",
+        "abstract": "The effects of boundary impurities on the entanglement entropy in an antiferromagnetic Heisenberg opened spin-$1/2$ chain are investigated. The method of density-matrix renormalization-group is used to obtain the bipartite entanglement. The entropy increases when the length of the subsystem increases. It will approach to a constant when system length is very large. With the same impurity interaction, qutrit impurities of spin-$1$ can increase the entanglement entropy.",
+        "url": "https://arxiv.org/abs/1006.1732v1",
+        "published": "2010-06-09T07:58:36Z",
+        "relevance_score": 3
+      },
+      {
+        "source": "arxiv",
+        "title": "Tensor network state correspondence and holography",
+        "abstract": "In recent years, tensor network states have emerged as a very useful conceptual and simulation framework to study quantum many-body systems at low energies. In this paper, we describe a particular way in which any given tensor network can be viewed as a representation of two different quantum many-body states. The two quantum many-body states are said to correspond to each other by means of the tensor network. We apply this \"tensor network state correspondence\"---a correspondence between quantum many-body states mediated by tensor networks as we describe---to the multi-scale entanglement renormalization ansatz (MERA) representation of ground states of one dimensional (1D) quantum many-body systems. Since the MERA is a 2D hyperbolic tensor network (the extra dimension is identified as the length scale of the 1D system), the two quantum many-body states obtained from the MERA, via tensor network state correspondence, are seen to live in the bulk and on the boundary of a discrete hyperbolic geometry. The bulk state so obtained from a MERA exhibits interesting features, some of which caricature known features of the holographic correspondence of String theory. We show how (i) the bulk state admits a description in terms of \"holographic screens\", (ii) the conformal field theory data associated with a critical ground state can be obtained from the corresponding bulk state, in particular, how pointlike boundary operators are identified with extended bulk operators. (iii) We also present numerical results to illustrate that bulk states, dual to ground states of several critical spin chains, have exponentially decaying correlations, and that the bulk correlation length generally decreases with increase in central charge for these spin chains.",
+        "url": "https://arxiv.org/abs/1701.04778v2",
+        "published": "2017-01-17T17:27:24Z",
+        "relevance_score": 3
+      },
+      {
+        "source": "arxiv",
+        "title": "Entanglement entropy in quantum impurity systems and systems with boundaries",
+        "abstract": "We review research on a number of situations where a quantum impurity or a physical boundary has an interesting effect on entanglement entropy. Our focus is mainly on impurity entanglement as it occurs in one dimensional systems with a single impurity or a boundary, in particular quantum spin models, but generalizations to higher dimensions are also reviewed. Recent advances in the understanding of impurity entanglement as it occurs in the spin-boson and Kondo impurity models are discussed along with the influence of boundaries. Particular attention is paid to 1+1 dimensional models where analytical results can be obtained for the case of conformally invariant boundary conditions and a connection to topological entanglement entropy is made. New results for the entanglement in systems with mixed boundary conditions are presented. Analytical results for the entanglement entropy obtained from Fermi liquid theory are also discussed as well as several different recent definitions of the impurity contribution to the entanglement entropy.",
+        "url": "https://arxiv.org/abs/0906.1809v1",
+        "published": "2009-06-10T14:24:10Z",
+        "relevance_score": 2
+      },
+      {
+        "source": "arxiv",
+        "title": "Thermodynamic law from the entanglement entropy bound",
+        "abstract": "From black hole thermodynamics, the Bekenstein bound has been proposed as a universal thermal entropy bound. It has been further generalized to an entanglement entropy bound which is valid even in a quantum system. In a quantumly entangled system, the non-negativity of the relative entropy leads to the entanglement entropy bound. When the entanglement entropy bound is saturated, a quantum system satisfies the thermodynamics-like law with an appropriately defined entanglement temperature. We show that the saturation of the entanglement entropy bound accounts for a universal feature of the entanglement temperature proportional to the inverse of the system size. In addition, we show that the deformed modular Hamiltonian under a global quench also satisfies the generalized entanglement entropy boundary after introducing a new quantity called the entanglement chemical potential.",
+        "url": "https://arxiv.org/abs/1511.02288v2",
+        "published": "2015-11-07T02:55:29Z",
+        "relevance_score": 2
+      },
+      {
+        "source": "arxiv",
+        "title": "Finite entanglement entropy and spectral dimension in quantum gravity",
+        "abstract": "What are the conditions on a field theoretic model leading to a finite entanglement entropy density? We prove two very general results: 1) Ultraviolet finiteness of a theory does not guarantee finiteness of the entropy density; 2) If the spectral dimension of the spatial boundary across which the entropy is calculated is non-negative at all scales, then the entanglement entropy cannot be finite. These conclusions, which we verify in several examples, negatively affect all quantum-gravity models, since their spectral dimension is always positive. Possible ways out are considered, including abandoning the definition of the entanglement entropy in terms of the boundary return probability or admitting an analytic continuation (not a regularization) of the usual definition. In the second case, one can get a finite entanglement entropy density in multi-fractional theories and causal dynamical triangulations.",
+        "url": "https://arxiv.org/abs/1704.01141v4",
+        "published": "2017-04-04T18:20:56Z",
+        "relevance_score": 2
+      },
+      {
+        "source": "arxiv",
+        "title": "Finite-size scaling of the entanglement entropy of the quantum Ising chain with homogeneous, periodically modulated and random couplings",
+        "abstract": "Using free-fermionic techniques we study the entanglement entropy of a block of contiguous spins in a large finite quantum Ising chain in a transverse field, with couplings of different types: homogeneous, periodically modulated and random. We carry out a systematic study of finite-size effects at the quantum critical point, and evaluate subleading corrections both for open and for periodic boundary conditions. For a block corresponding to a half of a finite chain, the position of the maximum of the entropy as a function of the control parameter (e.g. the transverse field) can define the effective critical point in the finite sample. On the basis of homogeneous chains, we demonstrate that the scaling behavior of the entropy near the quantum phase transition is in agreement with the universality hypothesis, and calculate the shift of the effective critical point, which has different scaling behaviors for open and for periodic boundary conditions.",
+        "url": "https://arxiv.org/abs/0803.3610v2",
+        "published": "2008-03-25T19:04:36Z",
+        "relevance_score": 2
+      },
+      {
+        "source": "arxiv",
+        "title": "Entanglement entropy in critical quantum spin chains with boundaries and defects",
+        "abstract": "Entanglement entropy (EE) in critical quantum spin chains described by 1+1D conformal field theories contains signatures of the universal characteristics of the field theory. Boundaries and defects in the spin chain give rise to universal contributions in the EE. In this work, we analyze these universal contributions for the critical Ising and XXZ spin chains for different conformal boundary conditions and defects. For the spin chains with boundaries, we use the boundary states for the corresponding continuum theories to compute the subleading contribution to the EE analytically and provide supporting numerical computation for the spin chains. Subsequently, we analyze the behavior of EE in the presence of conformal defects for the two spin chains and describe the change in both the leading logarithmic and subleading terms in the EE.",
+        "url": "https://arxiv.org/abs/2111.07927v2",
+        "published": "2021-11-15T17:32:46Z",
+        "relevance_score": 2
+      },
+      {
+        "source": "arxiv",
+        "title": "Entanglement entropy of the random spin-1 Heisenberg chain",
+        "abstract": "Random spin chains at quantum critical points exhibit an entanglement entropy between a segment of length L and the rest of the chain that scales as log_2 L with a universal coefficient. Since for pure quantum critical spin chains this coefficient is fixed by the central charge of the associated conformal field theory, the universal coefficient in the random case can be understood as an effective central charge. In this paper we calculate the entanglement entropy and effective central charge of the spin-1 random Heisenberg model in its random-singlet phase and also at the critical point at which the Haldane phase breaks down. The latter is the first entanglement calculation for an infinite-randomness fixed point that is not in the random-singlet universality class. Our results are consistent with a c-theorem for flow between infinite-randomness fixed points. The formalism we use can be generally applied to calculation of quantities that depend on the RG history in s>=1 random Heisenberg chains.",
+        "url": "https://arxiv.org/abs/cond-mat/0703038v2",
+        "published": "2007-03-01T21:05:04Z",
+        "relevance_score": 2
+      },
+      {
+        "source": "arxiv",
+        "title": "Thermodynamic law from the entanglement entropy bound",
+        "abstract": "From black hole thermodynamics, the Bekenstein bound has been proposed as a universal thermal entropy bound. It has been further generalized to an entanglement entropy bound which is valid even in a quantum system. In a quantumly entangled system, the non-negativity of the relative entropy leads to the entanglement entropy bound. When the entanglement entropy bound is saturated, a quantum system satisfies the thermodynamics-like law with an appropriately defined entanglement temperature. We show that the saturation of the entanglement entropy bound accounts for a universal feature of the entanglement temperature proportional to the inverse of the system size. In addition, we show that the deformed modular Hamiltonian under a global quench also satisfies the generalized entanglement entropy boundary after introducing a new quantity called the entanglement chemical potential.",
+        "url": "https://arxiv.org/abs/1511.02288v2",
+        "published": "2015-11-07T02:55:29Z",
+        "relevance_score": 2
+      },
+      {
+        "source": "crossref",
+        "title": "Entanglement entropy in the spin-1/2 Heisenberg chain with hexamer modulation of exchange",
+        "abstract": "",
+        "url": "https://doi.org/10.1016/j.physa.2020.124794",
+        "published": "2020",
+        "relevance_score": 2
+      },
+      {
+        "source": "arxiv",
+        "title": "AIC, BIC, Bayesian evidence against the interacting dark energy model",
+        "abstract": "Recent astronomical observations have indicated that the Universe is in the phase of accelerated expansion. While there are many cosmological models which try to explain this phenomenon, we focus on the interacting $\u039b$CDM model where the interaction between the dark energy and dark matter sectors takes place. This model is compared to its simpler alternative---the $\u039b$CDM model. To choose between these models the likelihood ratio test was applied as well as the model comparison methods (employing Occam's principle): the Akaike information criterion (AIC), the Bayesian information criterion (BIC) and the Bayesian evidence. Using the current astronomical data: SNIa (Union2.1), $h(z)$, BAO, Alcock--Paczynski test and CMB we evaluated both models. The analyses based on the AIC indicated that there is less support for the interacting $\u039b$CDM model when compared to the $\u039b$CDM model, while those based on the BIC indicated that there is the strong evidence against it in favor the $\u039b$CDM model. Given the weak or almost none support for the interacting $\u039b$CDM model and bearing in mind Occam's razor we are inclined to reject this model.",
+        "url": "https://arxiv.org/abs/0801.0638v3",
+        "published": "2008-01-04T08:23:37Z",
+        "relevance_score": 2
+      },
+      {
+        "source": "arxiv",
+        "title": "Critical exponents of one-dimensional quantum critical models by means of MERA tensor network",
+        "abstract": "An algorithm for optimizing the MERA tensor network in an infinite system is presented. Using this technique we compute the critical exponents of Ising and XXZ model.",
+        "url": "https://arxiv.org/abs/0810.1414v1",
+        "published": "2008-10-08T12:06:49Z",
+        "relevance_score": 2
+      }
+    ],
+    "escalate_tier_c": false,
+    "recommended_execution_keys": [
+      "claim2_seed_perturbation",
+      "claim3_optionb_regime_check"
+    ],
+    "signal_score": 26,
+    "focus_objective": "B"
+  }
+}

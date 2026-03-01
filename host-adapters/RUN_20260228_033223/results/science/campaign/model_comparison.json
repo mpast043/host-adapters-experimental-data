@@ -1,0 +1,19 @@
+{
+  "generated_at_utc": "2026-02-28T05:25:52.891816+00:00",
+  "tests": [
+    {
+      "test_id": "claim2_seed_perturbation",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim2_seed321"
+    },
+    {
+      "test_id": "claim3_optionb_regime_check",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/platform_openclaw_opt_check_relaxed"
+    }
+  ]
+}

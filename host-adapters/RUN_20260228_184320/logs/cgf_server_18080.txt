@@ -1,0 +1,39 @@
+Policy bundle loaded: 1.0.0 (hash: 085b6d282eb9ecc2...)
+Warning: policy_config_v03.json not found, using defaults
+============================================================
+CGF Server v0.3
+Schema: 0.3.0
+Policy: default
+Port: 18080
+============================================================
+INFO:     Started server process [45105]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:18080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49579 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49580 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49582 - "GET /v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49583 - "GET /v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49584 - "GET /v1/health HTTP/1.1" 200 OK
+{"timestamp": 1772304203.8465269, "level": "info", "message": "Adapter registered", "source": "cgf_server_v03", "adapter_id": "adp-30d43678c653", "event_type": "ADAPTER_REGISTERED", "adapter_type": "openclaw", "schema_version": "0.2.0"}
+INFO:     127.0.0.1:49585 - "POST /v1/register HTTP/1.1" 200 OK
+{"timestamp": 1772304203.847934, "level": "info", "message": "Decision made", "source": "cgf_server_v03", "adapter_id": "adp-30d43678c653", "proposal_id": "prop-1772304203844-bc0625", "decision_id": "dec-3829703d3a95", "event_type": "DECISION_MADE", "decision": "BLOCK", "confidence": 1.0, "reason_code": "DENYLISTED_TOOL"}
+INFO:     127.0.0.1:49585 - "POST /v1/evaluate HTTP/1.1" 200 OK
+{"timestamp": 1772304203.849696, "level": "info", "message": "Adapter registered", "source": "cgf_server_v03", "adapter_id": "adp-0c353ee79080", "event_type": "ADAPTER_REGISTERED", "adapter_type": "openclaw", "schema_version": "0.2.0"}
+INFO:     127.0.0.1:49586 - "POST /v1/register HTTP/1.1" 200 OK
+{"timestamp": 1772304203.850441, "level": "info", "message": "Decision made", "source": "cgf_server_v03", "adapter_id": "adp-0c353ee79080", "proposal_id": "prop-1772304203849-f519be", "decision_id": "dec-02c968f51767", "event_type": "DECISION_MADE", "decision": "ALLOW", "confidence": 0.85, "reason_code": "DEFAULT_ALLOW"}
+INFO:     127.0.0.1:49586 - "POST /v1/evaluate HTTP/1.1" 200 OK
+{"timestamp": 1772304203.851965, "level": "info", "message": "Adapter registered", "source": "cgf_server_v03", "adapter_id": "adp-717bd7ec7a88", "event_type": "ADAPTER_REGISTERED", "adapter_type": "langgraph", "schema_version": "0.3.0"}
+INFO:     127.0.0.1:49587 - "POST /v1/register HTTP/1.1" 200 OK
+{"timestamp": 1772304203.8531158, "level": "info", "message": "Decision made", "source": "cgf_server_v03", "adapter_id": "adp-717bd7ec7a88", "proposal_id": "lg-prop-1772304203852-e99ae6", "decision_id": "dec-ab5f6f24aa1b", "event_type": "DECISION_MADE", "decision": "BLOCK", "confidence": 1.0, "reason_code": "DENYLISTED_TOOL"}
+INFO:     127.0.0.1:49588 - "POST /v1/evaluate HTTP/1.1" 200 OK
+{"timestamp": 1772304203.8545558, "level": "info", "message": "Adapter registered", "source": "cgf_server_v03", "adapter_id": "adp-3c553f4b0d07", "event_type": "ADAPTER_REGISTERED", "adapter_type": "langgraph", "schema_version": "0.3.0"}
+INFO:     127.0.0.1:49589 - "POST /v1/register HTTP/1.1" 200 OK
+{"timestamp": 1772304203.855478, "level": "info", "message": "Decision made", "source": "cgf_server_v03", "adapter_id": "adp-3c553f4b0d07", "proposal_id": "lg-prop-1772304203855-c430e2", "decision_id": "dec-9bb5f7da7a9d", "event_type": "DECISION_MADE", "decision": "ALLOW", "confidence": 0.85, "reason_code": "DEFAULT_ALLOW"}
+INFO:     127.0.0.1:49590 - "POST /v1/evaluate HTTP/1.1" 200 OK
+{"timestamp": 1772304203.856534, "level": "info", "message": "Outcome received", "source": "cgf_server_v03", "adapter_id": "adp-3c553f4b0d07", "proposal_id": "lg-prop-1772304203855-c430e2", "decision_id": "dec-9bb5f7da7a9d", "event_type": "OUTCOME_LOGGED", "success": true, "committed": true}
+INFO:     127.0.0.1:49591 - "POST /v1/outcomes/report HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45105]

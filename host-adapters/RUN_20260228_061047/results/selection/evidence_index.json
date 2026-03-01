@@ -1,0 +1,34 @@
+{
+  "generated_at_utc": "2026-02-28T06:10:55.426681+00:00",
+  "pdf_source": "/Users/meganpastore/Clawdbot/Repos/capacity-demo/Framework with selection.pdf",
+  "claims": {
+    "CGR_CONTRACT_COMPLIANCE": {
+      "artifacts": [
+        "results/contracts/contract_result.json",
+        "results/sdk_validation/sdk_validation_result.json"
+      ],
+      "descriptor": "Governance and SDK contract status"
+    },
+    "CLAIM_2": {
+      "artifacts": [
+        "results/science/claim2_baseline",
+        "results/science/baseline_summary.json"
+      ],
+      "descriptor": "Capacity tradeoff baseline evidence"
+    },
+    "CLAIM_3": {
+      "artifacts": [
+        "results/science/claim3_baseline",
+        "results/science/campaign/campaign_index.csv"
+      ],
+      "descriptor": "Entropy scaling and regime checks"
+    },
+    "CLAIM_3P": {
+      "artifacts": [
+        "results/science/claim3p_ising_open",
+        "results/science/campaign/model_comparison.json"
+      ],
+      "descriptor": "Physical convergence checks"
+    }
+  }
+}

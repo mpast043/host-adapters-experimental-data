@@ -1,0 +1,11 @@
+{
+  "max_n": 5000,
+  "axes": [
+    "geo",
+    "int",
+    "gauge",
+    "ptr",
+    "obs"
+  ],
+  "failure_count": 0
+}

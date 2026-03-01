@@ -1,0 +1,324 @@
+{
+  "results": [
+    {
+      "n_sites": 16,
+      "target_error": 0.5,
+      "mera": {
+        "chi": 4,
+        "C_total": 452,
+        "depth": 4,
+        "entanglement": 0.3662040962227032
+      },
+      "random": {
+        "chi": 22,
+        "C_total": 1884,
+        "entanglement": 1.2364169813433266
+      },
+      "savings_ratio": 4.168141592920354
+    },
+    {
+      "n_sites": 16,
+      "target_error": 0.4,
+      "mera": {
+        "chi": 8,
+        "C_total": 1352,
+        "depth": 4,
+        "entanglement": 0.3662040962227032
+      },
+      "random": {
+        "chi": 44,
+        "C_total": 9197,
+        "entanglement": 1.5136758535673045
+      },
+      "savings_ratio": 6.802514792899408
+    },
+    {
+      "n_sites": 16,
+      "target_error": 0.35,
+      "mera": {
+        "chi": 10,
+        "C_total": 1982,
+        "depth": 4,
+        "entanglement": 0.3662040962227032
+      },
+      "random": {
+        "chi": 68,
+        "C_total": 15324,
+        "entanglement": 1.6878030820704428
+      },
+      "savings_ratio": 7.731584258324924
+    },
+    {
+      "n_sites": 16,
+      "target_error": 0.3,
+      "mera": {
+        "chi": 12,
+        "C_total": 2732,
+        "depth": 4,
+        "entanglement": 0.3662040962227032
+      },
+      "random": {
+        "chi": 112,
+        "C_total": 56140,
+        "entanglement": 1.8873995485180377
+      },
+      "savings_ratio": 20.54904831625183
+    },
+    {
+      "n_sites": 16,
+      "target_error": 0.25,
+      "mera": {
+        "chi": 16,
+        "C_total": 4592,
+        "depth": 4,
+        "entanglement": 0.3662040962227032
+      },
+      "random": {
+        "chi": 128,
+        "C_total": 99807,
+        "entanglement": 1.940812105567847
+      },
+      "savings_ratio": 21.73497386759582
+    },
+    {
+      "n_sites": 32,
+      "target_error": 0.5,
+      "mera": {
+        "chi": 4,
+        "C_total": 932,
+        "depth": 5,
+        "entanglement": 0.47220222400936934
+      },
+      "random": {
+        "chi": 22,
+        "C_total": 3853,
+        "entanglement": 1.2364169813433266
+      },
+      "savings_ratio": 4.134120171673819
+    },
+    {
+      "n_sites": 32,
+      "target_error": 0.4,
+      "mera": {
+        "chi": 8,
+        "C_total": 2792,
+        "depth": 5,
+        "entanglement": 0.47220222400936934
+      },
+      "random": {
+        "chi": 44,
+        "C_total": 21567,
+        "entanglement": 1.5136758535673045
+      },
+      "savings_ratio": 7.724570200573066
+    },
+    {
+      "n_sites": 32,
+      "target_error": 0.35,
+      "mera": {
+        "chi": 10,
+        "C_total": 4094,
+        "depth": 5,
+        "entanglement": 0.47220222400936934
+      },
+      "random": {
+        "chi": 68,
+        "C_total": 27421,
+        "entanglement": 1.6878030820704428
+      },
+      "savings_ratio": 6.697850512945775
+    },
+    {
+      "n_sites": 32,
+      "target_error": 0.3,
+      "mera": {
+        "chi": 12,
+        "C_total": 5644,
+        "depth": 5,
+        "entanglement": 0.47220222400936934
+      },
+      "random": {
+        "chi": 112,
+        "C_total": 105518,
+        "entanglement": 1.8873995485180377
+      },
+      "savings_ratio": 18.695605953224664
+    },
+    {
+      "n_sites": 32,
+      "target_error": 0.25,
+      "mera": {
+        "chi": 16,
+        "C_total": 9488,
+        "depth": 5,
+        "entanglement": 0.47220222400936934
+      },
+      "random": {
+        "chi": 128,
+        "C_total": 151770,
+        "entanglement": 1.940812105567847
+      },
+      "savings_ratio": 15.995994940978077
+    },
+    {
+      "n_sites": 64,
+      "target_error": 0.5,
+      "mera": {
+        "chi": 4,
+        "C_total": 1892,
+        "depth": 6,
+        "entanglement": 0.5827512602444134
+      },
+      "random": {
+        "chi": 22,
+        "C_total": 11397,
+        "entanglement": 1.2364169813433266
+      },
+      "savings_ratio": 6.023784355179704
+    },
+    {
+      "n_sites": 64,
+      "target_error": 0.4,
+      "mera": {
+        "chi": 8,
+        "C_total": 5672,
+        "depth": 6,
+        "entanglement": 0.5827512602444134
+      },
+      "random": {
+        "chi": 44,
+        "C_total": 36493,
+        "entanglement": 1.5136758535673045
+      },
+      "savings_ratio": 6.433885754583921
+    },
+    {
+      "n_sites": 64,
+      "target_error": 0.35,
+      "mera": {
+        "chi": 10,
+        "C_total": 8318,
+        "depth": 6,
+        "entanglement": 0.5827512602444134
+      },
+      "random": {
+        "chi": 68,
+        "C_total": 87394,
+        "entanglement": 1.6878030820704428
+      },
+      "savings_ratio": 10.50661216638615
+    },
+    {
+      "n_sites": 64,
+      "target_error": 0.3,
+      "mera": {
+        "chi": 12,
+        "C_total": 11468,
+        "depth": 6,
+        "entanglement": 0.5827512602444134
+      },
+      "random": {
+        "chi": 112,
+        "C_total": 156310,
+        "entanglement": 1.8873995485180377
+      },
+      "savings_ratio": 13.630101151028951
+    },
+    {
+      "n_sites": 64,
+      "target_error": 0.25,
+      "mera": {
+        "chi": 16,
+        "C_total": 19280,
+        "depth": 6,
+        "entanglement": 0.5827512602444134
+      },
+      "random": {
+        "chi": 128,
+        "C_total": 274589,
+        "entanglement": 1.940812105567847
+      },
+      "savings_ratio": 14.24216804979253
+    },
+    {
+      "n_sites": 128,
+      "target_error": 0.5,
+      "mera": {
+        "chi": 4,
+        "C_total": 3812,
+        "depth": 7,
+        "entanglement": 0.6957312116492728
+      },
+      "random": {
+        "chi": 22,
+        "C_total": 19706,
+        "entanglement": 1.2364169813433266
+      },
+      "savings_ratio": 5.169464847848898
+    },
+    {
+      "n_sites": 128,
+      "target_error": 0.4,
+      "mera": {
+        "chi": 8,
+        "C_total": 11432,
+        "depth": 7,
+        "entanglement": 0.6957312116492728
+      },
+      "random": {
+        "chi": 44,
+        "C_total": 67916,
+        "entanglement": 1.5136758535673045
+      },
+      "savings_ratio": 5.9408677396780964
+    },
+    {
+      "n_sites": 128,
+      "target_error": 0.35,
+      "mera": {
+        "chi": 10,
+        "C_total": 16766,
+        "depth": 7,
+        "entanglement": 0.6957312116492728
+      },
+      "random": {
+        "chi": 68,
+        "C_total": 165950,
+        "entanglement": 1.6878030820704428
+      },
+      "savings_ratio": 9.898007873076464
+    },
+    {
+      "n_sites": 128,
+      "target_error": 0.3,
+      "mera": {
+        "chi": 12,
+        "C_total": 23116,
+        "depth": 7,
+        "entanglement": 0.6957312116492728
+      },
+      "random": {
+        "chi": 112,
+        "C_total": 457717,
+        "entanglement": 1.8873995485180377
+      },
+      "savings_ratio": 19.80087385360789
+    },
+    {
+      "n_sites": 128,
+      "target_error": 0.25,
+      "mera": {
+        "chi": 16,
+        "C_total": 38864,
+        "depth": 7,
+        "entanglement": 0.6957312116492728
+      },
+      "random": {
+        "chi": 128,
+        "C_total": 582344,
+        "entanglement": 1.940812105567847
+      },
+      "savings_ratio": 14.98414985590778
+    }
+  ]
+}

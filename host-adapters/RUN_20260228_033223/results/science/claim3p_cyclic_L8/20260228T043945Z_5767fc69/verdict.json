@@ -1,0 +1,47 @@
+{
+  "claim": "3P",
+  "model": "ising_cyclic",
+  "L": 8,
+  "verdict": "REJECTED",
+  "falsifiers": {
+    "P3.1": {
+      "passed": true,
+      "violations": [],
+      "n_checks": 1,
+      "eps_fid": 0.0001
+    },
+    "P3.2": {
+      "passed": true,
+      "errors": [
+        0.14444458096676296,
+        0.1185423439968407
+      ],
+      "violations": [],
+      "n_checks": 1,
+      "eps_S": 0.001
+    },
+    "P3.3": {
+      "passed": false,
+      "fid_passed": false,
+      "S_passed": true,
+      "best_fidelity": 0.09860769512672574,
+      "final_entropy_error": 0.1185423439968407,
+      "fid_threshold": 0.95,
+      "S_threshold": 0.15
+    },
+    "P3.4": {
+      "passed": false,
+      "delta_aic": -25.743769481847,
+      "delta_bic": -25.743769481847004,
+      "S_inf_sat": 0.21468856449398221,
+      "c_sat": 10.358620689655172,
+      "aic_sat": -26.90456711112999,
+      "bic_sat": -29.518272750010098,
+      "a_log": 0.03736902882443764,
+      "b_log": 0.008560319141633244,
+      "aic_log": -52.64833659297699,
+      "bic_log": -55.2620422318571
+    }
+  },
+  "timestamp": "2026-02-28T04:39:55.013684+00:00"
+}

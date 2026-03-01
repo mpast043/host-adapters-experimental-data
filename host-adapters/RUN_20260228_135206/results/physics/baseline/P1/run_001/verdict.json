@@ -1,0 +1,10 @@
+{
+  "test": "P1",
+  "verdict": "ACCEPT",
+  "status": "COMPLETE",
+  "d_s": 1.3358965985496978,
+  "passed": {
+    "P1.1_spectral_dim": true,
+    "tolerance": 0.15
+  }
+}

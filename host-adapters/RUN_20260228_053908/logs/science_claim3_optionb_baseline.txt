@@ -1,0 +1,6 @@
+/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py:51: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  t = dt.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py:443: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp_utc": dt.datetime.utcnow().isoformat() + "Z",
+/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_053908/results/science/claim3_baseline/20260228T053912Z_5a2c155c
+{"verdict": "INCONCLUSIVE", "per_partition_pass": false, "bound_pass": true, "bridge_r": 0.9999944718617269}

@@ -1,0 +1,1 @@
+=== SECTION 4.2: Auto-Recovery Step C (Ad-hoc STDIO) ===

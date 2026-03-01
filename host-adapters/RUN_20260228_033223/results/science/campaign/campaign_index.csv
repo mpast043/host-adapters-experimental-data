@@ -1,0 +1,3 @@
+timestamp,test_id,model,L,chi,seed,key_metrics,aic_delta,bic_delta,verdict,artifact_path,exit_code
+2026-02-28T05:25:52.891949+00:00,claim2_seed_perturbation,claim2,0,n/a,321,{},,,PASS,results/science/claim2_seed321,0
+2026-02-28T05:25:52.892149+00:00,claim3_optionb_regime_check,optionB,32,"2,4,8",49,{},,,PASS,results/science/platform_openclaw_opt_check_relaxed,0

@@ -1,0 +1,7 @@
+[mcporter] Unknown tool '--file' on server 'uvx-markitdown-mcp-0-0-1a4'. Double-check the name or run mcporter list uvx-markitdown-mcp-0-0-1a4.
+Error: Unknown tool '--file' on server 'uvx-markitdown-mcp-0-0-1a4'. Double-check the name or run mcporter list uvx-markitdown-mcp-0-0-1a4.
+    at hydratePositionalArguments (file:///opt/homebrew/lib/node_modules/mcporter/dist/cli/call-command.js:200:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async handleCall (file:///opt/homebrew/lib/node_modules/mcporter/dist/cli/call-command.js:74:26)
+    at async runCli (file:///opt/homebrew/lib/node_modules/mcporter/dist/cli.js:143:13)
+    at async main (file:///opt/homebrew/lib/node_modules/mcporter/dist/cli.js:201:5)

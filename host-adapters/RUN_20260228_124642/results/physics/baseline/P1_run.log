@@ -1,0 +1,13 @@
+=== Experiment 1: Spectral Dimension vs Capacity ===
+Expected d_s: 1.3652  (expected β = 0.6826)
+Levels: [2, 3, 4]
+
+Generated 30 data points
+
+Falsifier 1.1: PASS
+All 7 configs within 25% of expected β=0.683
+
+Falsifier 1.2: PASS
+3/7 high-cap configs show plateau-like d_eff tail
+
+Verdict: SUPPORTED

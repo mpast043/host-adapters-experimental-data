@@ -1,0 +1,9 @@
+{
+  "command": [
+    "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+    "tools/validate_sdk_artifacts.py"
+  ],
+  "exit_code": 0,
+  "log_path": "logs/validate_sdk_artifacts.txt",
+  "generated_at_utc": "2026-02-28T05:26:26.697116+00:00"
+}

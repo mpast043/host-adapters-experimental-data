@@ -1,0 +1,19 @@
+{
+  "run_dir": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_054742",
+  "schema": "/private/tmp/openclaws/Repos/host-adapters/tools/workflow_auto_schema_v1.json",
+  "errors": 2,
+  "warnings": 0,
+  "ready": false,
+  "findings": [
+    {
+      "code": "STATUS_SCHEMA_VALIDATION_FAILED",
+      "level": "ERROR",
+      "message": "Schema validation failed: 'ACCEPTED' is not one of ['PASS', 'UNDERDETERMINED', 'FAIL', 'NOT_RUN']\n\nFailed validating 'enum' in schema['properties']['selection_status']:\n    {'type': 'string',\n     'enum': ['PASS', 'UNDERDETERMINED', 'FAIL', 'NOT_RUN']}\n\nOn instance['selection_status']:\n    'ACCEPTED'"
+    },
+    {
+      "code": "SELECTION_UNDERDETERMINED_MISSING_NEXT_TEST",
+      "level": "ERROR",
+      "message": "No UNDERDETERMINED ledger item includes next_test recommendation"
+    }
+  ]
+}

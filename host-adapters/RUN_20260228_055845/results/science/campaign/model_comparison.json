@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-02-28T05:58:54.464251+00:00",
+  "tests": [
+    {
+      "test_id": "claim_w02_poset_infimum",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim_w02_poset_infimum"
+    },
+    {
+      "test_id": "claim_w06_depth_vector_monotonicity",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim_w06_depth_vector_monotonicity"
+    },
+    {
+      "test_id": "claim2_seed_perturbation",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim2_seed321"
+    },
+    {
+      "test_id": "claim3_optionb_regime_check",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/campaign"
+    }
+  ]
+}

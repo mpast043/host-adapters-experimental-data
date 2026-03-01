@@ -1,0 +1,20 @@
+{
+  "role": "planner",
+  "ts_utc": "2026-02-28T05:50:02.947625+00:00",
+  "cycle": 1,
+  "ok": true,
+  "exit_code": 0,
+  "selected_execution_keys": [
+    "claim2_seed_perturbation",
+    "claim3_optionb_regime_check"
+  ],
+  "tier_c_blocked": [
+    "claim3p_ising_cyclic_l8",
+    "claim3p_heisenberg_cyclic_l8",
+    "claim3p_l16_gate"
+  ],
+  "plan_json": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_054958/results/agentic/planner_plan_cycle_001.json",
+  "plan_md": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_054958/results/agentic/planner_plan_cycle_001.md",
+  "stdout_tail": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_054958/results/agentic/planner_plan_cycle_001.json",
+  "stderr_tail": ""
+}

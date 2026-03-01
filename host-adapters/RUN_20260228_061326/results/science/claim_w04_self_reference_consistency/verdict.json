@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:13:30.604939+00:00",
+  "claim_id": "W04",
+  "verdict": "PASS",
+  "rationale": "Self-reference reconstruction reached stable fixed-point under deterministic Psi proxy.",
+  "metrics": {
+    "seed": 42,
+    "stable": true
+  }
+}

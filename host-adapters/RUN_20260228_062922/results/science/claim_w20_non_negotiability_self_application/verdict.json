@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:29:26.861543+00:00",
+  "claim_id": "W20",
+  "verdict": "PASS",
+  "rationale": "Self-application policy consistently blocked non-negotiability self-override while allowing benign updates.",
+  "metrics": {
+    "samples": 3000,
+    "violations": 0
+  }
+}

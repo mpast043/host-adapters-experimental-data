@@ -1,0 +1,1576 @@
+ruff check .
+E402 Module level import not at top of file
+  --> adapters/langgraph_adapter_v01.py:31:1
+   |
+29 |       sys.path.insert(0, str(_SDK_PATH))
+30 |
+31 | / from cgf_sdk.errors import (
+32 | |     GovernanceError,
+33 | |     ActionBlockedError,
+34 | |     FailModeError,
+35 | |     CGFConnectionError,
+36 | | )
+   | |_^
+37 |
+38 |   # Import v0.3 schemas with backward compatibility
+   |
+
+F401 [*] `cgf_schemas_v02.FailMode` imported but unused
+  --> adapters/langgraph_adapter_v01.py:66:9
+   |
+64 |         DecisionType,
+65 |         RiskTier,
+66 |         FailMode,
+   |         ^^^^^^^^
+67 |         HostEventType,
+68 |         HostConfig,
+   |
+help: Remove unused import
+
+F401 [*] `cgf_schemas_v02.ConstraintConfig` imported but unused
+  --> adapters/langgraph_adapter_v01.py:75:9
+   |
+73 |         HostOutcomeReport,
+74 |         HostEvent,
+75 |         ConstraintConfig,
+   |         ^^^^^^^^^^^^^^^^
+76 |         get_event_required_fields,
+77 |         validate_event_payload
+   |
+help: Remove unused import
+
+F401 [*] `cgf_schemas_v02.get_event_required_fields` imported but unused
+  --> adapters/langgraph_adapter_v01.py:76:9
+   |
+74 |         HostEvent,
+75 |         ConstraintConfig,
+76 |         get_event_required_fields,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+77 |         validate_event_payload
+78 |     )
+   |
+help: Remove unused import
+
+E722 Do not use bare `except`
+   --> adapters/langgraph_adapter_v01.py:836:13
+    |
+834 |             try:
+835 |                 tool_args = json.loads(tool_args)
+836 |             except:
+    |             ^^^^^^
+837 |                 tool_args = {}
+    |
+
+F401 [*] `typing.Union` imported but unused
+  --> adapters/openclaw_adapter_v01.py:26:47
+   |
+24 | from enum import Enum
+25 | from pathlib import Path
+26 | from typing import Any, Dict, List, Optional, Union
+   |                                               ^^^^^
+27 |
+28 | import aiohttp
+   |
+help: Remove unused import: `typing.Union`
+
+F841 Local variable `resp` is assigned to but never used
+   --> adapters/openclaw_adapter_v01.py:595:18
+    |
+593 |                 json=payload,
+594 |                 timeout=aiohttp.ClientTimeout(total=5.0)  # Longer timeout for reporting
+595 |             ) as resp:
+    |                  ^^^^
+596 |                 self.emit_event("outcome_logged", {
+597 |                     "proposal_id": outcome.proposal_id,
+    |
+help: Remove assignment to unused variable `resp`
+
+F401 [*] `enum.Enum` imported but unused
+  --> adapters/openclaw_adapter_v02.py:20:18
+   |
+18 | import uuid
+19 | from datetime import datetime
+20 | from enum import Enum
+   |                  ^^^^
+21 | from pathlib import Path
+22 | from typing import Any, Dict, List, Optional, Callable
+   |
+help: Remove unused import: `enum.Enum`
+
+F401 [*] `typing.Callable` imported but unused
+  --> adapters/openclaw_adapter_v02.py:22:47
+   |
+20 | from enum import Enum
+21 | from pathlib import Path
+22 | from typing import Any, Dict, List, Optional, Callable
+   |                                               ^^^^^^^^
+23 |
+24 | import aiohttp
+   |
+help: Remove unused import: `typing.Callable`
+
+E402 Module level import not at top of file
+  --> adapters/openclaw_adapter_v02.py:31:1
+   |
+29 |       sys.path.insert(0, str(_SDK_PATH))
+30 |
+31 | / from cgf_sdk.errors import (
+32 | |     GovernanceError,
+33 | |     ActionBlockedError,
+34 | |     ActionConstrainedError,
+35 | |     FailModeError,
+36 | |     CGFConnectionError,
+37 | |     CGFRegistryError,
+38 | | )
+   | |_^
+39 |
+40 |   from cgf_schemas_v02 import (
+   |
+
+E402 Module level import not at top of file
+  --> adapters/openclaw_adapter_v02.py:40:1
+   |
+38 |   )
+39 |
+40 | / from cgf_schemas_v02 import (
+41 | |     SCHEMA_VERSION,
+42 | |     ActionType,
+43 | |     DecisionType,
+44 | |     RiskTier,
+45 | |     FailMode,
+46 | |     HostEventType,
+47 | |     HostConfig,
+48 | |     HostProposal,
+49 | |     HostContext,
+50 | |     CapacitySignals,
+51 | |     ToolCallParams,
+52 | |     MemoryWriteParams,
+53 | |     HostOutcomeReport,
+54 | |     HostEvent,
+55 | |     get_event_required_fields
+56 | | )
+   | |_^
+57 |
+58 |   # ============== CONFIGURATION ==============
+   |
+
+F401 [*] `cgf_schemas_v02.HostConfig` imported but unused
+  --> adapters/openclaw_adapter_v02.py:47:5
+   |
+45 |     FailMode,
+46 |     HostEventType,
+47 |     HostConfig,
+   |     ^^^^^^^^^^
+48 |     HostProposal,
+49 |     HostContext,
+   |
+help: Remove unused import: `cgf_schemas_v02.HostConfig`
+
+F401 [*] `.types.Rule` imported but unused
+  --> cgf_policy/compiler.py:12:34
+   |
+10 | from typing import Union, Tuple
+11 |
+12 | from .types import PolicyBundle, Rule, Condition, Operator, FailModeConfig
+   |                                  ^^^^
+13 | from .fields import ALLOWED_FIELD_PATHS
+   |
+help: Remove unused import
+
+F401 [*] `.types.Condition` imported but unused
+  --> cgf_policy/compiler.py:12:40
+   |
+10 | from typing import Union, Tuple
+11 |
+12 | from .types import PolicyBundle, Rule, Condition, Operator, FailModeConfig
+   |                                        ^^^^^^^^^
+13 | from .fields import ALLOWED_FIELD_PATHS
+   |
+help: Remove unused import
+
+F401 [*] `.types.FailModeConfig` imported but unused
+  --> cgf_policy/compiler.py:12:61
+   |
+10 | from typing import Union, Tuple
+11 |
+12 | from .types import PolicyBundle, Rule, Condition, Operator, FailModeConfig
+   |                                                             ^^^^^^^^^^^^^^
+13 | from .fields import ALLOWED_FIELD_PATHS
+   |
+help: Remove unused import
+
+F401 [*] `datetime.datetime` imported but unused
+ --> cgf_policy/evaluator.py:8:22
+  |
+7 | import re
+8 | from datetime import datetime
+  |                      ^^^^^^^^
+9 | from typing import Any, Dict, List, Tuple, Optional
+  |
+help: Remove unused import: `datetime.datetime`
+
+F401 [*] `typing.List` imported but unused
+  --> cgf_policy/evaluator.py:9:31
+   |
+ 7 | import re
+ 8 | from datetime import datetime
+ 9 | from typing import Any, Dict, List, Tuple, Optional
+   |                               ^^^^
+10 |
+11 | from .fields import safe_get
+   |
+help: Remove unused import
+
+F401 [*] `typing.Tuple` imported but unused
+  --> cgf_policy/evaluator.py:9:37
+   |
+ 7 | import re
+ 8 | from datetime import datetime
+ 9 | from typing import Any, Dict, List, Tuple, Optional
+   |                                     ^^^^^
+10 |
+11 | from .fields import safe_get
+   |
+help: Remove unused import
+
+F401 [*] `typing.Optional` imported but unused
+  --> cgf_policy/evaluator.py:9:44
+   |
+ 7 | import re
+ 8 | from datetime import datetime
+ 9 | from typing import Any, Dict, List, Tuple, Optional
+   |                                            ^^^^^^^^
+10 |
+11 | from .fields import safe_get
+   |
+help: Remove unused import
+
+F401 [*] `.types.ConstraintConfig` imported but unused
+  --> cgf_policy/evaluator.py:14:21
+   |
+12 | from .types import (
+13 |     PolicyBundle, Rule, Condition, Operator, DecisionType,
+14 |     DecisionResult, ConstraintConfig
+   |                     ^^^^^^^^^^^^^^^^
+15 | )
+   |
+help: Remove unused import: `.types.ConstraintConfig`
+
+F401 [*] `typing.Union` imported but unused
+  --> cgf_policy/types.py:9:47
+   |
+ 8 | from enum import Enum
+ 9 | from typing import Any, Dict, List, Optional, Union
+   |                                               ^^^^^
+10 | from pydantic import BaseModel, Field, field_validator
+   |
+help: Remove unused import: `typing.Union`
+
+F841 Local variable `S_inf_guess` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py:125:5
+    |
+123 |     Need to guess S_inf from max(y)
+124 |     """
+125 |     S_inf_guess = float(np.max(y)) * 1.05 + 0.1  # Slightly above observed max
+    |     ^^^^^^^^^^^
+126 |     best = {"S_inf": float("nan"), "c": float("nan"), "alpha": float("nan"), 
+127 |             "rss": float("inf"), "aic": float("inf"), "bic": float("inf")}
+    |
+help: Remove assignment to unused variable `S_inf_guess`
+
+E722 Do not use bare `except`
+   --> experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py:152:9
+    |
+150 |             if rss < best["rss"]:
+151 |                 best = {"S_inf": S_inf, "c": c, "alpha": alpha, "rss": rss, "aic": aic, "bic": bic}
+152 |         except:
+    |         ^^^^^^
+153 |             continue
+    |
+
+F841 Local variable `saturating_preferred` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py:206:5
+    |
+205 |     # Regime II: saturating preferred and valid
+206 |     saturating_preferred = (m4["aic"] < aic1 - 10.0) or (m4["aic"] < m3["aic"] - 10.0)
+    |     ^^^^^^^^^^^^^^^^^^^^
+207 |     
+208 |     # Pass condition: either regime
+    |
+help: Remove assignment to unused variable `saturating_preferred`
+
+F401 [*] `subprocess` imported but unused
+  --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:26:8
+   |
+24 | import os
+25 | import platform
+26 | import subprocess
+   |        ^^^^^^^^^^
+27 | import sys
+28 | import time
+   |
+help: Remove unused import: `subprocess`
+
+F401 [*] `time` imported but unused
+  --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:28:8
+   |
+26 | import subprocess
+27 | import sys
+28 | import time
+   |        ^^^^
+29 | from dataclasses import dataclass, asdict
+30 | from pathlib import Path
+   |
+help: Remove unused import: `time`
+
+F401 [*] `dataclasses.asdict` imported but unused
+  --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:29:36
+   |
+27 | import sys
+28 | import time
+29 | from dataclasses import dataclass, asdict
+   |                                    ^^^^^^
+30 | from pathlib import Path
+31 | from typing import Dict, List, Tuple, Optional, Any
+   |
+help: Remove unused import: `dataclasses.asdict`
+
+F401 [*] `typing.Optional` imported but unused
+  --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:31:39
+   |
+29 | from dataclasses import dataclass, asdict
+30 | from pathlib import Path
+31 | from typing import Dict, List, Tuple, Optional, Any
+   |                                       ^^^^^^^^
+32 |
+33 | import numpy as np
+   |
+help: Remove unused import: `typing.Optional`
+
+E741 Ambiguous variable name: `I`
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:139:5
+    |
+138 |     # Pauli matrices
+139 |     I = np.array([[1, 0], [0, 1]], dtype=np.float64)
+    |     ^
+140 |     X = np.array([[0, 1], [1, 0]], dtype=np.float64)
+141 |     Z = np.array([[1, 0], [0, -1]], dtype=np.float64)
+    |
+
+E741 Ambiguous variable name: `I`
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:175:5
+    |
+174 |     # Pauli spin matrices (S = 0.5 * sigma)
+175 |     I = np.array([[1, 0], [0, 1]], dtype=np.float64)
+    |     ^
+176 |     Sx = 0.5 * np.array([[0, 1], [1, 0]], dtype=np.float64)
+177 |     Sy = 0.5 * np.array([[0, -1j], [1j, 0]], dtype=np.complex128)
+    |
+
+F841 Local variable `H_mpo` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:280:9
+    |
+278 |         H_dense = build_ising_hamiltonian(L, j, h)
+279 |     else:  # heisenberg
+280 |         H_mpo = qtn.MPO_ham_heis(L, cyclic=False)
+    |         ^^^^^
+281 |         H_dense = build_heisenberg_hamiltonian(L)
+282 |         H_dense = H_dense.astype(np.float64).real
+    |
+help: Remove assignment to unused variable `H_mpo`
+
+F841 [*] Local variable `e` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:318:25
+    |
+316 |         mera_opt = opt.optimize(maxiter=steps)
+317 |         converged = True
+318 |     except Exception as e:
+    |                         ^
+319 |         # If optimization fails, use last state
+320 |         mera_opt = mera
+    |
+help: Remove assignment to unused variable `e`
+
+F541 [*] f-string without any placeholders
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner.py:752:11
+    |
+750 |                            r.final_energy, r.converged])
+751 |     
+752 |     print(f"  Saved: metrics.json, verdict.json, manifest.json, raw_results.csv")
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+753 |     print(f"  Run directory: {run_dir}")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `platform` imported but unused
+  --> experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py:25:8
+   |
+23 | import math
+24 | import os
+25 | import platform
+   |        ^^^^^^^^
+26 | import sys
+27 | from dataclasses import dataclass, asdict
+   |
+help: Remove unused import: `platform`
+
+F401 [*] `dataclasses.asdict` imported but unused
+  --> experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py:27:36
+   |
+25 | import platform
+26 | import sys
+27 | from dataclasses import dataclass, asdict
+   |                                    ^^^^^^
+28 | from pathlib import Path
+29 | from typing import Dict, List, Tuple, Optional, Any
+   |
+help: Remove unused import: `dataclasses.asdict`
+
+F841 Local variable `psi_conj` is assigned to but never used
+  --> experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py:94:5
+   |
+92 |     # Compute reduced density matrix by contracting over B sites
+93 |     # rho_A[i1,i2,...,j1,j2,...] = sum_{B} psi*[i1,...,B,...] psi[j1,...,B,...]
+94 |     psi_conj = psi_tensor.conj()
+   |     ^^^^^^^^
+95 |     
+96 |     # Build rho_A by contraction
+   |
+help: Remove assignment to unused variable `psi_conj`
+
+F541 [*] f-string without any placeholders
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py:138:11
+    |
+137 |     # Sparse eigensolver (only need k=1 ground state)
+138 |     print(f"  [ED] Sparse diagonalization (k=1, which='SA')...")
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+139 |     evals, evecs = sla.eigsh(H, k=1, which="SA")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `quimb.tensor` imported but unused
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py:279:28
+    |
+277 |     Compute S(A) from MERA by forming reduced density matrix.
+278 |     """
+279 |     import quimb.tensor as qtn
+    |                            ^^^
+280 |     
+281 |     A_size = len(A_sites)
+    |
+help: Remove unused import: `quimb.tensor`
+
+F841 Local variable `A_size` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py:281:5
+    |
+279 |     import quimb.tensor as qtn
+280 |     
+281 |     A_size = len(A_sites)
+    |     ^^^^^^
+282 |     
+283 |     # Build bra with different index labels
+    |
+help: Remove assignment to unused variable `A_size`
+
+F541 [*] f-string without any placeholders
+   --> experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py:684:11
+    |
+682 |             writer.writerow([r.chi, r.restart_idx, r.seed, r.fidelity, r.entropy, r.final_energy])
+683 |     
+684 |     print(f"  Saved: metrics.json, verdict.json, manifest.json, raw_results.csv")
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+685 |     
+686 |     return 0 if verdict == "SUPPORTED" else 1
+    |
+help: Remove extraneous `f` prefix
+
+F841 Local variable `A_size` is assigned to but never used
+   --> experiments/claim3/exp3_claim3_quimb_runner.py:209:5
+    |
+208 |     A_sites = list(part.keep_sites)
+209 |     A_size = len(A_sites)
+    |     ^^^^^^
+210 |
+211 |     # reindex kept sites on bra to b{}
+    |
+help: Remove assignment to unused variable `A_size`
+
+F401 [*] `typing.List` imported but unused
+  --> prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py:17:26
+   |
+15 | import argparse
+16 | from pathlib import Path
+17 | from typing import Dict, List
+   |                          ^^^^
+18 |
+19 | np.random.seed(42)
+   |
+help: Remove unused import: `typing.List`
+
+F401 [*] `numpy` imported but unused
+  --> prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py:24:21
+   |
+22 | def create_mera_1d(n_sites: int, chi: int) -> Dict:
+23 |     """1D MERA tensor network representation."""
+24 |     import numpy as np
+   |                     ^^
+25 |     bond_dims = []
+26 |     phys_dims = [2] * n_sites
+   |
+help: Remove unused import: `numpy`
+
+F401 [*] `typing.List` imported but unused
+  --> prototype/experiments/exp2_mera_tradeoff/exp2b_asymptotic.py:16:26
+   |
+14 | import argparse
+15 | from pathlib import Path
+16 | from typing import Dict, List
+   |                          ^^^^
+17 |
+18 | np.random.seed(42)
+   |
+help: Remove unused import: `typing.List`
+
+F841 Local variable `level_factor` is assigned to but never used
+  --> prototype/experiments/exp3_mera_spectral/exp3_entanglement_entropy.py:51:5
+   |
+50 |     system_size = num_sites
+51 |     level_factor = min(num_levels, int(np.log2(system_size / subsystem_size)) + 2)
+   |     ^^^^^^^^^^^^
+52 |     
+53 |     # Geometric factor: number of bonds in minimal surface
+   |
+help: Remove assignment to unused variable `level_factor`
+
+F841 Local variable `chis` is assigned to but never used
+   --> prototype/experiments/exp3_mera_spectral/exp3_entanglement_entropy.py:118:5
+    |
+117 |     # Analyze scaling
+118 |     chis = [r['chi'] for r in results]
+    |     ^^^^
+119 |     entropies = [r['entanglement_entropy'] for r in results]
+120 |     logs_chi = [r['log_chi'] for r in results]
+    |
+help: Remove assignment to unused variable `chis`
+
+F401 [*] `sys` imported but unused
+  --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:20:8
+   |
+18 | import numpy as np
+19 | from pathlib import Path
+20 | import sys
+   |        ^^^
+   |
+help: Remove unused import: `sys`
+
+F841 Local variable `isometry_nodes` is assigned to but never used
+  --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:42:5
+   |
+40 |     level_nodes = {}
+41 |     disentangler_nodes = {}
+42 |     isometry_nodes = {}
+   |     ^^^^^^^^^^^^^^
+43 |     
+44 |     for level in range(num_levels):
+   |
+help: Remove assignment to unused variable `isometry_nodes`
+
+F541 [*] f-string without any placeholders
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:207:11
+    |
+205 |     print("Experiment 3: MERA Spectral Dimension Bridge")
+206 |     print("=" * 70)
+207 |     print(f"\nClaim 3: Tensor networks with MERA structure exhibit spectral")
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+208 |     print(f"dimension scaling consistent with holographic theories when")
+209 |     print(f"capacity is measured via bond dimension.")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:208:11
+    |
+206 |     print("=" * 70)
+207 |     print(f"\nClaim 3: Tensor networks with MERA structure exhibit spectral")
+208 |     print(f"dimension scaling consistent with holographic theories when")
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+209 |     print(f"capacity is measured via bond dimension.")
+210 |     print()
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:209:11
+    |
+207 |     print(f"\nClaim 3: Tensor networks with MERA structure exhibit spectral")
+208 |     print(f"dimension scaling consistent with holographic theories when")
+209 |     print(f"capacity is measured via bond dimension.")
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+210 |     print()
+    |
+help: Remove extraneous `f` prefix
+
+E741 Ambiguous variable name: `l`
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:250:59
+    |
+248 |         if len(by_level) >= 2:
+249 |             levels = sorted(by_level.keys())
+250 |             dims = [by_level[l]['spectral_dimension'] for l in levels]
+    |                                                           ^
+251 |             # Trend: should decrease or stay flat (coarse-graining reduces effective dim)
+252 |             valid = all(not np.isnan(d) for d in dims)
+    |
+
+F541 [*] f-string without any placeholders
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:274:15
+    |
+273 |         print(f"\nFalsifier 3.2 (d_s correlates with chi): {'PASS' if falsifier_3_2_passed else 'FAIL'}")
+274 |         print(f"  Chi-dimension pairs:")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^
+275 |         for c, d in sorted_by_chi:
+276 |             print(f"    chi={c:2d}: d_s = {d:.3f}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral.py:279:15
+    |
+277 |     else:
+278 |         falsifier_3_2_passed = False
+279 |         print(f"\nFalsifier 3.2 (d_s correlates with chi): FAIL (insufficient data)")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+280 |     
+281 |     # Overall verdict
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `typing.List` imported but unused
+  --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral_v2.py:22:20
+   |
+20 | import numpy as np
+21 | from pathlib import Path
+22 | from typing import List, Tuple, Dict
+   |                    ^^^^
+   |
+help: Remove unused import: `typing.List`
+
+E741 Ambiguous variable name: `l`
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral_v2.py:300:57
+    |
+298 |         levels = r['level_results']
+299 |         if len(levels) >= 2:
+300 |             dims = [levels[l]['spectral_dimension'] for l in sorted(levels.keys())]
+    |                                                         ^
+301 |             non_nan = [d for d in dims if d > 0]
+302 |             if len(non_nan) >= 2:
+    |
+
+F541 [*] f-string without any placeholders
+   --> prototype/experiments/exp3_mera_spectral/exp3_mera_spectral_v2.py:333:11
+    |
+331 |     print(f"\nFalsifier 3.2 (d_s correlates positively with chi): {'PASS' if falsifier_3_2_passed else 'FAIL'}")
+332 |     print(f"  Correlation: {correlation:.3f}")
+333 |     print(f"  Chi-d_s pairs:")
+    |           ^^^^^^^^^^^^^^^^^^^
+334 |     for c, d in zip(chis, dims):
+335 |         print(f"    chi={c:2d}: d_s = {d:.3f}")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `typing.Tuple` imported but unused
+  --> prototype/experiments/exp3b_windowed_regime/exp3b_windowed_regime.py:12:32
+   |
+10 | import numpy as np
+11 | from pathlib import Path
+12 | from typing import Dict, List, Tuple, Optional
+   |                                ^^^^^
+13 | from dataclasses import dataclass
+   |
+help: Remove unused import
+
+F401 [*] `typing.Optional` imported but unused
+  --> prototype/experiments/exp3b_windowed_regime/exp3b_windowed_regime.py:12:39
+   |
+10 | import numpy as np
+11 | from pathlib import Path
+12 | from typing import Dict, List, Tuple, Optional
+   |                                       ^^^^^^^^
+13 | from dataclasses import dataclass
+   |
+help: Remove unused import
+
+E722 Do not use bare `except`
+   --> prototype/experiments/exp3b_windowed_regime/exp3b_windowed_regime.py:144:9
+    |
+142 |                 best_rss = rss
+143 |                 best_params = (a, p, b)
+144 |         except:
+    |         ^^^^^^
+145 |             continue
+    |
+
+F541 [*] f-string without any placeholders
+   --> prototype/experiments/exp3b_windowed_regime/exp3b_windowed_regime.py:467:11
+    |
+466 |     f3b3_pass = all(transition_check.values())
+467 |     print(f"\nF3B.3 Transition Consistency:")
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+468 |     for A, ok in transition_check.items():
+469 |         print(f"  A={A}: {'PASS' if ok else 'FAIL'}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> prototype/experiments/exp3b_windowed_regime/exp3b_windowed_regime.py:495:11
+    |
+493 |     print("VERDICT")
+494 |     print("=" * 70)
+495 |     print(f"Claim 3B: Windowed Regime Detection")
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+496 |     print(f"F3B.1 Monotonicity: {'PASS' if f3b1_pass else 'FAIL'}")
+497 |     print(f"F3B.2 Window Detection: {'PASS' if f3b2_pass else 'FAIL'}")
+    |
+help: Remove extraneous `f` prefix
+
+E402 Module level import not at top of file
+  --> prototype/experiments/exp3b_windowed_regime/run_extended.py:22:1
+   |
+21 | # Calculate expected χ_sat
+22 | import numpy as np
+   | ^^^^^^^^^^^^^^^^^^
+23 | A = 16
+24 | S_max = A * np.log(2)
+   |
+
+E402 Module level import not at top of file
+  --> prototype/experiments/exp3b_windowed_regime/run_extended.py:52:1
+   |
+51 | # Patch the windows into the module
+52 | import exp3b_windowed_regime
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+53 | original_windows = exp3b_windowed_regime.run_windowed_experiment.__code__.co_consts
+   |
+
+F541 [*] f-string without any placeholders
+  --> prototype/experiments/exp3b_windowed_regime/run_extended.py:83:11
+   |
+82 |     # Post-hoc: Did we hit the predicted transition?
+83 |     print(f"\nPost-hoc analysis:")
+   |           ^^^^^^^^^^^^^^^^^^^^^^^
+84 |     print(f"Predicted χ_sat = {chi_sat:.1f}")
+85 |     print(f"If transition observed around χ≈{chi_sat:.0f}, falsifiers should pass")
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> prototype/experiments/exp3b_windowed_regime/run_extended.py:86:11
+   |
+84 |     print(f"Predicted χ_sat = {chi_sat:.1f}")
+85 |     print(f"If transition observed around χ≈{chi_sat:.0f}, falsifiers should pass")
+86 |     print(f"If no transition or at wrong χ, hypothesis may need revision")
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> prototype/experiments/exp3b_windowed_regime/test_kcut_precondition.py:44:19
+   |
+42 |             invariant = False
+43 |         else:
+44 |             print(f"    ✓ Invariant across seeds")
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+45 |             invariant = True
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> prototype/experiments/exp3b_windowed_regime/test_kcut_precondition.py:59:15
+   |
+58 |     if non_decreasing:
+59 |         print(f"    ✓ Non-decreasing with partition size")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+60 |     
+61 |     # Compute χ_sat predictions
+   |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+  --> prototype/experiments/exp3b_windowed_regime/test_kcut_precondition.py:62:11
+   |
+61 |     # Compute χ_sat predictions
+62 |     print(f"\n  χ_sat Predictions:")
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+63 |     for A in A_values:
+64 |         K = medians[A]
+   |
+help: Remove extraneous `f` prefix
+
+F401 [*] `datetime.datetime` imported but unused
+  --> sdk/python/cgf_sdk/adapter_base.py:13:22
+   |
+11 | from abc import ABC, abstractmethod
+12 | from dataclasses import dataclass, field
+13 | from datetime import datetime
+   |                      ^^^^^^^^
+14 | from enum import Enum
+15 | from pathlib import Path
+   |
+help: Remove unused import: `datetime.datetime`
+
+F401 [*] `typing.Callable` imported but unused
+  --> sdk/python/cgf_sdk/adapter_base.py:16:47
+   |
+14 | from enum import Enum
+15 | from pathlib import Path
+16 | from typing import Any, Dict, List, Optional, Callable
+   |                                               ^^^^^^^^
+17 |
+18 | from .cgf_client import CGFClient, ClientConfig
+   |
+help: Remove unused import: `typing.Callable`
+
+F401 [*] `.errors.GovernanceError` imported but unused
+  --> sdk/python/cgf_sdk/adapter_base.py:20:5
+   |
+18 | from .cgf_client import CGFClient, ClientConfig
+19 | from .errors import (
+20 |     GovernanceError,
+   |     ^^^^^^^^^^^^^^^
+21 |     FailModeError,
+22 |     CGFConnectionError,
+   |
+help: Remove unused import
+
+F401 [*] `.errors.ErrorConverter` imported but unused
+  --> sdk/python/cgf_sdk/adapter_base.py:23:5
+   |
+21 |     FailModeError,
+22 |     CGFConnectionError,
+23 |     ErrorConverter
+   |     ^^^^^^^^^^^^^^
+24 | )
+   |
+help: Remove unused import
+
+F401 [*] `json` imported but unused
+  --> sdk/python/cgf_sdk/cgf_client.py:11:8
+   |
+ 9 | import asyncio
+10 | import enum
+11 | import json
+   |        ^^^^
+12 | import os
+13 | import threading
+   |
+help: Remove unused import: `json`
+
+F401 [*] `pathlib.Path` imported but unused
+  --> sdk/python/cgf_sdk/cgf_client.py:16:21
+   |
+14 | import time
+15 | from dataclasses import dataclass
+16 | from pathlib import Path
+   |                     ^^^^
+17 | from typing import Any, Dict, List, Optional, Union
+18 | from urllib.parse import urljoin
+   |
+help: Remove unused import: `pathlib.Path`
+
+F401 [*] `typing.Union` imported but unused
+  --> sdk/python/cgf_sdk/cgf_client.py:17:47
+   |
+15 | from dataclasses import dataclass
+16 | from pathlib import Path
+17 | from typing import Any, Dict, List, Optional, Union
+   |                                               ^^^^^
+18 | from urllib.parse import urljoin
+   |
+help: Remove unused import: `typing.Union`
+
+F401 `requests` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> sdk/python/cgf_sdk/cgf_client.py:27:12
+   |
+26 | try:
+27 |     import requests
+   |            ^^^^^^^^
+28 |     HAS_REQUESTS = True
+29 | except ImportError:
+   |
+help: Remove unused import: `requests`
+
+F541 [*] f-string without any placeholders
+   --> sdk/python/cgf_sdk/cgf_client.py:406:42
+    |
+404 |                 if self._breaker:
+405 |                     self._breaker.record_failure()
+406 |                 raise CGFConnectionError(f"Outcome timeout") from e
+    |                                          ^^^^^^^^^^^^^^^^^^
+407 |             except aiohttp.ClientError as e:
+408 |                 if self._breaker:
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `sdk.python.cgf_sdk.CGFClient` imported but unused
+  --> sdk/python/examples/min_adapter.py:33:32
+   |
+32 | # Use SDK
+33 | from sdk.python.cgf_sdk import CGFClient, HostAdapter
+   |                                ^^^^^^^^^
+34 | from sdk.python.cgf_sdk.cgf_client import ClientConfig
+35 | from sdk.python.cgf_sdk.adapter_base import ReplayPack
+   |
+help: Remove unused import: `sdk.python.cgf_sdk.CGFClient`
+
+F401 [*] `sdk.python.cgf_sdk.adapter_base.ReplayPack` imported but unused
+  --> sdk/python/examples/min_adapter.py:35:45
+   |
+33 | from sdk.python.cgf_sdk import CGFClient, HostAdapter
+34 | from sdk.python.cgf_sdk.cgf_client import ClientConfig
+35 | from sdk.python.cgf_sdk.adapter_base import ReplayPack
+   |                                             ^^^^^^^^^^
+36 | from sdk.python.cgf_sdk.errors import FailModeError
+   |
+help: Remove unused import: `sdk.python.cgf_sdk.adapter_base.ReplayPack`
+
+F541 [*] f-string without any placeholders
+   --> sdk/python/examples/min_adapter.py:247:15
+    |
+245 |         first_proposal = list(adapter._proposals.keys())[0]
+246 |         replay = adapter.build_replay_pack(first_proposal)
+247 |         print(f"\n[6] Sample replay pack (truncated):")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+248 |         replay_dict = replay.to_dict()
+249 |         print(f"    Schema: {replay_dict['schema_version']}")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `pydantic.BaseModel` imported but unused
+  --> server/cgf_server_v03.py:23:22
+   |
+21 | from typing import Dict, List, Optional, Any
+22 | from fastapi import Depends, FastAPI, Header, HTTPException
+23 | from pydantic import BaseModel
+   |                      ^^^^^^^^^
+24 |
+25 | # Import v0.3 schemas
+   |
+help: Remove unused import: `pydantic.BaseModel`
+
+F401 `cgf_schemas_v03.normalize_for_processing` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> server/cgf_server_v03.py:31:9
+   |
+29 |         MIN_COMPATIBLE_VERSION,
+30 |         is_compatible_version,
+31 |         normalize_for_processing,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^
+32 |         PolicyConfig,
+33 |         HostAdapterRegistration,
+   |
+help: Remove unused import: `cgf_schemas_v03.normalize_for_processing`
+
+F401 `cgf_policy.get_fail_mode` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> server/cgf_server_v03.py:82:72
+   |
+80 |     import sys
+81 |     sys.path.insert(0, str(Path(__file__).parent.parent))
+82 |     from cgf_policy import load_policy_bundle, evaluate, PolicyBundle, get_fail_mode
+   |                                                                        ^^^^^^^^^^^^^
+83 |     from cgf_policy.types import DecisionType as PolicyDecisionType
+84 |     HAS_POLICY_ENGINE = True
+   |
+help: Remove unused import: `cgf_policy.get_fail_mode`
+
+E741 Ambiguous variable name: `l`
+   --> server/cgf_server_v03.py:259:27
+    |
+257 |     # Histogram buckets
+258 |     for bucket in LATENCY_BUCKETS:
+259 |         count = sum(1 for l in metrics_state["decision_latency_ms"] if l <= bucket)
+    |                           ^
+260 |         lines.append(f'cgf_decision_latency_ms_bucket{{le="{bucket}"}} {count}')
+    |
+
+F841 Local variable `avg_latency` is assigned to but never used
+   --> server/cgf_server_v03.py:267:9
+    |
+266 |     if total > 0:
+267 |         avg_latency = sum(metrics_state["decision_latency_ms"]) / total
+    |         ^^^^^^^^^^^
+268 |         lines.append(f'cgf_decision_latency_ms_sum {sum(metrics_state["decision_latency_ms"])}')
+269 |     else:
+    |
+help: Remove assignment to unused variable `avg_latency`
+
+F541 [*] f-string without any placeholders
+   --> server/cgf_server_v03.py:807:11
+    |
+805 |     port = int(os.environ.get("CGF_PORT", "8080"))
+806 |     print("=" * 60)
+807 |     print(f"CGF Server v0.3")
+    |           ^^^^^^^^^^^^^^^^^^
+808 |     print(f"Schema: {SCHEMA_VERSION if HAS_V03 else '0.2.0'}")
+809 |     print(f"Policy: {POLICY_DATA.get('policy_version', 'default')}")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `asyncio` imported but unused
+  --> tests/test_circuit_breaker.py:10:8
+   |
+ 8 | """
+ 9 |
+10 | import asyncio
+   |        ^^^^^^^
+11 | import sys
+12 | import time
+   |
+help: Remove unused import: `asyncio`
+
+F401 [*] `time` imported but unused
+  --> tests/test_circuit_breaker.py:12:8
+   |
+10 | import asyncio
+11 | import sys
+12 | import time
+   |        ^^^^
+13 | from pathlib import Path
+14 | from unittest.mock import AsyncMock, MagicMock, patch
+   |
+help: Remove unused import: `time`
+
+E402 Module level import not at top of file
+  --> tests/test_circuit_breaker.py:24:1
+   |
+22 |     sys.path.insert(0, str(_SDK_PATH))
+23 |
+24 | from cgf_sdk.cgf_client import CircuitBreaker, CGFClient, ClientConfig
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+25 | from cgf_sdk.errors import CGFConnectionError
+   |
+
+E402 Module level import not at top of file
+  --> tests/test_circuit_breaker.py:25:1
+   |
+24 | from cgf_sdk.cgf_client import CircuitBreaker, CGFClient, ClientConfig
+25 | from cgf_sdk.errors import CGFConnectionError
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+
+F401 [*] `asyncio` imported but unused
+  --> tests/test_outcome_reporting.py:8:8
+   |
+ 6 | """
+ 7 |
+ 8 | import asyncio
+   |        ^^^^^^^
+ 9 | import json
+10 | import sys
+   |
+help: Remove unused import: `asyncio`
+
+E402 Module level import not at top of file
+  --> tests/test_outcome_reporting.py:25:1
+   |
+23 | sys.path.insert(0, str(Path(__file__).parent.parent / "adapters"))
+24 |
+25 | from cgf_sdk.errors import GovernanceError
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+
+E741 Ambiguous variable name: `l`
+  --> tests/test_outcome_reporting.py:83:24
+   |
+81 |         local_file = tmp_path / "outcomes_local.jsonl"
+82 |         assert local_file.exists(), "Local JSONL fallback must be written on HTTP failure"
+83 |         lines = [l for l in local_file.read_text().splitlines() if l.strip()]
+   |                        ^
+84 |         assert len(lines) >= 1
+85 |         record = json.loads(lines[0])
+   |
+
+E741 Ambiguous variable name: `l`
+   --> tests/test_outcome_reporting.py:173:24
+    |
+171 |         local_file = tmp_path / "outcomes.jsonl"
+172 |         assert local_file.exists()
+173 |         lines = [l for l in local_file.read_text().splitlines() if l.strip()]
+    |                        ^
+174 |         assert len(lines) >= 1
+175 |         record = json.loads(lines[0])
+    |
+
+F401 [*] `cgf_policy.ALLOWED_FIELD_PATHS` imported but unused
+  --> tests/test_policy_engine.py:21:5
+   |
+19 |     load_policy_bundle, evaluate, compute_bundle_hash,
+20 |     Condition, Rule, PolicyBundle, DecisionResult, DecisionType,
+21 |     ALLOWED_FIELD_PATHS
+   |     ^^^^^^^^^^^^^^^^^^^
+22 | )
+23 | from cgf_policy.compiler import _validate_bundle_fields
+   |
+help: Remove unused import: `cgf_policy.ALLOWED_FIELD_PATHS`
+
+F401 [*] `pytest` imported but unused
+  --> tests/test_server_auth.py:10:8
+   |
+ 8 | from pathlib import Path
+ 9 |
+10 | import pytest
+   |        ^^^^^^
+11 | from fastapi.testclient import TestClient
+   |
+help: Remove unused import: `pytest`
+
+F401 [*] `time` imported but unused
+  --> tools/contract_compliance_tests.py:22:8
+   |
+20 | import sys
+21 | import os
+22 | import time
+   |        ^^^^
+23 | from pathlib import Path
+24 | from typing import Dict, List, Optional, Any
+   |
+help: Remove unused import: `time`
+
+F401 [*] `typing.Optional` imported but unused
+  --> tools/contract_compliance_tests.py:24:32
+   |
+22 | import time
+23 | from pathlib import Path
+24 | from typing import Dict, List, Optional, Any
+   |                                ^^^^^^^^
+25 | from dataclasses import dataclass, field
+26 | from datetime import datetime
+   |
+help: Remove unused import: `typing.Optional`
+
+F401 [*] `dataclasses.field` imported but unused
+  --> tools/contract_compliance_tests.py:25:36
+   |
+23 | from pathlib import Path
+24 | from typing import Dict, List, Optional, Any
+25 | from dataclasses import dataclass, field
+   |                                    ^^^^^
+26 | from datetime import datetime
+   |
+help: Remove unused import: `dataclasses.field`
+
+F401 [*] `cgf_schemas_v03.CrossHostCompatibilityReport` imported but unused
+  --> tools/contract_compliance_tests.py:44:9
+   |
+42 |         HostEventType,
+43 |         HostConfig,
+44 |         CrossHostCompatibilityReport,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+45 |         ReplayPack
+46 |     )
+   |
+help: Remove unused import
+
+F401 [*] `cgf_schemas_v03.ReplayPack` imported but unused
+  --> tools/contract_compliance_tests.py:45:9
+   |
+43 |         HostConfig,
+44 |         CrossHostCompatibilityReport,
+45 |         ReplayPack
+   |         ^^^^^^^^^^
+46 |     )
+47 |     SCHEMA_MODULE = "v0.3"
+   |
+help: Remove unused import
+
+F401 [*] `cgf_schemas_v02.ActionType` imported but unused
+  --> tools/contract_compliance_tests.py:53:13
+   |
+51 |         from cgf_schemas_v02 import (
+52 |             SCHEMA_VERSION,
+53 |             ActionType,
+   |             ^^^^^^^^^^
+54 |             DecisionType,
+55 |             RiskTier,
+   |
+help: Remove unused import
+
+F401 [*] `cgf_schemas_v02.HostEventType` imported but unused
+  --> tools/contract_compliance_tests.py:56:13
+   |
+54 |             DecisionType,
+55 |             RiskTier,
+56 |             HostEventType,
+   |             ^^^^^^^^^^^^^
+57 |             HostConfig
+58 |         )
+   |
+help: Remove unused import
+
+F401 [*] `cgf_server_v03.CGFServer` imported but unused
+  --> tools/contract_compliance_tests.py:88:32
+   |
+86 |     # Try to import server modules
+87 |     from cgf_server_v03 import app as cgf_app_v03
+88 |     from cgf_server_v03 import CGFServer
+   |                                ^^^^^^^^^
+89 |     HAS_SERVER = True
+90 |     SERVER_APP = cgf_app_v03
+   |
+help: Remove unused import: `cgf_server_v03.CGFServer`
+
+E402 Module level import not at top of file
+   --> tools/contract_compliance_tests.py:136:1
+    |
+134 | # ============== PYTEST FIXTURE ==============
+135 |
+136 | import pytest
+    | ^^^^^^^^^^^^^
+137 |
+138 | @pytest.fixture(scope="function")
+    |
+
+F401 [*] `openclaw_adapter_v02.OpenClawAdapter` imported but unused
+   --> tools/contract_compliance_tests.py:209:38
+    |
+207 |     """Test that adapters can be imported."""
+208 |     assert HAS_ADAPTERS, "Adapters not importable"
+209 |     from openclaw_adapter_v02 import OpenClawAdapter
+    |                                      ^^^^^^^^^^^^^^^
+210 |     from langgraph_adapter_v01 import LangGraphAdapter
+    |
+help: Remove unused import: `openclaw_adapter_v02.OpenClawAdapter`
+
+F401 [*] `langgraph_adapter_v01.LangGraphAdapter` imported but unused
+   --> tools/contract_compliance_tests.py:210:39
+    |
+208 |     assert HAS_ADAPTERS, "Adapters not importable"
+209 |     from openclaw_adapter_v02 import OpenClawAdapter
+210 |     from langgraph_adapter_v01 import LangGraphAdapter
+    |                                       ^^^^^^^^^^^^^^^^
+211 |
+212 | def test_cgf_server_importable():
+    |
+help: Remove unused import: `langgraph_adapter_v01.LangGraphAdapter`
+
+E741 Ambiguous variable name: `l`
+   --> tools/contract_compliance_tests.py:280:24
+    |
+278 |     # Each file should have events
+279 |     for ef in event_files:
+280 |         lines = [l for l in ef.read_text().strip().split('\n') if l.strip()]
+    |                        ^
+281 |         assert len(lines) > 0, f"{ef} is empty - events must be produced"
+    |
+
+F541 [*] f-string without any placeholders
+   --> tools/contract_compliance_tests.py:388:15
+    |
+386 |             print("Set ALLOW_CGF_DOWN=1 to continue anyway.")
+387 |             return False
+388 |         print(f"WARNING: CGF not available (ALLOW_CGF_DOWN=1)")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+389 |     
+390 |     print(f"\n{'=' * 70}")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `typing.Any` imported but unused
+  --> tools/replay_governance_timeline.py:18:42
+   |
+16 | from datetime import datetime
+17 | from pathlib import Path
+18 | from typing import Dict, List, Optional, Any
+   |                                          ^^^
+19 | from dataclasses import dataclass, asdict
+20 | from cgf_schemas_v02 import (
+   |
+help: Remove unused import: `typing.Any`
+
+F401 [*] `dataclasses.dataclass` imported but unused
+  --> tools/replay_governance_timeline.py:19:25
+   |
+17 | from pathlib import Path
+18 | from typing import Dict, List, Optional, Any
+19 | from dataclasses import dataclass, asdict
+   |                         ^^^^^^^^^
+20 | from cgf_schemas_v02 import (
+21 |     SCHEMA_VERSION,
+   |
+help: Remove unused import
+
+F401 [*] `dataclasses.asdict` imported but unused
+  --> tools/replay_governance_timeline.py:19:36
+   |
+17 | from pathlib import Path
+18 | from typing import Dict, List, Optional, Any
+19 | from dataclasses import dataclass, asdict
+   |                                    ^^^^^^
+20 | from cgf_schemas_v02 import (
+21 |     SCHEMA_VERSION,
+   |
+help: Remove unused import
+
+F401 `cgf_policy.PolicyDecision` imported but unused; consider using `importlib.util.find_spec` to test for availability
+  --> tools/replay_governance_timeline.py:30:45
+   |
+29 | try:
+30 |     from cgf_policy import PolicyEvaluator, PolicyDecision
+   |                                             ^^^^^^^^^^^^^^
+31 |     HAS_POLICY_ENGINE = True
+32 | except ImportError:
+   |
+help: Remove unused import: `cgf_policy.PolicyDecision`
+
+F841 [*] Local variable `e` is assigned to but never used
+   --> tools/replay_governance_timeline.py:157:33
+    |
+155 |             try:
+156 |                 events.append(HostEvent(**event_fields))
+157 |             except Exception as e:
+    |                                 ^
+158 |                 continue  # Skip malformed events
+    |
+help: Remove assignment to unused variable `e`
+
+F401 [*] `cgf_policy.DecisionType` imported but unused
+   --> tools/replay_governance_timeline.py:387:46
+    |
+385 |         print("=" * 70)
+386 |         
+387 |         from cgf_policy import PolicyBundle, DecisionType
+    |                                              ^^^^^^^^^^^^
+388 |         
+389 |         # Load policy bundle
+    |
+help: Remove unused import: `cgf_policy.DecisionType`
+
+F541 [*] f-string without any placeholders
+   --> tools/replay_governance_timeline.py:414:15
+    |
+413 |         # Compare
+414 |         print(f"\nOriginal Decision:")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^
+415 |         print(f"  Decision: {replay.decision.decision.value}")
+416 |         print(f"  Confidence: {replay.decision.confidence:.2f}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> tools/replay_governance_timeline.py:419:15
+    |
+417 |         print(f"  Reason Code: {replay.decision.reason_code}")
+418 |         
+419 |         print(f"\nRe-evaluated Decision:")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+420 |         print(f"  Decision: {new_decision.decision.value}")
+421 |         print(f"  Confidence: {new_decision.confidence:.2f}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> tools/replay_governance_timeline.py:426:15
+    |
+425 |         # Verification
+426 |         print(f"\nVerification:")
+    |               ^^^^^^^^^^^^^^^^^^
+427 |         
+428 |         match = True
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> tools/replay_governance_timeline.py:456:23
+    |
+454 |                 print(f"  ✓ Proposal hash match: {new_decision.proposal_hash}")
+455 |             else:
+456 |                 print(f"  ⚠ Proposal hash differs:")
+    |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+457 |                 print(f"    New: {new_decision.proposal_hash}")
+458 |                 print(f"    Original: {replay.decision.proposal_hash}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> tools/replay_governance_timeline.py:463:19
+    |
+461 |         print(f"\n{'=' * 70}")
+462 |         if match:
+463 |             print(f"✓ VERIFICATION PASSED")
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^
+464 |             print(f"  Original decision matches re-evaluation with policy v{bundle.policy_version}")
+465 |         else:
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> tools/replay_governance_timeline.py:466:19
+    |
+464 |             print(f"  Original decision matches re-evaluation with policy v{bundle.policy_version}")
+465 |         else:
+466 |             print(f"✗ VERIFICATION FAILED")
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^
+467 |             print(f"  Policy re-evaluation produced different decision")
+468 |         print(f"{'=' * 70}")
+    |
+help: Remove extraneous `f` prefix
+
+F541 [*] f-string without any placeholders
+   --> tools/replay_governance_timeline.py:467:19
+    |
+465 |         else:
+466 |             print(f"✗ VERIFICATION FAILED")
+467 |             print(f"  Policy re-evaluation produced different decision")
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+468 |         print(f"{'=' * 70}")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `cgf_policy.DecisionType` imported but unused
+  --> tools/replay_verify.py:20:54
+   |
+18 | sys.path.insert(0, str(Path(__file__).parent.parent))
+19 |
+20 | from cgf_policy import load_policy_bundle, evaluate, DecisionType
+   |                                                      ^^^^^^^^^^^^
+   |
+help: Remove unused import: `cgf_policy.DecisionType`
+
+F841 Local variable `decision_event` is assigned to but never used
+  --> tools/replay_verify.py:44:9
+   |
+42 |     if proposal_events and decision_events:
+43 |         proposal_event = proposal_events[0]
+44 |         decision_event = decision_events[0]
+   |         ^^^^^^^^^^^^^^
+45 |         
+46 |         # Reconstruct proposal from event payload
+   |
+help: Remove assignment to unused variable `decision_event`
+
+E741 Ambiguous variable name: `l`
+   --> tools/run_workflow_auto.py:295:9
+    |
+294 |     for line in mcporter_list_text.splitlines():
+295 |         l = line.strip()
+    |         ^
+296 |         if not l:
+297 |             continue
+    |
+
+F841 Local variable `proposals` is assigned to but never used
+    --> tools/run_workflow_auto.py:1541:9
+     |
+1540 |         plan_obj = json.loads(proposal_json.read_text(encoding="utf-8"))
+1541 |         proposals = plan_obj.get("proposals", [])
+     |         ^^^^^^^^^
+1542 |         selected = plan_obj.get("selected", [])
+1543 |         remaining_minutes = int(plan_obj.get("remaining_minutes", args.max_minutes))
+     |
+help: Remove assignment to unused variable `proposals`
+
+F401 [*] `typing.Optional` imported but unused
+  --> tools/schema_lint.py:21:32
+   |
+19 | import sys
+20 | from pathlib import Path
+21 | from typing import Dict, List, Optional, Set, Tuple
+   |                                ^^^^^^^^
+22 | from collections import defaultdict
+23 | from datetime import datetime
+   |
+help: Remove unused import: `typing.Optional`
+
+E722 Do not use bare `except`
+   --> tools/schema_lint.py:260:29
+    |
+258 |                             try:
+259 |                                 events.append(json.loads(line))
+260 |                             except:
+    |                             ^^^^^^
+261 |                                 pass
+262 |             host_events[host_name] = events
+    |
+
+F541 [*] f-string without any placeholders
+   --> tools/schema_lint.py:365:15
+    |
+363 |         print(f"Hosts: {report.hosts_tested}")
+364 |         print(f"Scenarios: {report.scenarios}")
+365 |         print(f"\nResults:")
+    |               ^^^^^^^^^^^^^
+366 |         for host, scenarios in report.results.items():
+367 |             print(f"  {host}:")
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `typing.List` imported but unused
+  --> tools/validate_sdk_artifacts.py:15:26
+   |
+13 | import sys
+14 | from pathlib import Path
+15 | from typing import Dict, List, Set, Any
+   |                          ^^^^
+16 |
+17 | # Add repo root to path for schema imports
+   |
+help: Remove unused import
+
+F401 [*] `typing.Set` imported but unused
+  --> tools/validate_sdk_artifacts.py:15:32
+   |
+13 | import sys
+14 | from pathlib import Path
+15 | from typing import Dict, List, Set, Any
+   |                                ^^^
+16 |
+17 | # Add repo root to path for schema imports
+   |
+help: Remove unused import
+
+F541 [*] f-string without any placeholders
+   --> tools/validate_sdk_artifacts.py:119:15
+    |
+118 |     if mismatches:
+119 |         print(f"  ✗ Required field mismatches found:")
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+120 |         for m in mismatches:
+121 |             print(f"    - {m['event']}: Schema-only={m['schema_only']} (missing in JSON)")
+    |
+help: Remove extraneous `f` prefix
+
+F841 Local variable `HAS_JSONSCHEMA` is assigned to but never used
+   --> tools/validate_sdk_artifacts.py:225:9
+    |
+223 |         HAS_JSONSCHEMA = True
+224 |     except ImportError:
+225 |         HAS_JSONSCHEMA = False
+    |         ^^^^^^^^^^^^^^
+226 |         print("  ⚠ jsonschema not installed, skipping schema validation")
+227 |         print("    (Install with: pip install jsonschema)")
+    |
+help: Remove assignment to unused variable `HAS_JSONSCHEMA`
+
+F541 [*] f-string without any placeholders
+   --> tools/validate_sdk_artifacts.py:268:19
+    |
+267 |             jsonschema.validate(instance=instance, schema=schema)
+268 |             print(f"    ✓ Valid")
+    |                   ^^^^^^^^^^^^^^
+269 |             
+270 |         except jsonschema.ValidationError as e:
+    |
+help: Remove extraneous `f` prefix
+
+F401 [*] `sys` imported but unused
+  --> tools/validate_workflow_auto_run.py:12:8
+   |
+10 | import argparse
+11 | import json
+12 | import sys
+   |        ^^^
+13 | from dataclasses import dataclass
+14 | from pathlib import Path
+   |
+help: Remove unused import: `sys`
+
+Found 136 errors.
+[*] 96 fixable with the `--fix` option (14 hidden fixes can be enabled with the `--unsafe-fixes` option).
+make: *** [lint] Error 1

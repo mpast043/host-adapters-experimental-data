@@ -1,0 +1,11 @@
+{
+  "selection_version": "0.1.0",
+  "claims_file": "../physics/claims/physics_claims.json",
+  "ledger_file": "ledger.jsonl",
+  "evidence_index": "evidence_index.json",
+  "rules_applied": [
+    "ACCEPTED requires document witness span (chunk_id + offsets)",
+    "ACCEPTED requires evidence witness path to existing file"
+  ],
+  "witness_validation": "passed"
+}

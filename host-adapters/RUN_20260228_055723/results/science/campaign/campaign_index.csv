@@ -1,0 +1,5 @@
+timestamp,test_id,model,L,chi,seed,key_metrics,aic_delta,bic_delta,verdict,artifact_path,exit_code
+2026-02-28T05:57:31.313524+00:00,claim_w02_poset_infimum,claim_check,0,n/a,42,"{""samples"": 2000, ""dims"": 5, ""failures"": 0}",,,PASS,results/science/claim_w02_poset_infimum,0
+2026-02-28T05:57:31.313699+00:00,claim_w06_depth_vector_monotonicity,claim_check,0,n/a,n/a,"{""max_n"": 5000, ""axes"": [""geo"", ""int"", ""gauge"", ""ptr"", ""obs""], ""failure_count"": 0}",,,PASS,results/science/claim_w06_depth_vector_monotonicity,0
+2026-02-28T05:57:31.313812+00:00,claim2_seed_perturbation,claim2,0,n/a,321,{},,,PASS,results/science/claim2_seed321,0
+2026-02-28T05:57:31.313963+00:00,claim3_optionb_regime_check,optionB,32,"2,4,8",49,{},,,PASS,results/science/campaign,0

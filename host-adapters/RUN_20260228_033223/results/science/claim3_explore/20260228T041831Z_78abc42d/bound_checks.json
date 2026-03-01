@@ -1,0 +1,308 @@
+{
+  "K_cut_proxy_rule": "K_cut = floor(log2(N/|A|)) + 1, min 1",
+  "summary": {
+    "total_points": 27,
+    "violation_count": 0,
+    "passed": true,
+    "min_margin": 0.0
+  },
+  "rows": [
+    {
+      "chi": 2,
+      "seed": 52,
+      "partition_id": "part_A_16",
+      "S": 1.3290438540799767,
+      "K_cut": 2.0,
+      "log_chi": 0.6931471805599453,
+      "bound": 1.3862943611198906,
+      "margin": 0.057250507039913856,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 53,
+      "partition_id": "part_A_16",
+      "S": 1.3862943611198906,
+      "K_cut": 2.0,
+      "log_chi": 0.6931471805599453,
+      "bound": 1.3862943611198906,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 54,
+      "partition_id": "part_A_16",
+      "S": 1.3189737355776618,
+      "K_cut": 2.0,
+      "log_chi": 0.6931471805599453,
+      "bound": 1.3862943611198906,
+      "margin": 0.06732062554222873,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 1052,
+      "partition_id": "part_A_16",
+      "S": 2.772588722239781,
+      "K_cut": 2.0,
+      "log_chi": 1.3862943611198906,
+      "bound": 2.772588722239781,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 1053,
+      "partition_id": "part_A_16",
+      "S": 2.772588722239781,
+      "K_cut": 2.0,
+      "log_chi": 1.3862943611198906,
+      "bound": 2.772588722239781,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 1054,
+      "partition_id": "part_A_16",
+      "S": 2.772588722239781,
+      "K_cut": 2.0,
+      "log_chi": 1.3862943611198906,
+      "bound": 2.772588722239781,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 2052,
+      "partition_id": "part_A_16",
+      "S": 4.1588830833596715,
+      "K_cut": 2.0,
+      "log_chi": 2.0794415416798357,
+      "bound": 4.1588830833596715,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 2053,
+      "partition_id": "part_A_16",
+      "S": 4.130952019422238,
+      "K_cut": 2.0,
+      "log_chi": 2.0794415416798357,
+      "bound": 4.1588830833596715,
+      "margin": 0.02793106393743372,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 2054,
+      "partition_id": "part_A_16",
+      "S": 4.1531833539822385,
+      "K_cut": 2.0,
+      "log_chi": 2.0794415416798357,
+      "bound": 4.1588830833596715,
+      "margin": 0.005699729377433016,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 1000052,
+      "partition_id": "part_A_8",
+      "S": 2.0169988050754415,
+      "K_cut": 3.0,
+      "log_chi": 0.6931471805599453,
+      "bound": 2.0794415416798357,
+      "margin": 0.062442736604394256,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 1000053,
+      "partition_id": "part_A_8",
+      "S": 2.0284408298673067,
+      "K_cut": 3.0,
+      "log_chi": 0.6931471805599453,
+      "bound": 2.0794415416798357,
+      "margin": 0.051000711812529076,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 1000054,
+      "partition_id": "part_A_8",
+      "S": 2.0794415416798357,
+      "K_cut": 3.0,
+      "log_chi": 0.6931471805599453,
+      "bound": 2.0794415416798357,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 1001052,
+      "partition_id": "part_A_8",
+      "S": 4.140280312384336,
+      "K_cut": 3.0,
+      "log_chi": 1.3862943611198906,
+      "bound": 4.1588830833596715,
+      "margin": 0.01860277097533558,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 1001053,
+      "partition_id": "part_A_8",
+      "S": 4.1588830833596715,
+      "K_cut": 3.0,
+      "log_chi": 1.3862943611198906,
+      "bound": 4.1588830833596715,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 1001054,
+      "partition_id": "part_A_8",
+      "S": 4.1588830833596715,
+      "K_cut": 3.0,
+      "log_chi": 1.3862943611198906,
+      "bound": 4.1588830833596715,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 1002052,
+      "partition_id": "part_A_8",
+      "S": 6.238324625039507,
+      "K_cut": 3.0,
+      "log_chi": 2.0794415416798357,
+      "bound": 6.238324625039507,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 1002053,
+      "partition_id": "part_A_8",
+      "S": 5.919195840749145,
+      "K_cut": 3.0,
+      "log_chi": 2.0794415416798357,
+      "bound": 6.238324625039507,
+      "margin": 0.3191287842903616,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 1002054,
+      "partition_id": "part_A_8",
+      "S": 6.220823257085584,
+      "K_cut": 3.0,
+      "log_chi": 2.0794415416798357,
+      "bound": 6.238324625039507,
+      "margin": 0.017501367953922653,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 2000052,
+      "partition_id": "part_A_4",
+      "S": 2.772588722239781,
+      "K_cut": 4.0,
+      "log_chi": 0.6931471805599453,
+      "bound": 2.772588722239781,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 2000053,
+      "partition_id": "part_A_4",
+      "S": 2.772588722239781,
+      "K_cut": 4.0,
+      "log_chi": 0.6931471805599453,
+      "bound": 2.772588722239781,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 2,
+      "seed": 2000054,
+      "partition_id": "part_A_4",
+      "S": 2.772588722239781,
+      "K_cut": 4.0,
+      "log_chi": 0.6931471805599453,
+      "bound": 2.772588722239781,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 2001052,
+      "partition_id": "part_A_4",
+      "S": 5.422540391686299,
+      "K_cut": 4.0,
+      "log_chi": 1.3862943611198906,
+      "bound": 5.545177444479562,
+      "margin": 0.1226370527932632,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 2001053,
+      "partition_id": "part_A_4",
+      "S": 5.252925926974651,
+      "K_cut": 4.0,
+      "log_chi": 1.3862943611198906,
+      "bound": 5.545177444479562,
+      "margin": 0.2922515175049112,
+      "passed": true
+    },
+    {
+      "chi": 4,
+      "seed": 2001054,
+      "partition_id": "part_A_4",
+      "S": 5.545177444479562,
+      "K_cut": 4.0,
+      "log_chi": 1.3862943611198906,
+      "bound": 5.545177444479562,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 2002052,
+      "partition_id": "part_A_4",
+      "S": 8.317766166719343,
+      "K_cut": 4.0,
+      "log_chi": 2.0794415416798357,
+      "bound": 8.317766166719343,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 2002053,
+      "partition_id": "part_A_4",
+      "S": 8.317766166719343,
+      "K_cut": 4.0,
+      "log_chi": 2.0794415416798357,
+      "bound": 8.317766166719343,
+      "margin": 0.0,
+      "passed": true
+    },
+    {
+      "chi": 8,
+      "seed": 2002054,
+      "partition_id": "part_A_4",
+      "S": 8.243942394704641,
+      "K_cut": 4.0,
+      "log_chi": 2.0794415416798357,
+      "bound": 8.317766166719343,
+      "margin": 0.07382377201470192,
+      "passed": true
+    }
+  ]
+}

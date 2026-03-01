@@ -1,0 +1,11 @@
+{
+  "samples": 3000,
+  "failures": 0,
+  "required_axes": [
+    "gauge",
+    "geo",
+    "int",
+    "obs",
+    "ptr"
+  ]
+}

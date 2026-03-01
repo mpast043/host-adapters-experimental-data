@@ -1,0 +1,368 @@
+{
+  "generated_at_utc": "2026-02-28T06:20:38.298474+00:00",
+  "budget_start_minutes": 120,
+  "budget_remaining_minutes": 78,
+  "selected": [
+    {
+      "test_id": "claim_w02_poset_infimum",
+      "title": "Claim W02 componentwise infimum executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W02"
+      ],
+      "decision_if_pass": "Promote W02 from DOC_ONLY to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag W02 contradiction and block progression pending formal fix.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w02_poset_infimum",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w06_depth_vector_monotonicity",
+      "title": "Claim W06 depth-vector monotonicity executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W06"
+      ],
+      "decision_if_pass": "Promote W06 from DOC_ONLY to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag W06 monotonicity violation and open corrective branch.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w06_depth_vector_monotonicity",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w08_class_splitting_monotonicity",
+      "title": "Claim W08 class-splitting monotonicity executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W08"
+      ],
+      "decision_if_pass": "Promote W08 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag class-splitting monotonicity contradiction.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w08_class_splitting_monotonicity",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w13_cobs_decomposition_compat",
+      "title": "Claim W13 C_obs decomposition compatibility check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W13"
+      ],
+      "decision_if_pass": "Promote W13 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag decomposition/backward-compatibility issue.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w13_cobs_decomposition_compat",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w14_ejection_expands_core",
+      "title": "Claim W14 ejection theorem executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W14"
+      ],
+      "decision_if_pass": "Promote W14 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag set-theoretic contradiction in ejection theorem.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w14_ejection_expands_core",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w16_time_consistency_monotone",
+      "title": "Claim W16 time consistency monotonic map check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W16"
+      ],
+      "decision_if_pass": "Promote W16 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag time-consistency mapping contradiction.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w16_time_consistency_monotone",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w09_delta_t_well_defined",
+      "title": "Claim W09 Delta-T well-definedness executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W09"
+      ],
+      "decision_if_pass": "Promote W09 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag Delta-T well-definedness contradiction.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w09_delta_t_well_defined",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w10_observer_non_influence",
+      "title": "Claim W10 observer non-influence executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W10"
+      ],
+      "decision_if_pass": "Promote W10 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag observer non-influence contradiction.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w10_observer_non_influence",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w12_observer_triad_mapping",
+      "title": "Claim W12 observer-triad mapping executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W12"
+      ],
+      "decision_if_pass": "Promote W12 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag observer triad mapping inconsistency.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w12_observer_triad_mapping",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w03_memory_excision_consistency",
+      "title": "Claim W03 memory excision consistency executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W03"
+      ],
+      "decision_if_pass": "Promote W03 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag memory excision consistency contradiction.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w03_memory_excision_consistency",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w04_self_reference_consistency",
+      "title": "Claim W04 self-reference consistency executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W04"
+      ],
+      "decision_if_pass": "Promote W04 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag self-reference consistency contradiction.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w04_self_reference_consistency",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w07_cross_axis_isolation",
+      "title": "Claim W07 cross-axis isolation executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W07"
+      ],
+      "decision_if_pass": "Promote W07 to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag cross-axis isolation contradiction.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w07_cross_axis_isolation",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w11_cpmt_annex_t_conformance",
+      "title": "Claim W11 CPMT Annex-T conformance executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W11"
+      ],
+      "decision_if_pass": "Promote W11 from DOC_ONLY to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag CPMT/Annex-T conformance inconsistency for remediation.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w11_cpmt_annex_t_conformance",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w15_pointer_accuracy_orthogonality",
+      "title": "Claim W15 pointer-accuracy orthogonality executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W15"
+      ],
+      "decision_if_pass": "Promote W15 from DOC_ONLY to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag pointer-accuracy coupling beyond allowed tolerance.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w15_pointer_accuracy_orthogonality",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim_w17_local_global_fixed_point_compat",
+      "title": "Claim W17 local/global fixed-point compatibility executable check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "W17"
+      ],
+      "decision_if_pass": "Promote W17 from DOC_ONLY to LOCAL_EXEC evidence-backed.",
+      "decision_if_fail": "Flag incompatibility between local and global fixed-point framing.",
+      "estimated_minutes": 2,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim_w17_local_global_fixed_point_compat",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim2_seed_perturbation",
+      "title": "Claim 2 seed perturbation regression check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "Claim_2"
+      ],
+      "decision_if_pass": "Keep Claim 2 marked stable under seed variation.",
+      "decision_if_fail": "Mark Claim 2 as unstable and require expanded seed coverage before promotion.",
+      "estimated_minutes": 4,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim2_seed_perturbation",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim3_optionb_regime_check",
+      "title": "Claim 3 Option-B regression stability check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "Claim_3"
+      ],
+      "decision_if_pass": "Maintain supported Claim 3 status and continue with current model family assumptions.",
+      "decision_if_fail": "Downgrade Claim 3 support and prioritize model-robustness follow-up tests.",
+      "estimated_minutes": 8,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim3_optionb_regime_check",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    }
+  ],
+  "stop_condition": {
+    "triggered": true,
+    "note": "Time remained while only Tier C work was queued. Budget reallocated to Tier A hardening tasks."
+  }
+}

@@ -1,0 +1,9 @@
+timestamp,test_id,model,L,chi,seed,key_metrics,aic_delta,bic_delta,verdict,artifact_path,exit_code
+2026-02-28T06:01:58.106023+00:00,claim_w02_poset_infimum,claim_check,0,n/a,42,"{""samples"": 2000, ""dims"": 5, ""failures"": 0}",,,PASS,results/science/claim_w02_poset_infimum,0
+2026-02-28T06:01:58.106192+00:00,claim_w06_depth_vector_monotonicity,claim_check,0,n/a,n/a,"{""max_n"": 5000, ""axes"": [""geo"", ""int"", ""gauge"", ""ptr"", ""obs""], ""failure_count"": 0}",,,PASS,results/science/claim_w06_depth_vector_monotonicity,0
+2026-02-28T06:01:58.106325+00:00,claim_w08_class_splitting_monotonicity,claim_check,0,n/a,42,"{""samples"": 4000, ""bit_depth"": 16, ""drops"": 0, ""counts_tail"": [128, 256, 512, 1007, 1743, 2552, 3168, 3547, 3769, 3878]}",,,PASS,results/science/claim_w08_class_splitting_monotonicity,0
+2026-02-28T06:01:58.106455+00:00,claim_w13_cobs_decomposition_compat,claim_check,0,n/a,42,"{""samples"": 2000, ""max_abs_error"": 1.1102230246251565e-16}",,,PASS,results/science/claim_w13_cobs_decomposition_compat,0
+2026-02-28T06:01:58.106577+00:00,claim_w14_ejection_expands_core,claim_check,0,n/a,42,"{""samples"": 1500, ""universe_size"": 60, ""ensemble_size"": 7, ""failures"": 0}",,,PASS,results/science/claim_w14_ejection_expands_core,0
+2026-02-28T06:01:58.107017+00:00,claim_w16_time_consistency_monotone,claim_check,0,n/a,42,"{""samples"": 3000, ""a"": 1.7416963688902962, ""b"": 0.3019391262269546, ""violations"": 0}",,,PASS,results/science/claim_w16_time_consistency_monotone,0
+2026-02-28T06:01:58.107164+00:00,claim2_seed_perturbation,claim2,0,n/a,321,{},,,PASS,results/science/claim2_seed321,0
+2026-02-28T06:01:58.107332+00:00,claim3_optionb_regime_check,optionB,32,"2,4,8",49,{},,,PASS,results/science/campaign,0

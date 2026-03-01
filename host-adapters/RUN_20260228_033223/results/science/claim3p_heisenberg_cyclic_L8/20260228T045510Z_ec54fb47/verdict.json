@@ -1,0 +1,47 @@
+{
+  "claim": "3P",
+  "model": "heisenberg_cyclic",
+  "L": 8,
+  "verdict": "REJECTED",
+  "falsifiers": {
+    "P3.1": {
+      "passed": true,
+      "violations": [],
+      "n_checks": 1,
+      "eps_fid": 0.0001
+    },
+    "P3.2": {
+      "passed": true,
+      "errors": [
+        0.6504109975252858,
+        0.2342570880398216
+      ],
+      "violations": [],
+      "n_checks": 1,
+      "eps_S": 0.001
+    },
+    "P3.3": {
+      "passed": false,
+      "fid_passed": false,
+      "S_passed": false,
+      "best_fidelity": 0.7694955824520857,
+      "final_entropy_error": 0.2342570880398216,
+      "fid_threshold": 0.95,
+      "S_threshold": 0.15
+    },
+    "P3.4": {
+      "passed": false,
+      "delta_aic": -47.44412349482713,
+      "delta_bic": -47.44412349482714,
+      "S_inf_sat": 1.2613990519375917,
+      "c_sat": 2.972413793103448,
+      "aic_sat": -5.204213098149857,
+      "bic_sat": -7.8179187370299665,
+      "a_log": 0.6003831814612339,
+      "b_log": -0.01539903039609043,
+      "aic_log": -52.64833659297699,
+      "bic_log": -55.2620422318571
+    }
+  },
+  "timestamp": "2026-02-28T04:55:17.950651+00:00"
+}

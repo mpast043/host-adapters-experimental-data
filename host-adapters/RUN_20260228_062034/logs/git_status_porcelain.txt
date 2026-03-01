@@ -1,0 +1,7 @@
+ M docs/physics/framework_selection_test_catalog_v1.json
+ M tools/framework_claim_checks.py
+ M tools/run_workflow_auto.py
+ M tools/workflow_auto_multi_agent.py
+?? memory/2026-02-27.md
+?? memory/2026-02-28.md
+?? tools/generate_framework_traceability_summary.py

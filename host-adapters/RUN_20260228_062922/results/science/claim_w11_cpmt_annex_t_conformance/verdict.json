@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-02-28T06:29:26.657421+00:00",
+  "claim_id": "W11",
+  "verdict": "PASS",
+  "rationale": "CPMT projection preserved Annex-T axis coverage and deterministic replay across sampled states.",
+  "metrics": {
+    "samples": 3000,
+    "failures": 0,
+    "required_axes": [
+      "gauge",
+      "geo",
+      "int",
+      "obs",
+      "ptr"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-02-28T06:13:30.443431+00:00",
+  "claim_id": "W09",
+  "verdict": "PASS",
+  "rationale": "Delta T differences were finite for all sampled normal-functional pairs.",
+  "metrics": {
+    "samples": 5000,
+    "non_finite": 0,
+    "max_abs_delta": 1965.415658517396
+  }
+}

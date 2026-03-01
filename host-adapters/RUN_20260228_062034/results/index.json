@@ -1,0 +1,36 @@
+{
+  "run_id": "RUN_20260228_062034",
+  "generated_at_utc": "2026-02-28T06:20:39.124965+00:00",
+  "pointers": {
+    "contracts": {
+      "path": "results/contracts"
+    },
+    "sdk_validation": {
+      "path": "results/sdk_validation"
+    },
+    "science": {
+      "path": "results/science"
+    },
+    "selection": {
+      "path": "results/selection"
+    },
+    "capabilities": {
+      "path": "results/capabilities.json"
+    },
+    "VERDICT": {
+      "path": "results/VERDICT.json"
+    },
+    "VERDICT_latest": {
+      "path": "results/VERDICT_latest.json"
+    },
+    "workflow_status": {
+      "path": "results/workflow_auto_status.json"
+    },
+    "workflow_status_latest": {
+      "path": "results/workflow_auto_status_latest.json"
+    },
+    "result_history": {
+      "path": "results/history/history_index.jsonl"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-02-28T05:49:22.152772+00:00",
+  "baseline_tests": [],
+  "exploration_tests": [],
+  "budgets": {
+    "max_minutes": 120,
+    "max_runs": 80,
+    "max_failures": 10,
+    "seeds": 3,
+    "mode": "COMPLETE"
+  },
+  "stop_conditions": {
+    "hard_failures": [
+      "TEST_FAILURE",
+      "CONTRACT_FAILURE",
+      "RUNTIME_FAILURE",
+      "SELECTION_FAILURE"
+    ],
+    "science_evidence_failure_is_nonblocking": true
+  }
+}

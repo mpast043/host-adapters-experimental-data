@@ -1,0 +1,53 @@
+{
+  "generated_at_utc": "2026-02-28T05:50:08.166981+00:00",
+  "budget_start_minutes": 120,
+  "budget_remaining_minutes": 108,
+  "selected": [
+    {
+      "test_id": "claim2_seed_perturbation",
+      "title": "Claim 2 seed perturbation regression check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "Claim_2"
+      ],
+      "decision_if_pass": "Keep Claim 2 marked stable under seed variation.",
+      "decision_if_fail": "Mark Claim 2 as unstable and require expanded seed coverage before promotion.",
+      "estimated_minutes": 4,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim2_seed_perturbation",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    },
+    {
+      "test_id": "claim3_optionb_regime_check",
+      "title": "Claim 3 Option-B regression stability check",
+      "tier": "B",
+      "critical_path_objective": "B",
+      "target_claims": [
+        "Claim_3"
+      ],
+      "decision_if_pass": "Maintain supported Claim 3 status and continue with current model family assumptions.",
+      "decision_if_fail": "Downgrade Claim 3 support and prioritize model-robustness follow-up tests.",
+      "estimated_minutes": 8,
+      "requires_compute": false,
+      "hardening_task": false,
+      "protects_supported_claim": true,
+      "prevents_regression": true,
+      "execution_key": "claim3_optionb_regime_check",
+      "gate": {
+        "allowed": true,
+        "reasons": []
+      }
+    }
+  ],
+  "stop_condition": {
+    "triggered": true,
+    "note": "Time remained while only Tier C work was queued. Budget reallocated to Tier A hardening tasks."
+  }
+}

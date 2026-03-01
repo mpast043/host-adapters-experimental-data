@@ -1,0 +1,78 @@
+{
+  "framework_spec": {
+    "name": "FRAMEWORK_SPEC_v0.2",
+    "version": "0.2.0",
+    "date": "2026-02-25"
+  },
+  "experiment_name": "claim3_baseline",
+  "run_id": "20260228T053307Z_d6870684",
+  "timestamp_utc": "2026-02-28T05:33:07.993954Z",
+  "claim": {
+    "claim_id": "C3",
+    "option": "B",
+    "statement": "Across multiple partitions, the fitted slope of S versus log chi scales with the partition-dependent cut proxy K_cut, consistent with minimal-cut intuition."
+  },
+  "scope": {
+    "fixed": {
+      "N": 32,
+      "generator": "simplified (toy) entropy generator",
+      "layout": "proxy cut-counting"
+    },
+    "varied": {
+      "chi_sweep": [
+        2,
+        4,
+        8
+      ],
+      "seeds_per_chi": 3,
+      "partitions": [
+        "part_A_16",
+        "part_A_8",
+        "part_A_4"
+      ]
+    },
+    "partition_definition": [
+      {
+        "partition_id": "part_A_16",
+        "subsystem_size": 16
+      },
+      {
+        "partition_id": "part_A_8",
+        "subsystem_size": 8
+      },
+      {
+        "partition_id": "part_A_4",
+        "subsystem_size": 4
+      }
+    ],
+    "K_cut_proxy_rule": "K_cut = floor(log2(N/|A|)) + 1, min 1",
+    "falsifiers_required": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5"
+    ]
+  },
+  "seed_policy": {
+    "seed_base": 42,
+    "formula": "seed = seed_base + (partition_index*1_000_000) + (chi_index*1000) + rep"
+  },
+  "software": {
+    "python": "3.14.3",
+    "numpy": "2.4.2",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O"
+  },
+  "outputs": {
+    "manifest": "manifest.json",
+    "raw_entropy": "raw_entropy.csv",
+    "fits": "fits.json",
+    "bound_checks": "bound_checks.json",
+    "bridge_checks": "bridge_checks.json",
+    "verdict": "verdict.json"
+  },
+  "scope_limitations": [
+    "This run validates scaling, model selection, bound compliance, and the cut-size bridge inside a simplified entropy generator and a proxy K_cut.",
+    "It does not demonstrate that a full physical MERA simulation for a specified Hamiltonian reproduces the same scaling in the same regime, because S is not computed from a Hamiltonian ground state/time evolution and K_cut is not computed as an actual network minimal cut."
+  ]
+}

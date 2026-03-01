@@ -1,0 +1,21 @@
+timestamp,test_id,model,L,chi,seed,key_metrics,aic_delta,bic_delta,verdict,artifact_path,exit_code
+2026-02-28T06:29:26.127225+00:00,claim_w02_poset_infimum,claim_check,0,n/a,42,"{""samples"": 2000, ""dims"": 5, ""failures"": 0}",,,PASS,results/science/claim_w02_poset_infimum,0
+2026-02-28T06:29:26.164912+00:00,claim_w06_depth_vector_monotonicity,claim_check,0,n/a,n/a,"{""max_n"": 5000, ""axes"": [""geo"", ""int"", ""gauge"", ""ptr"", ""obs""], ""failure_count"": 0}",,,PASS,results/science/claim_w06_depth_vector_monotonicity,0
+2026-02-28T06:29:26.216536+00:00,claim_w08_class_splitting_monotonicity,claim_check,0,n/a,42,"{""samples"": 4000, ""bit_depth"": 16, ""drops"": 0, ""counts_tail"": [128, 256, 512, 1007, 1743, 2552, 3168, 3547, 3769, 3878]}",,,PASS,results/science/claim_w08_class_splitting_monotonicity,0
+2026-02-28T06:29:26.257703+00:00,claim_w13_cobs_decomposition_compat,claim_check,0,n/a,42,"{""samples"": 2000, ""max_abs_error"": 1.1102230246251565e-16}",,,PASS,results/science/claim_w13_cobs_decomposition_compat,0
+2026-02-28T06:29:26.348934+00:00,claim_w14_ejection_expands_core,claim_check,0,n/a,42,"{""samples"": 1500, ""universe_size"": 60, ""ensemble_size"": 7, ""failures"": 0}",,,PASS,results/science/claim_w14_ejection_expands_core,0
+2026-02-28T06:29:26.385644+00:00,claim_w16_time_consistency_monotone,claim_check,0,n/a,42,"{""samples"": 3000, ""a"": 1.7416963688902962, ""b"": 0.3019391262269546, ""violations"": 0}",,,PASS,results/science/claim_w16_time_consistency_monotone,0
+2026-02-28T06:29:26.424210+00:00,claim_w09_delta_t_well_defined,claim_check,0,n/a,42,"{""samples"": 5000, ""non_finite"": 0, ""max_abs_delta"": 1965.415658517396}",,,PASS,results/science/claim_w09_delta_t_well_defined,0
+2026-02-28T06:29:26.468298+00:00,claim_w10_observer_non_influence,claim_check,0,n/a,42,"{""samples"": 3000, ""mismatches"": 0}",,,PASS,results/science/claim_w10_observer_non_influence,0
+2026-02-28T06:29:26.505818+00:00,claim_w12_observer_triad_mapping,claim_check,0,n/a,n/a,"{""mapping"": {""Access"": ""M"", ""Selection"": ""omega"", ""Commitment"": ""U""}, ""bijective"": true}",,,PASS,results/science/claim_w12_observer_triad_mapping,0
+2026-02-28T06:29:26.544527+00:00,claim_w03_memory_excision_consistency,claim_check,0,n/a,42,"{""samples"": 3000, ""failures"": 0}",,,PASS,results/science/claim_w03_memory_excision_consistency,0
+2026-02-28T06:29:26.582259+00:00,claim_w04_self_reference_consistency,claim_check,0,n/a,42,"{""samples"": 500, ""failures"": 0}",,,PASS,results/science/claim_w04_self_reference_consistency,0
+2026-02-28T06:29:26.620410+00:00,claim_w07_cross_axis_isolation,claim_check,0,n/a,42,"{""samples"": 3000, ""failures"": 0}",,,PASS,results/science/claim_w07_cross_axis_isolation,0
+2026-02-28T06:29:26.662530+00:00,claim_w11_cpmt_annex_t_conformance,claim_check,0,n/a,42,"{""samples"": 3000, ""failures"": 0, ""required_axes"": [""gauge"", ""geo"", ""int"", ""obs"", ""ptr""]}",,,PASS,results/science/claim_w11_cpmt_annex_t_conformance,0
+2026-02-28T06:29:26.700382+00:00,claim_w15_pointer_accuracy_orthogonality,claim_check,0,n/a,42,"{""samples"": 4000, ""correlation"": -0.005547747389901118, ""threshold"": 0.08}",,,PASS,results/science/claim_w15_pointer_accuracy_orthogonality,0
+2026-02-28T06:29:26.746100+00:00,claim_w17_local_global_fixed_point_compat,claim_check,0,n/a,42,"{""samples"": 3000, ""failures"": 0, ""max_local_points"": 6}",,,PASS,results/science/claim_w17_local_global_fixed_point_compat,0
+2026-02-28T06:29:26.790461+00:00,claim_w18_compression_governance_t7,claim_check,0,n/a,42,"{""samples"": 3000, ""failures"": 0}",,,PASS,results/science/claim_w18_compression_governance_t7,0
+2026-02-28T06:29:26.828628+00:00,claim_w19_meta_limitation_acknowledged,claim_check,0,n/a,42,"{""samples"": 3000, ""false_closure_count"": 0, ""min_residual_gap"": 0.013801169986341559}",,,PASS,results/science/claim_w19_meta_limitation_acknowledged,0
+2026-02-28T06:29:26.866215+00:00,claim_w20_non_negotiability_self_application,claim_check,0,n/a,42,"{""samples"": 3000, ""violations"": 0}",,,PASS,results/science/claim_w20_non_negotiability_self_application,0
+2026-02-28T06:29:26.937428+00:00,claim2_seed_perturbation,claim2,0,n/a,321,{},,,PASS,results/science/claim2_seed321,0
+2026-02-28T06:29:27.032098+00:00,claim3_optionb_regime_check,optionB,32,"2,4,8",49,{},,,PASS,results/science/claim3_explore,0

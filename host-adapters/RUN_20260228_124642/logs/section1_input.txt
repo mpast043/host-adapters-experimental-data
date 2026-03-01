@@ -1,0 +1,3 @@
+=== SECTION 1: FIXED INPUT ===
+PDF copied successfully
+SHA256 computed

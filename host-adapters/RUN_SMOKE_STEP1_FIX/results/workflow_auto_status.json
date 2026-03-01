@@ -1,0 +1,18 @@
+{
+  "run_id": "RUN_SMOKE_STEP1_FIX",
+  "mode": "COMPLETE",
+  "mcp_targets": {
+    "compute_target": "local-compute",
+    "docs_target": null,
+    "discovery_log": "logs/mcporter_list.txt"
+  },
+  "contract_status": "LINT_DEBT",
+  "science_status": "NOT_RUN",
+  "selection_status": "UNDERDETERMINED",
+  "retention_status": "PASS",
+  "artifact_index": "results/index.json",
+  "notes": [
+    "lint_status=LINT_DEBT",
+    "overall_status=PARTIAL"
+  ]
+}

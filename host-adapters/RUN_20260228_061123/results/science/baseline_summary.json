@@ -1,0 +1,45 @@
+{
+  "generated_at_utc": "2026-02-28T06:11:27.365230+00:00",
+  "tests": [
+    {
+      "test_id": "claim2_baseline",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061123/results/science/claim2_baseline",
+        "--seed",
+        "123"
+      ],
+      "exit_code": 0,
+      "log_path": "logs/science_claim2_baseline.txt",
+      "artifact_path": "results/science/claim2_baseline",
+      "verdict": "NOT_RUN"
+    },
+    {
+      "test_id": "claim3_baseline",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_061123/results/science",
+        "--experiment_name",
+        "claim3_baseline",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "42"
+      ],
+      "exit_code": 0,
+      "log_path": "logs/science_claim3_optionb_baseline.txt",
+      "artifact_path": "results/science/claim3_baseline/20260228T061127Z_5c87c546",
+      "verdict": "INCONCLUSIVE"
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "mode": "list",
+  "counts": {
+    "ok": 5,
+    "auth": 4,
+    "offline": 3,
+    "http": 0,
+    "error": 0
+  },
+  "servers": [
+    {
+      "name": "playwright",
+      "status": "ok",
+      "durationMs": 1216,
+      "transport": "STDIO npx @playwright/mcp@latest",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/.codex/config.toml",
+        "importKind": "codex"
+      },
+      "tools": [
+        {
+          "name": "browser_close",
+          "description": "Close the page"
+        },
+        {
+          "name": "browser_resize",
+          "description": "Resize the browser window"
+        },
+        {
+          "name": "browser_console_messages",
+          "description": "Returns all console messages"
+        },
+        {
+          "name": "browser_handle_dialog",
+          "description": "Handle a dialog"
+        },
+        {
+          "name": "browser_evaluate",
+          "description": "Evaluate JavaScript expression on page or element"
+        },
+        {
+          "name": "browser_file_upload",
+          "description": "Upload one or multiple files"
+        },
+        {
+          "name": "browser_fill_form",
+          "description": "Fill multiple form fields"
+        },
+        {
+          "name": "browser_install",
+          "description": "Install the browser specified in the config. Call this if you get an error about the browser not being installed."
+        },
+        {
+          "name": "browser_press_key",
+          "description": "Press a key on the keyboard"
+        },
+        {
+          "name": "browser_type",
+          "description": "Type text into editable element"
+        },
+        {
+          "name": "browser_navigate",
+          "description": "Navigate to a URL"
+        },
+        {
+          "name": "browser_navigate_back",
+          "description": "Go back to the previous page in the history"
+        },
+        {
+          "name": "browser_network_requests",
+          "description": "Returns all network requests since loading the page"
+        },
+        {
+          "name": "browser_run_code",
+          "description": "Run Playwright code snippet"
+        },
+        {
+          "name": "browser_take_screenshot",
+          "description": "Take a screenshot of the current page. You can't perform actions based on the screenshot, use browser_snapshot for actions."
+        },
+        {
+          "name": "browser_snapshot",
+          "description": "Capture accessibility snapshot of the current page, this is better than screenshot"
+        },
+        {
+          "name": "browser_click",
+          "description": "Perform click on a web page"
+        },
+        {
+          "name": "browser_drag",
+          "description": "Perform drag and drop between two elements"
+        },
+        {
+          "name": "browser_hover",
+          "description": "Hover over element on page"
+        },
+        {
+          "name": "browser_select_option",
+          "description": "Select an option in a dropdown"
+        },
+        {
+          "name": "browser_tabs",
+          "description": "List, create, close, or select a browser tab."
+        },
+        {
+          "name": "browser_wait_for",
+          "description": "Wait for text to appear or disappear or a specified time to pass"
+        }
+      ]
+    },
+    {
+      "name": "figma",
+      "status": "auth",
+      "durationMs": 242,
+      "transport": "HTTP https://mcp.figma.com/mcp",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/.codex/config.toml",
+        "importKind": "codex"
+      },
+      "issue": {
+        "kind": "auth",
+        "statusCode": 405,
+        "rawMessage": "SSE error: Non-200 status code (405)"
+      },
+      "authCommand": "mcporter auth figma",
+      "error": "SSE error: Non-200 status code (405)"
+    },
+    {
+      "name": "notion",
+      "status": "auth",
+      "durationMs": 169,
+      "transport": "HTTP https://mcp.notion.com/mcp",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/.codex/config.toml",
+        "importKind": "codex"
+      },
+      "issue": {
+        "kind": "auth",
+        "statusCode": 401,
+        "rawMessage": "SSE error: Non-200 status code (401)"
+      },
+      "authCommand": "mcporter auth notion",
+      "error": "SSE error: Non-200 status code (401)"
+    },
+    {
+      "name": "github",
+      "status": "offline",
+      "durationMs": 24,
+      "transport": "HTTP ttps://api.githubcopilot.com/mcp/",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/.codex/config.toml",
+        "importKind": "codex"
+      },
+      "issue": {
+        "kind": "offline",
+        "rawMessage": "SSE error: TypeError: fetch failed: unknown scheme"
+      },
+      "error": "SSE error: TypeError: fetch failed: unknown scheme"
+    },
+    {
+      "name": "local-compute",
+      "status": "ok",
+      "durationMs": 370,
+      "transport": "STDIO /tmp/openclaws/Repos/host-adapters/.venv/bin/python /tmp/openclaws/Repos/host-adapters/tools/local_compute_mcp.py",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/.codex/config.toml",
+        "importKind": "codex"
+      },
+      "tools": [
+        {
+          "name": "compute_health",
+          "description": "Health and configuration details for this local compute MCP server."
+        },
+        {
+          "name": "compute_exec",
+          "description": "Execute a command synchronously with constrained binaries and capture logs."
+        },
+        {
+          "name": "compute_exec_background",
+          "description": "Start a background command and return a job id for later polling."
+        },
+        {
+          "name": "compute_job_status",
+          "description": "Get status for a compute job id."
+        },
+        {
+          "name": "compute_job_tail",
+          "description": "Return the tail of a compute job log file."
+        },
+        {
+          "name": "compute_list_jobs",
+          "description": "List recent compute jobs."
+        },
+        {
+          "name": "compute_cancel_job",
+          "description": "Terminate a background job by PID if still running."
+        }
+      ]
+    },
+    {
+      "name": "io.github.github/github-mcp-server",
+      "status": "auth",
+      "durationMs": 168,
+      "transport": "HTTP https://api.githubcopilot.com/mcp/",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/Library/Application Support/Code/User/mcp.json",
+        "importKind": "vscode"
+      },
+      "issue": {
+        "kind": "auth",
+        "statusCode": 401,
+        "rawMessage": "SSE error: Non-200 status code (401)"
+      },
+      "authCommand": "mcporter auth io.github.github/github-mcp-server",
+      "error": "SSE error: Non-200 status code (401)"
+    },
+    {
+      "name": "io.github.bytebase/dbhub",
+      "status": "offline",
+      "durationMs": 820,
+      "transport": "STDIO npx @bytebase/dbhub@0.13.2",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/Library/Application Support/Code/User/mcp.json",
+        "importKind": "vscode"
+      },
+      "issue": {
+        "kind": "offline",
+        "rawMessage": "MCP error -32000: Connection closed"
+      },
+      "error": "MCP error -32000: Connection closed"
+    },
+    {
+      "name": "microsoft/playwright-mcp",
+      "status": "ok",
+      "durationMs": 1185,
+      "transport": "STDIO npx @playwright/mcp@latest",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/Library/Application Support/Code/User/mcp.json",
+        "importKind": "vscode"
+      },
+      "tools": [
+        {
+          "name": "browser_close",
+          "description": "Close the page"
+        },
+        {
+          "name": "browser_resize",
+          "description": "Resize the browser window"
+        },
+        {
+          "name": "browser_console_messages",
+          "description": "Returns all console messages"
+        },
+        {
+          "name": "browser_handle_dialog",
+          "description": "Handle a dialog"
+        },
+        {
+          "name": "browser_evaluate",
+          "description": "Evaluate JavaScript expression on page or element"
+        },
+        {
+          "name": "browser_file_upload",
+          "description": "Upload one or multiple files"
+        },
+        {
+          "name": "browser_fill_form",
+          "description": "Fill multiple form fields"
+        },
+        {
+          "name": "browser_install",
+          "description": "Install the browser specified in the config. Call this if you get an error about the browser not being installed."
+        },
+        {
+          "name": "browser_press_key",
+          "description": "Press a key on the keyboard"
+        },
+        {
+          "name": "browser_type",
+          "description": "Type text into editable element"
+        },
+        {
+          "name": "browser_navigate",
+          "description": "Navigate to a URL"
+        },
+        {
+          "name": "browser_navigate_back",
+          "description": "Go back to the previous page in the history"
+        },
+        {
+          "name": "browser_network_requests",
+          "description": "Returns all network requests since loading the page"
+        },
+        {
+          "name": "browser_run_code",
+          "description": "Run Playwright code snippet"
+        },
+        {
+          "name": "browser_take_screenshot",
+          "description": "Take a screenshot of the current page. You can't perform actions based on the screenshot, use browser_snapshot for actions."
+        },
+        {
+          "name": "browser_snapshot",
+          "description": "Capture accessibility snapshot of the current page, this is better than screenshot"
+        },
+        {
+          "name": "browser_click",
+          "description": "Perform click on a web page"
+        },
+        {
+          "name": "browser_drag",
+          "description": "Perform drag and drop between two elements"
+        },
+        {
+          "name": "browser_hover",
+          "description": "Hover over element on page"
+        },
+        {
+          "name": "browser_select_option",
+          "description": "Select an option in a dropdown"
+        },
+        {
+          "name": "browser_tabs",
+          "description": "List, create, close, or select a browser tab."
+        },
+        {
+          "name": "browser_wait_for",
+          "description": "Wait for text to appear or disappear or a specified time to pass"
+        }
+      ]
+    },
+    {
+      "name": "microsoft/markitdown",
+      "status": "ok",
+      "durationMs": 787,
+      "transport": "STDIO uvx markitdown-mcp@0.0.1a4",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/Library/Application Support/Code/User/mcp.json",
+        "importKind": "vscode"
+      },
+      "tools": [
+        {
+          "name": "convert_to_markdown",
+          "description": "Convert a resource described by an http:, https:, file: or data: URI to markdown"
+        }
+      ]
+    },
+    {
+      "name": "io.github.tavily-ai/tavily-mcp",
+      "status": "ok",
+      "durationMs": 777,
+      "transport": "STDIO npx tavily-mcp@0.2.15",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/Library/Application Support/Code/User/mcp.json",
+        "importKind": "vscode"
+      },
+      "tools": [
+        {
+          "name": "tavily_search",
+          "description": "Search the web for current information on any topic. Use for news, facts, or data beyond your knowledge cutoff. Returns snippets and source URLs."
+        },
+        {
+          "name": "tavily_extract",
+          "description": "Extract content from URLs. Returns raw page content in markdown or text format."
+        },
+        {
+          "name": "tavily_crawl",
+          "description": "Crawl a website starting from a URL. Extracts content from pages with configurable depth and breadth."
+        },
+        {
+          "name": "tavily_map",
+          "description": "Map a website's structure. Returns a list of URLs found starting from the base URL."
+        }
+      ]
+    },
+    {
+      "name": "io.github.hashicorp/terraform-mcp-server",
+      "status": "offline",
+      "durationMs": 211,
+      "transport": "STDIO docker run -i --rm run --rm -i -e ${input:e} TFE_ADDRESS -e ${input:e} TFE_TOKEN -e ${input:e} ENABLE_TF_OPERATIONS hashicorp/terraform-mcp-server:0.4.0 -e TFE_ADDRESS -e TFE_TOKEN -e ENABLE_TF_OPERATIONS docker.io/hashicorp/terraform-mcp-server:0.4.0",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/Library/Application Support/Code/User/mcp.json",
+        "importKind": "vscode"
+      },
+      "issue": {
+        "kind": "offline",
+        "rawMessage": "MCP error -32000: Connection closed"
+      },
+      "error": "MCP error -32000: Connection closed"
+    },
+    {
+      "name": "com.apify/apify-mcp-server",
+      "status": "auth",
+      "durationMs": 139,
+      "transport": "HTTP https://mcp.apify.com/",
+      "source": {
+        "kind": "import",
+        "path": "/Users/meganpastore/Library/Application Support/Code/User/mcp.json",
+        "importKind": "vscode"
+      },
+      "issue": {
+        "kind": "auth",
+        "statusCode": 401,
+        "rawMessage": "SSE error: Non-200 status code (401)"
+      },
+      "authCommand": "mcporter auth com.apify/apify-mcp-server",
+      "error": "SSE error: Non-200 status code (401)"
+    }
+  ]
+}

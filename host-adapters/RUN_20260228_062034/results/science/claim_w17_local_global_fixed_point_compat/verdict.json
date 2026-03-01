@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-02-28T06:20:38.949790+00:00",
+  "claim_id": "W17",
+  "verdict": "PASS",
+  "rationale": "Sampled local fixed points embedded consistently in a global fixed-point frame.",
+  "metrics": {
+    "samples": 3000,
+    "failures": 0,
+    "max_local_points": 6
+  }
+}

@@ -1,0 +1,2 @@
+origin	https://github.com/mpast043/host-adapters.git (fetch)
+origin	https://github.com/mpast043/host-adapters.git (push)

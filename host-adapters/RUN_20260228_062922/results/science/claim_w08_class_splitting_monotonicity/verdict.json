@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-02-28T06:29:26.211401+00:00",
+  "claim_id": "W08",
+  "verdict": "PASS",
+  "rationale": "Prefix class count was monotone non-decreasing across increasing resolution depth.",
+  "metrics": {
+    "samples": 4000,
+    "bit_depth": 16,
+    "drops": 0,
+    "counts_tail": [
+      128,
+      256,
+      512,
+      1007,
+      1743,
+      2552,
+      3168,
+      3547,
+      3769,
+      3878
+    ]
+  }
+}

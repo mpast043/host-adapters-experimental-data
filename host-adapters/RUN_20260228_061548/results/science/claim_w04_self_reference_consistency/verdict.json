@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-02-28T06:16:05.737264+00:00",
+  "claim_id": "W04",
+  "verdict": "FAIL",
+  "rationale": "Self-reference exceeded capacity.",
+  "metrics": {
+    "samples": 500,
+    "failures": 500
+  }
+}

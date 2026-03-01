@@ -1,0 +1,9 @@
+{
+  "test": "P3",
+  "verdict": "REJECT",
+  "status": "COMPLETE",
+  "passed": {
+    "P3.1_gluing_stable": false,
+    "P3.2_excision_valid": true
+  }
+}

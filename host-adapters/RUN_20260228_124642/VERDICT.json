@@ -1,0 +1,29 @@
+{
+  "overall_status": "PARTIAL",
+  "objective": "PHYSICS_P",
+  "compute_mode": "LOCAL_ONLY",
+  "governance": "PASS",
+  "physics": "PARTIAL",
+  "selection": "SUPPORTED",
+  "exploration_runs": 1,
+  "key_artifacts": {
+    "verdict": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/VERDICT.json",
+    "manifest": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/manifest.json",
+    "ledger": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/selection/ledger.jsonl",
+    "baseline_index": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/physics/baseline/baseline_index.json",
+    "framework_md": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/docs/framework.md"
+  },
+  "physics_summary": {
+    "tests_total": 4,
+    "complete": 2,
+    "missing_runners": 2,
+    "supported": 1,
+    "rejected": 1
+  },
+  "mcp": {
+    "docs_target": "microsoft/markitdown (ad-hoc stdio fallback)",
+    "compute_target": "local-compute",
+    "compute_mode": "LOCAL_ONLY"
+  },
+  "timestamp_utc": "2026-02-28T17:53:39Z"
+}

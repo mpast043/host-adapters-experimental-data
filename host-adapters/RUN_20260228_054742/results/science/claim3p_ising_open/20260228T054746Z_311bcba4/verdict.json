@@ -1,0 +1,47 @@
+{
+  "claim": "3P",
+  "model": "ising_open",
+  "L": 8,
+  "verdict": "REJECTED",
+  "falsifiers": {
+    "P3.1": {
+      "passed": true,
+      "violations": [],
+      "n_checks": 1,
+      "eps_fid": 0.0001
+    },
+    "P3.2": {
+      "passed": true,
+      "errors": [
+        0.07649902673454945,
+        0.06537429120190325
+      ],
+      "violations": [],
+      "n_checks": 1,
+      "eps_S": 0.001
+    },
+    "P3.3": {
+      "passed": false,
+      "fid_passed": false,
+      "S_passed": true,
+      "best_fidelity": 0.1870123657765897,
+      "final_entropy_error": 0.06537429120190325,
+      "fid_threshold": 0.95,
+      "S_threshold": 0.15
+    },
+    "P3.4": {
+      "passed": false,
+      "delta_aic": -27.406102378652225,
+      "delta_bic": -27.40610237865223,
+      "S_inf_sat": 0.09185373055387488,
+      "c_sat": 12.0,
+      "aic_sat": -25.242234214324764,
+      "bic_sat": -27.855939853204873,
+      "a_log": 0.016049600784149916,
+      "b_log": 0.0011681772682167364,
+      "aic_log": -52.64833659297699,
+      "bic_log": -55.2620422318571
+    }
+  },
+  "timestamp": "2026-02-28T05:47:56.455303+00:00"
+}

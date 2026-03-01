@@ -1,0 +1,61 @@
+{
+  "generated_at_utc": "2026-02-28T06:01:58.105869+00:00",
+  "tests": [
+    {
+      "test_id": "claim_w02_poset_infimum",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim_w02_poset_infimum"
+    },
+    {
+      "test_id": "claim_w06_depth_vector_monotonicity",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim_w06_depth_vector_monotonicity"
+    },
+    {
+      "test_id": "claim_w08_class_splitting_monotonicity",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim_w08_class_splitting_monotonicity"
+    },
+    {
+      "test_id": "claim_w13_cobs_decomposition_compat",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim_w13_cobs_decomposition_compat"
+    },
+    {
+      "test_id": "claim_w14_ejection_expands_core",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim_w14_ejection_expands_core"
+    },
+    {
+      "test_id": "claim_w16_time_consistency_monotone",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim_w16_time_consistency_monotone"
+    },
+    {
+      "test_id": "claim2_seed_perturbation",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/claim2_seed321"
+    },
+    {
+      "test_id": "claim3_optionb_regime_check",
+      "verdict": "PASS",
+      "delta_aic": null,
+      "delta_bic": null,
+      "artifact_path": "results/science/campaign"
+    }
+  ]
+}

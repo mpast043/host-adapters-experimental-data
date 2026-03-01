@@ -1,0 +1,1912 @@
+{
+  "run_id": "RUN_20260228_033223",
+  "repo_root": "/private/tmp/openclaws/Repos/host-adapters",
+  "artifacts_root": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters",
+  "started_utc": "2026-02-28T03:32:23.647392+00:00",
+  "host": {
+    "hostname": "Mac",
+    "os": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.3",
+    "user": "meganpastore"
+  },
+  "steps": {
+    "0": {
+      "name": "Preflight and MCP discovery",
+      "status": "PASS"
+    },
+    "1": {
+      "name": "Repo verification",
+      "status": "PASS"
+    },
+    "2": {
+      "name": "CGF contract verification",
+      "status": "PASS"
+    },
+    "3": {
+      "name": "Scientific baseline suite",
+      "status": "PASS"
+    },
+    "4": {
+      "name": "Exploration campaign",
+      "status": "PASS"
+    },
+    "5": {
+      "name": "Selection pass",
+      "status": "PASS"
+    },
+    "6": {
+      "name": "Verdict and retention",
+      "status": "PASS"
+    }
+  },
+  "commands": [
+    {
+      "name": "env_uname",
+      "step": "0",
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:23.653419+00:00",
+      "ended_utc": "2026-02-28T03:32:23.655019+00:00",
+      "duration_s": 0.002,
+      "log_path": "logs/env_uname.txt"
+    },
+    {
+      "name": "env_python_version",
+      "step": "0",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "--version"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:23.655174+00:00",
+      "ended_utc": "2026-02-28T03:32:23.661480+00:00",
+      "duration_s": 0.006,
+      "log_path": "logs/env_python_version.txt"
+    },
+    {
+      "name": "env_pip_freeze",
+      "step": "0",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:23.661657+00:00",
+      "ended_utc": "2026-02-28T03:32:23.784212+00:00",
+      "duration_s": 0.123,
+      "log_path": "logs/env_pip_freeze.txt"
+    },
+    {
+      "name": "git_remote_v",
+      "step": "0",
+      "command": [
+        "git",
+        "remote",
+        "-v"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:23.784495+00:00",
+      "ended_utc": "2026-02-28T03:32:23.793159+00:00",
+      "duration_s": 0.009,
+      "log_path": "logs/git_remote_v.txt"
+    },
+    {
+      "name": "git_branch",
+      "step": "0",
+      "command": [
+        "git",
+        "rev-parse",
+        "--abbrev-ref",
+        "HEAD"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:23.793397+00:00",
+      "ended_utc": "2026-02-28T03:32:23.800315+00:00",
+      "duration_s": 0.007,
+      "log_path": "logs/git_branch.txt"
+    },
+    {
+      "name": "git_commit",
+      "step": "0",
+      "command": [
+        "git",
+        "rev-parse",
+        "--short",
+        "HEAD"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:23.800539+00:00",
+      "ended_utc": "2026-02-28T03:32:23.807648+00:00",
+      "duration_s": 0.007,
+      "log_path": "logs/git_commit.txt"
+    },
+    {
+      "name": "git_status_porcelain",
+      "step": "0",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:23.807854+00:00",
+      "ended_utc": "2026-02-28T03:32:23.815641+00:00",
+      "duration_s": 0.008,
+      "log_path": "logs/git_status_porcelain.txt"
+    },
+    {
+      "name": "mcporter_cmd_check",
+      "step": "0",
+      "command": [
+        "sh",
+        "-lc",
+        "command -v mcporter"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:23.815875+00:00",
+      "ended_utc": "2026-02-28T03:32:23.821061+00:00",
+      "duration_s": 0.005,
+      "log_path": "logs/mcporter_cmd_check.txt"
+    },
+    {
+      "name": "mcporter_list",
+      "step": "0",
+      "command": [
+        "mcporter",
+        "list"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:23.821243+00:00",
+      "ended_utc": "2026-02-28T03:32:25.201154+00:00",
+      "duration_s": 1.38,
+      "log_path": "logs/mcporter_list.txt"
+    },
+    {
+      "name": "pip_install_requirements",
+      "step": "1",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:25.202484+00:00",
+      "ended_utc": "2026-02-28T03:32:25.443402+00:00",
+      "duration_s": 0.241,
+      "log_path": "logs/pip_install_requirements.txt"
+    },
+    {
+      "name": "make_lint",
+      "step": "1",
+      "command": [
+        "make",
+        "lint"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 2,
+      "started_utc": "2026-02-28T03:32:25.443700+00:00",
+      "ended_utc": "2026-02-28T03:32:25.452645+00:00",
+      "duration_s": 0.009,
+      "log_path": "logs/make_lint.txt",
+      "tail200_path": "logs/make_lint_tail200.txt"
+    },
+    {
+      "name": "ruff_fix",
+      "step": "1",
+      "command": [
+        "ruff",
+        "check",
+        ".",
+        "--fix"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 127,
+      "started_utc": "2026-02-28T03:32:25.453000+00:00",
+      "ended_utc": "2026-02-28T03:32:25.453926+00:00",
+      "duration_s": 0.001,
+      "log_path": "logs/ruff_fix.txt",
+      "tail200_path": "logs/ruff_fix_tail200.txt"
+    },
+    {
+      "name": "ruff_format",
+      "step": "1",
+      "command": [
+        "ruff",
+        "format",
+        "."
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 127,
+      "started_utc": "2026-02-28T03:32:25.454195+00:00",
+      "ended_utc": "2026-02-28T03:32:25.455030+00:00",
+      "duration_s": 0.001,
+      "log_path": "logs/ruff_format.txt",
+      "tail200_path": "logs/ruff_format_tail200.txt"
+    },
+    {
+      "name": "make_lint_rerun",
+      "step": "1",
+      "command": [
+        "make",
+        "lint"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 2,
+      "started_utc": "2026-02-28T03:32:25.455270+00:00",
+      "ended_utc": "2026-02-28T03:32:25.462095+00:00",
+      "duration_s": 0.007,
+      "log_path": "logs/make_lint_rerun.txt",
+      "tail200_path": "logs/make_lint_rerun_tail200.txt"
+    },
+    {
+      "name": "make_test_fast",
+      "step": "1",
+      "command": [
+        "make",
+        "test-fast"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:25.462526+00:00",
+      "ended_utc": "2026-02-28T03:32:26.016561+00:00",
+      "duration_s": 0.554,
+      "log_path": "logs/make_test_fast.txt"
+    },
+    {
+      "name": "contract_suite",
+      "step": "2",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-v",
+        "tools/contract_compliance_tests.py"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:26.607880+00:00",
+      "ended_utc": "2026-02-28T03:32:27.070140+00:00",
+      "duration_s": 0.462,
+      "log_path": "logs/contract_suite.txt"
+    },
+    {
+      "name": "validate_sdk_artifacts",
+      "step": "2",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/validate_sdk_artifacts.py"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:27.070566+00:00",
+      "ended_utc": "2026-02-28T03:32:27.091315+00:00",
+      "duration_s": 0.021,
+      "log_path": "logs/validate_sdk_artifacts.txt"
+    },
+    {
+      "name": "science_claim2_baseline",
+      "step": "3",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim2_baseline",
+        "--seed",
+        "123"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T03:32:27.091900+00:00",
+      "ended_utc": "2026-02-28T03:32:27.269098+00:00",
+      "duration_s": 0.177,
+      "log_path": "logs/science_claim2_baseline.txt",
+      "tail200_path": "logs/science_claim2_baseline_tail200.txt"
+    },
+    {
+      "name": "science_claim3_optionb_baseline",
+      "step": "3",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science",
+        "--experiment_name",
+        "claim3_baseline",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "42"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:27.269560+00:00",
+      "ended_utc": "2026-02-28T03:32:27.377679+00:00",
+      "duration_s": 0.108,
+      "log_path": "logs/science_claim3_optionb_baseline.txt"
+    },
+    {
+      "name": "science_claim3p_ising_open",
+      "step": "3",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_open",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_ising_open"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T03:32:27.378125+00:00",
+      "ended_utc": "2026-02-28T03:32:41.400962+00:00",
+      "duration_s": 14.023,
+      "log_path": "logs/science_claim3p_ising_open.txt",
+      "tail200_path": "logs/science_claim3p_ising_open_tail200.txt"
+    },
+    {
+      "name": "plan_framework_selection_tests",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/plan_framework_selection_tests.py",
+        "--repo-root",
+        "/private/tmp/openclaws/Repos/host-adapters",
+        "--artifacts-root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223",
+        "--catalog",
+        "docs/physics/framework_selection_test_catalog_v1.json",
+        "--max-minutes",
+        "120",
+        "--max-runs",
+        "80",
+        "--output-json",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.json",
+        "--output-md",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.md",
+        "--compute-target",
+        "local-compute"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:41.402309+00:00",
+      "ended_utc": "2026-02-28T03:32:41.436413+00:00",
+      "duration_s": 0.034,
+      "log_path": "logs/plan_framework_selection_tests.txt"
+    },
+    {
+      "name": "explore_platform_mcporter_health_snapshot",
+      "step": "4",
+      "command": [
+        "mcporter",
+        "list"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:41.436896+00:00",
+      "ended_utc": "2026-02-28T03:32:42.923920+00:00",
+      "duration_s": 1.487,
+      "log_path": "logs/explore_platform_mcporter_health_snapshot.txt"
+    },
+    {
+      "name": "explore_platform_openclaw_opt_check",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/openclaw_opt_check.py",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/platform_openclaw_opt_check/openclaw_opt_check.json"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:42.924596+00:00",
+      "ended_utc": "2026-02-28T03:32:46.396630+00:00",
+      "duration_s": 3.472,
+      "log_path": "logs/explore_platform_openclaw_opt_check.txt"
+    },
+    {
+      "name": "explore_claim2_seed_perturbation",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim2_seed321",
+        "--seed",
+        "321"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T03:32:46.396996+00:00",
+      "ended_utc": "2026-02-28T03:32:46.470779+00:00",
+      "duration_s": 0.074,
+      "log_path": "logs/explore_claim2_seed_perturbation.txt",
+      "tail200_path": "logs/explore_claim2_seed_perturbation_tail200.txt"
+    },
+    {
+      "name": "explore_claim3_optionb_regime_check",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science",
+        "--experiment_name",
+        "claim3_explore",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "49"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:32:46.471324+00:00",
+      "ended_utc": "2026-02-28T03:32:46.565050+00:00",
+      "duration_s": 0.094,
+      "log_path": "logs/explore_claim3_optionb_regime_check.txt"
+    },
+    {
+      "name": "explore_claim2_seed_perturbation",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/prototype/experiments/exp2_mera_tradeoff/exp2_mera_tradeoff.py",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim2_seed321",
+        "--seed",
+        "321"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:45:55.893639+00:00",
+      "ended_utc": "2026-02-28T03:45:55.999616+00:00",
+      "duration_s": 0.106,
+      "log_path": "logs/explore_claim2_seed_perturbation.txt"
+    },
+    {
+      "name": "explore_claim3_optionb_regime_check",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science",
+        "--experiment_name",
+        "claim3_explore",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "50"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T04:18:04.996584+00:00",
+      "ended_utc": "2026-02-28T04:18:05.115622+00:00",
+      "duration_s": 0.119,
+      "log_path": "logs/explore_claim3_optionb_regime_check.txt"
+    },
+    {
+      "name": "explore_claim3_optionb_regime_check",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science",
+        "--experiment_name",
+        "claim3_explore",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "51"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T04:18:22.344257+00:00",
+      "ended_utc": "2026-02-28T04:18:22.451197+00:00",
+      "duration_s": 0.107,
+      "log_path": "logs/explore_claim3_optionb_regime_check.txt"
+    },
+    {
+      "name": "explore_claim3_optionb_regime_check",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science",
+        "--experiment_name",
+        "claim3_explore",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "52"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T04:18:31.748945+00:00",
+      "ended_utc": "2026-02-28T04:18:31.866928+00:00",
+      "duration_s": 0.118,
+      "log_path": "logs/explore_claim3_optionb_regime_check.txt"
+    },
+    {
+      "name": "explore_claim3_optionb_regime_check",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science",
+        "--experiment_name",
+        "claim3_explore",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "53"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T04:18:32.017434+00:00",
+      "ended_utc": "2026-02-28T04:18:32.112674+00:00",
+      "duration_s": 0.095,
+      "log_path": "logs/explore_claim3_optionb_regime_check.txt"
+    },
+    {
+      "name": "explore_claim3_optionb_regime_check",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science",
+        "--experiment_name",
+        "claim3_explore",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "54"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T04:29:07.678697+00:00",
+      "ended_utc": "2026-02-28T04:29:07.789975+00:00",
+      "duration_s": 0.111,
+      "log_path": "logs/explore_claim3_optionb_regime_check.txt"
+    },
+    {
+      "name": "plan_framework_selection_tests",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/plan_framework_selection_tests.py",
+        "--repo-root",
+        "/private/tmp/openclaws/Repos/host-adapters",
+        "--artifacts-root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223",
+        "--catalog",
+        "docs/physics/framework_selection_test_catalog_v1.json",
+        "--max-minutes",
+        "120",
+        "--max-runs",
+        "80",
+        "--output-json",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.json",
+        "--output-md",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.md",
+        "--compute-target",
+        "local-compute",
+        "--tier-c-justification",
+        "Escalate Tier C to resolve persistent UNDERDETERMINED selection."
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T04:39:45.125652+00:00",
+      "ended_utc": "2026-02-28T04:39:45.160188+00:00",
+      "duration_s": 0.035,
+      "log_path": "logs/plan_framework_selection_tests.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "43",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:39:45.161364+00:00",
+      "ended_utc": "2026-02-28T04:39:55.384959+00:00",
+      "duration_s": 10.224,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "43",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:39:55.385959+00:00",
+      "ended_utc": "2026-02-28T04:40:01.505262+00:00",
+      "duration_s": 6.119,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "43",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:40:01.506201+00:00",
+      "ended_utc": "2026-02-28T04:40:40.421394+00:00",
+      "duration_s": 38.915,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:45:19.509541+00:00",
+      "ended_utc": "2026-02-28T04:45:28.618197+00:00",
+      "duration_s": 9.109,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:45:28.619093+00:00",
+      "ended_utc": "2026-02-28T04:45:34.486584+00:00",
+      "duration_s": 5.867,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:45:34.487470+00:00",
+      "ended_utc": "2026-02-28T04:46:11.577811+00:00",
+      "duration_s": 37.09,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "plan_framework_selection_tests",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/plan_framework_selection_tests.py",
+        "--repo-root",
+        "/private/tmp/openclaws/Repos/host-adapters",
+        "--artifacts-root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223",
+        "--catalog",
+        "docs/physics/framework_selection_test_catalog_v1.json",
+        "--max-minutes",
+        "120",
+        "--max-runs",
+        "80",
+        "--output-json",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.json",
+        "--output-md",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.md",
+        "--compute-target",
+        "local-compute",
+        "--tier-c-justification",
+        "Escalate Tier C to resolve persistent UNDERDETERMINED selection"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T04:46:18.025362+00:00",
+      "ended_utc": "2026-02-28T04:46:18.057885+00:00",
+      "duration_s": 0.033,
+      "log_path": "logs/plan_framework_selection_tests.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "43",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:46:18.058980+00:00",
+      "ended_utc": "2026-02-28T04:46:27.638721+00:00",
+      "duration_s": 9.58,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "43",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:46:27.639598+00:00",
+      "ended_utc": "2026-02-28T04:46:33.786857+00:00",
+      "duration_s": 6.147,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "43",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:46:33.787742+00:00",
+      "ended_utc": "2026-02-28T04:47:13.028348+00:00",
+      "duration_s": 39.241,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "44",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:47:19.522664+00:00",
+      "ended_utc": "2026-02-28T04:47:29.656332+00:00",
+      "duration_s": 10.134,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "44",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:47:29.657258+00:00",
+      "ended_utc": "2026-02-28T04:47:36.231557+00:00",
+      "duration_s": 6.574,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "44",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:47:36.232457+00:00",
+      "ended_utc": "2026-02-28T04:48:17.995698+00:00",
+      "duration_s": 41.763,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "45",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:48:24.438942+00:00",
+      "ended_utc": "2026-02-28T04:48:35.417375+00:00",
+      "duration_s": 10.978,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "45",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:48:35.418392+00:00",
+      "ended_utc": "2026-02-28T04:48:42.507334+00:00",
+      "duration_s": 7.089,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "45",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:48:42.508522+00:00",
+      "ended_utc": "2026-02-28T04:49:27.344318+00:00",
+      "duration_s": 44.836,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "46",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:49:33.947749+00:00",
+      "ended_utc": "2026-02-28T04:49:45.503505+00:00",
+      "duration_s": 11.556,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "46",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:49:45.504628+00:00",
+      "ended_utc": "2026-02-28T04:49:52.739863+00:00",
+      "duration_s": 7.235,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "46",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:49:52.741017+00:00",
+      "ended_utc": "2026-02-28T04:50:40.429099+00:00",
+      "duration_s": 47.688,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "47",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:50:47.556480+00:00",
+      "ended_utc": "2026-02-28T04:50:59.585697+00:00",
+      "duration_s": 12.029,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "47",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:50:59.586931+00:00",
+      "ended_utc": "2026-02-28T04:51:07.031006+00:00",
+      "duration_s": 7.444,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "47",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:51:07.032131+00:00",
+      "ended_utc": "2026-02-28T04:51:57.945985+00:00",
+      "duration_s": 50.914,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "explore_claim3_optionb_regime_check",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py",
+        "--output_root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science",
+        "--experiment_name",
+        "claim3_explore",
+        "--chi_sweep",
+        "2,4,8",
+        "--seeds_per_chi",
+        "3",
+        "--num_sites",
+        "32",
+        "--subsystem_sizes",
+        "16,8,4",
+        "--seed_base",
+        "55"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T04:52:04.641837+00:00",
+      "ended_utc": "2026-02-28T04:52:04.757992+00:00",
+      "duration_s": 0.116,
+      "log_path": "logs/explore_claim3_optionb_regime_check.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "48",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:52:04.758558+00:00",
+      "ended_utc": "2026-02-28T04:52:20.733893+00:00",
+      "duration_s": 15.975,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "48",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:52:20.735389+00:00",
+      "ended_utc": "2026-02-28T04:52:30.050694+00:00",
+      "duration_s": 9.315,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "48",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:52:30.051938+00:00",
+      "ended_utc": "2026-02-28T04:53:33.794733+00:00",
+      "duration_s": 63.743,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:54:59.071721+00:00",
+      "ended_utc": "2026-02-28T04:55:10.487397+00:00",
+      "duration_s": 11.416,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:55:10.488309+00:00",
+      "ended_utc": "2026-02-28T04:55:18.305716+00:00",
+      "duration_s": 7.817,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:55:18.306754+00:00",
+      "ended_utc": "2026-02-28T04:56:04.969628+00:00",
+      "duration_s": 46.663,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_ising_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:56:23.079565+00:00",
+      "ended_utc": "2026-02-28T04:56:35.091469+00:00",
+      "duration_s": 12.012,
+      "log_path": "logs/explore_claim3p_ising_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_ising_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_heisenberg_cyclic_l8",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "8",
+        "--A_size",
+        "4",
+        "--model",
+        "heisenberg_cyclic",
+        "--chi_sweep",
+        "2,4",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "30",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_heisenberg_cyclic_L8"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:56:35.092650+00:00",
+      "ended_utc": "2026-02-28T04:56:42.646514+00:00",
+      "duration_s": 7.554,
+      "log_path": "logs/explore_claim3p_heisenberg_cyclic_l8.txt",
+      "tail200_path": "logs/explore_claim3p_heisenberg_cyclic_l8_tail200.txt"
+    },
+    {
+      "name": "explore_claim3p_l16_gate",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "/private/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py",
+        "--L",
+        "16",
+        "--A_size",
+        "8",
+        "--model",
+        "ising_cyclic",
+        "--chi_sweep",
+        "2,4,8",
+        "--restarts_per_chi",
+        "1",
+        "--fit_steps",
+        "40",
+        "--seed",
+        "42",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/claim3p_cyclic_L16"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 1,
+      "started_utc": "2026-02-28T04:56:42.647733+00:00",
+      "ended_utc": "2026-02-28T04:57:32.745307+00:00",
+      "duration_s": 50.098,
+      "log_path": "logs/explore_claim3p_l16_gate.txt",
+      "tail200_path": "logs/explore_claim3p_l16_gate_tail200.txt"
+    },
+    {
+      "name": "plan_framework_selection_tests",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/plan_framework_selection_tests.py",
+        "--repo-root",
+        "/private/tmp/openclaws/Repos/host-adapters",
+        "--artifacts-root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223",
+        "--catalog",
+        "docs/physics/framework_selection_test_catalog_v1.json",
+        "--max-minutes",
+        "120",
+        "--max-runs",
+        "80",
+        "--output-json",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.json",
+        "--output-md",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.md",
+        "--focus-objective",
+        "A",
+        "--compute-target",
+        "local-compute"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T05:04:52.023861+00:00",
+      "ended_utc": "2026-02-28T05:04:52.059808+00:00",
+      "duration_s": 0.036,
+      "log_path": "logs/plan_framework_selection_tests.txt"
+    },
+    {
+      "name": "explore_platform_openclaw_opt_check_relaxed",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/openclaw_opt_check.py",
+        "--output",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/platform_openclaw_opt_check_relaxed/openclaw_opt_check.json",
+        "--min-files",
+        "5",
+        "--min-chunks",
+        "20",
+        "--min-eligible-skills",
+        "8",
+        "--max-disabled-skills",
+        "6"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T05:05:43.536107+00:00",
+      "ended_utc": "2026-02-28T05:05:47.387994+00:00",
+      "duration_s": 3.852,
+      "log_path": "logs/explore_platform_openclaw_opt_check_relaxed.txt"
+    },
+    {
+      "name": "plan_framework_selection_tests",
+      "step": "4",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "tools/plan_framework_selection_tests.py",
+        "--repo-root",
+        "/private/tmp/openclaws/Repos/host-adapters",
+        "--artifacts-root",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223",
+        "--catalog",
+        "docs/physics/framework_selection_test_catalog_v1.json",
+        "--max-minutes",
+        "120",
+        "--max-runs",
+        "80",
+        "--output-json",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.json",
+        "--output-md",
+        "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_033223/results/science/exploration_proposals.md",
+        "--focus-objective",
+        "B",
+        "--compute-target",
+        "local-compute"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T05:20:37.471672+00:00",
+      "ended_utc": "2026-02-28T05:20:37.507661+00:00",
+      "duration_s": 0.036,
+      "log_path": "logs/plan_framework_selection_tests.txt"
+    }
+  ],
+  "mcp_calls": [
+    {
+      "tool": "mcporter list",
+      "server_target": "local",
+      "request_summary": "discover available MCP servers",
+      "response_pointer": "logs/mcporter_list.txt"
+    }
+  ],
+  "failure_classification": "SELECTION_FAILURE",
+  "failure_message": "Selection status was FAIL",
+  "mcp_targets": {
+    "compute_target": "local-compute",
+    "docs_target": null,
+    "discovery_log": "logs/mcporter_list.txt",
+    "servers": [
+      "com.apify/apify-mcp-server",
+      "figma",
+      "github",
+      "io.github.bytebase/dbhub",
+      "io.github.github/github-mcp-server",
+      "io.github.hashicorp/terraform-mcp-server",
+      "io.github.tavily-ai/tavily-mcp",
+      "local-compute",
+      "microsoft/markitdown",
+      "microsoft/playwright-mcp",
+      "notion",
+      "playwright"
+    ]
+  },
+  "capabilities": {
+    "path": "results/capabilities.json",
+    "skills_count": 16
+  },
+  "cgf": {
+    "endpoint": "http://127.0.0.1:18080"
+  },
+  "ended_utc": "2026-02-28T05:25:52.989901+00:00",
+  "resume_history": [
+    {
+      "resumed_utc": "2026-02-28T03:45:55.891610+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T03:46:26.804784+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:15:06.871258+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:17:38.724418+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:18:04.826347+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:18:04.995157+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:18:22.342541+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:18:31.747318+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:18:32.016031+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:28:56.434979+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:28:58.647692+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:29:00.901453+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:29:03.159419+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:29:05.420647+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:29:07.677276+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:33:09.303399+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:39:22.980598+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:39:23.206835+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:39:41.089835+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:39:45.124823+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:45:19.507983+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:46:18.024607+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:47:19.521178+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:48:24.437344+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:49:33.946096+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:50:47.554868+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:52:04.640442+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:54:59.069920+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T04:56:23.077740+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T05:04:52.023140+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T05:05:43.533429+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T05:07:09.832674+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T05:07:45.656736+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T05:13:51.379429+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T05:20:37.470799+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T05:21:06.477127+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T05:25:49.115705+00:00"
+    },
+    {
+      "resumed_utc": "2026-02-28T05:25:52.890775+00:00"
+    }
+  ],
+  "_resume_enabled": true
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "",
+  "physics_tests": [
+    {
+      "test_id": "P1",
+      "name": "spectral_dimension_sierpinski",
+      "status": "COMPLETE",
+      "verdict": "SUPPORTED",
+      "artifact": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/physics/baseline/P1/exp1_verdict.json",
+      "falsifiers_passed": ["F1.1", "F1.2"],
+      "metrics": {
+        "expected_d_s": 1.3652,
+        "configs_within_tolerance": "7/7"
+      },
+      "seed": 42
+    },
+    {
+      "test_id": "P2",
+      "name": "capacity_threshold_plateau_scan",
+      "status": "RUNNER_MISSING",
+      "verdict": "NOT_RUN",
+      "note": "No existing P2 runner found in experiments/"
+    },
+    {
+      "test_id": "P3",
+      "name": "gluing_excision_stability",
+      "status": "RUNNER_MISSING",
+      "verdict": "NOT_RUN",
+      "note": "No existing P3 runner found in experiments/"
+    },
+    {
+      "test_id": "P4",
+      "name": "mera_physical_convergence_ising",
+      "status": "COMPLETE",
+      "verdict": "REJECTED",
+      "artifact": "/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_124642/results/physics/baseline/P4/20260228T174958Z_07626c64/verdict.json",
+      "falsifiers": {
+        "P3.1": "PASS",
+        "P3.2": "PASS",
+        "P3.3": "FAIL",
+        "P3.4": "FAIL"
+      },
+      "metrics": {
+        "L": 8,
+        "A_size": 4,
+        "model": "ising_cyclic",
+        "best_fidelity": 0.2181,
+        "final_entropy_error": 0.456
+      },
+      "seed": 42
+    }
+  ],
+  "baseline_summary": {
+    "total_tests": 4,
+    "complete": 2,
+    "partial": 0,
+    "missing_runners": 2,
+    "supported": 1,
+    "rejected": 1,
+    "compute_mode": "LOCAL_ONLY"
+  }
+}

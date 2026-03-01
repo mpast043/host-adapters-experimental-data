@@ -1,0 +1,17 @@
+=== SECTION 6: GOVERNANCE BASELINE ===
+Checking CGF server...
+{
+    "status": "healthy",
+    "adapters": 0,
+    "proposals": 0,
+    "events": 0,
+    "schema_version": "0.3.0"
+}
+Expecting value: line 1 column 1 (char 0)
+-rwxr-xr-x  1 meganpastore  wheel  9627 Feb 25 12:58 /tmp/openclaws/Repos/host-adapters/tools/run_contract_suite.sh
+
+=== RUNNING CONTRACT SUITE ===
+
+=== RUNNING SDK VALIDATION ===
+
+=== GOVERNANCE COMPLETE ===

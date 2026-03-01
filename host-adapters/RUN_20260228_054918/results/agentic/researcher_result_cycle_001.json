@@ -1,0 +1,17 @@
+{
+  "role": "researcher",
+  "ts_utc": "2026-02-28T05:49:25.156102+00:00",
+  "cycle": 1,
+  "ok": true,
+  "exit_code": 0,
+  "escalate_tier_c": false,
+  "recommended_execution_keys": [
+    "claim2_seed_perturbation",
+    "claim3_optionb_regime_check"
+  ],
+  "signal_score": 26,
+  "research_json": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_054918/results/agentic/research_signal_cycle_001.json",
+  "research_md": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_054918/results/agentic/research_signal_cycle_001.md",
+  "stdout_tail": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters/RUN_20260228_054918/results/agentic/research_signal_cycle_001.json",
+  "stderr_tail": ""
+}

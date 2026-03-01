@@ -1,0 +1,289 @@
+{
+  "run_id": "RUN_20260228_032913",
+  "repo_root": "/private/tmp/openclaws/Repos/host-adapters",
+  "artifacts_root": "/private/tmp/openclaws/Repos/host-adapters-experimental-data/host-adapters",
+  "started_utc": "2026-02-28T03:29:13.667641+00:00",
+  "host": {
+    "hostname": "Mac",
+    "os": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.3",
+    "user": "meganpastore"
+  },
+  "steps": {
+    "0": {
+      "name": "Preflight and MCP discovery",
+      "status": "PASS"
+    },
+    "1": {
+      "name": "Repo verification",
+      "status": "RUNNING"
+    }
+  },
+  "commands": [
+    {
+      "name": "env_uname",
+      "step": "0",
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:13.674555+00:00",
+      "ended_utc": "2026-02-28T03:29:13.676268+00:00",
+      "duration_s": 0.002,
+      "log_path": "logs/env_uname.txt"
+    },
+    {
+      "name": "env_python_version",
+      "step": "0",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "--version"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:13.676422+00:00",
+      "ended_utc": "2026-02-28T03:29:13.682826+00:00",
+      "duration_s": 0.006,
+      "log_path": "logs/env_python_version.txt"
+    },
+    {
+      "name": "env_pip_freeze",
+      "step": "0",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:13.683001+00:00",
+      "ended_utc": "2026-02-28T03:29:13.809985+00:00",
+      "duration_s": 0.127,
+      "log_path": "logs/env_pip_freeze.txt"
+    },
+    {
+      "name": "git_remote_v",
+      "step": "0",
+      "command": [
+        "git",
+        "remote",
+        "-v"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:13.810265+00:00",
+      "ended_utc": "2026-02-28T03:29:13.818898+00:00",
+      "duration_s": 0.009,
+      "log_path": "logs/git_remote_v.txt"
+    },
+    {
+      "name": "git_branch",
+      "step": "0",
+      "command": [
+        "git",
+        "rev-parse",
+        "--abbrev-ref",
+        "HEAD"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:13.819129+00:00",
+      "ended_utc": "2026-02-28T03:29:13.826477+00:00",
+      "duration_s": 0.007,
+      "log_path": "logs/git_branch.txt"
+    },
+    {
+      "name": "git_commit",
+      "step": "0",
+      "command": [
+        "git",
+        "rev-parse",
+        "--short",
+        "HEAD"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:13.826662+00:00",
+      "ended_utc": "2026-02-28T03:29:13.834169+00:00",
+      "duration_s": 0.007,
+      "log_path": "logs/git_commit.txt"
+    },
+    {
+      "name": "git_status_porcelain",
+      "step": "0",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:13.834373+00:00",
+      "ended_utc": "2026-02-28T03:29:13.843264+00:00",
+      "duration_s": 0.009,
+      "log_path": "logs/git_status_porcelain.txt"
+    },
+    {
+      "name": "mcporter_cmd_check",
+      "step": "0",
+      "command": [
+        "sh",
+        "-lc",
+        "command -v mcporter"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:13.843504+00:00",
+      "ended_utc": "2026-02-28T03:29:13.849167+00:00",
+      "duration_s": 0.006,
+      "log_path": "logs/mcporter_cmd_check.txt"
+    },
+    {
+      "name": "mcporter_list",
+      "step": "0",
+      "command": [
+        "mcporter",
+        "list"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:13.849358+00:00",
+      "ended_utc": "2026-02-28T03:29:16.480143+00:00",
+      "duration_s": 2.631,
+      "log_path": "logs/mcporter_list.txt"
+    },
+    {
+      "name": "pip_install_requirements",
+      "step": "1",
+      "command": [
+        "/private/tmp/openclaws/Repos/host-adapters/.venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 0,
+      "started_utc": "2026-02-28T03:29:16.484938+00:00",
+      "ended_utc": "2026-02-28T03:29:16.753643+00:00",
+      "duration_s": 0.269,
+      "log_path": "logs/pip_install_requirements.txt"
+    },
+    {
+      "name": "make_lint",
+      "step": "1",
+      "command": [
+        "make",
+        "lint"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 2,
+      "started_utc": "2026-02-28T03:29:16.753937+00:00",
+      "ended_utc": "2026-02-28T03:29:16.762667+00:00",
+      "duration_s": 0.009,
+      "log_path": "logs/make_lint.txt",
+      "tail200_path": "logs/make_lint_tail200.txt"
+    },
+    {
+      "name": "ruff_fix",
+      "step": "1",
+      "command": [
+        "ruff",
+        "check",
+        ".",
+        "--fix"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 127,
+      "started_utc": "2026-02-28T03:29:16.763047+00:00",
+      "ended_utc": "2026-02-28T03:29:16.764064+00:00",
+      "duration_s": 0.001,
+      "log_path": "logs/ruff_fix.txt",
+      "tail200_path": "logs/ruff_fix_tail200.txt"
+    },
+    {
+      "name": "ruff_format",
+      "step": "1",
+      "command": [
+        "ruff",
+        "format",
+        "."
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 127,
+      "started_utc": "2026-02-28T03:29:16.764341+00:00",
+      "ended_utc": "2026-02-28T03:29:16.765245+00:00",
+      "duration_s": 0.001,
+      "log_path": "logs/ruff_format.txt",
+      "tail200_path": "logs/ruff_format_tail200.txt"
+    },
+    {
+      "name": "make_lint_rerun",
+      "step": "1",
+      "command": [
+        "make",
+        "lint"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 2,
+      "started_utc": "2026-02-28T03:29:16.765487+00:00",
+      "ended_utc": "2026-02-28T03:29:16.772565+00:00",
+      "duration_s": 0.007,
+      "log_path": "logs/make_lint_rerun.txt",
+      "tail200_path": "logs/make_lint_rerun_tail200.txt"
+    },
+    {
+      "name": "make_test",
+      "step": "1",
+      "command": [
+        "make",
+        "test"
+      ],
+      "cwd": "/private/tmp/openclaws/Repos/host-adapters",
+      "exit_code": 2,
+      "started_utc": "2026-02-28T03:29:16.772893+00:00",
+      "ended_utc": "2026-02-28T03:29:17.835107+00:00",
+      "duration_s": 1.062,
+      "log_path": "logs/make_test.txt",
+      "tail200_path": "logs/make_test_tail200.txt"
+    }
+  ],
+  "mcp_calls": [
+    {
+      "tool": "mcporter list",
+      "server_target": "local",
+      "request_summary": "discover available MCP servers",
+      "response_pointer": "logs/mcporter_list.txt"
+    }
+  ],
+  "failure_classification": "TEST_FAILURE",
+  "failure_message": "Step 1 tests failed",
+  "mcp_targets": {
+    "compute_target": "local-compute",
+    "docs_target": null,
+    "discovery_log": "logs/mcporter_list.txt",
+    "servers": [
+      "com.apify/apify-mcp-server",
+      "figma",
+      "github",
+      "io.github.bytebase/dbhub",
+      "io.github.github/github-mcp-server",
+      "io.github.hashicorp/terraform-mcp-server",
+      "io.github.tavily-ai/tavily-mcp",
+      "local-compute",
+      "microsoft/markitdown",
+      "microsoft/playwright-mcp",
+      "notion",
+      "playwright"
+    ]
+  },
+  "capabilities": {
+    "path": "results/capabilities.json",
+    "skills_count": 16
+  },
+  "ended_utc": "2026-02-28T03:29:17.836020+00:00"
+}

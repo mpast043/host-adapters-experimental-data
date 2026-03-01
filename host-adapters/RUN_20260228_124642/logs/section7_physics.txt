@@ -1,0 +1,10 @@
+=== SECTION 7: PHYSICS BASELINE ===
+Finding experiment runners...
+/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner_v2.py
+/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_optionB_runner.py
+/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_quimb_runner.py
+/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_physical_convergence_runner.py
+/tmp/openclaws/Repos/host-adapters/experiments/claim3/exp3_claim3_entanglement_max_mincut_runner.py
+ls: /tmp/openclaws/Repos/capacity-demo/experiments/: No such file or directory
+=== P4: MERA PHYSICAL CONVERGENCE (L=8, chi=8,16) ===
+=== P1: SPECTRAL DIMENSION ===

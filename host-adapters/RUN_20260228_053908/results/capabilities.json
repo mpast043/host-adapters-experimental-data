@@ -1,0 +1,119 @@
+{
+  "generated_at_utc": "2026-02-28T05:39:10.252005+00:00",
+  "repo_root": "/private/tmp/openclaws/Repos/host-adapters",
+  "commands": {
+    "python3": {
+      "available": true,
+      "path": "/opt/homebrew/bin/python3"
+    },
+    "mcporter": {
+      "available": true,
+      "path": "/opt/homebrew/bin/mcporter"
+    },
+    "openclaw": {
+      "available": true,
+      "path": "/opt/homebrew/bin/openclaw"
+    },
+    "ruff": {
+      "available": false,
+      "path": null
+    },
+    "pytest": {
+      "available": true,
+      "path": "/opt/homebrew/bin/pytest"
+    },
+    "pdftotext": {
+      "available": false,
+      "path": null
+    },
+    "pdftoppm": {
+      "available": false,
+      "path": null
+    },
+    "uv": {
+      "available": true,
+      "path": "/opt/homebrew/bin/uv"
+    }
+  },
+  "mcp_servers_discovered": [
+    "com.apify/apify-mcp-server",
+    "figma",
+    "github",
+    "io.github.bytebase/dbhub",
+    "io.github.github/github-mcp-server",
+    "io.github.hashicorp/terraform-mcp-server",
+    "io.github.tavily-ai/tavily-mcp",
+    "local-compute",
+    "microsoft/markitdown",
+    "microsoft/playwright-mcp",
+    "notion",
+    "playwright"
+  ],
+  "skills_root": "/Users/meganpastore/.codex/skills",
+  "skills": [
+    {
+      "name": "cloudflare-deploy",
+      "path": "/Users/meganpastore/.codex/skills/cloudflare-deploy/SKILL.md"
+    },
+    {
+      "name": "doc",
+      "path": "/Users/meganpastore/.codex/skills/doc/SKILL.md"
+    },
+    {
+      "name": "figma",
+      "path": "/Users/meganpastore/.codex/skills/figma/SKILL.md"
+    },
+    {
+      "name": "figma-implement-design",
+      "path": "/Users/meganpastore/.codex/skills/figma-implement-design/SKILL.md"
+    },
+    {
+      "name": "imagegen",
+      "path": "/Users/meganpastore/.codex/skills/imagegen/SKILL.md"
+    },
+    {
+      "name": "jupyter-notebook",
+      "path": "/Users/meganpastore/.codex/skills/jupyter-notebook/SKILL.md"
+    },
+    {
+      "name": "netlify-deploy",
+      "path": "/Users/meganpastore/.codex/skills/netlify-deploy/SKILL.md"
+    },
+    {
+      "name": "notion-knowledge-capture",
+      "path": "/Users/meganpastore/.codex/skills/notion-knowledge-capture/SKILL.md"
+    },
+    {
+      "name": "notion-meeting-intelligence",
+      "path": "/Users/meganpastore/.codex/skills/notion-meeting-intelligence/SKILL.md"
+    },
+    {
+      "name": "notion-research-documentation",
+      "path": "/Users/meganpastore/.codex/skills/notion-research-documentation/SKILL.md"
+    },
+    {
+      "name": "notion-spec-to-implementation",
+      "path": "/Users/meganpastore/.codex/skills/notion-spec-to-implementation/SKILL.md"
+    },
+    {
+      "name": "openai-docs",
+      "path": "/Users/meganpastore/.codex/skills/openai-docs/SKILL.md"
+    },
+    {
+      "name": "pdf",
+      "path": "/Users/meganpastore/.codex/skills/pdf/SKILL.md"
+    },
+    {
+      "name": "playwright",
+      "path": "/Users/meganpastore/.codex/skills/playwright/SKILL.md"
+    },
+    {
+      "name": "render-deploy",
+      "path": "/Users/meganpastore/.codex/skills/render-deploy/SKILL.md"
+    },
+    {
+      "name": "vercel-deploy",
+      "path": "/Users/meganpastore/.codex/skills/vercel-deploy/SKILL.md"
+    }
+  ]
+}
