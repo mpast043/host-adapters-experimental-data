@@ -1,0 +1,57 @@
+{
+  "claim": "3P",
+  "model": "heisenberg_cyclic",
+  "L": 8,
+  "verdict": "REJECTED",
+  "falsifiers": {
+    "P3.1": {
+      "passed": true,
+      "violations": [],
+      "n_checks": 4,
+      "eps_fid": 0.0001
+    },
+    "P3.2": {
+      "passed": false,
+      "errors": [
+        0.183620621872293,
+        6.205132572789651e-05,
+        0.0010952073257053385,
+        6.738767304836912e-06,
+        1.497757316615278e-05
+      ],
+      "violations": [
+        {
+          "chi_i": 4,
+          "chi_i+1": 8,
+          "error_i": 6.205132572789651e-05,
+          "error_i+1": 0.0010952073257053385
+        }
+      ],
+      "n_checks": 4,
+      "eps_S": 0.001
+    },
+    "P3.3": {
+      "passed": true,
+      "fid_passed": true,
+      "S_passed": true,
+      "best_fidelity": 0.9999999982473622,
+      "final_entropy_error": 1.497757316615278e-05,
+      "fid_threshold": 0.95,
+      "S_threshold": 0.15
+    },
+    "P3.4": {
+      "passed": false,
+      "delta_aic": -1.3215515274549148,
+      "delta_bic": -1.3215515274549148,
+      "S_inf_sat": 1.0294176170984954,
+      "c_sat": 0.1,
+      "aic_sat": -24.28848091527094,
+      "bic_sat": -25.069605090402742,
+      "a_log": 0.05298731481452281,
+      "b_log": 0.9040246291413568,
+      "aic_log": -25.610032442725856,
+      "bic_log": -26.391156617857657
+    }
+  },
+  "timestamp": "2026-03-02T00:40:12.343164+00:00"
+}

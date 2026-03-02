@@ -1,0 +1,37 @@
+{
+  "model": "ising",
+  "L_values": [
+    16
+  ],
+  "chi": 16,
+  "generated_at_utc": "2026-03-02T04:26:52.726140+00:00",
+  "known_cft": {
+    "primary_fields": {
+      "identity": 0.0,
+      "sigma": 0.125,
+      "epsilon": 1.0
+    },
+    "description": "Ising CFT: c=1/2, primary fields 1, \u03c3, \u03b5"
+  },
+  "extracted_dimensions": {
+    "L_8_chi_16": [
+      0.0,
+      0.125,
+      1.0
+    ]
+  },
+  "staircase_analysis": {
+    "has_staircase": false,
+    "num_jumps": 1,
+    "num_plateaus": 0,
+    "near_integer_count": 3,
+    "near_integer_fraction": 1.0,
+    "dimension_values": [
+      0.0,
+      0.125,
+      1.0
+    ],
+    "min_dim": 0.0,
+    "max_dim": 1.0
+  }
+}
