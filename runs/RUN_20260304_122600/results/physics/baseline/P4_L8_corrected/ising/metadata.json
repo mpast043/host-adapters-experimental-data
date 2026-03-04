@@ -1,0 +1,19 @@
+{
+  "run_id": "20260304T172957Z_c53167f1",
+  "timestamp": "2026-03-04T17:29:57.561441",
+  "config": {
+    "L": 8,
+    "A_size": 4,
+    "model": "ising",
+    "chi_sweep": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "seed": 42
+  },
+  "test": "P4_L8_CORRECTED",
+  "version": "1.0.0",
+  "hamiltonian_convention": "corrected (j/4, h/2)"
+}
