@@ -1,0 +1,25 @@
+{
+  "run_id": "20260304T174624Z_d5675823",
+  "timestamp": "2026-03-04T17:46:24.869349",
+  "config": {
+    "L": 12,
+    "A_size": 6,
+    "model": "heisenberg",
+    "chi_sweep": "2,4,8,16",
+    "seed": 42,
+    "output": "/tmp/openclaws/Repos/host-adapters-experimental-data/runs/RUN_20260304_1243/results/physics/baseline/P2_heisenberg_L12"
+  },
+  "ed_reference": {
+    "ground_state_energy": -5.14209063284053,
+    "ground_state_psi": "[0.+0.j 0.+0.j 0.+0.j ... 0.+0.j 0.+0.j 0.+0.j]",
+    "entanglement_entropy": 0.5368332535681604,
+    "n_sites": 12
+  },
+  "verdict": "REJECT",
+  "passed": {
+    "P3.1": true,
+    "P3.2": true,
+    "P3.3": true,
+    "P3.4": false
+  }
+}
