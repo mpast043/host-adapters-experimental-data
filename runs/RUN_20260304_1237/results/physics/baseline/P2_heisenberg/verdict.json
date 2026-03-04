@@ -1,0 +1,14 @@
+{
+  "test": "P4_L8_CORRECTED",
+  "verdict": "REJECT",
+  "status": "COMPLETE",
+  "passed": {
+    "P3.1_fidelity": true,
+    "P3.2_entropy": true,
+    "P3.3_thresholds": true,
+    "P3.4_model_selection": false
+  },
+  "ed_energy": -3.374932598687888,
+  "ed_entropy": 0.4569757731133828,
+  "delta_aic": -3.452369527845889
+}

@@ -1,0 +1,12 @@
+{
+  "test": "P3",
+  "test_name": "gluing_excision_stability",
+  "verdict": "REJECT",
+  "status": "COMPLETE",
+  "passed": {
+    "P3.1_gluing_stable": false,
+    "P3.2_excision_valid": true,
+    "P3.3_subadditivity": true,
+    "P3.4_araki_lieb": true
+  }
+}
