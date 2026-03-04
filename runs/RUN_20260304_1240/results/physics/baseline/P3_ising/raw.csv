@@ -1,0 +1,2 @@
+chi,energy,S_full,S_A,S_B,S_glued,S_excised,gluing_error,gluing_stable,excision_valid,valid_spectrum,subadditivity,araki_lieb
+16,-4.221285373302043,0.08879193953541167,0.08879193953541167,0.08879193953541167,2.220446049250313e-16,0.08879193953538592,0.17758387907082313,False,True,True,True,True
