@@ -1,0 +1,58 @@
+{
+  "model": "ising",
+  "boundary": "cyclic",
+  "results": [
+    {
+      "L": 8,
+      "A_size": 4,
+      "model": "ising",
+      "boundary": "cyclic",
+      "E0": -8.509082235140273,
+      "cumulants": {
+        "kappa_1_entropy": 0.6987952386966803,
+        "kappa_2_capacity": 0.04449976080178902,
+        "kappa_3_skewness": -1.2056639102318016,
+        "d_eff": 2.011328076977826,
+        "spectrum_mean": 0.6987952386966803,
+        "spectrum_var": 0.04449976080178902,
+        "spectrum_std": 0.21094966414239447,
+        "spectrum_min": 0.6583838025214815,
+        "spectrum_max": 26.23067900990621,
+        "spectrum_range": 25.57229520738473,
+        "n_eigenvalues": 14
+      },
+      "timestamp": "2026-03-04T18:13:12.834833",
+      "test_type": "capacity_of_entanglement_k2"
+    },
+    {
+      "L": 12,
+      "A_size": 6,
+      "model": "ising",
+      "boundary": "cyclic",
+      "E0": -12.762569151024042,
+      "cumulants": {
+        "kappa_1_entropy": 0.6990136443944491,
+        "kappa_2_capacity": 0.04203562880580258,
+        "kappa_3_skewness": -1.1960270108924245,
+        "d_eff": 2.0117674104646426,
+        "spectrum_mean": 0.6990136443944491,
+        "spectrum_var": 0.04203562880580258,
+        "spectrum_std": 0.2050259222776539,
+        "spectrum_min": 0.6863319258986683,
+        "spectrum_max": 27.02218381398843,
+        "spectrum_range": 26.335851888089763,
+        "n_eigenvalues": 22
+      },
+      "timestamp": "2026-03-04T18:13:24.831623",
+      "test_type": "capacity_of_entanglement_k2"
+    }
+  ],
+  "scaling": {
+    "entropy_slope": 0.0005386547286099072,
+    "entropy_intercept": 0.6976751376773865,
+    "capacity_log_slope": -0.006077297273453901,
+    "capacity_const": 0.043267694803795796,
+    "delta_AIC": 129.24130578564382
+  },
+  "verdict": "CAPACITY_SATURATES"
+}
