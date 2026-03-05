@@ -1,0 +1,230 @@
+{
+  "metadata": {
+    "test": "P2_XXZ_BOUNDARY_ED",
+    "version": "2.0.0",
+    "method": "exact_diagonalization",
+    "validation_mode": "physics_truth_baseline",
+    "framework_correctness_gate": true,
+    "boundary_condition": "OBC",
+    "partition_rule": "half_chain_ell_equals_L_over_2",
+    "log_model": "S(L)=alpha*ln(L)+beta",
+    "sat_model": "S(L)=S_inf-A*exp(-L/xi)",
+    "decision_metric": "delta_aicc_sat_minus_log",
+    "decision_threshold_abs": 2.0,
+    "decision_rule": "delta<=-2:IN_SCOPE; delta>=+2:OUT_OF_SCOPE; otherwise:INCONCLUSIVE",
+    "gate_data_source": "observed_S_L2_L_only",
+    "even_L_only": true,
+    "solver_overlap_required_for_pooling": true,
+    "solver_overlap_strict_mode": "all_must_pass",
+    "pooling_mode": "pool_if_overlap_pass"
+  },
+  "config": {
+    "deltas": [
+      2.0
+    ],
+    "L_values": [
+      8,
+      10,
+      12
+    ],
+    "ed_max_L": null,
+    "delta_set": "custom",
+    "min_viable_L_points": 8,
+    "pooling_mode": "pool_if_overlap_pass",
+    "dmrg_overlap_json": "outputs/tmp_dmrg_low_accuracy_mismatch.json",
+    "overlap_L_values": [
+      8,
+      10,
+      12
+    ],
+    "overlap_abs_tol": 0.001,
+    "overlap_rel_tol": 0.001
+  },
+  "results": [
+    {
+      "delta": 2.0,
+      "expected_scope": "IN_SCOPE",
+      "measurements": [
+        {
+          "L": 8,
+          "delta": 2.0,
+          "E0": -4.611274141649156,
+          "S_entropy": 0.7592390594399395,
+          "kappa2": 0.8903337929184402,
+          "A_size": 4
+        },
+        {
+          "L": 10,
+          "delta": 2.0,
+          "E0": -5.832681365221641,
+          "S_entropy": 1.087896558112264,
+          "kappa2": 0.2549038321757736,
+          "A_size": 5
+        },
+        {
+          "L": 12,
+          "delta": 2.0,
+          "E0": -7.056954786581861,
+          "S_entropy": 0.9117265669906532,
+          "kappa2": 0.870986136269529,
+          "A_size": 6
+        }
+      ],
+      "log_model": {
+        "alpha": 0.4164572507067689,
+        "beta": -0.033640657296980785,
+        "rss": 0.039796520849657326,
+        "aic": -8.967764225055792,
+        "aicc": Infinity,
+        "bic": -10.770539647719572,
+        "n": 3,
+        "k": 2,
+        "log_base": "e",
+        "fit_status": "OK",
+        "optimizer": "linear_least_squares",
+        "converged_clean": true
+      },
+      "sat_model": {
+        "S_inf": 1.0878975581122639,
+        "A": 126.74529660402978,
+        "xi": 1.3378401246737348,
+        "rss": 0.03084918906297268,
+        "aic": -7.731771312287393,
+        "aicc": Infinity,
+        "bic": -10.435934446283063,
+        "n": 3,
+        "k": 3,
+        "constraints": {
+          "S_inf_gte_0": true,
+          "A_gte_0": true,
+          "xi_gt_0": true
+        },
+        "fit_status": "OK",
+        "optimizer": "grid_search_closed_form_A",
+        "candidates_total": 2400,
+        "candidates_valid": 2280,
+        "boundary_hits": {
+          "S_inf": true,
+          "A": false,
+          "xi": false
+        },
+        "at_constraint": {
+          "S_inf_gte_0": false,
+          "A_gte_0": false,
+          "xi_gt_0": false
+        },
+        "converged_clean": false
+      },
+      "delta_aic": 1.235992912768399,
+      "delta_aic_sat_minus_log": 1.235992912768399,
+      "delta_aic_log_minus_sat": -1.235992912768399,
+      "delta_aicc_sat_minus_log": NaN,
+      "delta_aicc_log_minus_sat": NaN,
+      "aic_saturating": -7.731771312287393,
+      "aic_loglinear": -8.967764225055792,
+      "aicc_saturating": Infinity,
+      "aicc_loglinear": Infinity,
+      "preferred_model": "tie",
+      "expected_preferred_model": "saturating",
+      "expected_sign_sat_minus_log": "negative",
+      "actual_sign_sat_minus_log": "positive",
+      "actual_sign_aicc_sat_minus_log": "undefined",
+      "gate_decision": "INCONCLUSIVE",
+      "gate_reason": "SOLVER_MISMATCH",
+      "solver_calibration": {
+        "enabled": true,
+        "delta": 2.0,
+        "required_L_values": [
+          8,
+          10,
+          12
+        ],
+        "abs_tol": 0.001,
+        "rel_tol": 0.001,
+        "strict_all_must_pass": true,
+        "calibration_pass": false,
+        "status": "MISMATCH",
+        "reason": "SOLVER_MISMATCH",
+        "required_points": 3,
+        "checked_points": 3,
+        "passed_points": 0,
+        "failed_points": 3,
+        "missing_points": 0,
+        "overlap_points": [
+          {
+            "L": 8,
+            "status": "FAIL",
+            "S_ed": 0.7592390594399395,
+            "S_dmrg": 0.15,
+            "delta_s": 0.6092390594399395,
+            "rel_delta_s": 0.6092390594399395,
+            "epsilon_abs": 0.001,
+            "epsilon_rel": 0.001,
+            "pass_abs": false,
+            "pass_rel": false
+          },
+          {
+            "L": 10,
+            "status": "FAIL",
+            "S_ed": 1.087896558112264,
+            "S_dmrg": 0.2,
+            "delta_s": 0.887896558112264,
+            "rel_delta_s": 0.8161589918557668,
+            "epsilon_abs": 0.001,
+            "epsilon_rel": 0.001,
+            "pass_abs": false,
+            "pass_rel": false
+          },
+          {
+            "L": 12,
+            "status": "FAIL",
+            "S_ed": 0.9117265669906532,
+            "S_dmrg": 0.3,
+            "delta_s": 0.6117265669906533,
+            "rel_delta_s": 0.6117265669906533,
+            "epsilon_abs": 0.001,
+            "epsilon_rel": 0.001,
+            "pass_abs": false,
+            "pass_rel": false
+          }
+        ]
+      },
+      "model_selection_audit": {
+        "aicc_used_for_gating": false,
+        "aicc_evaluated_for_audit": true,
+        "blocked_by_solver_calibration": true,
+        "blocking_reason": "SOLVER_MISMATCH"
+      },
+      "fit_series": {
+        "source": "ED_ONLY",
+        "pooling_mode": "pool_if_overlap_pass",
+        "pooling_applied": false,
+        "pooling_reason": "SOLVER_MISMATCH",
+        "n_fit_points": 3,
+        "L_values": [
+          8,
+          10,
+          12
+        ],
+        "source_by_L": {
+          "8": "ED",
+          "10": "ED",
+          "12": "ED"
+        }
+      },
+      "verdict": "INCONCLUSIVE",
+      "scope_correct": null
+    }
+  ],
+  "summary": {
+    "scope_matches": 0,
+    "conclusive_total": 0,
+    "inconclusive_total": 1,
+    "total": 1,
+    "all_correct": false,
+    "gate_reason_counts": {
+      "SOLVER_MISMATCH": 1
+    },
+    "overall_verdict": "SCOPE_INCONCLUSIVE"
+  }
+}

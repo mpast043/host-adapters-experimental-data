@@ -1,0 +1,134 @@
+{
+  "artifact": "XXZ_GATE_REGRESSION_STABLE_20260305",
+  "created_at": "2026-03-05T16:19:53.359173+00:00",
+  "runner": "experiments/physics/PHYS_BORDER_XXZ_ED_runner_v1.py",
+  "scope_rule_version": "2026-03-05",
+  "tests": {
+    "A_solver_mismatch": {
+      "description": "Degraded DMRG overlap must force INCONCLUSIVE with SOLVER_MISMATCH and no pooling",
+      "result_overall": "SCOPE_INCONCLUSIVE",
+      "expected": {
+        "all_verdict_inconclusive": true,
+        "all_reason_solver_mismatch": true,
+        "all_pooling_applied_false": true
+      },
+      "observed_checks": {
+        "all_verdict_inconclusive": true,
+        "all_reason_solver_mismatch": true,
+        "all_pooling_applied_false": true
+      },
+      "source_json": "outputs/regression_stable_20260305/A_solver_mismatch/run_ed_25c6c279/xxz_boundary_results.json",
+      "rows": [
+        {
+          "delta": 0.5,
+          "verdict": "INCONCLUSIVE",
+          "gate_reason": "SOLVER_MISMATCH",
+          "delta_aicc_sat_minus_log": NaN,
+          "n_fit": 3,
+          "pooling_applied": false,
+          "fit_source": "ED_ONLY",
+          "parity_control": "L_mod_4_eq_0",
+          "fit_variant": "base",
+          "solver_calibration_pass": false,
+          "aicc_used_for_gating": false
+        },
+        {
+          "delta": 2.0,
+          "verdict": "INCONCLUSIVE",
+          "gate_reason": "SOLVER_MISMATCH",
+          "delta_aicc_sat_minus_log": NaN,
+          "n_fit": 3,
+          "pooling_applied": false,
+          "fit_source": "ED_ONLY",
+          "parity_control": "L_mod_4_eq_0",
+          "fit_variant": "base",
+          "solver_calibration_pass": false,
+          "aicc_used_for_gating": false
+        }
+      ]
+    },
+    "B_solver_pass_bulk": {
+      "description": "Parity-controlled grid with overlap pass must pool and produce decisive correct outcomes for bulk deltas",
+      "result_overall": "SCOPE_VALIDATED",
+      "expected": {
+        "delta_0_5_verdict": "REJECT",
+        "delta_2_0_verdict": "ACCEPT",
+        "all_calibration_pass": true,
+        "all_pooling_applied_true": true
+      },
+      "observed_checks": {
+        "delta_0_5_verdict": "REJECT",
+        "delta_2_0_verdict": "ACCEPT",
+        "all_calibration_pass": true,
+        "all_pooling_applied_true": true
+      },
+      "source_json": "outputs/regression_stable_20260305/B_solver_pass_bulk/xxz_boundary_results.json",
+      "rows": [
+        {
+          "delta": 0.5,
+          "verdict": "REJECT",
+          "gate_reason": "AICC_LOG_PREFERRED",
+          "delta_aicc_sat_minus_log": 20.132519770018945,
+          "n_fit": 10,
+          "pooling_applied": true,
+          "fit_source": "ED_PLUS_DMRG",
+          "parity_control": "L_mod_4_eq_0",
+          "fit_variant": "base",
+          "solver_calibration_pass": true,
+          "aicc_used_for_gating": true
+        },
+        {
+          "delta": 2.0,
+          "verdict": "ACCEPT",
+          "gate_reason": "AICC_SATURATION_PREFERRED",
+          "delta_aicc_sat_minus_log": -21.058842081857648,
+          "n_fit": 10,
+          "pooling_applied": true,
+          "fit_source": "ED_PLUS_DMRG",
+          "parity_control": "L_mod_4_eq_0",
+          "fit_variant": "base",
+          "solver_calibration_pass": true,
+          "aicc_used_for_gating": true
+        }
+      ]
+    },
+    "C_mixed_even_warning": {
+      "description": "Mixed-even grid must emit parity warning and surface oscillation contamination behavior",
+      "result_overall": "SCOPE_VALIDATED",
+      "expected": {
+        "parity_control": "mixed_even",
+        "fit_variant": "oscillation_corrected",
+        "alternation_detected": true
+      },
+      "observed_checks": {
+        "parity_control": "mixed_even",
+        "fit_variant": "oscillation_corrected",
+        "alternation_detected": true,
+        "alternation_fraction": 1.0
+      },
+      "source_json": "outputs/regression_stable_20260305/C_mixed_even_warning/xxz_boundary_results.json",
+      "stdout_log": "outputs/regression_stable_20260305/C_mixed_even_warning/run.log",
+      "rows": [
+        {
+          "delta": 0.5,
+          "verdict": "REJECT",
+          "gate_reason": "AICC_LOG_PREFERRED",
+          "delta_aicc_sat_minus_log": 24.996247161923606,
+          "n_fit": 8,
+          "pooling_applied": false,
+          "fit_source": "ED_ONLY",
+          "parity_control": "mixed_even",
+          "fit_variant": "oscillation_corrected",
+          "solver_calibration_pass": false,
+          "aicc_used_for_gating": true
+        }
+      ]
+    }
+  },
+  "policy_corrections": [
+    "Authoritative scope gate uses observed S(L/2,L) data with AICc comparison only.",
+    "Literature benchmark is regression/interpretation aid and is not used for scope gating decisions.",
+    "Do not model gapped phases with CFT central charge; gapped classification is based on saturation-vs-log model evidence in observed data.",
+    "Decision metric is delta_aicc_sat_minus_log = AICc_sat - AICc_log (negative favors saturation/IN_SCOPE, positive favors log/OUT_OF_SCOPE)."
+  ]
+}

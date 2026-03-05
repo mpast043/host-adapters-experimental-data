@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "test": "P2_XXZ_BOUNDARY_ED",
+    "version": "2.0.0",
+    "method": "exact_diagonalization",
+    "validation_mode": "physics_truth_baseline",
+    "framework_correctness_gate": true,
+    "boundary_condition": "OBC",
+    "partition_rule": "half_chain_ell_equals_L_over_2",
+    "log_model": "S(L)=alpha*ln(L)+beta",
+    "sat_model": "S(L)=S_inf-A*exp(-L/xi)",
+    "decision_metric": "delta_aicc_sat_minus_log",
+    "decision_threshold_abs": 2.0,
+    "decision_rule": "delta<=-2:IN_SCOPE; delta>=+2:OUT_OF_SCOPE; otherwise:INCONCLUSIVE",
+    "gate_data_source": "observed_S_L2_L_only",
+    "even_L_only": true
+  },
+  "config": {
+    "deltas": [
+      0.95,
+      1.0,
+      1.05,
+      1.1
+    ],
+    "L_values": [
+      4,
+      6,
+      8,
+      10
+    ],
+    "delta_set": "boundary",
+    "min_viable_L_points": 8
+  },
+  "results": [
+    {
+      "delta": 0.95,
+      "expected_scope": "OUT_OF_SCOPE",
+      "measurements": [
+        {
+          "L": 4,
+          "delta": 0.95,
+          "E0": -1.589180240803941,
+          "S_entropy": 0.4609724723686451,
+          "kappa2": 0.8706429942884917,
+          "A_size": 2
+        },
+        {
+          "L": 6,
+          "delta": 0.95,
+          "E0": -2.4522080044939694,
+          "S_entropy": 1.0263190503898107,
+          "kappa2": 0.10496743521197227,
+          "A_size": 3
+        },
+        {
+          "L": 8,
+          "delta": 0.95,
+          "E0": -3.318981462278085,
+          "S_entropy": 0.6596223524116878,
+          "kappa2": 0.9961504130124186,
+          "A_size": 4
+        },
+        {
+          "L": 10,
+          "delta": 0.95,
+          "E0": -4.187475747370572,
+          "S_entropy": 1.0645878629871919,
+          "kappa2": 0.21334429549253714,
+          "A_size": 5
+        }
+      ],
+      "log_model": {
+        "alpha": 0.4922579628172604,
+        "beta": -0.12750201757221896,
+        "rss": 0.14207487463282584,
+        "aic": -9.350781741282393,
+        "aicc": 2.6492182587176067,
+        "bic": -10.578193019042612,
+        "n": 4,
+        "k": 2,
+        "log_base": "e"
+      },
+      "sat_model": {
+        "S_inf": 1.0645888629871918,
+        "A": 2.426291665934834,
+        "xi": 2.704681323120246,
+        "rss": 0.13494026766854159,
+        "aic": -7.556869685172691,
+        "aicc": Infinity,
+        "bic": -9.39798660181302,
+        "n": 4,
+        "k": 3,
+        "constraints": {
+          "S_inf_gte_0": true,
+          "A_gte_0": true,
+          "xi_gt_0": true
+        }
+      },
+      "delta_aic": 1.7939120561097024,
+      "delta_aic_sat_minus_log": 1.7939120561097024,
+      "delta_aic_log_minus_sat": -1.7939120561097024,
+      "delta_aicc_sat_minus_log": Infinity,
+      "delta_aicc_log_minus_sat": -Infinity,
+      "aic_saturating": -7.556869685172691,
+      "aic_loglinear": -9.350781741282393,
+      "aicc_saturating": Infinity,
+      "aicc_loglinear": 2.6492182587176067,
+      "preferred_model": "log-linear",
+      "expected_preferred_model": "log-linear",
+      "expected_sign_sat_minus_log": "positive",
+      "actual_sign_sat_minus_log": "positive",
+      "actual_sign_aicc_sat_minus_log": "undefined",
+      "gate_decision": "INCONCLUSIVE",
+      "verdict": "INCONCLUSIVE",
+      "scope_correct": null
+    },
+    {
+      "delta": 1.0,
+      "expected_scope": "OUT_OF_SCOPE",
+      "measurements": [
+        {
+          "L": 4,
+          "delta": 1.0,
+          "E0": -1.6160254037844386,
+          "S_entropy": 0.4607512581906738,
+          "kappa2": 0.8707353679237697,
+          "A_size": 2
+        },
+        {
+          "L": 6,
+          "delta": 1.0,
+          "E0": -2.4935771338879267,
+          "S_entropy": 1.0262943679664862,
+          "kappa2": 0.10488944014289298,
+          "A_size": 3
+        },
+        {
+          "L": 8,
+          "delta": 1.0,
+          "E0": -3.374932598687888,
+          "S_entropy": 0.6592766816768473,
+          "kappa2": 0.9964002363381376,
+          "A_size": 4
+        },
+        {
+          "L": 10,
+          "delta": 1.0,
+          "E0": -4.25803520728288,
+          "S_entropy": 1.064520575217512,
+          "kappa2": 0.21318125743402086,
+          "A_size": 5
+        }
+      ],
+      "log_model": {
+        "alpha": 0.49230188022393917,
+        "beta": -0.12774973613074977,
+        "rss": 0.14225869346654982,
+        "aic": -9.345609819850486,
+        "aicc": 2.6543901801495142,
+        "bic": -10.573021097610704,
+        "n": 4,
+        "k": 2,
+        "log_base": "e"
+      },
+      "sat_model": {
+        "S_inf": 1.064521575217512,
+        "A": 2.426961036098869,
+        "xi": 2.704681323120246,
+        "rss": 0.13513049842319555,
+        "aic": -7.551234694348105,
+        "aicc": Infinity,
+        "bic": -9.392351610988435,
+        "n": 4,
+        "k": 3,
+        "constraints": {
+          "S_inf_gte_0": true,
+          "A_gte_0": true,
+          "xi_gt_0": true
+        }
+      },
+      "delta_aic": 1.7943751255023805,
+      "delta_aic_sat_minus_log": 1.7943751255023805,
+      "delta_aic_log_minus_sat": -1.7943751255023805,
+      "delta_aicc_sat_minus_log": Infinity,
+      "delta_aicc_log_minus_sat": -Infinity,
+      "aic_saturating": -7.551234694348105,
+      "aic_loglinear": -9.345609819850486,
+      "aicc_saturating": Infinity,
+      "aicc_loglinear": 2.6543901801495142,
+      "preferred_model": "log-linear",
+      "expected_preferred_model": "log-linear",
+      "expected_sign_sat_minus_log": "positive",
+      "actual_sign_sat_minus_log": "positive",
+      "actual_sign_aicc_sat_minus_log": "undefined",
+      "gate_decision": "INCONCLUSIVE",
+      "verdict": "INCONCLUSIVE",
+      "scope_correct": null
+    },
+    {
+      "delta": 1.05,
+      "expected_scope": "IN_SCOPE",
+      "measurements": [
+        {
+          "L": 4,
+          "delta": 1.05,
+          "E0": -1.6430466797755945,
+          "S_entropy": 0.4609631033246499,
+          "kappa2": 0.8706419933888974,
+          "A_size": 2
+        },
+        {
+          "L": 6,
+          "delta": 1.05,
+          "E0": -2.535325537131053,
+          "S_entropy": 1.0263186944172127,
+          "kappa2": 0.10496489471154763,
+          "A_size": 3
+        },
+        {
+          "L": 8,
+          "delta": 1.05,
+          "E0": -3.4314772156713405,
+          "S_entropy": 0.6596143643113063,
+          "kappa2": 0.9961485749540461,
+          "A_size": 4
+        },
+        {
+          "L": 10,
+          "delta": 1.05,
+          "E0": -4.329408202026916,
+          "S_entropy": 1.064588294566326,
+          "kappa2": 0.21334130372463966,
+          "A_size": 5
+        }
+      ],
+      "log_model": {
+        "alpha": 0.49226524599564697,
+        "beta": -0.12752010331034,
+        "rss": 0.14208027035402976,
+        "aic": -9.350629832121507,
+        "aicc": 2.6493701678784927,
+        "bic": -10.578041109881726,
+        "n": 4,
+        "k": 2,
+        "log_base": "e"
+      },
+      "sat_model": {
+        "S_inf": 1.064589294566326,
+        "A": 2.426332757922766,
+        "xi": 2.704681323120246,
+        "rss": 0.13494560370637979,
+        "aic": -7.556711513488885,
+        "aicc": Infinity,
+        "bic": -9.397828430129213,
+        "n": 4,
+        "k": 3,
+        "constraints": {
+          "S_inf_gte_0": true,
+          "A_gte_0": true,
+          "xi_gt_0": true
+        }
+      },
+      "delta_aic": 1.7939183186326222,
+      "delta_aic_sat_minus_log": 1.7939183186326222,
+      "delta_aic_log_minus_sat": -1.7939183186326222,
+      "delta_aicc_sat_minus_log": Infinity,
+      "delta_aicc_log_minus_sat": -Infinity,
+      "aic_saturating": -7.556711513488885,
+      "aic_loglinear": -9.350629832121507,
+      "aicc_saturating": Infinity,
+      "aicc_loglinear": 2.6493701678784927,
+      "preferred_model": "log-linear",
+      "expected_preferred_model": "saturating",
+      "expected_sign_sat_minus_log": "negative",
+      "actual_sign_sat_minus_log": "positive",
+      "actual_sign_aicc_sat_minus_log": "undefined",
+      "gate_decision": "INCONCLUSIVE",
+      "verdict": "INCONCLUSIVE",
+      "scope_correct": null
+    },
+    {
+      "delta": 1.1,
+      "expected_scope": "IN_SCOPE",
+      "measurements": [
+        {
+          "L": 4,
+          "delta": 1.1,
+          "E0": -1.6702408969915998,
+          "S_entropy": 0.4615805896110109,
+          "kappa2": 0.8703600351884075,
+          "A_size": 2
+        },
+        {
+          "L": 6,
+          "delta": 1.1,
+          "E0": -2.577448177067999,
+          "S_entropy": 1.0263909140237846,
+          "kappa2": 0.10518607976842766,
+          "A_size": 3
+        },
+        {
+          "L": 8,
+          "delta": 1.1,
+          "E0": -3.488609424230008,
+          "S_entropy": 0.660611025853733,
+          "kappa2": 0.9953893889561194,
+          "A_size": 4
+        },
+        {
+          "L": 10,
+          "delta": 1.1,
+          "E0": -4.401588734982222,
+          "S_entropy": 1.0647921013719481,
+          "kappa2": 0.21381461350403644,
+          "A_size": 5
+        }
+      ],
+      "log_model": {
+        "alpha": 0.49216882655988503,
+        "beta": -0.12686532507690643,
+        "rss": 0.1415565114768227,
+        "aic": -9.365402513411821,
+        "aicc": 2.634597486588179,
+        "bic": -10.59281379117204,
+        "n": 4,
+        "k": 2,
+        "log_base": "e"
+      },
+      "sat_model": {
+        "S_inf": 1.064793101371948,
+        "A": 2.424526919666107,
+        "xi": 2.704681323120246,
+        "rss": 0.13440249004899316,
+        "aic": -7.57284274013743,
+        "aicc": Infinity,
+        "bic": -9.41395965677776,
+        "n": 4,
+        "k": 3,
+        "constraints": {
+          "S_inf_gte_0": true,
+          "A_gte_0": true,
+          "xi_gt_0": true
+        }
+      },
+      "delta_aic": 1.792559773274391,
+      "delta_aic_sat_minus_log": 1.792559773274391,
+      "delta_aic_log_minus_sat": -1.792559773274391,
+      "delta_aicc_sat_minus_log": Infinity,
+      "delta_aicc_log_minus_sat": -Infinity,
+      "aic_saturating": -7.57284274013743,
+      "aic_loglinear": -9.365402513411821,
+      "aicc_saturating": Infinity,
+      "aicc_loglinear": 2.634597486588179,
+      "preferred_model": "log-linear",
+      "expected_preferred_model": "saturating",
+      "expected_sign_sat_minus_log": "negative",
+      "actual_sign_sat_minus_log": "positive",
+      "actual_sign_aicc_sat_minus_log": "undefined",
+      "gate_decision": "INCONCLUSIVE",
+      "verdict": "INCONCLUSIVE",
+      "scope_correct": null
+    }
+  ],
+  "summary": {
+    "scope_matches": 0,
+    "conclusive_total": 0,
+    "inconclusive_total": 4,
+    "total": 4,
+    "all_correct": false,
+    "overall_verdict": "SCOPE_INCONCLUSIVE"
+  }
+}

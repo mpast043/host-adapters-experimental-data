@@ -1,0 +1,40 @@
+[WARN] L grid is mixed-even. OBC half-chain entropy can exhibit strong parity oscillations.
+       Recommended: use L ≡ 0 (mod 4) (or L ≡ 2 (mod 4)) OR enable oscillation_mode=auto/force.
+============================================================
+XXZ BOUNDARY TEST (ED Correctness Gate)
+============================================================
+[GATE] Uses observed S(L/2, L) data only; theory formulas are interpretation-only.
+L values (requested): [8, 10, 12, 14, 16, 18, 20, 22]
+L values (ED schedule): [8, 10, 12, 14, 16, 18, 20, 22]
+Δ values: [0.5]
+[PARITY] parity_control=mixed_even
+[POOLING] mode=ed_only
+
+
+[Δ = 0.5]
+  Expected scope: OUT_OF_SCOPE (critical)
+  L=8... S=0.6971, κ₂=0.9715
+  L=10... S=1.0711, κ₂=0.2303
+  L=12... S=0.8183, κ₂=1.0057
+  L=14... S=1.1098, κ₂=0.3189
+  L=16... S=0.9023, κ₂=1.0231
+  L=18... S=1.1440, κ₂=0.3880
+  L=20... S=0.9662, κ₂=1.0348
+  L=22... S=1.1741, κ₂=0.4438
+  ΔAICc(sat-log) = 24.9962 (log growth)
+  [FIT] variant=oscillation_corrected, oscillation_detected=True, alt_fraction=1.000
+  [POOLING] source=ED_ONLY, applied=False, n_fit=8, reason=POOLING_DISABLED
+  Gate decision: OUT_OF_SCOPE, reason=AICC_LOG_PREFERRED, Verdict: REJECT, Scope correct: True
+
+============================================================
+SUMMARY
+============================================================
+     Δ |     Expected |      ΔAICc |      Verdict | Scope OK
+----------------------------------------------------------------------
+  0.50 | OUT_OF_SCOPE |    24.9962 |       REJECT |     True
+----------------------------------------------------------------------
+Scope matches (conclusive only): 1/1
+Inconclusive points: 0
+Overall: SCOPE_VALIDATED
+
+Results written to outputs/regression_stable_20260305/C_mixed_even_warning

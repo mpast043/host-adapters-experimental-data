@@ -1,0 +1,90 @@
+{
+  "artifact": "XXZ_BOUNDARY_BOUNDARYSET_L4K_SUMMARY",
+  "source_run": "outputs/xxz_boundary_ed_gate_v2/run_ed_622c8dc8/xxz_boundary_results.json",
+  "boundary_delta_set": [
+    0.95,
+    1.0,
+    1.05,
+    1.1
+  ],
+  "grid": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44
+  ],
+  "policy": {
+    "boundary_condition": "OBC",
+    "partition": "ell=L/2",
+    "ed_max_L": 16,
+    "dmrg_used": true,
+    "overlap_L_values": [
+      8,
+      12,
+      16
+    ],
+    "pooling_mode": "pool_if_overlap_pass",
+    "parity_control_used": true,
+    "parity_rule": "L_mod_4_eq_0"
+  },
+  "rows": [
+    {
+      "delta": 0.95,
+      "verdict": "REJECT",
+      "delta_aicc_sat_minus_log": 22.190771940204343,
+      "decisive_abs_delta_aicc_ge_2": true,
+      "n_fit": 10,
+      "solver_calibration_status": "PASS",
+      "solver_calibration_pass": true,
+      "parity_control_used": true,
+      "parity_rule": "L_mod_4_eq_0",
+      "fit_variant": "base",
+      "gate_reason": "AICC_LOG_PREFERRED"
+    },
+    {
+      "delta": 1.0,
+      "verdict": "REJECT",
+      "delta_aicc_sat_minus_log": 22.095365128341896,
+      "decisive_abs_delta_aicc_ge_2": true,
+      "n_fit": 10,
+      "solver_calibration_status": "PASS",
+      "solver_calibration_pass": true,
+      "parity_control_used": true,
+      "parity_rule": "L_mod_4_eq_0",
+      "fit_variant": "base",
+      "gate_reason": "AICC_LOG_PREFERRED"
+    },
+    {
+      "delta": 1.05,
+      "verdict": "REJECT",
+      "delta_aicc_sat_minus_log": 22.24408583360352,
+      "decisive_abs_delta_aicc_ge_2": true,
+      "n_fit": 10,
+      "solver_calibration_status": "PASS",
+      "solver_calibration_pass": true,
+      "parity_control_used": true,
+      "parity_rule": "L_mod_4_eq_0",
+      "fit_variant": "base",
+      "gate_reason": "AICC_LOG_PREFERRED"
+    },
+    {
+      "delta": 1.1,
+      "verdict": "REJECT",
+      "delta_aicc_sat_minus_log": 22.82599573618137,
+      "decisive_abs_delta_aicc_ge_2": true,
+      "n_fit": 10,
+      "solver_calibration_status": "PASS",
+      "solver_calibration_pass": true,
+      "parity_control_used": true,
+      "parity_rule": "L_mod_4_eq_0",
+      "fit_variant": "base",
+      "gate_reason": "AICC_LOG_PREFERRED"
+    }
+  ]
+}
